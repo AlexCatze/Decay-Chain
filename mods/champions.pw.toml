@@ -1,0 +1,13 @@
+name = "Champions"
+filename = "champions-1.12.2-1.0.11.10.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/YlKc4JEx/versions/pBLPv0i4/champions-1.12.2-1.0.11.10.jar"
+hash-format = "sha512"
+hash = "c2b9968788aa4784b2447b35f0febea7ea0063b911958c3657c2f1dc99947059f73b21e0eaef313f0029a2061d23b0f0971a25174f9967629f1beacd607a37b1"
+
+[update]
+[update.modrinth]
+mod-id = "YlKc4JEx"
+version = "pBLPv0i4"

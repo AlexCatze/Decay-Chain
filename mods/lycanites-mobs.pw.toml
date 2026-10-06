@@ -1,0 +1,13 @@
+name = "Lycanites Mobs"
+filename = "lycanitesmobs-1.12.2-2.0.8.10.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/kESMTJSz/versions/K4pmQow9/lycanitesmobs-1.12.2-2.0.8.10.jar"
+hash-format = "sha512"
+hash = "1edc0c33bb03bf1a270ebd7041e27d183e860259baea14b7082aee5af1fd16164a53747c982144974d4a2232d436ef30e4f3d8ba72d08eb7da17630cbd2cf072"
+
+[update]
+[update.modrinth]
+mod-id = "kESMTJSz"
+version = "K4pmQow9"

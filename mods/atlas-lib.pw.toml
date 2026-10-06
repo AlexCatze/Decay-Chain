@@ -1,0 +1,13 @@
+name = "Atlas Lib"
+filename = "Atlas-Lib-1.12.2-1.1.11.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/G6VHtQr4/versions/UekJfJ7l/Atlas-Lib-1.12.2-1.1.11.jar"
+hash-format = "sha512"
+hash = "9368277aa9c96a24045bf76a83cc1d17a5b6cce0ec7be2bb499d8e2757ea256803de08016008de23c51b155a3c18ea574cc355ceb1ad43ad841a37d2417d73e5"
+
+[update]
+[update.modrinth]
+mod-id = "G6VHtQr4"
+version = "UekJfJ7l"

@@ -1,0 +1,13 @@
+name = "Storage Drawers"
+filename = "StorageDrawers-1.12.2-5.5.2.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/guitPqEi/versions/MYiIvcYr/StorageDrawers-1.12.2-5.5.2.jar"
+hash-format = "sha512"
+hash = "276064f5c60f444454ec3d098a112561111c3137c6011aea10d7ea6540845fce6cc7e01d3845789231fcdfbb04ebe417677bbfc476fb19ab7d156a5e8d7d8839"
+
+[update]
+[update.modrinth]
+mod-id = "guitPqEi"
+version = "MYiIvcYr"

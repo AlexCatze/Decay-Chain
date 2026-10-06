@@ -1,0 +1,13 @@
+name = "Comforts"
+filename = "comforts-1.12.2-1.4.1.3.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/SaCpeal4/versions/dHrSKL4J/comforts-1.12.2-1.4.1.3.jar"
+hash-format = "sha512"
+hash = "0a3a4cefb2a8674a1029cf6afc8c7851422de7d86fe2a152d0692650ca2ddf6fad44eeb0c72edf1a66bd6a30ab00c031fe21f8de94114047b674a31163714428"
+
+[update]
+[update.modrinth]
+mod-id = "SaCpeal4"
+version = "dHrSKL4J"

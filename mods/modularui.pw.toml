@@ -1,0 +1,13 @@
+name = "ModularUI"
+filename = "modularui-3.1.6.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/Ecvd12QC/versions/1twp2z8Y/modularui-3.1.6.jar"
+hash-format = "sha512"
+hash = "3c5a9c6b9930e18513be800507573aa4a219bb8a9ee6dbb5b541a945a96931ae6e71c63693947e8db8d8bd58484b8a9189b6affc85900dc2d7238fc8a27c4862"
+
+[update]
+[update.modrinth]
+mod-id = "Ecvd12QC"
+version = "1twp2z8Y"

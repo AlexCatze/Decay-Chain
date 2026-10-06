@@ -1,0 +1,13 @@
+name = "VintageFix"
+filename = "vintagefix-0.7.2.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/e6vNsbAm/versions/CutuuVKA/vintagefix-0.7.2.jar"
+hash-format = "sha512"
+hash = "2e9e4734e38169c5f2ae815be47d4de5710c019ec70923b2c8f3fcaf7f55672630e4895391fac05c29313b2b592749dfd4b9dee35f353e8e9030ea869a42aac9"
+
+[update]
+[update.modrinth]
+mod-id = "e6vNsbAm"
+version = "CutuuVKA"

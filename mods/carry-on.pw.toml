@@ -1,0 +1,13 @@
+name = "Carry On"
+filename = "carryon-1.12.2-1.12.7.23.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/joEfVgkn/versions/uGbxgawj/carryon-1.12.2-1.12.7.23.jar"
+hash-format = "sha512"
+hash = "a16b7805ff74b6138004b6f1f3ffcabacaa7e77cc498229ddae0cae54945eefa57c19f4296a70f629a90b83dbbf6f42f1e2e5d8ee75185e7341c6220f5e1ca94"
+
+[update]
+[update.modrinth]
+mod-id = "joEfVgkn"
+version = "uGbxgawj"

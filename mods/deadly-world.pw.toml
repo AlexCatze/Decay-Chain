@@ -1,0 +1,13 @@
+name = "Deadly World"
+filename = "deadlyworld-1.1.1_for_mc1.12.2.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "81010e64828401a2898a1435590ba7e2f70d136e"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 3320173
+project-id = 60098

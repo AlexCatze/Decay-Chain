@@ -1,0 +1,13 @@
+name = "Carbon Config"
+filename = "CarbonConfig-1.12.2-2.0.2.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/1jDdpgcc/versions/j6vx2zE2/CarbonConfig-1.12.2-2.0.2.1.jar"
+hash-format = "sha512"
+hash = "ec03fc965741325919f341fbe88ff6a6d8703ea5719e989810200b42810cb4ee7362c78b661ee996d5985c660878cf81ee1ab1ebaf42e87809e6f53b2459fc6b"
+
+[update]
+[update.modrinth]
+mod-id = "1jDdpgcc"
+version = "j6vx2zE2"

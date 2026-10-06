@@ -1,0 +1,13 @@
+name = "Techguns-CE"
+filename = "techguns-2.2.0.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/U6fWJkVe/versions/fbzBNaZi/techguns-2.2.0.1.jar"
+hash-format = "sha512"
+hash = "dba6eb6ece8cc9c9b3a8316dcae6d1ec02ed0ce5cbd1f12c7210ea2ffb4478cff29682f9f5bbfbd738db59853586f282de8445a5e569db1ad1c069d44999fbf7"
+
+[update]
+[update.modrinth]
+mod-id = "U6fWJkVe"
+version = "fbzBNaZi"

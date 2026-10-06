@@ -1,0 +1,13 @@
+name = "HBM Nuclear Tech Mod: Community Edition"
+filename = "NTM-CE-1.12.2-2.6.1.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/oKqJzTkl/versions/8te6YIHl/NTM-CE-1.12.2-2.6.1.0.jar"
+hash-format = "sha512"
+hash = "1d2233f253e7686eea8c4c2b1836d9642ac42adb608a2d01663beb6fcec84b739d00f09b7ccb10b91dcddde15aed7a5d7fdaf50741e570e6fd4876891a5dca90"
+
+[update]
+[update.modrinth]
+mod-id = "oKqJzTkl"
+version = "8te6YIHl"

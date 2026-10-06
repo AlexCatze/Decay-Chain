@@ -1,0 +1,13 @@
+name = "FirstAid"
+filename = "firstaid-1.6.22.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/eTiYU57B/versions/mcwDfpit/firstaid-1.6.22.jar"
+hash-format = "sha512"
+hash = "55853228a88ac5965e08fbd467eeb114979308f77db470c76f0190e473f48c4601f5ff67fa6f8b52f32792b3481246171b24250c8519bb42167e3004b9cd73f4"
+
+[update]
+[update.modrinth]
+mod-id = "eTiYU57B"
+version = "mcwDfpit"

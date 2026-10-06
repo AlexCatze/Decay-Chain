@@ -1,0 +1,13 @@
+name = "Inventory Bogosorter"
+filename = "bogosorter-1.6.4.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/CuLATCrJ/versions/nD915vxB/bogosorter-1.6.4.jar"
+hash-format = "sha512"
+hash = "6c18d250bf5c89cf77c16c804a17ea1510193b5edfe6168519ed030e45937efed620e82218793439f846e6b95113277dab07476fac105ab510af4872cc163e75"
+
+[update]
+[update.modrinth]
+mod-id = "CuLATCrJ"
+version = "nD915vxB"

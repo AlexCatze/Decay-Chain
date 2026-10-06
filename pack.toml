@@ -1,0 +1,13 @@
+name = "Decay Chain"
+author = "AlexCatze"
+version = "1.0.0"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "347410da2cf918e81eef9d23c84ec12ea8f59b5a9e89e8fa41124b1b5af7904a"
+
+[versions]
+forge = "14.23.5.2864"
+minecraft = "1.12.2"
