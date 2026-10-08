@@ -1,0 +1,7 @@
+*.zip
+*.mrpack
+.gitignore
+.vscode/
+README.md
+docs/
+tools/

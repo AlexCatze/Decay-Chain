@@ -1,0 +1,6 @@
+item.decaychain.toxic_water_bottle.name=Bottle of Toxic Water
+decaychain.water.toxic_canteen=§cThis water is far too toxic to put in a canteen.
+decaychain.water.toxic_bucket=§cThe water here is too toxic to carry in a bucket.
+fluid.decaychain.diesel.name=Diesel
+fluid.decaychain.gasoline.name=Gasoline
+fluid.decaychain.kerosene.name=Kerosene

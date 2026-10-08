@@ -1,0 +1,13 @@
+name = "Timberjack"
+filename = "Timberjack_1.12.2-1.6.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "5a44c84c5dfa8a2d1a2acd8965d62ee9852b220e"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 2609470
+project-id = 266081

@@ -1,0 +1,545 @@
+[
+  {
+    "type": "palette",
+    "name": "bricks_concrete_ruined",
+    "palette": [
+      {
+        "char": "X",
+        "blocks": [
+          {
+            "random": 50,
+            "block": "hbm:brick_concrete"
+          },
+          {
+            "random": 30,
+            "block": "hbm:brick_concrete_cracked"
+          },
+          {
+            "random": 15,
+            "block": "hbm:brick_concrete_broken"
+          },
+          {
+            "random": 5,
+            "block": "hbm:brick_concrete_mossy"
+          }
+        ],
+        "damaged": "minecraft:iron_bars"
+      },
+      {
+        "char": "$",
+        "blocks": [
+          {
+            "random": 40,
+            "block": "hbm:concrete_gray"
+          },
+          {
+            "random": 35,
+            "block": "hbm:brick_concrete_cracked"
+          },
+          {
+            "random": 25,
+            "block": "hbm:brick_concrete_broken"
+          }
+        ],
+        "damaged": "minecraft:iron_bars"
+      },
+      {
+        "char": "#",
+        "blocks": [
+          {
+            "random": 50,
+            "block": "hbm:brick_concrete"
+          },
+          {
+            "random": 30,
+            "block": "hbm:brick_concrete_cracked"
+          },
+          {
+            "random": 15,
+            "block": "hbm:brick_concrete_broken"
+          },
+          {
+            "random": 5,
+            "block": "hbm:brick_concrete_mossy"
+          }
+        ],
+        "damaged": "minecraft:iron_bars"
+      }
+    ]
+  },
+  {
+    "type": "palette",
+    "name": "bricks_concrete_dark_ruined",
+    "palette": [
+      {
+        "char": "X",
+        "blocks": [
+          {
+            "random": 40,
+            "block": "hbm:concrete_gray"
+          },
+          {
+            "random": 35,
+            "block": "hbm:brick_concrete_cracked"
+          },
+          {
+            "random": 25,
+            "block": "hbm:brick_concrete_broken"
+          }
+        ],
+        "damaged": "minecraft:iron_bars"
+      },
+      {
+        "char": "$",
+        "blocks": [
+          {
+            "random": 50,
+            "block": "hbm:brick_concrete"
+          },
+          {
+            "random": 30,
+            "block": "hbm:brick_concrete_cracked"
+          },
+          {
+            "random": 15,
+            "block": "hbm:brick_concrete_broken"
+          },
+          {
+            "random": 5,
+            "block": "hbm:brick_concrete_mossy"
+          }
+        ],
+        "damaged": "minecraft:iron_bars"
+      },
+      {
+        "char": "#",
+        "blocks": [
+          {
+            "random": 40,
+            "block": "hbm:concrete_gray"
+          },
+          {
+            "random": 35,
+            "block": "hbm:brick_concrete_cracked"
+          },
+          {
+            "random": 25,
+            "block": "hbm:brick_concrete_broken"
+          }
+        ],
+        "damaged": "minecraft:iron_bars"
+      }
+    ]
+  },
+  {
+    "type": "palette",
+    "name": "bricks_rusty_steel",
+    "palette": [
+      {
+        "char": "X",
+        "blocks": [
+          {
+            "random": 70,
+            "block": "hbm:deco_rusty_steel"
+          },
+          {
+            "random": 20,
+            "block": "hbm:deco_steel"
+          },
+          {
+            "random": 10,
+            "block": "hbm:steel_grate"
+          }
+        ],
+        "damaged": "minecraft:iron_bars"
+      },
+      {
+        "char": "$",
+        "blocks": [
+          {
+            "random": 40,
+            "block": "hbm:concrete_gray"
+          },
+          {
+            "random": 35,
+            "block": "hbm:brick_concrete_cracked"
+          },
+          {
+            "random": 25,
+            "block": "hbm:brick_concrete_broken"
+          }
+        ],
+        "damaged": "minecraft:iron_bars"
+      },
+      {
+        "char": "#",
+        "blocks": [
+          {
+            "random": 70,
+            "block": "hbm:deco_rusty_steel"
+          },
+          {
+            "random": 20,
+            "block": "hbm:deco_steel"
+          },
+          {
+            "random": 10,
+            "block": "hbm:steel_grate"
+          }
+        ],
+        "damaged": "minecraft:iron_bars"
+      }
+    ]
+  },
+  {
+    "type": "palette",
+    "name": "bricks_asbestos",
+    "palette": [
+      {
+        "char": "X",
+        "blocks": [
+          {
+            "random": 60,
+            "block": "hbm:brick_asbestos"
+          },
+          {
+            "random": 40,
+            "block": "hbm:concrete_asbestos"
+          }
+        ],
+        "damaged": "minecraft:iron_bars"
+      },
+      {
+        "char": "$",
+        "blocks": [
+          {
+            "random": 50,
+            "block": "hbm:brick_concrete"
+          },
+          {
+            "random": 30,
+            "block": "hbm:brick_concrete_cracked"
+          },
+          {
+            "random": 15,
+            "block": "hbm:brick_concrete_broken"
+          },
+          {
+            "random": 5,
+            "block": "hbm:brick_concrete_mossy"
+          }
+        ],
+        "damaged": "minecraft:iron_bars"
+      },
+      {
+        "char": "#",
+        "blocks": [
+          {
+            "random": 60,
+            "block": "hbm:brick_asbestos"
+          },
+          {
+            "random": 40,
+            "block": "hbm:concrete_asbestos"
+          }
+        ],
+        "damaged": "minecraft:iron_bars"
+      }
+    ]
+  },
+  {
+    "type": "palette",
+    "name": "glass_broken",
+    "palette": [
+      {
+        "char": "+",
+        "blocks": [
+          {
+            "random": 20,
+            "block": "minecraft:air"
+          },
+          {
+            "random": 45,
+            "block": "minecraft:glass"
+          },
+          {
+            "random": 35,
+            "block": "minecraft:iron_bars"
+          }
+        ]
+      },
+      {
+        "char": "`",
+        "blocks": [
+          {
+            "random": 25,
+            "block": "minecraft:air"
+          },
+          {
+            "random": 50,
+            "block": "minecraft:glass_pane"
+          },
+          {
+            "random": 25,
+            "block": "minecraft:iron_bars"
+          }
+        ]
+      },
+      {
+        "char": "a",
+        "blocks": [
+          {
+            "random": 25,
+            "block": "minecraft:air"
+          },
+          {
+            "random": 50,
+            "block": "minecraft:glass_pane"
+          },
+          {
+            "random": 25,
+            "block": "minecraft:iron_bars"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "style",
+    "name": "ruined",
+    "randompalettes": [
+      [
+        {
+          "factor": 1.0,
+          "palette": "common"
+        }
+      ],
+      [
+        {
+          "factor": 1.0,
+          "palette": "default"
+        }
+      ],
+      [
+        {
+          "factor": 3.0,
+          "palette": "bricks_concrete_ruined"
+        },
+        {
+          "factor": 2.0,
+          "palette": "bricks_concrete_dark_ruined"
+        },
+        {
+          "factor": 1.0,
+          "palette": "bricks_rusty_steel"
+        },
+        {
+          "factor": 0.3,
+          "palette": "bricks_asbestos"
+        },
+        {
+          "factor": 1.0,
+          "palette": "bricks_gray"
+        }
+      ],
+      [
+        {
+          "factor": 4.0,
+          "palette": "glass_broken"
+        },
+        {
+          "factor": 0.5,
+          "palette": "glass_pane_gray"
+        }
+      ],
+      [
+        {
+          "factor": 1.0,
+          "palette": "glass_side_variant_glass"
+        },
+        {
+          "factor": 1.0,
+          "palette": "glass_side_variant_bricks"
+        }
+      ]
+    ]
+  },
+  {
+    "type": "style",
+    "name": "ruined_desert",
+    "randompalettes": [
+      [
+        {
+          "factor": 1.0,
+          "palette": "common"
+        }
+      ],
+      [
+        {
+          "factor": 1.0,
+          "palette": "default_desert"
+        }
+      ],
+      [
+        {
+          "factor": 2.0,
+          "palette": "bricks_desert"
+        },
+        {
+          "factor": 1.0,
+          "palette": "bricks_desert_red"
+        },
+        {
+          "factor": 2.0,
+          "palette": "bricks_concrete_ruined"
+        },
+        {
+          "factor": 1.0,
+          "palette": "bricks_rusty_steel"
+        }
+      ],
+      [
+        {
+          "factor": 4.0,
+          "palette": "glass_broken"
+        },
+        {
+          "factor": 0.5,
+          "palette": "glass_pane"
+        }
+      ],
+      [
+        {
+          "factor": 1.0,
+          "palette": "glass_side_variant_glass"
+        },
+        {
+          "factor": 1.0,
+          "palette": "glass_side_variant_bricks"
+        }
+      ]
+    ]
+  },
+  {
+    "type": "citystyle",
+    "name": "citystyle_ruined",
+    "style": "ruined",
+    "inherit": "citystyle_standard",
+    "explosionchance": 1.0
+  },
+  {
+    "type": "citystyle",
+    "name": "citystyle_ruined_desert",
+    "style": "ruined_desert",
+    "inherit": "citystyle_desert",
+    "explosionchance": 1.0
+  },
+  {
+    "type": "citystyle",
+    "name": "citystyle_town",
+    "style": "standard",
+    "inherit": "citystyle_standard",
+    "explosionchance": 0.15,
+    "buildingsettings": {
+      "maxfloors": 4,
+      "maxcellars": 1
+    }
+  },
+  {
+    "type": "worldstyle",
+    "name": "decay",
+    "outsidestyle": "outside",
+    "citystyles": [
+      {
+        "factor": 1.0,
+        "citystyle": "citystyle_town"
+      },
+      {
+        "factor": 40.0,
+        "biomes": [
+          "biomesoplenty:wasteland",
+          "biomesoplenty:dead_forest",
+          "biomesoplenty:dead_swamp",
+          "biomesoplenty:outback",
+          "biomesoplenty:xeric_shrubland",
+          "biomesoplenty:steppe",
+          "biomesoplenty:quagmire",
+          "biomesoplenty:cold_desert",
+          "biomesoplenty:volcanic_island"
+        ],
+        "citystyle": "citystyle_ruined"
+      },
+      {
+        "factor": 40.0,
+        "biomes": [
+          "desert",
+          "desert_hills",
+          "mutated_desert",
+          "mesa",
+          "mesa_rock",
+          "mesa_clear_rock",
+          "mutated_mesa",
+          "mutated_mesa_rock",
+          "mutated_mesa_clear_rock"
+        ],
+        "citystyle": "citystyle_ruined_desert"
+      }
+    ]
+  },
+  {
+    "type": "condition",
+    "name": "chestloot",
+    "values": [
+      {
+        "factor": 8,
+        "value": "lostcities:chests/lostcitychest",
+        "range": "4,100"
+      },
+      {
+        "factor": 8,
+        "value": "lostcities:chests/lostcitychest",
+        "range": "-100,-3"
+      },
+      {
+        "factor": 20,
+        "value": "lostcities:chests/raildungeonchest",
+        "inpart": "rail_dungeon1"
+      },
+      {
+        "factor": 20,
+        "value": "lostcities:chests/raildungeonchest",
+        "inpart": "rail_dungeon2"
+      },
+      {
+        "factor": 6,
+        "value": "minecraft:chests/simple_dungeon"
+      },
+      {
+        "factor": 2,
+        "value": "minecraft:chests/abandoned_mineshaft"
+      },
+      {
+        "factor": 1,
+        "value": "minecraft:chests/village_blacksmith"
+      }
+    ]
+  },
+  {
+    "type": "condition",
+    "name": "hardmobs",
+    "values": [
+      {
+        "factor": 2,
+        "value": "minecraft:husk"
+      },
+      {
+        "factor": 1,
+        "value": "minecraft:zombie_villager"
+      },
+      {
+        "factor": 1,
+        "value": "minecraft:cave_spider"
+      }
+    ]
+  }
+]

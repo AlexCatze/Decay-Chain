@@ -1,0 +1,13 @@
+name = "Wearable Backpacks: RLCraft Edition"
+filename = "WearableBackpacks-RLCraft-1.12.2-3.2.7.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/c2IMtnCX/versions/4F9wgmna/WearableBackpacks-RLCraft-1.12.2-3.2.7.jar"
+hash-format = "sha512"
+hash = "91d9ab698a3fe52f5037e8d40676ccd1db4cbbd30578b0bf60e7a8e394655c467db95b51866733105032ba80e0eaebc10691562c6c52dce1b7a22a9c6d5028b9"
+
+[update]
+[update.modrinth]
+mod-id = "c2IMtnCX"
+version = "4F9wgmna"

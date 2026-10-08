@@ -1,0 +1,298 @@
+{
+  "simpledifficulty:campfire": [
+    {
+      "properties": {
+        "burning": "true"
+      },
+      "temperature": 7.0
+    },
+    {
+      "properties": {
+        "burning": "false"
+      },
+      "temperature": 0.0
+    }
+  ],
+  "harvestcraft:candledeco9": [
+    {
+      "properties": {},
+      "temperature": 1.0
+    }
+  ],
+  "harvestcraft:candledeco5": [
+    {
+      "properties": {},
+      "temperature": 1.0
+    }
+  ],
+  "harvestcraft:candledeco6": [
+    {
+      "properties": {},
+      "temperature": 1.0
+    }
+  ],
+  "minecraft:magma": [
+    {
+      "properties": {},
+      "temperature": 10.0
+    }
+  ],
+  "harvestcraft:candledeco7": [
+    {
+      "properties": {},
+      "temperature": 1.0
+    }
+  ],
+  "harvestcraft:candledeco8": [
+    {
+      "properties": {},
+      "temperature": 1.0
+    }
+  ],
+  "harvestcraft:candledeco1": [
+    {
+      "properties": {},
+      "temperature": 1.0
+    }
+  ],
+  "lycanitesmobs:ooze": [
+    {
+      "properties": {},
+      "temperature": -12.5
+    }
+  ],
+  "harvestcraft:candledeco2": [
+    {
+      "properties": {},
+      "temperature": 1.0
+    }
+  ],
+  "minecraft:torch": [
+    {
+      "properties": {},
+      "temperature": 1.0
+    }
+  ],
+  "harvestcraft:candledeco3": [
+    {
+      "properties": {},
+      "temperature": 1.0
+    }
+  ],
+  "harvestcraft:candledeco4": [
+    {
+      "properties": {},
+      "temperature": 1.0
+    }
+  ],
+  "harvestcraft:candledeco14": [
+    {
+      "properties": {},
+      "temperature": 1.0
+    }
+  ],
+  "harvestcraft:candledeco15": [
+    {
+      "properties": {},
+      "temperature": 1.0
+    }
+  ],
+  "harvestcraft:candledeco16": [
+    {
+      "properties": {},
+      "temperature": 1.0
+    }
+  ],
+  "lycanitesmobs:moglava": [
+    {
+      "properties": {},
+      "temperature": 12.5
+    }
+  ],
+  "harvestcraft:candledeco10": [
+    {
+      "properties": {},
+      "temperature": 1.0
+    }
+  ],
+  "lycanitesmobs:rabbitooze": [
+    {
+      "properties": {},
+      "temperature": -12.5
+    }
+  ],
+  "harvestcraft:candledeco11": [
+    {
+      "properties": {},
+      "temperature": 1.0
+    }
+  ],
+  "harvestcraft:candledeco12": [
+    {
+      "properties": {},
+      "temperature": 1.0
+    }
+  ],
+  "harvestcraft:candledeco13": [
+    {
+      "properties": {},
+      "temperature": 1.0
+    }
+  ],
+  "lycanitesmobs:frostfire": [
+    {
+      "properties": {},
+      "temperature": -5.0
+    }
+  ],
+  "lycanitesmobs:icefire": [
+    {
+      "properties": {},
+      "temperature": -8.0
+    }
+  ],
+  "lycanitesmobs:purelava": [
+    {
+      "properties": {},
+      "temperature": 12.5
+    }
+  ],
+  "minecraft:lava": [
+    {
+      "properties": {},
+      "temperature": 12.5
+    }
+  ],
+  "minecraft:lit_furnace": [
+    {
+      "properties": {},
+      "temperature": 4.0
+    }
+  ],
+  "minecraft:flowing_lava": [
+    {
+      "properties": {},
+      "temperature": 12.5
+    }
+  ],
+  "hbm:heater_firebox": [
+    {
+      "properties": {},
+      "temperature": 6.0
+    }
+  ],
+  "hbm:heater_oven": [
+    {
+      "properties": {},
+      "temperature": 6.0
+    }
+  ],
+  "hbm:heater_oilburner": [
+    {
+      "properties": {},
+      "temperature": 7.0
+    }
+  ],
+  "hbm:heater_electric": [
+    {
+      "properties": {},
+      "temperature": 5.0
+    }
+  ],
+  "hbm:heater_rt": [
+    {
+      "properties": {},
+      "temperature": 5.0
+    }
+  ],
+  "hbm:heater_heatex": [
+    {
+      "properties": {},
+      "temperature": 3.0
+    }
+  ],
+  "hbm:furnace_iron": [
+    {
+      "properties": {},
+      "temperature": 5.0
+    }
+  ],
+  "hbm:furnace_steel": [
+    {
+      "properties": {},
+      "temperature": 4.0
+    }
+  ],
+  "hbm:furnace_combination": [
+    {
+      "properties": {},
+      "temperature": 6.0
+    }
+  ],
+  "hbm:machine_difurnace_on": [
+    {
+      "properties": {},
+      "temperature": 6.0
+    }
+  ],
+  "hbm:machine_difurnace_rtg_on": [
+    {
+      "properties": {},
+      "temperature": 4.0
+    }
+  ],
+  "hbm:machine_electric_furnace_on": [
+    {
+      "properties": {},
+      "temperature": 4.0
+    }
+  ],
+  "hbm:machine_rtg_furnace_on": [
+    {
+      "properties": {},
+      "temperature": 4.0
+    }
+  ],
+  "hbm:machine_arc_furnace_on": [
+    {
+      "properties": {},
+      "temperature": 7.0
+    }
+  ],
+  "hbm:machine_boiler_on": [
+    {
+      "properties": {},
+      "temperature": 5.0
+    }
+  ],
+  "hbm:machine_boiler_electric_on": [
+    {
+      "properties": {},
+      "temperature": 5.0
+    }
+  ],
+  "hbm:machine_boiler": [
+    {
+      "properties": {},
+      "temperature": 3.0
+    }
+  ],
+  "hbm:heat_boiler": [
+    {
+      "properties": {},
+      "temperature": 3.0
+    }
+  ],
+  "hbm:rad_lava_block": [
+    {
+      "properties": {},
+      "temperature": 10.0
+    }
+  ],
+  "hbm:volcanic_lava_block": [
+    {
+      "properties": {},
+      "temperature": 12.0
+    }
+  ]
+}

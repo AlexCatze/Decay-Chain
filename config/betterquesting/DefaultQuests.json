@@ -1,0 +1,3300 @@
+{
+  "format:8": "2.1.0",
+  "build:8": "4.3.2",
+  "questSettings:10": {
+    "betterquesting:10": {
+      "pack_name:8": "Decay Chain",
+      "pack_version:3": 2,
+      "editMode:1": 0,
+      "hardcore:1": 0,
+      "lockTray:1": 0,
+      "livesDef:3": 3,
+      "livesMax:3": 10,
+      "party_enable:1": 1,
+      "home_image:8": "betterquesting:textures/gui/default_title.png",
+      "home_anchor_x:5": 0.5,
+      "home_anchor_y:5": 0.0,
+      "home_offset_x:3": -128,
+      "home_offset_y:3": 0
+    }
+  },
+  "questDatabase:9": {
+    "0:10": {
+      "questID:3": 0,
+      "preRequisites:11": [],
+      "properties:10": {
+        "betterquesting:10": {
+          "name:8": "Empty Pockets",
+          "desc:8": "The world ended a long time ago. You have nothing - no tools, no food, no clean water.\n\nThese quests are §eonly a guide§r: there are no rewards, and nothing here is required. Follow them to learn how this pack works, or ignore them and explore.\n\n§eTips§r\n- Look up any item with §eR§r (recipe) / §eU§r (uses) in the item list.\n- You start with Pyrotech's guide book, §ePyrotechnic Esoterica§r. Its pages explain every primitive machine in detail - read it alongside these quests.\n- The §eStaying Alive§r chapter runs in parallel: water, food, shelter and dangers.",
+          "icon:10": {
+            "id:8": "patchouli:guide_book",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": "",
+            "tag:10": {
+              "patchouli:book:8": "pyrotech:book"
+            }
+          },
+          "isMain:1": 1,
+          "isSilent:1": 0,
+          "autoClaim:1": 1,
+          "globalShare:1": 0,
+          "lockedProgress:1": 0,
+          "simultaneous:1": 0,
+          "repeatTime:3": -1,
+          "repeat_relative:1": 1,
+          "questLogic:8": "AND",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "taskID:8": "bq_standard:checkbox",
+          "index:3": 0
+        }
+      },
+      "rewards:9": {}
+    },
+    "1:10": {
+      "questID:3": 1,
+      "preRequisites:11": [
+        0
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "name:8": "Rocks",
+          "desc:8": "Small rocks lie on the ground almost everywhere - pick them up.\n\nRocks are your first building material and your first weapon: you can §ethrow§r them at things that come too close. Mining stone with weak tools also gives rocks instead of cobblestone.",
+          "icon:10": {
+            "id:8": "pyrotech:rock",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "isMain:1": 0,
+          "isSilent:1": 0,
+          "autoClaim:1": 1,
+          "globalShare:1": 0,
+          "lockedProgress:1": 0,
+          "simultaneous:1": 0,
+          "repeatTime:3": -1,
+          "repeat_relative:1": 1,
+          "questLogic:8": "AND",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "pyrotech:rock",
+              "Count:3": 8,
+              "Damage:2": 32767,
+              "OreDict:8": ""
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "index:3": 0
+        }
+      },
+      "rewards:9": {}
+    },
+    "2:10": {
+      "questID:3": 2,
+      "preRequisites:11": [
+        1
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "name:8": "Sticks and Fibers",
+          "desc:8": "§eSticks§r drop from leaves (any tree, including the Biomes O' Plenty ones) - break them by hand.\n§ePlant Fibers§r come from breaking tall grass.\n\nYou cannot punch trees in this world: logs only come off with an axe. Make one first.",
+          "icon:10": {
+            "id:8": "pyrotech:material",
+            "Count:3": 1,
+            "Damage:2": 12,
+            "OreDict:8": ""
+          },
+          "isMain:1": 0,
+          "isSilent:1": 0,
+          "autoClaim:1": 1,
+          "globalShare:1": 0,
+          "lockedProgress:1": 0,
+          "simultaneous:1": 0,
+          "repeatTime:3": -1,
+          "repeat_relative:1": 1,
+          "questLogic:8": "AND",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "minecraft:stick",
+              "Count:3": 6,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "pyrotech:material",
+              "Count:3": 6,
+              "Damage:2": 12,
+              "OreDict:8": ""
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "index:3": 0
+        }
+      },
+      "rewards:9": {}
+    },
+    "3:10": {
+      "questID:3": 3,
+      "preRequisites:11": [
+        2
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "name:8": "Crude Tools",
+          "desc:8": "Rocks + sticks make crude tools. They are weak and break fast, but a §ecrude axe§r is the only way to get your first logs, and a §ecrude pickaxe§r starts you on stone.\n\nA crude shovel is worth it too: digging gravel with a shovel finds §eflint shards§r.",
+          "icon:10": {
+            "id:8": "pyrotech:crude_pickaxe",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "isMain:1": 0,
+          "isSilent:1": 0,
+          "autoClaim:1": 1,
+          "globalShare:1": 0,
+          "lockedProgress:1": 0,
+          "simultaneous:1": 0,
+          "repeatTime:3": -1,
+          "repeat_relative:1": 1,
+          "questLogic:8": "AND",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "pyrotech:crude_axe",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "pyrotech:crude_pickaxe",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "index:3": 0
+        }
+      },
+      "rewards:9": {}
+    },
+    "4:10": {
+      "questID:3": 4,
+      "preRequisites:11": [
+        3
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "name:8": "Timber!",
+          "desc:8": "Chop a tree with your axe. §cTrees fall when you cut them§r - logs come crashing down, so step aside or you may get hit.\n\nLogs fuel everything in the primitive age: campfires, kilns, charcoal.",
+          "icon:10": {
+            "id:8": "minecraft:log",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "isMain:1": 0,
+          "isSilent:1": 0,
+          "autoClaim:1": 1,
+          "globalShare:1": 0,
+          "lockedProgress:1": 0,
+          "simultaneous:1": 0,
+          "repeatTime:3": -1,
+          "repeat_relative:1": 1,
+          "questLogic:8": "AND",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "minecraft:log",
+              "Count:3": 8,
+              "Damage:2": 32767,
+              "OreDict:8": "logWood"
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "index:3": 0
+        }
+      },
+      "rewards:9": {}
+    },
+    "5:10": {
+      "questID:3": 5,
+      "preRequisites:11": [
+        4
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "name:8": "Crude Hammer",
+          "desc:8": "Hammers are how you craft on a Worktable and an Anvil: place the ingredients on top, then hit them.",
+          "icon:10": {
+            "id:8": "pyrotech:crude_hammer",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "isMain:1": 0,
+          "isSilent:1": 0,
+          "autoClaim:1": 1,
+          "globalShare:1": 0,
+          "lockedProgress:1": 0,
+          "simultaneous:1": 0,
+          "repeatTime:3": -1,
+          "repeat_relative:1": 1,
+          "questLogic:8": "AND",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "pyrotech:crude_hammer",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "index:3": 0
+        }
+      },
+      "rewards:9": {}
+    },
+    "6:10": {
+      "questID:3": 6,
+      "preRequisites:11": [
+        5
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "name:8": "The Worktable",
+          "desc:8": "There is no vanilla crafting table at the start. The §eWorktable§r replaces it: place the recipe ingredients on top and strike it with your hammer.\n\nA proper crafting table comes much later.",
+          "icon:10": {
+            "id:8": "pyrotech:worktable",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "isMain:1": 0,
+          "isSilent:1": 0,
+          "autoClaim:1": 1,
+          "globalShare:1": 0,
+          "lockedProgress:1": 0,
+          "simultaneous:1": 0,
+          "repeatTime:3": -1,
+          "repeat_relative:1": 1,
+          "questLogic:8": "AND",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "pyrotech:worktable",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "index:3": 0
+        }
+      },
+      "rewards:9": {}
+    },
+    "7:10": {
+      "questID:3": 7,
+      "preRequisites:11": [
+        6
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "name:8": "Chopping Block",
+          "desc:8": "Put a log on the Chopping Block and hit it with an axe to split it into planks and firewood.\n\nChopping is hard work: §eif nothing happens, you are too hungry§r.",
+          "icon:10": {
+            "id:8": "pyrotech:chopping_block",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "isMain:1": 0,
+          "isSilent:1": 0,
+          "autoClaim:1": 1,
+          "globalShare:1": 0,
+          "lockedProgress:1": 0,
+          "simultaneous:1": 0,
+          "repeatTime:3": -1,
+          "repeat_relative:1": 1,
+          "questLogic:8": "AND",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "pyrotech:chopping_block",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "index:3": 0
+        }
+      },
+      "rewards:9": {}
+    },
+    "8:10": {
+      "questID:3": 8,
+      "preRequisites:11": [
+        3
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "name:8": "Shards",
+          "desc:8": "Sharper tools need §eflint shards§r or §ebone shards§r (either one works).\n\n- Flint shards: dig gravel with a shovel.\n- Bone shards: break bones on an anvil, or find them in fossils.\nSkeletons drop bones - but at night you have bigger problems than skeletons.",
+          "icon:10": {
+            "id:8": "pyrotech:material",
+            "Count:3": 1,
+            "Damage:2": 10,
+            "OreDict:8": ""
+          },
+          "isMain:1": 0,
+          "isSilent:1": 0,
+          "autoClaim:1": 1,
+          "globalShare:1": 0,
+          "lockedProgress:1": 0,
+          "simultaneous:1": 0,
+          "repeatTime:3": -1,
+          "repeat_relative:1": 1,
+          "questLogic:8": "AND",
+          "taskLogic:8": "OR",
+          "visibility:8": "NORMAL",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "pyrotech:material",
+              "Count:3": 1,
+              "Damage:2": 10,
+              "OreDict:8": ""
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "index:3": 0
+        },
+        "1:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "pyrotech:material",
+              "Count:3": 1,
+              "Damage:2": 11,
+              "OreDict:8": ""
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "index:3": 1
+        }
+      },
+      "rewards:9": {}
+    },
+    "9:10": {
+      "questID:3": 9,
+      "preRequisites:11": [
+        2
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "name:8": "Twine",
+          "desc:8": "Twist plant fibers into §etwine§r. Twine ties tools together, builds drying racks and makes fire-starting kits.",
+          "icon:10": {
+            "id:8": "pyrotech:material",
+            "Count:3": 1,
+            "Damage:2": 14,
+            "OreDict:8": ""
+          },
+          "isMain:1": 0,
+          "isSilent:1": 0,
+          "autoClaim:1": 1,
+          "globalShare:1": 0,
+          "lockedProgress:1": 0,
+          "simultaneous:1": 0,
+          "repeatTime:3": -1,
+          "repeat_relative:1": 1,
+          "questLogic:8": "AND",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "pyrotech:material",
+              "Count:3": 4,
+              "Damage:2": 14,
+              "OreDict:8": ""
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "index:3": 0
+        }
+      },
+      "rewards:9": {}
+    },
+    "10:10": {
+      "questID:3": 10,
+      "preRequisites:11": [
+        4,
+        8,
+        9
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "name:8": "Fire",
+          "desc:8": "Craft §eTinder§r, place it, add logs and light it with a §eFlint and Tinder§r.\n\nThe campfire cooks food (roasted food is far better than raw), §eboils dirty water§r into drinkable water, keeps you warm at night and speeds up nearby drying racks.",
+          "icon:10": {
+            "id:8": "pyrotech:campfire",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "isMain:1": 1,
+          "isSilent:1": 0,
+          "autoClaim:1": 1,
+          "globalShare:1": 0,
+          "lockedProgress:1": 0,
+          "simultaneous:1": 0,
+          "repeatTime:3": -1,
+          "repeat_relative:1": 1,
+          "questLogic:8": "AND",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "pyrotech:flint_and_tinder",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "pyrotech:campfire",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "index:3": 0
+        }
+      },
+      "rewards:9": {}
+    },
+    "11:10": {
+      "questID:3": 11,
+      "preRequisites:11": [
+        8,
+        9
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "name:8": "Bone and Flint Tools",
+          "desc:8": "Flint or bone tools last much longer than crude ones and can mine iron ore. Make a pickaxe, an axe and a shovel.\n\n§7Note: there are no hoes until you have steel - farming is not a primitive-age option.",
+          "icon:10": {
+            "id:8": "pyrotech:flint_pickaxe",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "isMain:1": 0,
+          "isSilent:1": 0,
+          "autoClaim:1": 1,
+          "globalShare:1": 0,
+          "lockedProgress:1": 0,
+          "simultaneous:1": 0,
+          "repeatTime:3": -1,
+          "repeat_relative:1": 1,
+          "questLogic:8": "AND",
+          "taskLogic:8": "OR",
+          "visibility:8": "NORMAL",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "pyrotech:flint_pickaxe",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "index:3": 0
+        },
+        "1:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "pyrotech:bone_pickaxe",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "index:3": 1
+        }
+      },
+      "rewards:9": {}
+    },
+    "12:10": {
+      "questID:3": 12,
+      "preRequisites:11": [
+        9
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "name:8": "Drying Rack",
+          "desc:8": "A crude drying rack (sticks tied with fibers) dries plant fibers, wheat and food. It works faster under open sky, in warm dry biomes and next to a campfire - and slower in rain.",
+          "icon:10": {
+            "id:8": "pyrotech:drying_rack",
+            "Count:3": 1,
+            "Damage:2": 1,
+            "OreDict:8": ""
+          },
+          "isMain:1": 0,
+          "isSilent:1": 0,
+          "autoClaim:1": 1,
+          "globalShare:1": 0,
+          "lockedProgress:1": 0,
+          "simultaneous:1": 0,
+          "repeatTime:3": -1,
+          "repeat_relative:1": 1,
+          "questLogic:8": "AND",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "pyrotech:drying_rack",
+              "Count:3": 1,
+              "Damage:2": 32767,
+              "OreDict:8": ""
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "index:3": 0
+        }
+      },
+      "rewards:9": {}
+    },
+    "13:10": {
+      "questID:3": 13,
+      "preRequisites:11": [
+        12
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "name:8": "Straw",
+          "desc:8": "Dried plant fibers tie together into §eStraw§r; straw packs into a §eStraw Bale§r (thatch).\n\nStraw is the fuel bed of a pit kiln, and a straw bed is the cheapest place to sleep.",
+          "icon:10": {
+            "id:8": "pyrotech:thatch",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "isMain:1": 0,
+          "isSilent:1": 0,
+          "autoClaim:1": 1,
+          "globalShare:1": 0,
+          "lockedProgress:1": 0,
+          "simultaneous:1": 0,
+          "repeatTime:3": -1,
+          "repeat_relative:1": 1,
+          "questLogic:8": "AND",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "pyrotech:material",
+              "Count:3": 4,
+              "Damage:2": 2,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "pyrotech:thatch",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "index:3": 0
+        }
+      },
+      "rewards:9": {}
+    },
+    "14:10": {
+      "questID:3": 14,
+      "preRequisites:11": [
+        3
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "name:8": "Clay",
+          "desc:8": "Dig clay in rivers, swamps and lakes. Lumps of clay become bricks, buckets and - most importantly - §erefractory bricks§r for the bloomery.",
+          "icon:10": {
+            "id:8": "pyrotech:material",
+            "Count:3": 1,
+            "Damage:2": 17,
+            "OreDict:8": ""
+          },
+          "isMain:1": 0,
+          "isSilent:1": 0,
+          "autoClaim:1": 1,
+          "globalShare:1": 0,
+          "lockedProgress:1": 0,
+          "simultaneous:1": 0,
+          "repeatTime:3": -1,
+          "repeat_relative:1": 1,
+          "questLogic:8": "AND",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "pyrotech:material",
+              "Count:3": 8,
+              "Damage:2": 17,
+              "OreDict:8": ""
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "index:3": 0
+        }
+      },
+      "rewards:9": {}
+    },
+    "15:10": {
+      "questID:3": 15,
+      "preRequisites:11": [
+        13,
+        14,
+        10
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "name:8": "Pit Kiln",
+          "desc:8": "Your first furnace. Place the kiln, put the item inside, cover it with straw and a straw bale, stack three logs and light it. Wait - and hope nothing cracks.\n\nThe pit kiln fires clay into bricks and can even smelt §ecopper ore§r into ingots.",
+          "icon:10": {
+            "id:8": "pyrotech:kiln_pit",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "isMain:1": 1,
+          "isSilent:1": 0,
+          "autoClaim:1": 1,
+          "globalShare:1": 0,
+          "lockedProgress:1": 0,
+          "simultaneous:1": 0,
+          "repeatTime:3": -1,
+          "repeat_relative:1": 1,
+          "questLogic:8": "AND",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "pyrotech:kiln_pit",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "index:3": 0
+        }
+      },
+      "rewards:9": {}
+    },
+    "16:10": {
+      "questID:3": 16,
+      "preRequisites:11": [
+        11
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "name:8": "Granite Anvil",
+          "desc:8": "A stone anvil: place things on it and hit them with a pickaxe or hammer to split rocks, shard bones and flint, and later to hammer iron blooms into metal.",
+          "icon:10": {
+            "id:8": "pyrotech:anvil_granite",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "isMain:1": 0,
+          "isSilent:1": 0,
+          "autoClaim:1": 1,
+          "globalShare:1": 0,
+          "lockedProgress:1": 0,
+          "simultaneous:1": 0,
+          "repeatTime:3": -1,
+          "repeat_relative:1": 1,
+          "questLogic:8": "AND",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "pyrotech:anvil_granite",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "index:3": 0
+        }
+      },
+      "rewards:9": {}
+    },
+    "17:10": {
+      "questID:3": 17,
+      "preRequisites:11": [
+        16
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "name:8": "Stone Tools",
+          "desc:8": "§7Optional.§r Stone tools are a solid upgrade over flint and bone, and the stone hammer works the anvil faster.",
+          "icon:10": {
+            "id:8": "minecraft:stone_pickaxe",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "isMain:1": 0,
+          "isSilent:1": 0,
+          "autoClaim:1": 1,
+          "globalShare:1": 0,
+          "lockedProgress:1": 0,
+          "simultaneous:1": 0,
+          "repeatTime:3": -1,
+          "repeat_relative:1": 1,
+          "questLogic:8": "AND",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "minecraft:stone_pickaxe",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "index:3": 0
+        }
+      },
+      "rewards:9": {}
+    },
+    "18:10": {
+      "questID:3": 18,
+      "preRequisites:11": [
+        15
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "name:8": "Stone Machines",
+          "desc:8": "§7Optional.§r The Stone Kiln does the pit kiln's job faster and with fewer failures; the Stone Oven cooks and dries without burning your food. Both run on fuel.",
+          "icon:10": {
+            "id:8": "pyrotech:stone_kiln",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "isMain:1": 0,
+          "isSilent:1": 0,
+          "autoClaim:1": 1,
+          "globalShare:1": 0,
+          "lockedProgress:1": 0,
+          "simultaneous:1": 0,
+          "repeatTime:3": -1,
+          "repeat_relative:1": 1,
+          "questLogic:8": "AND",
+          "taskLogic:8": "OR",
+          "visibility:8": "NORMAL",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "pyrotech:stone_kiln",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "index:3": 0
+        },
+        "1:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "pyrotech:stone_oven",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "index:3": 1
+        }
+      },
+      "rewards:9": {}
+    },
+    "19:10": {
+      "questID:3": 19,
+      "preRequisites:11": [
+        15
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "name:8": "Charcoal",
+          "desc:8": "Stack §elog piles§r, seal them under dirt or stone and light them - a §ePit Burn§r turns wood into charcoal (and tar).\n\nCharcoal is the fuel that gets a bloomery hot enough for iron. It also makes water filters.",
+          "icon:10": {
+            "id:8": "minecraft:coal",
+            "Count:3": 1,
+            "Damage:2": 1,
+            "OreDict:8": ""
+          },
+          "isMain:1": 0,
+          "isSilent:1": 0,
+          "autoClaim:1": 1,
+          "globalShare:1": 0,
+          "lockedProgress:1": 0,
+          "simultaneous:1": 0,
+          "repeatTime:3": -1,
+          "repeat_relative:1": 1,
+          "questLogic:8": "AND",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "minecraft:coal",
+              "Count:3": 8,
+              "Damage:2": 1,
+              "OreDict:8": ""
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "index:3": 0
+        }
+      },
+      "rewards:9": {}
+    },
+    "20:10": {
+      "questID:3": 20,
+      "preRequisites:11": [
+        15
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "name:8": "Refractory Bricks",
+          "desc:8": "Mix clay into §erefractory clay§r, shape unfired refractory bricks and fire them in a kiln.\n\nRefractory bricks survive the heat of iron smelting - the bloomery is built from them.",
+          "icon:10": {
+            "id:8": "pyrotech:material",
+            "Count:3": 1,
+            "Damage:2": 5,
+            "OreDict:8": ""
+          },
+          "isMain:1": 0,
+          "isSilent:1": 0,
+          "autoClaim:1": 1,
+          "globalShare:1": 0,
+          "lockedProgress:1": 0,
+          "simultaneous:1": 0,
+          "repeatTime:3": -1,
+          "repeat_relative:1": 1,
+          "questLogic:8": "AND",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "pyrotech:material",
+              "Count:3": 16,
+              "Damage:2": 5,
+              "OreDict:8": ""
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "index:3": 0
+        }
+      },
+      "rewards:9": {}
+    },
+    "21:10": {
+      "questID:3": 21,
+      "preRequisites:11": [
+        11
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "name:8": "Iron Ore",
+          "desc:8": "Iron ore needs at least a flint, bone or stone pickaxe.\n\n§eScavenging tip:§r iron found in ruins is mostly ore too - nobody left neat ingots lying around.",
+          "icon:10": {
+            "id:8": "minecraft:iron_ore",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "isMain:1": 0,
+          "isSilent:1": 0,
+          "autoClaim:1": 1,
+          "globalShare:1": 0,
+          "lockedProgress:1": 0,
+          "simultaneous:1": 0,
+          "repeatTime:3": -1,
+          "repeat_relative:1": 1,
+          "questLogic:8": "AND",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "minecraft:iron_ore",
+              "Count:3": 8,
+              "Damage:2": 32767,
+              "OreDict:8": "oreIron"
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "index:3": 0
+        }
+      },
+      "rewards:9": {}
+    },
+    "22:10": {
+      "questID:3": 22,
+      "preRequisites:11": [
+        11
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "name:8": "Tongs",
+          "desc:8": "A fresh bloom is glowing-hot iron. §cHolding it with bare hands burns you.§r Carry tongs.",
+          "icon:10": {
+            "id:8": "pyrotech:tongs_flint",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "isMain:1": 0,
+          "isSilent:1": 0,
+          "autoClaim:1": 1,
+          "globalShare:1": 0,
+          "lockedProgress:1": 0,
+          "simultaneous:1": 0,
+          "repeatTime:3": -1,
+          "repeat_relative:1": 1,
+          "questLogic:8": "AND",
+          "taskLogic:8": "OR",
+          "visibility:8": "NORMAL",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "pyrotech:tongs_flint",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "index:3": 0
+        },
+        "1:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "pyrotech:tongs_bone",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "index:3": 1
+        }
+      },
+      "rewards:9": {}
+    },
+    "23:10": {
+      "questID:3": 23,
+      "preRequisites:11": [
+        19,
+        20,
+        21,
+        22
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "name:8": "The Bloomery",
+          "desc:8": "Load iron ore and fuel into the top of the bloomery and light it. The more (and better) fuel, the faster it works; a bellows helps.\n\nThe result is a §eBloom§r: a lump of iron and slag.",
+          "icon:10": {
+            "id:8": "pyrotech:bloomery",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "isMain:1": 1,
+          "isSilent:1": 0,
+          "autoClaim:1": 1,
+          "globalShare:1": 0,
+          "lockedProgress:1": 0,
+          "simultaneous:1": 0,
+          "repeatTime:3": -1,
+          "repeat_relative:1": 1,
+          "questLogic:8": "AND",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "pyrotech:bloomery",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "index:3": 0
+        }
+      },
+      "rewards:9": {}
+    },
+    "24:10": {
+      "questID:3": 24,
+      "preRequisites:11": [
+        23,
+        16
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "name:8": "Iron!",
+          "desc:8": "Put the bloom on an anvil and hammer it: iron comes out, slag stays behind (slag with ore left in it can go back into the bloomery).\n\nYou made metal from nothing. The primitive age is almost over.",
+          "icon:10": {
+            "id:8": "minecraft:iron_ingot",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "isMain:1": 1,
+          "isSilent:1": 0,
+          "autoClaim:1": 1,
+          "globalShare:1": 0,
+          "lockedProgress:1": 0,
+          "simultaneous:1": 0,
+          "repeatTime:3": -1,
+          "repeat_relative:1": 1,
+          "questLogic:8": "AND",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "minecraft:iron_ingot",
+              "Count:3": 4,
+              "Damage:2": 32767,
+              "OreDict:8": "ingotIron"
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "index:3": 0
+        }
+      },
+      "rewards:9": {}
+    },
+    "25:10": {
+      "questID:3": 25,
+      "preRequisites:11": [
+        24
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "name:8": "The First Anvil",
+          "desc:8": "An §eIron Anvil§r from HBM's Nuclear Tech - the first real machine of the old world. With it you can build the next generation of tools and begin to salvage the ruins for steel.\n\n§eThis is the end of the Primitive age.§r Next: the Scavenger age.",
+          "icon:10": {
+            "id:8": "hbm:anvil_iron",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "isMain:1": 1,
+          "isSilent:1": 0,
+          "autoClaim:1": 1,
+          "globalShare:1": 0,
+          "lockedProgress:1": 0,
+          "simultaneous:1": 0,
+          "repeatTime:3": -1,
+          "repeat_relative:1": 1,
+          "questLogic:8": "AND",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "hbm:anvil_iron",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "index:3": 0
+        }
+      },
+      "rewards:9": {}
+    },
+    "26:10": {
+      "questID:3": 100,
+      "preRequisites:11": [
+        0
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "name:8": "Thirst",
+          "desc:8": "You get thirsty as you move, work and fight. §eYou cannot drink straight from rivers or lakes§r - water has to go into a bottle or a canteen first.\n\n- Water from normal biomes is §edirty§r: drinkable, but it can give you parasites. Boil or filter it.\n- Water in §cwastelands, deserts and nuke craters is toxic§r. You cannot even fill a canteen there.\n- Standing in the rain and looking up lets you drink rain water.",
+          "icon:10": {
+            "id:8": "simpledifficulty:purified_water_bottle",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "isMain:1": 0,
+          "isSilent:1": 0,
+          "autoClaim:1": 1,
+          "globalShare:1": 0,
+          "lockedProgress:1": 0,
+          "simultaneous:1": 0,
+          "repeatTime:3": -1,
+          "repeat_relative:1": 1,
+          "questLogic:8": "AND",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "taskID:8": "bq_standard:checkbox",
+          "index:3": 0
+        }
+      },
+      "rewards:9": {}
+    },
+    "27:10": {
+      "questID:3": 101,
+      "preRequisites:11": [
+        100
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "name:8": "Something to Drink From",
+          "desc:8": "A §eCanteen§r (leather) holds several drinks. Glass bottles work too - you will find empty and full ones in ruined buildings long before you can make glass.",
+          "icon:10": {
+            "id:8": "simpledifficulty:canteen",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "isMain:1": 0,
+          "isSilent:1": 0,
+          "autoClaim:1": 1,
+          "globalShare:1": 0,
+          "lockedProgress:1": 0,
+          "simultaneous:1": 0,
+          "repeatTime:3": -1,
+          "repeat_relative:1": 1,
+          "questLogic:8": "AND",
+          "taskLogic:8": "OR",
+          "visibility:8": "NORMAL",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "simpledifficulty:canteen",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "index:3": 0
+        },
+        "1:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "minecraft:glass_bottle",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "index:3": 1
+        }
+      },
+      "rewards:9": {}
+    },
+    "28:10": {
+      "questID:3": 102,
+      "preRequisites:11": [
+        101,
+        10
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "name:8": "Boil It",
+          "desc:8": "Put a bottle of dirty water on a §ecampfire§r (or in a stone oven) and it comes back purified and safe.",
+          "icon:10": {
+            "id:8": "simpledifficulty:purified_water_bottle",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "isMain:1": 0,
+          "isSilent:1": 0,
+          "autoClaim:1": 1,
+          "globalShare:1": 0,
+          "lockedProgress:1": 0,
+          "simultaneous:1": 0,
+          "repeatTime:3": -1,
+          "repeat_relative:1": 1,
+          "questLogic:8": "AND",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "simpledifficulty:purified_water_bottle",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "index:3": 0
+        }
+      },
+      "rewards:9": {}
+    },
+    "29:10": {
+      "questID:3": 103,
+      "preRequisites:11": [
+        101,
+        19
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "name:8": "Charcoal Filter",
+          "desc:8": "Canteens cannot go on a fire. Craft a filled canteen with a §echarcoal filter§r to purify it.",
+          "icon:10": {
+            "id:8": "simpledifficulty:charcoal_filter",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "isMain:1": 0,
+          "isSilent:1": 0,
+          "autoClaim:1": 1,
+          "globalShare:1": 0,
+          "lockedProgress:1": 0,
+          "simultaneous:1": 0,
+          "repeatTime:3": -1,
+          "repeat_relative:1": 1,
+          "questLogic:8": "AND",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "simpledifficulty:charcoal_filter",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "index:3": 0
+        }
+      },
+      "rewards:9": {}
+    },
+    "30:10": {
+      "questID:3": 104,
+      "preRequisites:11": [
+        100
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "name:8": "Never Drink the Wasteland",
+          "desc:8": "A bottle filled in the wasteland comes out as §cToxic Water§r: poison, nausea and radiation.\n\nNo campfire or filter can clean it - that needs a chemical plant, far in the future. §eWhen you travel into the wastes, carry your water with you.§r",
+          "icon:10": {
+            "id:8": "decaychain:toxic_water_bottle",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "isMain:1": 0,
+          "isSilent:1": 0,
+          "autoClaim:1": 1,
+          "globalShare:1": 0,
+          "lockedProgress:1": 0,
+          "simultaneous:1": 0,
+          "repeatTime:3": -1,
+          "repeat_relative:1": 1,
+          "questLogic:8": "AND",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "taskID:8": "bq_standard:checkbox",
+          "index:3": 0
+        }
+      },
+      "rewards:9": {}
+    },
+    "31:10": {
+      "questID:3": 110,
+      "preRequisites:11": [
+        0
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "name:8": "Forage",
+          "desc:8": "Dig grassy dirt by hand for §eStrange Tubers§r, and pick berries from bushes in plains and forests.\n\nFood is less filling here than you are used to, and you only heal when you are well fed. Keep an eye on the saturation shown on your hunger bar.",
+          "icon:10": {
+            "id:8": "pyrotech:strange_tuber",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "isMain:1": 0,
+          "isSilent:1": 0,
+          "autoClaim:1": 1,
+          "globalShare:1": 0,
+          "lockedProgress:1": 0,
+          "simultaneous:1": 0,
+          "repeatTime:3": -1,
+          "repeat_relative:1": 1,
+          "questLogic:8": "AND",
+          "taskLogic:8": "OR",
+          "visibility:8": "NORMAL",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "pyrotech:strange_tuber",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "index:3": 0
+        },
+        "1:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "pyrotech:freckleberries",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "index:3": 1
+        }
+      },
+      "rewards:9": {}
+    },
+    "32:10": {
+      "questID:3": 111,
+      "preRequisites:11": [
+        3
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "name:8": "Hunting Spear",
+          "desc:8": "A crude spear can be thrown - it sticks in the target, so go and pick it up. Animals are the best early source of meat, leather (canteens, backpacks) and bones.",
+          "icon:10": {
+            "id:8": "pyrotech:crude_spear",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "isMain:1": 0,
+          "isSilent:1": 0,
+          "autoClaim:1": 1,
+          "globalShare:1": 0,
+          "lockedProgress:1": 0,
+          "simultaneous:1": 0,
+          "repeatTime:3": -1,
+          "repeat_relative:1": 1,
+          "questLogic:8": "AND",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "pyrotech:crude_spear",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "index:3": 0
+        }
+      },
+      "rewards:9": {}
+    },
+    "33:10": {
+      "questID:3": 112,
+      "preRequisites:11": [
+        10
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "name:8": "Cooked Meal",
+          "desc:8": "Cook food on the campfire. Roasted food restores much more than raw food - and raw meat can make you sick.",
+          "icon:10": {
+            "id:8": "minecraft:cooked_porkchop",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "isMain:1": 0,
+          "isSilent:1": 0,
+          "autoClaim:1": 1,
+          "globalShare:1": 0,
+          "lockedProgress:1": 0,
+          "simultaneous:1": 0,
+          "repeatTime:3": -1,
+          "repeat_relative:1": 1,
+          "questLogic:8": "AND",
+          "taskLogic:8": "OR",
+          "visibility:8": "NORMAL",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "minecraft:cooked_porkchop",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "index:3": 0
+        },
+        "1:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "minecraft:cooked_beef",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "index:3": 1
+        },
+        "2:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "minecraft:cooked_mutton",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "index:3": 2
+        },
+        "3:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "minecraft:cooked_chicken",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "index:3": 3
+        },
+        "4:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "minecraft:cooked_rabbit",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "index:3": 4
+        },
+        "5:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "minecraft:baked_potato",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "index:3": 5
+        }
+      },
+      "rewards:9": {}
+    },
+    "34:10": {
+      "questID:3": 113,
+      "preRequisites:11": [
+        110
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "name:8": "Canned Goods",
+          "desc:8": "Ruined cities still hide pre-war food: canned beef, tuna, mystery meat... Cans keep forever. City chests, rail tunnels and old dungeons are your pantry.",
+          "icon:10": {
+            "id:8": "hbm:canned_conserve",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "isMain:1": 0,
+          "isSilent:1": 0,
+          "autoClaim:1": 1,
+          "globalShare:1": 0,
+          "lockedProgress:1": 0,
+          "simultaneous:1": 0,
+          "repeatTime:3": -1,
+          "repeat_relative:1": 1,
+          "questLogic:8": "AND",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "hbm:canned_conserve",
+              "Count:3": 1,
+              "Damage:2": 32767,
+              "OreDict:8": ""
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "index:3": 0
+        }
+      },
+      "rewards:9": {}
+    },
+    "35:10": {
+      "questID:3": 114,
+      "preRequisites:11": [
+        110
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "name:8": "Wild Gardens",
+          "desc:8": "Wild gardens grow in many biomes. Break them for vegetables, fruits and seeds.\n\n§7Real farming needs a steel hoe - that comes in the Scavenger age. Until then, gather and scavenge.§r",
+          "icon:10": {
+            "id:8": "harvestcraft:windygarden",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "isMain:1": 0,
+          "isSilent:1": 0,
+          "autoClaim:1": 1,
+          "globalShare:1": 0,
+          "lockedProgress:1": 0,
+          "simultaneous:1": 0,
+          "repeatTime:3": -1,
+          "repeat_relative:1": 1,
+          "questLogic:8": "AND",
+          "taskLogic:8": "OR",
+          "visibility:8": "NORMAL",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "harvestcraft:aridgarden",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "index:3": 0
+        },
+        "1:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "harvestcraft:frostgarden",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "index:3": 1
+        },
+        "2:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "harvestcraft:shadedgarden",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "index:3": 2
+        },
+        "3:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "harvestcraft:soggygarden",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "index:3": 3
+        },
+        "4:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "harvestcraft:tropicalgarden",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "index:3": 4
+        },
+        "5:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "harvestcraft:windygarden",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "index:3": 5
+        }
+      },
+      "rewards:9": {}
+    },
+    "36:10": {
+      "questID:3": 120,
+      "preRequisites:11": [
+        2
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "name:8": "Light in the Dark",
+          "desc:8": "Nights are §cpitch black§r here - no moonlight to see by. Fiber torches burn out, so make plenty.\n\nDarkness is also where things spawn. Light up your camp.",
+          "icon:10": {
+            "id:8": "pyrotech:torch_fiber",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "isMain:1": 0,
+          "isSilent:1": 0,
+          "autoClaim:1": 1,
+          "globalShare:1": 0,
+          "lockedProgress:1": 0,
+          "simultaneous:1": 0,
+          "repeatTime:3": -1,
+          "repeat_relative:1": 1,
+          "questLogic:8": "AND",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "pyrotech:torch_fiber",
+              "Count:3": 4,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "index:3": 0
+        }
+      },
+      "rewards:9": {}
+    },
+    "37:10": {
+      "questID:3": 121,
+      "preRequisites:11": [
+        1
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "name:8": "Four Walls",
+          "desc:8": "Rocks craft into cobblestone. Build something you can close behind you before your first night.\n\nMud and straw make §eCob§r - another cheap early building block.",
+          "icon:10": {
+            "id:8": "minecraft:cobblestone",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "isMain:1": 0,
+          "isSilent:1": 0,
+          "autoClaim:1": 1,
+          "globalShare:1": 0,
+          "lockedProgress:1": 0,
+          "simultaneous:1": 0,
+          "repeatTime:3": -1,
+          "repeat_relative:1": 1,
+          "questLogic:8": "AND",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "minecraft:cobblestone",
+              "Count:3": 32,
+              "Damage:2": 32767,
+              "OreDict:8": "cobblestone"
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "index:3": 0
+        }
+      },
+      "rewards:9": {}
+    },
+    "38:10": {
+      "questID:3": 122,
+      "preRequisites:11": [
+        121
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "name:8": "A Place to Sleep",
+          "desc:8": "A §estraw bed§r is cheap; a §esleeping bag§r (wool) can be carried. Sleeping skips the night - except when the horde is coming.",
+          "icon:10": {
+            "id:8": "comforts:sleeping_bag",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "isMain:1": 0,
+          "isSilent:1": 0,
+          "autoClaim:1": 1,
+          "globalShare:1": 0,
+          "lockedProgress:1": 0,
+          "simultaneous:1": 0,
+          "repeatTime:3": -1,
+          "repeat_relative:1": 1,
+          "questLogic:8": "AND",
+          "taskLogic:8": "OR",
+          "visibility:8": "NORMAL",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "pyrotech:straw_bed",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "index:3": 0
+        },
+        "1:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "comforts:sleeping_bag",
+              "Count:3": 1,
+              "Damage:2": 32767,
+              "OreDict:8": ""
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "index:3": 1
+        }
+      },
+      "rewards:9": {}
+    },
+    "39:10": {
+      "questID:3": 123,
+      "preRequisites:11": [
+        7
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "name:8": "Storage",
+          "desc:8": "Crates, stashes and drawers keep your loot safe. A §eRock Bag§r collects rocks automatically.",
+          "icon:10": {
+            "id:8": "pyrotech:crate",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "isMain:1": 0,
+          "isSilent:1": 0,
+          "autoClaim:1": 1,
+          "globalShare:1": 0,
+          "lockedProgress:1": 0,
+          "simultaneous:1": 0,
+          "repeatTime:3": -1,
+          "repeat_relative:1": 1,
+          "questLogic:8": "AND",
+          "taskLogic:8": "OR",
+          "visibility:8": "NORMAL",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "pyrotech:crate",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "index:3": 0
+        },
+        "1:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "pyrotech:stash",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "index:3": 1
+        },
+        "2:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "storagedrawers:basicdrawers",
+              "Count:3": 1,
+              "Damage:2": 32767,
+              "OreDict:8": ""
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "index:3": 2
+        }
+      },
+      "rewards:9": {}
+    },
+    "40:10": {
+      "questID:3": 124,
+      "preRequisites:11": [
+        121
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "name:8": "The Horde",
+          "desc:8": "§cEvery tenth night a horde comes for you§r - and it grows each time. You cannot sleep through it.\n\nZombies carrying pickaxes §edig through walls§r. HBM concrete stops them; until you have it, build thick walls, light everything and have an escape route.\n\nBitten survivors can catch the zombie infection. Watch your status effects.",
+          "icon:10": {
+            "id:8": "minecraft:rotten_flesh",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "isMain:1": 0,
+          "isSilent:1": 0,
+          "autoClaim:1": 1,
+          "globalShare:1": 0,
+          "lockedProgress:1": 0,
+          "simultaneous:1": 0,
+          "repeatTime:3": -1,
+          "repeat_relative:1": 1,
+          "questLogic:8": "AND",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "taskID:8": "bq_standard:checkbox",
+          "index:3": 0
+        }
+      },
+      "rewards:9": {}
+    },
+    "41:10": {
+      "questID:3": 130,
+      "preRequisites:11": [
+        0
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "name:8": "First Aid",
+          "desc:8": "Damage hits §especific body parts§r: a hurt leg slows you down, a damaged head blurs your sight. Plasters and bandages heal individual parts - look for them in ruins.\n\nHealth only regenerates while you are well fed.",
+          "icon:10": {
+            "id:8": "firstaid:plaster",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "isMain:1": 0,
+          "isSilent:1": 0,
+          "autoClaim:1": 1,
+          "globalShare:1": 0,
+          "lockedProgress:1": 0,
+          "simultaneous:1": 0,
+          "repeatTime:3": -1,
+          "repeat_relative:1": 1,
+          "questLogic:8": "AND",
+          "taskLogic:8": "OR",
+          "visibility:8": "NORMAL",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "firstaid:plaster",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "index:3": 0
+        },
+        "1:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "firstaid:bandage",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "index:3": 1
+        }
+      },
+      "rewards:9": {}
+    },
+    "42:10": {
+      "questID:3": 131,
+      "preRequisites:11": [
+        0
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "name:8": "Hot and Cold",
+          "desc:8": "Your body temperature matters. Deserts and wastelands are scorching by day and freezing at night; rain and water chill you.\n\nStay near a campfire at night, wear cloth armour in the cold, and keep an eye on the thermometer on your HUD.",
+          "icon:10": {
+            "id:8": "simpledifficulty:wool_helmet",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "isMain:1": 0,
+          "isSilent:1": 0,
+          "autoClaim:1": 1,
+          "globalShare:1": 0,
+          "lockedProgress:1": 0,
+          "simultaneous:1": 0,
+          "repeatTime:3": -1,
+          "repeat_relative:1": 1,
+          "questLogic:8": "AND",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "taskID:8": "bq_standard:checkbox",
+          "index:3": 0
+        }
+      },
+      "rewards:9": {}
+    },
+    "43:10": {
+      "questID:3": 132,
+      "preRequisites:11": [
+        0
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "name:8": "Death Is Not the End",
+          "desc:8": "When you die your belongings stay in a §egrave§r where you fell - you respawn with a key to it. Go back carefully: whatever killed you is probably still there.\n\nYou lose most of your experience on death, and experience is what buys skill levels.",
+          "icon:10": {
+            "id:8": "tombstone:decorative_grave_simple",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "isMain:1": 0,
+          "isSilent:1": 0,
+          "autoClaim:1": 1,
+          "globalShare:1": 0,
+          "lockedProgress:1": 0,
+          "simultaneous:1": 0,
+          "repeatTime:3": -1,
+          "repeat_relative:1": 1,
+          "questLogic:8": "AND",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "taskID:8": "bq_standard:checkbox",
+          "index:3": 0
+        }
+      },
+      "rewards:9": {}
+    },
+    "44:10": {
+      "questID:3": 140,
+      "preRequisites:11": [
+        0
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "name:8": "Know Your Enemies",
+          "desc:8": "- §eParasites§r start weak, but they evolve as they spread and assimilate other creatures. The longer they go unchecked, the worse they get.\n- §eMutated wildlife§r roams the wastes - giant worms, insects and worse.\n- Some monsters are §eelite§r: a coloured health bar and special powers. Avoid them early.\n- Zombies hear noise, see light and follow blood.",
+          "icon:10": {
+            "id:8": "minecraft:skull",
+            "Count:3": 1,
+            "Damage:2": 2,
+            "OreDict:8": ""
+          },
+          "isMain:1": 0,
+          "isSilent:1": 0,
+          "autoClaim:1": 1,
+          "globalShare:1": 0,
+          "lockedProgress:1": 0,
+          "simultaneous:1": 0,
+          "repeatTime:3": -1,
+          "repeat_relative:1": 1,
+          "questLogic:8": "AND",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "taskID:8": "bq_standard:checkbox",
+          "index:3": 0
+        }
+      },
+      "rewards:9": {}
+    },
+    "45:10": {
+      "questID:3": 141,
+      "preRequisites:11": [
+        0
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "name:8": "Ruins",
+          "desc:8": "Cities stand in ruins - the worst in the wastelands. They are full of loot and full of danger.\n\n- Some buildings are §ehaunted§r: their chests stay locked until you clear the building.\n- Concrete and steel walls §ecannot be dug through§r without at least an iron pickaxe - use the doors.\n- §cSmashing glass cuts you§r: breaking windows makes you bleed. A §eGlass Cutter§r removes glass safely (and keeps it).\n- Watch for radiation, landmines and asbestos dust near old industrial sites.\n- Underground rail tunnels hold the best early caches.",
+          "icon:10": {
+            "id:8": "hbm:brick_concrete_cracked",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "isMain:1": 0,
+          "isSilent:1": 0,
+          "autoClaim:1": 1,
+          "globalShare:1": 0,
+          "lockedProgress:1": 0,
+          "simultaneous:1": 0,
+          "repeatTime:3": -1,
+          "repeat_relative:1": 1,
+          "questLogic:8": "AND",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "taskID:8": "bq_standard:checkbox",
+          "index:3": 0
+        }
+      },
+      "rewards:9": {}
+    },
+    "46:10": {
+      "questID:3": 142,
+      "preRequisites:11": [
+        0
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "name:8": "Skills",
+          "desc:8": "Experience buys skill levels (open the skills tab in your inventory). Tools and machines are never locked by skills - but §eweapons and armour are§r: better guns, swords and armour need Attack, Defense or Agility levels.",
+          "icon:10": {
+            "id:8": "minecraft:experience_bottle",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "isMain:1": 0,
+          "isSilent:1": 0,
+          "autoClaim:1": 1,
+          "globalShare:1": 0,
+          "lockedProgress:1": 0,
+          "simultaneous:1": 0,
+          "repeatTime:3": -1,
+          "repeat_relative:1": 1,
+          "questLogic:8": "AND",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "taskID:8": "bq_standard:checkbox",
+          "index:3": 0
+        }
+      },
+      "rewards:9": {}
+    },
+    "47:10": {
+      "questID:3": 143,
+      "preRequisites:11": [
+        3
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "name:8": "Something to Fight With",
+          "desc:8": "Spears, daggers and clubs of wood and stone are your first real weapons; a bow keeps danger at a distance. Firearms come with steel.",
+          "icon:10": {
+            "id:8": "spartanweaponry:spear_wood",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "isMain:1": 0,
+          "isSilent:1": 0,
+          "autoClaim:1": 1,
+          "globalShare:1": 0,
+          "lockedProgress:1": 0,
+          "simultaneous:1": 0,
+          "repeatTime:3": -1,
+          "repeat_relative:1": 1,
+          "questLogic:8": "AND",
+          "taskLogic:8": "OR",
+          "visibility:8": "NORMAL",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "spartanweaponry:spear_wood",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "index:3": 0
+        },
+        "1:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "spartanweaponry:spear_stone",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "index:3": 1
+        },
+        "2:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "spartanweaponry:dagger_stone",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "index:3": 2
+        },
+        "3:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "pyrotech:crude_spear",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "index:3": 3
+        },
+        "4:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "minecraft:bow",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "index:3": 4
+        }
+      },
+      "rewards:9": {}
+    },
+    "48:10": {
+      "questID:3": 144,
+      "preRequisites:11": [
+        111
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "name:8": "Backpack",
+          "desc:8": "A leather backpack worn on your back roughly doubles what you can carry home from a scavenging run.",
+          "icon:10": {
+            "id:8": "wearablebackpacks:backpack",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "isMain:1": 0,
+          "isSilent:1": 0,
+          "autoClaim:1": 1,
+          "globalShare:1": 0,
+          "lockedProgress:1": 0,
+          "simultaneous:1": 0,
+          "repeatTime:3": -1,
+          "repeat_relative:1": 1,
+          "questLogic:8": "AND",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "wearablebackpacks:backpack",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "index:3": 0
+        }
+      },
+      "rewards:9": {}
+    }
+  },
+  "questLines:9": {
+    "0:10": {
+      "lineID:3": 10,
+      "order:3": 0,
+      "properties:10": {
+        "betterquesting:10": {
+          "name:8": "I. Primitive - Path to Iron",
+          "desc:8": "From empty pockets to your first iron and the first HBM anvil.",
+          "icon:10": {
+            "id:8": "pyrotech:flint_pickaxe",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "visibility:8": "NORMAL",
+          "bg_image:8": "",
+          "bg_size:3": 256
+        }
+      },
+      "quests:9": {
+        "0:10": {
+          "id:3": 0,
+          "x:3": -16,
+          "y:3": 64,
+          "sizeX:3": 32,
+          "sizeY:3": 32
+        },
+        "1:10": {
+          "id:3": 1,
+          "x:3": 28,
+          "y:3": 68,
+          "sizeX:3": 24,
+          "sizeY:3": 24
+        },
+        "2:10": {
+          "id:3": 2,
+          "x:3": 68,
+          "y:3": 68,
+          "sizeX:3": 24,
+          "sizeY:3": 24
+        },
+        "3:10": {
+          "id:3": 3,
+          "x:3": 108,
+          "y:3": 68,
+          "sizeX:3": 24,
+          "sizeY:3": 24
+        },
+        "4:10": {
+          "id:3": 4,
+          "x:3": 148,
+          "y:3": 68,
+          "sizeX:3": 24,
+          "sizeY:3": 24
+        },
+        "5:10": {
+          "id:3": 5,
+          "x:3": 188,
+          "y:3": 68,
+          "sizeX:3": 24,
+          "sizeY:3": 24
+        },
+        "6:10": {
+          "id:3": 6,
+          "x:3": 228,
+          "y:3": 68,
+          "sizeX:3": 24,
+          "sizeY:3": 24
+        },
+        "7:10": {
+          "id:3": 7,
+          "x:3": 268,
+          "y:3": 68,
+          "sizeX:3": 24,
+          "sizeY:3": 24
+        },
+        "8:10": {
+          "id:3": 8,
+          "x:3": 308,
+          "y:3": 68,
+          "sizeX:3": 24,
+          "sizeY:3": 24
+        },
+        "9:10": {
+          "id:3": 9,
+          "x:3": 348,
+          "y:3": 68,
+          "sizeX:3": 24,
+          "sizeY:3": 24
+        },
+        "10:10": {
+          "id:3": 10,
+          "x:3": 384,
+          "y:3": 64,
+          "sizeX:3": 32,
+          "sizeY:3": 32
+        },
+        "11:10": {
+          "id:3": 11,
+          "x:3": 388,
+          "y:3": 108,
+          "sizeX:3": 24,
+          "sizeY:3": 24
+        },
+        "12:10": {
+          "id:3": 12,
+          "x:3": 348,
+          "y:3": 108,
+          "sizeX:3": 24,
+          "sizeY:3": 24
+        },
+        "13:10": {
+          "id:3": 13,
+          "x:3": 308,
+          "y:3": 108,
+          "sizeX:3": 24,
+          "sizeY:3": 24
+        },
+        "14:10": {
+          "id:3": 14,
+          "x:3": 268,
+          "y:3": 108,
+          "sizeX:3": 24,
+          "sizeY:3": 24
+        },
+        "15:10": {
+          "id:3": 15,
+          "x:3": 224,
+          "y:3": 104,
+          "sizeX:3": 32,
+          "sizeY:3": 32
+        },
+        "16:10": {
+          "id:3": 16,
+          "x:3": 188,
+          "y:3": 108,
+          "sizeX:3": 24,
+          "sizeY:3": 24
+        },
+        "17:10": {
+          "id:3": 17,
+          "x:3": 188,
+          "y:3": 148,
+          "sizeX:3": 24,
+          "sizeY:3": 24
+        },
+        "18:10": {
+          "id:3": 18,
+          "x:3": 228,
+          "y:3": 148,
+          "sizeX:3": 24,
+          "sizeY:3": 24
+        },
+        "19:10": {
+          "id:3": 19,
+          "x:3": 148,
+          "y:3": 108,
+          "sizeX:3": 24,
+          "sizeY:3": 24
+        },
+        "20:10": {
+          "id:3": 20,
+          "x:3": 108,
+          "y:3": 108,
+          "sizeX:3": 24,
+          "sizeY:3": 24
+        },
+        "21:10": {
+          "id:3": 21,
+          "x:3": 68,
+          "y:3": 108,
+          "sizeX:3": 24,
+          "sizeY:3": 24
+        },
+        "22:10": {
+          "id:3": 22,
+          "x:3": 68,
+          "y:3": 148,
+          "sizeX:3": 24,
+          "sizeY:3": 24
+        },
+        "23:10": {
+          "id:3": 23,
+          "x:3": 104,
+          "y:3": 144,
+          "sizeX:3": 32,
+          "sizeY:3": 32
+        },
+        "24:10": {
+          "id:3": 24,
+          "x:3": 144,
+          "y:3": 144,
+          "sizeX:3": 32,
+          "sizeY:3": 32
+        },
+        "25:10": {
+          "id:3": 25,
+          "x:3": 144,
+          "y:3": 184,
+          "sizeX:3": 32,
+          "sizeY:3": 32
+        }
+      }
+    },
+    "1:10": {
+      "lineID:3": 11,
+      "order:3": 1,
+      "properties:10": {
+        "betterquesting:10": {
+          "name:8": "I. Primitive - Staying Alive",
+          "desc:8": "Water, food, shelter, health and the dangers of this world.",
+          "icon:10": {
+            "id:8": "simpledifficulty:canteen",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "visibility:8": "NORMAL",
+          "bg_image:8": "",
+          "bg_size:3": 256
+        }
+      },
+      "quests:9": {
+        "0:10": {
+          "id:3": 100,
+          "x:3": -12,
+          "y:3": -12,
+          "sizeX:3": 24,
+          "sizeY:3": 24
+        },
+        "1:10": {
+          "id:3": 101,
+          "x:3": -12,
+          "y:3": 28,
+          "sizeX:3": 24,
+          "sizeY:3": 24
+        },
+        "2:10": {
+          "id:3": 102,
+          "x:3": -12,
+          "y:3": 68,
+          "sizeX:3": 24,
+          "sizeY:3": 24
+        },
+        "3:10": {
+          "id:3": 103,
+          "x:3": -12,
+          "y:3": 108,
+          "sizeX:3": 24,
+          "sizeY:3": 24
+        },
+        "4:10": {
+          "id:3": 104,
+          "x:3": -12,
+          "y:3": 148,
+          "sizeX:3": 24,
+          "sizeY:3": 24
+        },
+        "5:10": {
+          "id:3": 110,
+          "x:3": 68,
+          "y:3": -12,
+          "sizeX:3": 24,
+          "sizeY:3": 24
+        },
+        "6:10": {
+          "id:3": 111,
+          "x:3": 68,
+          "y:3": 28,
+          "sizeX:3": 24,
+          "sizeY:3": 24
+        },
+        "7:10": {
+          "id:3": 112,
+          "x:3": 68,
+          "y:3": 68,
+          "sizeX:3": 24,
+          "sizeY:3": 24
+        },
+        "8:10": {
+          "id:3": 113,
+          "x:3": 68,
+          "y:3": 108,
+          "sizeX:3": 24,
+          "sizeY:3": 24
+        },
+        "9:10": {
+          "id:3": 114,
+          "x:3": 68,
+          "y:3": 148,
+          "sizeX:3": 24,
+          "sizeY:3": 24
+        },
+        "10:10": {
+          "id:3": 120,
+          "x:3": 148,
+          "y:3": -12,
+          "sizeX:3": 24,
+          "sizeY:3": 24
+        },
+        "11:10": {
+          "id:3": 121,
+          "x:3": 148,
+          "y:3": 28,
+          "sizeX:3": 24,
+          "sizeY:3": 24
+        },
+        "12:10": {
+          "id:3": 122,
+          "x:3": 148,
+          "y:3": 68,
+          "sizeX:3": 24,
+          "sizeY:3": 24
+        },
+        "13:10": {
+          "id:3": 123,
+          "x:3": 148,
+          "y:3": 108,
+          "sizeX:3": 24,
+          "sizeY:3": 24
+        },
+        "14:10": {
+          "id:3": 124,
+          "x:3": 148,
+          "y:3": 148,
+          "sizeX:3": 24,
+          "sizeY:3": 24
+        },
+        "15:10": {
+          "id:3": 130,
+          "x:3": 228,
+          "y:3": -12,
+          "sizeX:3": 24,
+          "sizeY:3": 24
+        },
+        "16:10": {
+          "id:3": 131,
+          "x:3": 228,
+          "y:3": 28,
+          "sizeX:3": 24,
+          "sizeY:3": 24
+        },
+        "17:10": {
+          "id:3": 132,
+          "x:3": 228,
+          "y:3": 68,
+          "sizeX:3": 24,
+          "sizeY:3": 24
+        },
+        "18:10": {
+          "id:3": 140,
+          "x:3": 308,
+          "y:3": -12,
+          "sizeX:3": 24,
+          "sizeY:3": 24
+        },
+        "19:10": {
+          "id:3": 141,
+          "x:3": 308,
+          "y:3": 28,
+          "sizeX:3": 24,
+          "sizeY:3": 24
+        },
+        "20:10": {
+          "id:3": 142,
+          "x:3": 308,
+          "y:3": 68,
+          "sizeX:3": 24,
+          "sizeY:3": 24
+        },
+        "21:10": {
+          "id:3": 143,
+          "x:3": 308,
+          "y:3": 108,
+          "sizeX:3": 24,
+          "sizeY:3": 24
+        },
+        "22:10": {
+          "id:3": 144,
+          "x:3": 308,
+          "y:3": 148,
+          "sizeX:3": 24,
+          "sizeY:3": 24
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "weights": {
+    "ice_cap": 0,
+    "tundra": 0,
+    "boreal": 0,
+    "cold_swamp": 0,
+    "wet_temperate": 0,
+    "dry_temperate": 0,
+    "cool_temperate": 0,
+    "warm_temperate": 0,
+    "hot_swamp": 0,
+    "tropical": 0,
+    "mediteranean": 8,
+    "savanna": 0,
+    "hot_desert": 10,
+    "wasteland": 0
+  }
+}

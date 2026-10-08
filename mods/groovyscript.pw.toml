@@ -1,0 +1,13 @@
+name = "GroovyScript"
+filename = "groovyscript-1.4.3.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/GJaDRTrb/versions/mkViescX/groovyscript-1.4.3.jar"
+hash-format = "sha512"
+hash = "61c6d6061a9a4ddeccaa24bdafb1bfa16ff8982daae30436cb19e88ab1e79608e347efdeeae4ef6bf1d4bb1d6f75008ef84692c8dc62d718e427786bc29ec226"
+
+[update]
+[update.modrinth]
+mod-id = "GJaDRTrb"
+version = "mkViescX"
