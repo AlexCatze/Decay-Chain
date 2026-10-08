@@ -46,7 +46,7 @@ def build_quest(q):
         'name:8': q['name'], 'desc:8': q['desc'], 'icon:10': q['icon'],
         'isMain:1': 1 if q.get('main') else 0, 'isSilent:1': 0, 'autoClaim:1': 1,
         'globalShare:1': 0, 'lockedProgress:1': 0, 'simultaneous:1': 0, 'repeatTime:3': -1,
-        'repeat_relative:1': 1, 'questLogic:8': 'AND', 'taskLogic:8': q.get('task_logic', 'AND'),
+        'repeat_relative:1': 1, 'questLogic:8': q.get('requires_logic', 'AND'), 'taskLogic:8': q.get('task_logic', 'AND'),
         'visibility:8': q.get('visibility', 'NORMAL'),
         'snd_complete:8': 'minecraft:entity.player.levelup', 'snd_update:8': 'minecraft:entity.player.levelup',
     }
@@ -69,10 +69,10 @@ def build(chapters, pack_version):
             assert q['id'] not in seen, f"duplicate quest id {q['id']}"
             seen.add(q['id'])
             quests[f'{len(quests)}:10'] = build_quest(q)
-            x, y = q['pos']
-            size = 32 if q.get('main') else 24
-            entries[f'{i}:10'] = {'id:3': q['id'], 'x:3': x * 40 - size // 2, 'y:3': y * 40 - size // 2,
-                                  'sizeX:3': size, 'sizeY:3': size}
+            # xy = top-left corner in quest-book pixels, as the in-game editor stores it (see diff_save.py)
+            x, y = q['xy']
+            size = q.get('size', 32 if q.get('main') else 24)
+            entries[f'{i}:10'] = {'id:3': q['id'], 'x:3': x, 'y:3': y, 'sizeX:3': size, 'sizeY:3': size}
         lines[f'{order}:10'] = {
             'lineID:3': ch['id'], 'order:3': order,
             'properties:10': {'betterquesting:10': {

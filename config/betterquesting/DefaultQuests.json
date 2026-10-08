@@ -4,7 +4,7 @@
   "questSettings:10": {
     "betterquesting:10": {
       "pack_name:8": "Decay Chain",
-      "pack_version:3": 7,
+      "pack_version:3": 9,
       "editMode:1": 0,
       "hardcore:1": 0,
       "lockTray:1": 0,
@@ -114,12 +114,12 @@
     "2:10": {
       "questID:3": 2,
       "preRequisites:11": [
-        1
+        0
       ],
       "properties:10": {
         "betterquesting:10": {
           "name:8": "Sticks and Fibers",
-          "desc:8": "§eSticks§r drop from leaves (any tree, including the Biomes O' Plenty ones) - break them by hand.\n§ePlant Fibers§r come from breaking tall grass.\n\nYou cannot punch trees in this world: logs only come off with an axe. Make one first.",
+          "desc:8": "§eSticks§r drop from leaves (any tree, including the Biomes O' Plenty ones) - break them by hand.\n§ePlant Fibers§r come from breaking tall grass and other grassy plants.\n\nYou cannot punch trees in this world: logs only come off with an axe. Make one first.",
           "icon:10": {
             "id:8": "pyrotech:material",
             "Count:3": 1,
@@ -171,14 +171,68 @@
       "rewards:9": {}
     },
     "3:10": {
+      "questID:3": 1349163978,
+      "preRequisites:11": [
+        0
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "name:8": "Dried Plant Fibers",
+          "desc:8": "Fresh plant fibers are too green to burn or twist. §eDried Plant Fibers§r are the base of twine, tinder, fiber torches and fire starters.\n\n- Dry grass - §edead grass, desert grass, dune grass§r in dry biomes - drops them directly.\n- Any tall grass drops one now and then.\n- A §eCrude Drying Rack§r (2 sticks over 2 plant fibers) dries fresh fibers. It works faster in the sun, in warm dry biomes and next to a campfire.\n- One straw splits into two dried fibers.",
+          "icon:10": {
+            "id:8": "pyrotech:material",
+            "Count:3": 1,
+            "Damage:2": 13,
+            "OreDict:8": ""
+          },
+          "isMain:1": 0,
+          "isSilent:1": 0,
+          "autoClaim:1": 1,
+          "globalShare:1": 0,
+          "lockedProgress:1": 0,
+          "simultaneous:1": 0,
+          "repeatTime:3": -1,
+          "repeat_relative:1": 1,
+          "questLogic:8": "AND",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "pyrotech:material",
+              "Count:3": 3,
+              "Damage:2": 13,
+              "OreDict:8": ""
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "optional:1": 0,
+          "index:3": 0
+        }
+      },
+      "rewards:9": {}
+    },
+    "4:10": {
       "questID:3": 3,
       "preRequisites:11": [
-        2
+        2,
+        1
       ],
       "properties:10": {
         "betterquesting:10": {
           "name:8": "Crude Tools",
-          "desc:8": "Rocks + sticks make crude tools. They are weak and break fast, but a §ecrude axe§r is the only way to get your first logs, and a §ecrude pickaxe§r starts you on stone.\n\nA crude shovel is worth it too: digging gravel with a shovel finds §eflint shards§r.",
+          "desc:8": "Rocks + a stick + plant fibers make crude tools. They are weak and break fast, but you will want all three:\n\n- §eCrude Axe§r: the only way to get your first logs.\n- §eCrude Pickaxe§r: starts you on stone.\n- §eCrude Shovel§r: digging gravel with a shovel finds §eflint shards§r.",
           "icon:10": {
             "id:8": "pyrotech:crude_pickaxe",
             "Count:3": 1,
@@ -215,6 +269,12 @@
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
+            },
+            "2:10": {
+              "id:8": "pyrotech:crude_shovel",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           },
           "consume:1": 0,
@@ -222,14 +282,14 @@
           "groupDetect:1": 0,
           "ignoreNBT:1": 1,
           "partialMatch:1": 1,
-          "entryLogic:8": "AND",
+          "entryLogic:8": "OR",
           "optional:1": 0,
           "index:3": 0
         }
       },
       "rewards:9": {}
     },
-    "4:10": {
+    "5:10": {
       "questID:3": 4,
       "preRequisites:11": [
         3
@@ -282,7 +342,7 @@
       },
       "rewards:9": {}
     },
-    "5:10": {
+    "6:10": {
       "questID:3": 7,
       "preRequisites:11": [
         4
@@ -335,10 +395,11 @@
       },
       "rewards:9": {}
     },
-    "6:10": {
+    "7:10": {
       "questID:3": 5,
       "preRequisites:11": [
-        3
+        2,
+        1
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -388,7 +449,7 @@
       },
       "rewards:9": {}
     },
-    "7:10": {
+    "8:10": {
       "questID:3": 6,
       "preRequisites:11": [
         7,
@@ -480,10 +541,10 @@
       },
       "rewards:9": {}
     },
-    "8:10": {
+    "9:10": {
       "questID:3": 8,
       "preRequisites:11": [
-        3
+        0
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -539,15 +600,15 @@
       },
       "rewards:9": {}
     },
-    "9:10": {
+    "10:10": {
       "questID:3": 9,
       "preRequisites:11": [
-        2
+        1349163978
       ],
       "properties:10": {
         "betterquesting:10": {
           "name:8": "Twine",
-          "desc:8": "Twist plant fibers into §etwine§r. Twine ties tools together, builds drying racks and makes fire-starting kits.",
+          "desc:8": "Twist §e3 dried plant fibers§r into §e3 twine§r (inventory grid). Twine ties tools together, builds drying racks and knives, and lashes the better tools.",
           "icon:10": {
             "id:8": "pyrotech:material",
             "Count:3": 1,
@@ -575,7 +636,7 @@
           "requiredItems:9": {
             "0:10": {
               "id:8": "pyrotech:material",
-              "Count:3": 4,
+              "Count:3": 1,
               "Damage:2": 14,
               "OreDict:8": ""
             }
@@ -592,17 +653,77 @@
       },
       "rewards:9": {}
     },
-    "10:10": {
+    "11:10": {
+      "questID:3": 830666229,
+      "preRequisites:11": [
+        1,
+        2,
+        8
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "name:8": "Fire Starter",
+          "desc:8": "Nothing burns in this world unless you light it yourself. You need a fire starter:\n\n- §eFlint and Tinder§r: a flint shard + dried plant fibers + a rock. Cheap, wears out quickly.\n- §eBow Drill§r: a bow + a stick. Lasts much longer, but a bow needs string.\n\nUse it on tinder, a kiln or a log pile to light it.",
+          "icon:10": {
+            "id:8": "pyrotech:bow_drill",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "isMain:1": 0,
+          "isSilent:1": 0,
+          "autoClaim:1": 1,
+          "globalShare:1": 0,
+          "lockedProgress:1": 0,
+          "simultaneous:1": 0,
+          "repeatTime:3": -1,
+          "repeat_relative:1": 1,
+          "questLogic:8": "AND",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "pyrotech:flint_and_tinder",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "pyrotech:bow_drill",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "OR",
+          "optional:1": 0,
+          "index:3": 0
+        }
+      },
+      "rewards:9": {}
+    },
+    "12:10": {
       "questID:3": 10,
       "preRequisites:11": [
         4,
-        8,
-        9
+        830666229
       ],
       "properties:10": {
         "betterquesting:10": {
           "name:8": "Fire",
-          "desc:8": "Craft §eTinder§r, place it, add logs and light it with a §eFlint and Tinder§r.\n\nThe campfire cooks food (roasted food is far better than raw), §eboils dirty water§r into drinkable water, keeps you warm at night and speeds up nearby drying racks.",
+          "desc:8": "A campfire in four steps:\n\n1. Craft §eTinder§r: 2 dried plant fibers + 2 sticks.\n2. Place the tinder on the ground.\n3. Right-click it with §elogs§r to add fuel.\n4. Light it with your §efire starter§r.\n\nThe campfire cooks food (roasted food is far better than raw), §eboils dirty water§r into drinkable water, keeps you warm at night and speeds up nearby drying racks. Resting next to it at night slowly heals you. Rain or a bucket of water puts it out; clear the ash with a shovel.",
           "icon:10": {
             "id:8": "pyrotech:campfire",
             "Count:3": 1,
@@ -629,13 +750,7 @@
           "taskID:8": "bq_standard:retrieval",
           "requiredItems:9": {
             "0:10": {
-              "id:8": "pyrotech:flint_and_tinder",
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            },
-            "1:10": {
-              "id:8": "pyrotech:campfire",
+              "id:8": "pyrotech:tinder",
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
@@ -649,20 +764,40 @@
           "entryLogic:8": "AND",
           "optional:1": 0,
           "index:3": 0
+        },
+        "1:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "minecraft:log",
+              "Count:3": 8,
+              "Damage:2": 32767,
+              "OreDict:8": "logWood"
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "optional:1": 0,
+          "index:3": 1
         }
       },
       "rewards:9": {}
     },
-    "11:10": {
+    "13:10": {
       "questID:3": 11,
       "preRequisites:11": [
         8,
-        9
+        9,
+        6
       ],
       "properties:10": {
         "betterquesting:10": {
           "name:8": "Bone and Flint Tools",
-          "desc:8": "Flint or bone tools last much longer than crude ones and can mine iron ore. Make a pickaxe, an axe and a shovel.\n\n§7Note: there are no hoes until you have steel - farming is not a primitive-age option.",
+          "desc:8": "Shards + sticks + twine, crafted on the §eWorktable§r. Flint or bone tools last much longer than crude ones and can mine iron ore. Make a pickaxe, an axe and a shovel.\n\n§7Note: there are no hoes until you have steel - farming is not a primitive-age option.",
           "icon:10": {
             "id:8": "pyrotech:flint_pickaxe",
             "Count:3": 1,
@@ -713,15 +848,16 @@
       },
       "rewards:9": {}
     },
-    "12:10": {
+    "14:10": {
       "questID:3": 12,
       "preRequisites:11": [
-        9
+        9,
+        2
       ],
       "properties:10": {
         "betterquesting:10": {
           "name:8": "Drying Rack",
-          "desc:8": "A crude drying rack (sticks tied with fibers) dries plant fibers, wheat and food. It works faster under open sky, in warm dry biomes and next to a campfire - and slower in rain.",
+          "desc:8": "Drying racks dry plant fibers, wheat and food, and can store items.\n\n- §eCrude Drying Rack§r: 2 sticks over 2 plant fibers, holds one item.\n- §eDrying Rack§r: sticks lashed with twine around a ladder, holds four.\n\nThey work faster under open sky, in warm dry biomes and next to a campfire - and slower in rain.",
           "icon:10": {
             "id:8": "pyrotech:drying_rack",
             "Count:3": 1,
@@ -766,7 +902,7 @@
       },
       "rewards:9": {}
     },
-    "13:10": {
+    "15:10": {
       "questID:3": 13,
       "preRequisites:11": [
         12
@@ -825,7 +961,7 @@
       },
       "rewards:9": {}
     },
-    "14:10": {
+    "16:10": {
       "questID:3": 14,
       "preRequisites:11": [
         3
@@ -878,7 +1014,7 @@
       },
       "rewards:9": {}
     },
-    "15:10": {
+    "17:10": {
       "questID:3": 15,
       "preRequisites:11": [
         13,
@@ -933,7 +1069,7 @@
       },
       "rewards:9": {}
     },
-    "16:10": {
+    "18:10": {
       "questID:3": 16,
       "preRequisites:11": [
         11
@@ -986,7 +1122,7 @@
       },
       "rewards:9": {}
     },
-    "17:10": {
+    "19:10": {
       "questID:3": 17,
       "preRequisites:11": [
         16
@@ -1039,7 +1175,7 @@
       },
       "rewards:9": {}
     },
-    "18:10": {
+    "20:10": {
       "questID:3": 18,
       "preRequisites:11": [
         15
@@ -1098,7 +1234,7 @@
       },
       "rewards:9": {}
     },
-    "19:10": {
+    "21:10": {
       "questID:3": 19,
       "preRequisites:11": [
         15
@@ -1151,7 +1287,7 @@
       },
       "rewards:9": {}
     },
-    "20:10": {
+    "22:10": {
       "questID:3": 20,
       "preRequisites:11": [
         15
@@ -1204,7 +1340,7 @@
       },
       "rewards:9": {}
     },
-    "21:10": {
+    "23:10": {
       "questID:3": 21,
       "preRequisites:11": [
         11
@@ -1257,7 +1393,7 @@
       },
       "rewards:9": {}
     },
-    "22:10": {
+    "24:10": {
       "questID:3": 22,
       "preRequisites:11": [
         11
@@ -1316,7 +1452,7 @@
       },
       "rewards:9": {}
     },
-    "23:10": {
+    "25:10": {
       "questID:3": 23,
       "preRequisites:11": [
         19,
@@ -1372,7 +1508,7 @@
       },
       "rewards:9": {}
     },
-    "24:10": {
+    "26:10": {
       "questID:3": 24,
       "preRequisites:11": [
         23,
@@ -1426,7 +1562,7 @@
       },
       "rewards:9": {}
     },
-    "25:10": {
+    "27:10": {
       "questID:3": 25,
       "preRequisites:11": [
         24
@@ -1479,7 +1615,7 @@
       },
       "rewards:9": {}
     },
-    "26:10": {
+    "28:10": {
       "questID:3": 28,
       "preRequisites:11": [
         24,
@@ -1533,7 +1669,7 @@
       },
       "rewards:9": {}
     },
-    "27:10": {
+    "29:10": {
       "questID:3": 100,
       "preRequisites:11": [
         0
@@ -1571,15 +1707,68 @@
       },
       "rewards:9": {}
     },
-    "28:10": {
-      "questID:3": 101,
+    "30:10": {
+      "questID:3": 1226231121,
       "preRequisites:11": [
         100
       ],
       "properties:10": {
         "betterquesting:10": {
-          "name:8": "Something to Drink From",
-          "desc:8": "A §eCanteen§r holds several drinks. Animals drop carcasses, not leather - make a §erawhide canteen§r:\n\n1. Process a carcass with a §eButcher's Knife§r to get §epelts§r.\n2. Scrape a pelt with a §eHunter's Knife§r (crafting grid) into a §escraped hide§r.\n3. Wash it: craft it with a bucket of water, or leave it lying in water for a while.\n4. §e3 washed hides + twine§r make the canteen.\n\nTanned leather (6 for a canteen) comes later. Glass bottles work too - you will find empty and full ones in ruined buildings long before you can make glass.",
+          "name:8": "Mehrwegflasche",
+          "desc:8": "§7(German: \"reusable bottle\".)§r\n\nYou cannot make glass yet, but the old world left plenty of bottles behind: look in kitchens, houses and chests in ruined towns. Some are still full.\n\nA bottle holds one drink. Fill it at any water, §eboil it on a campfire§r to make it safe, drink, and keep the empty bottle - it is reusable forever.",
+          "icon:10": {
+            "id:8": "minecraft:glass_bottle",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "isMain:1": 0,
+          "isSilent:1": 0,
+          "autoClaim:1": 1,
+          "globalShare:1": 0,
+          "lockedProgress:1": 0,
+          "simultaneous:1": 0,
+          "repeatTime:3": -1,
+          "repeat_relative:1": 1,
+          "questLogic:8": "AND",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "minecraft:glass_bottle",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "optional:1": 0,
+          "index:3": 0
+        }
+      },
+      "rewards:9": {}
+    },
+    "31:10": {
+      "questID:3": 1942058366,
+      "preRequisites:11": [
+        100
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "name:8": "Not a Tin Can",
+          "desc:8": "A §eCanteen§r holds several drinks. Animals drop carcasses, not leather - make a §erawhide canteen§r:\n\n1. Process a carcass with a §eButcher's Knife§r to get §epelts§r (see §eHunting and Butchering§r).\n2. Scrape a pelt with a §eHunter's Knife§r (crafting grid) into a §escraped hide§r.\n3. Wash it: craft it with a bucket of water, or leave it lying in water for a while.\n4. §e3 washed hides + twine§r make the canteen.\n\nTanned leather (6 for a canteen) works too, but comes much later. With iron you can upgrade it to an §eIron Canteen§r that holds more.",
           "icon:10": {
             "id:8": "simpledifficulty:canteen",
             "Count:3": 1,
@@ -1595,7 +1784,7 @@
           "repeatTime:3": -1,
           "repeat_relative:1": 1,
           "questLogic:8": "AND",
-          "taskLogic:8": "OR",
+          "taskLogic:8": "AND",
           "visibility:8": "NORMAL",
           "snd_complete:8": "minecraft:entity.player.levelup",
           "snd_update:8": "minecraft:entity.player.levelup"
@@ -1612,7 +1801,7 @@
               "OreDict:8": ""
             },
             "1:10": {
-              "id:8": "minecraft:glass_bottle",
+              "id:8": "simpledifficulty:iron_canteen",
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
@@ -1630,7 +1819,46 @@
       },
       "rewards:9": {}
     },
-    "29:10": {
+    "32:10": {
+      "questID:3": 101,
+      "preRequisites:11": [
+        1226231121,
+        1942058366
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "name:8": "Something to Drink From",
+          "desc:8": "Bottles and canteens are how you carry water:\n\n- §eFill§r: right-click water with an empty bottle or canteen. Water from normal biomes is §edirty§r.\n- §eDrink§r: hold right-click. A canteen holds several drinks, a bottle one.\n- §ePurify§r: boil bottles on a campfire; canteens cannot go on a fire - craft them with a charcoal filter.\n\n§cWasteland water fills bottles with Toxic Water, and canteens refuse it.§r",
+          "icon:10": {
+            "id:8": "simpledifficulty:canteen",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "isMain:1": 0,
+          "isSilent:1": 0,
+          "autoClaim:1": 1,
+          "globalShare:1": 0,
+          "lockedProgress:1": 0,
+          "simultaneous:1": 0,
+          "repeatTime:3": -1,
+          "repeat_relative:1": 1,
+          "questLogic:8": "OR",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "taskID:8": "bq_standard:checkbox",
+          "index:3": 0
+        }
+      },
+      "rewards:9": {}
+    },
+    "33:10": {
       "questID:3": 102,
       "preRequisites:11": [
         101,
@@ -1684,7 +1912,7 @@
       },
       "rewards:9": {}
     },
-    "30:10": {
+    "34:10": {
       "questID:3": 103,
       "preRequisites:11": [
         101,
@@ -1738,7 +1966,7 @@
       },
       "rewards:9": {}
     },
-    "31:10": {
+    "35:10": {
       "questID:3": 104,
       "preRequisites:11": [
         100
@@ -1776,7 +2004,7 @@
       },
       "rewards:9": {}
     },
-    "32:10": {
+    "36:10": {
       "questID:3": 110,
       "preRequisites:11": [
         0
@@ -1784,7 +2012,7 @@
       "properties:10": {
         "betterquesting:10": {
           "name:8": "Forage",
-          "desc:8": "Dig grassy dirt by hand for §eStrange Tubers§r, and pick berries from bushes in plains and forests.\n\nFood is less filling here than you are used to, and you only heal when you are well fed. Keep an eye on the saturation shown on your hunger bar.",
+          "desc:8": "Dig grassy dirt by hand for §eStrange Tubers§r, and pick berries - freckleberries, wild strawberries and Biomes O' Plenty berry bushes grow in plains and forests.\n\nFood is less filling here than you are used to, and you only heal when you are well fed. Keep an eye on the saturation shown on your hunger bar.",
           "icon:10": {
             "id:8": "pyrotech:strange_tuber",
             "Count:3": 1,
@@ -1800,7 +2028,7 @@
           "repeatTime:3": -1,
           "repeat_relative:1": 1,
           "questLogic:8": "AND",
-          "taskLogic:8": "OR",
+          "taskLogic:8": "AND",
           "visibility:8": "NORMAL",
           "snd_complete:8": "minecraft:entity.player.levelup",
           "snd_update:8": "minecraft:entity.player.levelup"
@@ -1821,6 +2049,18 @@
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
+            },
+            "2:10": {
+              "id:8": "hbmspace:strawberry",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "3:10": {
+              "id:8": "biomesoplenty:berries",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           },
           "consume:1": 0,
@@ -1835,15 +2075,107 @@
       },
       "rewards:9": {}
     },
-    "33:10": {
+    "37:10": {
+      "questID:3": 1665027210,
+      "preRequisites:11": [
+        8,
+        9,
+        6
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "name:8": "Hunting and Butchering",
+          "desc:8": "Animals do not drop meat and leather here. When they die they leave a §eCarcass§r - pick it up and place it on the ground.\n\n- §eButcher's Knife§r (shards + sticks + twine): use it on the carcass for §emeat§r, §epelts§r, bone shards and lard.\n- §eHunter's Knife§r: gets more pelts out of a carcass, and scrapes pelts into hides.\n- A §eButcher's Block§r gives better yields.\n\nButchering is hard work: §eif nothing happens, you are too hungry§r.",
+          "icon:10": {
+            "id:8": "pyrotech:carcass",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "isMain:1": 0,
+          "isSilent:1": 0,
+          "autoClaim:1": 1,
+          "globalShare:1": 0,
+          "lockedProgress:1": 0,
+          "simultaneous:1": 0,
+          "repeatTime:3": -1,
+          "repeat_relative:1": 1,
+          "questLogic:8": "AND",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "pyrotech:bone_butchers_knife",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "pyrotech:flint_butchers_knife",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "id:8": "pyrotech:stone_butchers_knife",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "3:10": {
+              "id:8": "pyrotech:iron_butchers_knife",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "OR",
+          "optional:1": 0,
+          "index:3": 0
+        },
+        "1:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "pyrotech:carcass",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "optional:1": 0,
+          "index:3": 1
+        }
+      },
+      "rewards:9": {}
+    },
+    "38:10": {
       "questID:3": 111,
       "preRequisites:11": [
-        3
+        6
       ],
       "properties:10": {
         "betterquesting:10": {
           "name:8": "Hunting Spear",
-          "desc:8": "A crude spear can be thrown - it sticks in the target, so go and pick it up. Animals are the best early source of meat, leather (canteens, backpacks) and bones.",
+          "desc:8": "A crude spear can be thrown - it sticks in the target, so go and pick it up. Animals are the best early source of meat, pelts (canteens, later leather) and bones.",
           "icon:10": {
             "id:8": "pyrotech:crude_spear",
             "Count:3": 1,
@@ -1888,15 +2220,16 @@
       },
       "rewards:9": {}
     },
-    "34:10": {
+    "39:10": {
       "questID:3": 112,
       "preRequisites:11": [
-        10
+        10,
+        1665027210
       ],
       "properties:10": {
         "betterquesting:10": {
           "name:8": "Cooked Meal",
-          "desc:8": "Cook food on the campfire. Roasted food restores much more than raw food - and raw meat can make you sick.",
+          "desc:8": "Cook meat from your carcasses on the campfire. Roasted food restores much more than raw food - and raw meat can make you sick. §eFood left cooking unattended burns.§r",
           "icon:10": {
             "id:8": "minecraft:cooked_porkchop",
             "Count:3": 1,
@@ -1971,10 +2304,10 @@
       },
       "rewards:9": {}
     },
-    "35:10": {
+    "40:10": {
       "questID:3": 113,
       "preRequisites:11": [
-        110
+        0
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -2024,10 +2357,10 @@
       },
       "rewards:9": {}
     },
-    "36:10": {
+    "41:10": {
       "questID:3": 114,
       "preRequisites:11": [
-        110
+        0
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -2107,7 +2440,48 @@
       },
       "rewards:9": {}
     },
-    "37:10": {
+    "42:10": {
+      "questID:3": 1586696649,
+      "preRequisites:11": [
+        114,
+        112,
+        113,
+        110
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "name:8": "Something to Eat",
+          "desc:8": "There are four ways to eat in the primitive age: §eforage§r, §ehunt and cook§r, §escavenge cans§r and §epick wild gardens§r. You have found one - none of them is enough on its own, so use them all.\n\n- Food is less filling than you are used to - cooked food is worth far more than raw.\n- You only heal while you are well fed.\n- Eating next to a campfire at night makes you §eComfortable§r: food goes further, and a big meal gives you §eWell Fed§r (more stamina).",
+          "icon:10": {
+            "id:8": "minecraft:cake",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "isMain:1": 0,
+          "isSilent:1": 0,
+          "autoClaim:1": 1,
+          "globalShare:1": 0,
+          "lockedProgress:1": 0,
+          "simultaneous:1": 0,
+          "repeatTime:3": -1,
+          "repeat_relative:1": 1,
+          "questLogic:8": "OR",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "taskID:8": "bq_standard:checkbox",
+          "index:3": 0
+        }
+      },
+      "rewards:9": {}
+    },
+    "43:10": {
       "questID:3": 120,
       "preRequisites:11": [
         2
@@ -2115,7 +2489,7 @@
       "properties:10": {
         "betterquesting:10": {
           "name:8": "Light in the Dark",
-          "desc:8": "Nights are §cpitch black§r here - no moonlight to see by. Fiber torches burn out, so make plenty.\n\nDarkness is also where things spawn. Light up your camp.",
+          "desc:8": "Nights are §cpitch black§r here - no moonlight to see by. Darkness is also where things spawn: light up your camp.\n\n- §eFiber Torch§r: dried plant fibers on a stick. Cheap, but it §eburns up§r over time and the rain puts it out.\n- §eStone Torch§r: coal pieces on a stone rod. §eNever burns up§r, but rain can still put it out.",
           "icon:10": {
             "id:8": "pyrotech:torch_fiber",
             "Count:3": 1,
@@ -2143,7 +2517,13 @@
           "requiredItems:9": {
             "0:10": {
               "id:8": "pyrotech:torch_fiber",
-              "Count:3": 4,
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "pyrotech:torch_stone",
+              "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
             }
@@ -2153,14 +2533,14 @@
           "groupDetect:1": 0,
           "ignoreNBT:1": 1,
           "partialMatch:1": 1,
-          "entryLogic:8": "AND",
+          "entryLogic:8": "OR",
           "optional:1": 0,
           "index:3": 0
         }
       },
       "rewards:9": {}
     },
-    "38:10": {
+    "44:10": {
       "questID:3": 121,
       "preRequisites:11": [
         1
@@ -2213,7 +2593,7 @@
       },
       "rewards:9": {}
     },
-    "39:10": {
+    "45:10": {
       "questID:3": 122,
       "preRequisites:11": [
         121
@@ -2272,7 +2652,7 @@
       },
       "rewards:9": {}
     },
-    "40:10": {
+    "46:10": {
       "questID:3": 123,
       "preRequisites:11": [
         6
@@ -2337,7 +2717,7 @@
       },
       "rewards:9": {}
     },
-    "41:10": {
+    "47:10": {
       "questID:3": 124,
       "preRequisites:11": [
         121
@@ -2375,7 +2755,48 @@
       },
       "rewards:9": {}
     },
-    "42:10": {
+    "48:10": {
+      "questID:3": 409861656,
+      "preRequisites:11": [
+        830666229,
+        101,
+        120,
+        1586696649
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "name:8": "The First Night",
+          "desc:8": "Night falls fast, and it is darker than you remember. Before the sun goes down:\n\n- §eFire§r: a campfire keeps you warm, cooks, and lets you rest and heal.\n- §eWater§r: a full bottle or canteen - you cannot go looking for a river in the dark.\n- §eLight§r: torches around your camp; monsters spawn in darkness.\n- §eFood§r: something cooked, something stored.\n- §eWalls§r: anything you can close behind you - dig into a hillside if you must.\n\nDo not wander at night. Zombies hear noise and follow light, and worse things hunt in the dark. Survive until morning - then do it again.",
+          "icon:10": {
+            "id:8": "minecraft:iron_sword",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "isMain:1": 0,
+          "isSilent:1": 0,
+          "autoClaim:1": 1,
+          "globalShare:1": 0,
+          "lockedProgress:1": 0,
+          "simultaneous:1": 0,
+          "repeatTime:3": -1,
+          "repeat_relative:1": 1,
+          "questLogic:8": "AND",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "taskID:8": "bq_standard:checkbox",
+          "index:3": 0
+        }
+      },
+      "rewards:9": {}
+    },
+    "49:10": {
       "questID:3": 130,
       "preRequisites:11": [
         0
@@ -2434,7 +2855,7 @@
       },
       "rewards:9": {}
     },
-    "43:10": {
+    "50:10": {
       "questID:3": 131,
       "preRequisites:11": [
         0
@@ -2472,7 +2893,7 @@
       },
       "rewards:9": {}
     },
-    "44:10": {
+    "51:10": {
       "questID:3": 132,
       "preRequisites:11": [
         0
@@ -2510,7 +2931,7 @@
       },
       "rewards:9": {}
     },
-    "45:10": {
+    "52:10": {
       "questID:3": 140,
       "preRequisites:11": [
         0
@@ -2548,7 +2969,7 @@
       },
       "rewards:9": {}
     },
-    "46:10": {
+    "53:10": {
       "questID:3": 141,
       "preRequisites:11": [
         0
@@ -2586,7 +3007,7 @@
       },
       "rewards:9": {}
     },
-    "47:10": {
+    "54:10": {
       "questID:3": 142,
       "preRequisites:11": [
         0
@@ -2624,7 +3045,7 @@
       },
       "rewards:9": {}
     },
-    "48:10": {
+    "55:10": {
       "questID:3": 143,
       "preRequisites:11": [
         3
@@ -2701,15 +3122,15 @@
       },
       "rewards:9": {}
     },
-    "49:10": {
+    "56:10": {
       "questID:3": 144,
       "preRequisites:11": [
-        111
+        6
       ],
       "properties:10": {
         "betterquesting:10": {
           "name:8": "Backpack",
-          "desc:8": "A leather backpack worn on your back roughly doubles what you can carry home from a scavenging run.",
+          "desc:8": "A backpack worn on your back roughly doubles what you can carry home from a scavenging run.\n\nIt is made of §etanned leather§r (7), a gold ingot and wool - a goal for once your tanning rack is running.",
           "icon:10": {
             "id:8": "wearablebackpacks:backpack",
             "Count:3": 1,
@@ -2777,190 +3198,204 @@
       "quests:9": {
         "0:10": {
           "id:3": 0,
-          "x:3": -16,
-          "y:3": 64,
-          "sizeX:3": 32,
-          "sizeY:3": 32
+          "x:3": -12,
+          "y:3": -12,
+          "sizeX:3": 36,
+          "sizeY:3": 36
         },
         "1:10": {
           "id:3": 1,
-          "x:3": 28,
-          "y:3": 68,
+          "x:3": 48,
+          "y:3": -24,
           "sizeX:3": 24,
           "sizeY:3": 24
         },
         "2:10": {
           "id:3": 2,
-          "x:3": 68,
-          "y:3": 68,
+          "x:3": 48,
+          "y:3": 36,
           "sizeX:3": 24,
           "sizeY:3": 24
         },
         "3:10": {
-          "id:3": 3,
-          "x:3": 108,
-          "y:3": 68,
+          "id:3": 1349163978,
+          "x:3": -48,
+          "y:3": 36,
           "sizeX:3": 24,
           "sizeY:3": 24
         },
         "4:10": {
-          "id:3": 4,
-          "x:3": 148,
-          "y:3": 68,
+          "id:3": 3,
+          "x:3": 96,
+          "y:3": 36,
           "sizeX:3": 24,
           "sizeY:3": 24
         },
         "5:10": {
-          "id:3": 7,
-          "x:3": 188,
-          "y:3": 28,
+          "id:3": 4,
+          "x:3": 144,
+          "y:3": 36,
           "sizeX:3": 24,
           "sizeY:3": 24
         },
         "6:10": {
-          "id:3": 5,
-          "x:3": 228,
-          "y:3": -12,
+          "id:3": 7,
+          "x:3": 192,
+          "y:3": 36,
           "sizeX:3": 24,
           "sizeY:3": 24
         },
         "7:10": {
-          "id:3": 6,
-          "x:3": 224,
-          "y:3": 24,
-          "sizeX:3": 32,
-          "sizeY:3": 32
-        },
-        "8:10": {
-          "id:3": 8,
-          "x:3": 308,
-          "y:3": 68,
+          "id:3": 5,
+          "x:3": 144,
+          "y:3": -24,
           "sizeX:3": 24,
           "sizeY:3": 24
         },
+        "8:10": {
+          "id:3": 6,
+          "x:3": 240,
+          "y:3": 0,
+          "sizeX:3": 36,
+          "sizeY:3": 36
+        },
         "9:10": {
-          "id:3": 9,
-          "x:3": 348,
-          "y:3": 68,
+          "id:3": 8,
+          "x:3": 0,
+          "y:3": 84,
           "sizeX:3": 24,
           "sizeY:3": 24
         },
         "10:10": {
-          "id:3": 10,
-          "x:3": 384,
-          "y:3": 64,
-          "sizeX:3": 32,
-          "sizeY:3": 32
+          "id:3": 9,
+          "x:3": -48,
+          "y:3": 132,
+          "sizeX:3": 24,
+          "sizeY:3": 24
         },
         "11:10": {
-          "id:3": 11,
-          "x:3": 388,
-          "y:3": 108,
+          "id:3": 830666229,
+          "x:3": 48,
+          "y:3": 84,
           "sizeX:3": 24,
           "sizeY:3": 24
         },
         "12:10": {
-          "id:3": 12,
-          "x:3": 348,
-          "y:3": 108,
-          "sizeX:3": 24,
-          "sizeY:3": 24
+          "id:3": 10,
+          "x:3": 144,
+          "y:3": 84,
+          "sizeX:3": 36,
+          "sizeY:3": 36
         },
         "13:10": {
-          "id:3": 13,
-          "x:3": 308,
-          "y:3": 108,
-          "sizeX:3": 24,
-          "sizeY:3": 24
+          "id:3": 11,
+          "x:3": 240,
+          "y:3": 84,
+          "sizeX:3": 36,
+          "sizeY:3": 36
         },
         "14:10": {
-          "id:3": 14,
-          "x:3": 268,
-          "y:3": 108,
+          "id:3": 12,
+          "x:3": 0,
+          "y:3": 132,
           "sizeX:3": 24,
           "sizeY:3": 24
         },
         "15:10": {
-          "id:3": 15,
-          "x:3": 224,
-          "y:3": 104,
-          "sizeX:3": 32,
-          "sizeY:3": 32
+          "id:3": 13,
+          "x:3": 48,
+          "y:3": 132,
+          "sizeX:3": 24,
+          "sizeY:3": 24
         },
         "16:10": {
-          "id:3": 16,
-          "x:3": 188,
-          "y:3": 108,
+          "id:3": 14,
+          "x:3": 96,
+          "y:3": 84,
           "sizeX:3": 24,
           "sizeY:3": 24
         },
         "17:10": {
-          "id:3": 17,
-          "x:3": 188,
-          "y:3": 148,
-          "sizeX:3": 24,
-          "sizeY:3": 24
+          "id:3": 15,
+          "x:3": 144,
+          "y:3": 156,
+          "sizeX:3": 36,
+          "sizeY:3": 36
         },
         "18:10": {
-          "id:3": 18,
-          "x:3": 228,
-          "y:3": 148,
+          "id:3": 16,
+          "x:3": 300,
+          "y:3": 36,
           "sizeX:3": 24,
           "sizeY:3": 24
         },
         "19:10": {
-          "id:3": 19,
-          "x:3": 148,
-          "y:3": 108,
+          "id:3": 17,
+          "x:3": 348,
+          "y:3": 36,
           "sizeX:3": 24,
           "sizeY:3": 24
         },
         "20:10": {
-          "id:3": 20,
-          "x:3": 108,
-          "y:3": 108,
+          "id:3": 18,
+          "x:3": 144,
+          "y:3": 240,
           "sizeX:3": 24,
           "sizeY:3": 24
         },
         "21:10": {
-          "id:3": 21,
-          "x:3": 68,
-          "y:3": 108,
+          "id:3": 19,
+          "x:3": 240,
+          "y:3": 240,
           "sizeX:3": 24,
           "sizeY:3": 24
         },
         "22:10": {
-          "id:3": 22,
-          "x:3": 68,
-          "y:3": 148,
+          "id:3": 20,
+          "x:3": 240,
+          "y:3": 192,
           "sizeX:3": 24,
           "sizeY:3": 24
         },
         "23:10": {
-          "id:3": 23,
-          "x:3": 104,
-          "y:3": 144,
-          "sizeX:3": 32,
-          "sizeY:3": 32
+          "id:3": 21,
+          "x:3": 300,
+          "y:3": 84,
+          "sizeX:3": 24,
+          "sizeY:3": 24
         },
         "24:10": {
-          "id:3": 24,
-          "x:3": 144,
+          "id:3": 22,
+          "x:3": 240,
           "y:3": 144,
-          "sizeX:3": 32,
-          "sizeY:3": 32
+          "sizeX:3": 24,
+          "sizeY:3": 24
         },
         "25:10": {
-          "id:3": 25,
-          "x:3": 144,
-          "y:3": 184,
+          "id:3": 23,
+          "x:3": 300,
+          "y:3": 192,
           "sizeX:3": 32,
           "sizeY:3": 32
         },
         "26:10": {
+          "id:3": 24,
+          "x:3": 372,
+          "y:3": 144,
+          "sizeX:3": 32,
+          "sizeY:3": 32
+        },
+        "27:10": {
+          "id:3": 25,
+          "x:3": 456,
+          "y:3": 144,
+          "sizeX:3": 32,
+          "sizeY:3": 32
+        },
+        "28:10": {
           "id:3": 28,
-          "x:3": 188,
-          "y:3": 188,
+          "x:3": 384,
+          "y:3": 0,
           "sizeX:3": 24,
           "sizeY:3": 24
         }
@@ -2987,162 +3422,197 @@
       "quests:9": {
         "0:10": {
           "id:3": 100,
-          "x:3": -12,
-          "y:3": -12,
+          "x:3": -192,
+          "y:3": 48,
           "sizeX:3": 24,
           "sizeY:3": 24
         },
         "1:10": {
-          "id:3": 101,
-          "x:3": -12,
-          "y:3": 28,
+          "id:3": 1226231121,
+          "x:3": -144,
+          "y:3": 48,
           "sizeX:3": 24,
           "sizeY:3": 24
         },
         "2:10": {
-          "id:3": 102,
-          "x:3": -12,
-          "y:3": 68,
+          "id:3": 1942058366,
+          "x:3": -144,
+          "y:3": 0,
           "sizeX:3": 24,
           "sizeY:3": 24
         },
         "3:10": {
-          "id:3": 103,
-          "x:3": -12,
-          "y:3": 108,
+          "id:3": 101,
+          "x:3": -84,
+          "y:3": 24,
           "sizeX:3": 24,
           "sizeY:3": 24
         },
         "4:10": {
-          "id:3": 104,
-          "x:3": -12,
-          "y:3": 148,
+          "id:3": 102,
+          "x:3": -108,
+          "y:3": 96,
           "sizeX:3": 24,
           "sizeY:3": 24
         },
         "5:10": {
-          "id:3": 110,
-          "x:3": 68,
-          "y:3": -12,
+          "id:3": 103,
+          "x:3": -60,
+          "y:3": 96,
           "sizeX:3": 24,
           "sizeY:3": 24
         },
         "6:10": {
-          "id:3": 111,
-          "x:3": 68,
-          "y:3": 28,
+          "id:3": 104,
+          "x:3": -192,
+          "y:3": 0,
           "sizeX:3": 24,
           "sizeY:3": 24
         },
         "7:10": {
-          "id:3": 112,
-          "x:3": 68,
-          "y:3": 68,
+          "id:3": 110,
+          "x:3": 72,
+          "y:3": 96,
           "sizeX:3": 24,
           "sizeY:3": 24
         },
         "8:10": {
-          "id:3": 113,
-          "x:3": 68,
-          "y:3": 108,
+          "id:3": 1665027210,
+          "x:3": 24,
+          "y:3": -48,
           "sizeX:3": 24,
           "sizeY:3": 24
         },
         "9:10": {
-          "id:3": 114,
-          "x:3": 68,
-          "y:3": 148,
+          "id:3": 111,
+          "x:3": 24,
+          "y:3": -96,
           "sizeX:3": 24,
           "sizeY:3": 24
         },
         "10:10": {
-          "id:3": 120,
-          "x:3": 148,
-          "y:3": -12,
+          "id:3": 112,
+          "x:3": 72,
+          "y:3": -48,
           "sizeX:3": 24,
           "sizeY:3": 24
         },
         "11:10": {
-          "id:3": 121,
-          "x:3": 148,
-          "y:3": 28,
+          "id:3": 113,
+          "x:3": 72,
+          "y:3": 0,
           "sizeX:3": 24,
           "sizeY:3": 24
         },
         "12:10": {
-          "id:3": 122,
-          "x:3": 148,
-          "y:3": 68,
+          "id:3": 114,
+          "x:3": 72,
+          "y:3": 48,
           "sizeX:3": 24,
           "sizeY:3": 24
         },
         "13:10": {
-          "id:3": 123,
-          "x:3": 148,
-          "y:3": 108,
+          "id:3": 1586696649,
+          "x:3": 24,
+          "y:3": 24,
           "sizeX:3": 24,
           "sizeY:3": 24
         },
         "14:10": {
-          "id:3": 124,
-          "x:3": 148,
-          "y:3": 148,
+          "id:3": 120,
+          "x:3": -12,
+          "y:3": 96,
           "sizeX:3": 24,
           "sizeY:3": 24
         },
         "15:10": {
-          "id:3": 130,
-          "x:3": 228,
-          "y:3": -12,
+          "id:3": 121,
+          "x:3": 144,
+          "y:3": -96,
           "sizeX:3": 24,
           "sizeY:3": 24
         },
         "16:10": {
-          "id:3": 131,
-          "x:3": 228,
-          "y:3": 28,
+          "id:3": 122,
+          "x:3": 144,
+          "y:3": -48,
           "sizeX:3": 24,
           "sizeY:3": 24
         },
         "17:10": {
-          "id:3": 132,
-          "x:3": 228,
-          "y:3": 68,
+          "id:3": 123,
+          "x:3": 144,
+          "y:3": 0,
           "sizeX:3": 24,
           "sizeY:3": 24
         },
         "18:10": {
-          "id:3": 140,
-          "x:3": 308,
-          "y:3": -12,
+          "id:3": 124,
+          "x:3": 144,
+          "y:3": 48,
           "sizeX:3": 24,
           "sizeY:3": 24
         },
         "19:10": {
-          "id:3": 141,
-          "x:3": 308,
-          "y:3": 28,
-          "sizeX:3": 24,
-          "sizeY:3": 24
+          "id:3": 409861656,
+          "x:3": -36,
+          "y:3": 0,
+          "sizeX:3": 36,
+          "sizeY:3": 36
         },
         "20:10": {
-          "id:3": 142,
-          "x:3": 308,
-          "y:3": 68,
+          "id:3": 130,
+          "x:3": 216,
+          "y:3": -96,
           "sizeX:3": 24,
           "sizeY:3": 24
         },
         "21:10": {
-          "id:3": 143,
-          "x:3": 308,
-          "y:3": 108,
+          "id:3": 131,
+          "x:3": 216,
+          "y:3": -48,
           "sizeX:3": 24,
           "sizeY:3": 24
         },
         "22:10": {
+          "id:3": 132,
+          "x:3": 216,
+          "y:3": 0,
+          "sizeX:3": 24,
+          "sizeY:3": 24
+        },
+        "23:10": {
+          "id:3": 140,
+          "x:3": 288,
+          "y:3": -96,
+          "sizeX:3": 24,
+          "sizeY:3": 24
+        },
+        "24:10": {
+          "id:3": 141,
+          "x:3": 288,
+          "y:3": -48,
+          "sizeX:3": 24,
+          "sizeY:3": 24
+        },
+        "25:10": {
+          "id:3": 142,
+          "x:3": 288,
+          "y:3": 0,
+          "sizeX:3": 24,
+          "sizeY:3": 24
+        },
+        "26:10": {
+          "id:3": 143,
+          "x:3": 288,
+          "y:3": 48,
+          "sizeX:3": 24,
+          "sizeY:3": 24
+        },
+        "27:10": {
           "id:3": 144,
-          "x:3": 308,
-          "y:3": 148,
+          "x:3": 288,
+          "y:3": 96,
           "sizeX:3": 24,
           "sizeY:3": 24
         }

@@ -10,7 +10,7 @@ hash = "e8e6cb3efc5bcee1e557dec361f42f769f1a0a0dce8fb29f44b368e00367dd23"
 
 [[files]]
 file = "config/betterquesting/DefaultQuests.json"
-hash = "f6fc196402a71d7ab23ff96dd75c2478fc98749bef490753d97c63ab8e7797b0"
+hash = "048879c747ab895869fcb292ae4d79c56405598561524f53713672bff3efb469"
 
 [[files]]
 file = "config/biomesoplenty/biomes/cherry_blossom_grove.json"
