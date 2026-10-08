@@ -46,19 +46,32 @@ PATH = [
          tasks=[retrieve(ore('logWood', 8, 'minecraft:log'))],
          desc="Chop a tree with your axe. §cTrees fall when you cut them§r - logs come crashing down, so step "
               "aside or you may get hit.\n\nLogs fuel everything in the primitive age: campfires, kilns, charcoal."),
-    dict(id=5, pos=(5, 2), requires=[4], name='Crude Hammer', icon=pyro('crude_hammer'),
-         tasks=[retrieve(pyro('crude_hammer'))],
-         desc="Hammers are how you craft on a Worktable and an Anvil: place the ingredients on top, then hit them."),
-    dict(id=6, pos=(6, 2), requires=[5], name='The Worktable', icon=pyro('worktable'),
-         tasks=[retrieve(pyro('worktable'))],
-         desc="There is no vanilla crafting table at the start. The §eWorktable§r replaces it: place the recipe "
-              "ingredients on top and strike it with your hammer.\n\nA proper crafting table comes much later."),
-    dict(id=7, pos=(7, 2), requires=[6], name='Chopping Block', icon=pyro('chopping_block'),
+    # --- Wood branch (row 1): log -> chopping block -> plank -> slab -> worktable ---
+    dict(id=7, pos=(5, 1), requires=[4], name='Chopping Block', icon=pyro('chopping_block'),
          tasks=[retrieve(pyro('chopping_block'))],
-         desc="Put a log on the Chopping Block and hit it with an axe to split it into planks and firewood.\n\n"
-              "Chopping is hard work: §eif nothing happens, you are too hungry§r."),
-    dict(id=8, pos=(8, 2), requires=[3], task_logic='OR', name='Shards', icon=mat(10),
-         tasks=[retrieve(mat(10)), retrieve(mat(11))],
+         desc="Your inventory crafting grid is all you have yet. Put §eany log + your axe§r into it to make a "
+              "§eChopping Block§r (the axe takes a little damage and comes back).\n\n"
+              "Place the chopping block on the ground - it is your first workstation."),
+    dict(id=5, pos=(6, 0), requires=[3], name='Crude Hammer', icon=pyro('crude_hammer'),
+         tasks=[retrieve(pyro('crude_hammer'))],
+         desc="Rocks + a stick + plant fibers. Hammers are how you craft on a §eWorktable§r and later an "
+              "§eAnvil§r: place the ingredients on top, then hit them with the hammer."),
+    dict(id=6, pos=(6, 1), requires=[7, 5], main=True, name='The Worktable', icon=pyro('worktable'),
+         tasks=[retrieve(ore('plankWood', 1, 'minecraft:planks'), optional=True),
+                retrieve(ore('slabWood', 1, 'minecraft:wooden_slab'), optional=True),
+                retrieve(pyro('worktable'))],
+         desc="The Worktable is §ea wooden slab on top of a log§r (inventory grid). Planks and slabs cannot be "
+              "crafted by hand - you split them on the chopping block:\n\n"
+              "1. §ePlank:§r right-click the chopping block with a §elog§r to put it on top, then hold your axe and "
+              "§ehit (left-click)§r the block until the log splits.\n"
+              "2. §eSlab:§r put one of those §eplanks§r on the block and hit it again.\n"
+              "3. §eWorktable:§r the slab on top of a log.\n\n"
+              "Chopping is hard work: §eif nothing happens, you are too hungry§r - eat something.\n\n"
+              "There is no vanilla crafting table at the start - the Worktable replaces it for every 3x3 recipe. "
+              "Right-click it to lay out a recipe, then §ehit it with your hammer§r until the item is done. "
+              "A real crafting table needs iron (see §eA Real Crafting Table§r)."),
+    dict(id=8, pos=(8, 2), requires=[3], name='Shards', icon=mat(10),
+         tasks=[retrieve(mat(10), mat(11), any_of=True)],
          desc="Sharper tools need §eflint shards§r or §ebone shards§r (either one works).\n\n"
               "- Flint shards: dig gravel with a shovel.\n- Bone shards: break bones on an anvil, or find them in fossils.\n"
               "Skeletons drop bones - but at night you have bigger problems than skeletons."),
@@ -133,20 +146,33 @@ PATH = [
          desc="An §eIron Anvil§r from HBM's Nuclear Tech - the first real machine of the old world. With it you can "
               "build the next generation of tools and begin to salvage the ruins for steel.\n\n"
               "§eThis is the end of the Primitive age.§r Next: the Scavenger age."),
+    dict(id=28, pos=(5, 5), requires=[24, 6], name='A Real Crafting Table', icon=item('minecraft:crafting_table'),
+         tasks=[retrieve(item('minecraft:crafting_table'))],
+         desc="With iron you can finally build a vanilla crafting table - no more hammering every recipe.\n\n"
+              "1. On the Worktable: §e8 iron ingots§r in a ring make a §eCrafting Table Template§r.\n"
+              "2. Then: the template surrounded by §e8 planks§r makes the §eCrafting Table§r."),
 ]
 
 ALIVE = [
     # --- Water (column 0) ---
     dict(id=100, pos=(0, 0), requires=[0], name='Thirst', icon=item('simpledifficulty:purified_water_bottle'), tasks=[checkbox()],
-         desc="You get thirsty as you move, work and fight. §eYou cannot drink straight from rivers or lakes§r - "
-              "water has to go into a bottle or a canteen first.\n\n"
+         desc="You get thirsty as you move, work and fight. In an emergency you can §edrink straight from a water "
+              "source§r: look at the water with an §eempty hand§r and right-click.\n\n"
               "- Water from normal biomes is §edirty§r: drinkable, but it can give you parasites. Boil or filter it.\n"
-              "- Water in §cwastelands, deserts and nuke craters is toxic§r. You cannot even fill a canteen there.\n"
-              "- Standing in the rain and looking up lets you drink rain water."),
+              "- §eSea water§r is salty: it makes you thirstier and sick to your stomach.\n"
+              "- Water in §cwastelands, deserts and nuke craters is toxic§r: poison and radiation with every sip. "
+              "You cannot even fill a canteen there.\n"
+              "- Standing in the rain and looking up lets you drink rain water.\n\n"
+              "If you start in the desert, head for green land and a river - then make a canteen."),
     dict(id=101, pos=(0, 1), requires=[100], task_logic='OR', name='Something to Drink From',
          icon=item('simpledifficulty:canteen'),
          tasks=[retrieve(item('simpledifficulty:canteen')), retrieve(item('minecraft:glass_bottle'))],
-         desc="A §eCanteen§r (leather) holds several drinks. Glass bottles work too - you will find empty and "
+         desc="A §eCanteen§r holds several drinks. Animals drop carcasses, not leather - make a §erawhide canteen§r:\n\n"
+              "1. Process a carcass with a §eButcher's Knife§r to get §epelts§r.\n"
+              "2. Scrape a pelt with a §eHunter's Knife§r (crafting grid) into a §escraped hide§r.\n"
+              "3. Wash it: craft it with a bucket of water, or leave it lying in water for a while.\n"
+              "4. §e3 washed hides + twine§r make the canteen.\n\n"
+              "Tanned leather (6 for a canteen) comes later. Glass bottles work too - you will find empty and "
               "full ones in ruined buildings long before you can make glass."),
     dict(id=102, pos=(0, 2), requires=[101, 10], name='Boil It', icon=item('simpledifficulty:purified_water_bottle'),
          tasks=[retrieve(item('simpledifficulty:purified_water_bottle'))],
@@ -196,7 +222,7 @@ ALIVE = [
          tasks=[retrieve(pyro('straw_bed')), retrieve(item('comforts:sleeping_bag', 1, 32767))],
          desc="A §estraw bed§r is cheap; a §esleeping bag§r (wool) can be carried. Sleeping skips the night - "
               "except when the horde is coming."),
-    dict(id=123, pos=(4, 3), requires=[7], task_logic='OR', name='Storage', icon=pyro('crate'),
+    dict(id=123, pos=(4, 3), requires=[6], task_logic='OR', name='Storage', icon=pyro('crate'),
          tasks=[retrieve(pyro('crate')), retrieve(pyro('stash')), retrieve(item('storagedrawers:basicdrawers', 1, 32767))],
          desc="Crates, stashes and drawers keep your loot safe. A §eRock Bag§r collects rocks automatically."),
     dict(id=124, pos=(4, 4), requires=[121], name='The Horde', icon=item('minecraft:rotten_flesh'), tasks=[checkbox()],

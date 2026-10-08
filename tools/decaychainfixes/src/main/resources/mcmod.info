@@ -1,0 +1,8 @@
+[{
+  "modid": "decaychainfixes",
+  "name": "Decay Chain Fixes",
+  "description": "Mixin fixes for third-party mod bugs in the Decay Chain modpack.",
+  "version": "1.0.0",
+  "mcversion": "1.12.2",
+  "authorList": ["AlexCatze"]
+}]

@@ -4,3 +4,5 @@ decaychain.water.toxic_bucket=§cThe water here is too toxic to carry in a bucke
 fluid.decaychain.diesel.name=Diesel
 fluid.decaychain.gasoline.name=Gasoline
 fluid.decaychain.kerosene.name=Kerosene
+decaychain.water.toxic_sip=§cThe water burns your throat. It is poisoned and radioactive.
+decaychain.water.salty_sip=§eSalt water. It only makes you thirstier.

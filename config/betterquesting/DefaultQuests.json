@@ -4,7 +4,7 @@
   "questSettings:10": {
     "betterquesting:10": {
       "pack_name:8": "Decay Chain",
-      "pack_version:3": 2,
+      "pack_version:3": 7,
       "editMode:1": 0,
       "hardcore:1": 0,
       "lockTray:1": 0,
@@ -105,6 +105,7 @@
           "ignoreNBT:1": 1,
           "partialMatch:1": 1,
           "entryLogic:8": "AND",
+          "optional:1": 0,
           "index:3": 0
         }
       },
@@ -163,6 +164,7 @@
           "ignoreNBT:1": 1,
           "partialMatch:1": 1,
           "entryLogic:8": "AND",
+          "optional:1": 0,
           "index:3": 0
         }
       },
@@ -221,6 +223,7 @@
           "ignoreNBT:1": 1,
           "partialMatch:1": 1,
           "entryLogic:8": "AND",
+          "optional:1": 0,
           "index:3": 0
         }
       },
@@ -273,124 +276,21 @@
           "ignoreNBT:1": 1,
           "partialMatch:1": 1,
           "entryLogic:8": "AND",
+          "optional:1": 0,
           "index:3": 0
         }
       },
       "rewards:9": {}
     },
     "5:10": {
-      "questID:3": 5,
+      "questID:3": 7,
       "preRequisites:11": [
         4
       ],
       "properties:10": {
         "betterquesting:10": {
-          "name:8": "Crude Hammer",
-          "desc:8": "Hammers are how you craft on a Worktable and an Anvil: place the ingredients on top, then hit them.",
-          "icon:10": {
-            "id:8": "pyrotech:crude_hammer",
-            "Count:3": 1,
-            "Damage:2": 0,
-            "OreDict:8": ""
-          },
-          "isMain:1": 0,
-          "isSilent:1": 0,
-          "autoClaim:1": 1,
-          "globalShare:1": 0,
-          "lockedProgress:1": 0,
-          "simultaneous:1": 0,
-          "repeatTime:3": -1,
-          "repeat_relative:1": 1,
-          "questLogic:8": "AND",
-          "taskLogic:8": "AND",
-          "visibility:8": "NORMAL",
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "snd_update:8": "minecraft:entity.player.levelup"
-        }
-      },
-      "tasks:9": {
-        "0:10": {
-          "taskID:8": "bq_standard:retrieval",
-          "requiredItems:9": {
-            "0:10": {
-              "id:8": "pyrotech:crude_hammer",
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            }
-          },
-          "consume:1": 0,
-          "autoConsume:1": 0,
-          "groupDetect:1": 0,
-          "ignoreNBT:1": 1,
-          "partialMatch:1": 1,
-          "entryLogic:8": "AND",
-          "index:3": 0
-        }
-      },
-      "rewards:9": {}
-    },
-    "6:10": {
-      "questID:3": 6,
-      "preRequisites:11": [
-        5
-      ],
-      "properties:10": {
-        "betterquesting:10": {
-          "name:8": "The Worktable",
-          "desc:8": "There is no vanilla crafting table at the start. The §eWorktable§r replaces it: place the recipe ingredients on top and strike it with your hammer.\n\nA proper crafting table comes much later.",
-          "icon:10": {
-            "id:8": "pyrotech:worktable",
-            "Count:3": 1,
-            "Damage:2": 0,
-            "OreDict:8": ""
-          },
-          "isMain:1": 0,
-          "isSilent:1": 0,
-          "autoClaim:1": 1,
-          "globalShare:1": 0,
-          "lockedProgress:1": 0,
-          "simultaneous:1": 0,
-          "repeatTime:3": -1,
-          "repeat_relative:1": 1,
-          "questLogic:8": "AND",
-          "taskLogic:8": "AND",
-          "visibility:8": "NORMAL",
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "snd_update:8": "minecraft:entity.player.levelup"
-        }
-      },
-      "tasks:9": {
-        "0:10": {
-          "taskID:8": "bq_standard:retrieval",
-          "requiredItems:9": {
-            "0:10": {
-              "id:8": "pyrotech:worktable",
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            }
-          },
-          "consume:1": 0,
-          "autoConsume:1": 0,
-          "groupDetect:1": 0,
-          "ignoreNBT:1": 1,
-          "partialMatch:1": 1,
-          "entryLogic:8": "AND",
-          "index:3": 0
-        }
-      },
-      "rewards:9": {}
-    },
-    "7:10": {
-      "questID:3": 7,
-      "preRequisites:11": [
-        6
-      ],
-      "properties:10": {
-        "betterquesting:10": {
           "name:8": "Chopping Block",
-          "desc:8": "Put a log on the Chopping Block and hit it with an axe to split it into planks and firewood.\n\nChopping is hard work: §eif nothing happens, you are too hungry§r.",
+          "desc:8": "Your inventory crafting grid is all you have yet. Put §eany log + your axe§r into it to make a §eChopping Block§r (the axe takes a little damage and comes back).\n\nPlace the chopping block on the ground - it is your first workstation.",
           "icon:10": {
             "id:8": "pyrotech:chopping_block",
             "Count:3": 1,
@@ -429,7 +329,153 @@
           "ignoreNBT:1": 1,
           "partialMatch:1": 1,
           "entryLogic:8": "AND",
+          "optional:1": 0,
           "index:3": 0
+        }
+      },
+      "rewards:9": {}
+    },
+    "6:10": {
+      "questID:3": 5,
+      "preRequisites:11": [
+        3
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "name:8": "Crude Hammer",
+          "desc:8": "Rocks + a stick + plant fibers. Hammers are how you craft on a §eWorktable§r and later an §eAnvil§r: place the ingredients on top, then hit them with the hammer.",
+          "icon:10": {
+            "id:8": "pyrotech:crude_hammer",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "isMain:1": 0,
+          "isSilent:1": 0,
+          "autoClaim:1": 1,
+          "globalShare:1": 0,
+          "lockedProgress:1": 0,
+          "simultaneous:1": 0,
+          "repeatTime:3": -1,
+          "repeat_relative:1": 1,
+          "questLogic:8": "AND",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "pyrotech:crude_hammer",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "optional:1": 0,
+          "index:3": 0
+        }
+      },
+      "rewards:9": {}
+    },
+    "7:10": {
+      "questID:3": 6,
+      "preRequisites:11": [
+        7,
+        5
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "name:8": "The Worktable",
+          "desc:8": "The Worktable is §ea wooden slab on top of a log§r (inventory grid). Planks and slabs cannot be crafted by hand - you split them on the chopping block:\n\n1. §ePlank:§r right-click the chopping block with a §elog§r to put it on top, then hold your axe and §ehit (left-click)§r the block until the log splits.\n2. §eSlab:§r put one of those §eplanks§r on the block and hit it again.\n3. §eWorktable:§r the slab on top of a log.\n\nChopping is hard work: §eif nothing happens, you are too hungry§r - eat something.\n\nThere is no vanilla crafting table at the start - the Worktable replaces it for every 3x3 recipe. Right-click it to lay out a recipe, then §ehit it with your hammer§r until the item is done. A real crafting table needs iron (see §eA Real Crafting Table§r).",
+          "icon:10": {
+            "id:8": "pyrotech:worktable",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "isMain:1": 1,
+          "isSilent:1": 0,
+          "autoClaim:1": 1,
+          "globalShare:1": 0,
+          "lockedProgress:1": 0,
+          "simultaneous:1": 0,
+          "repeatTime:3": -1,
+          "repeat_relative:1": 1,
+          "questLogic:8": "AND",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "minecraft:planks",
+              "Count:3": 1,
+              "Damage:2": 32767,
+              "OreDict:8": "plankWood"
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "optional:1": 1,
+          "index:3": 0
+        },
+        "1:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "minecraft:wooden_slab",
+              "Count:3": 1,
+              "Damage:2": 32767,
+              "OreDict:8": "slabWood"
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "optional:1": 1,
+          "index:3": 1
+        },
+        "2:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "pyrotech:worktable",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "optional:1": 0,
+          "index:3": 2
         }
       },
       "rewards:9": {}
@@ -458,7 +504,7 @@
           "repeatTime:3": -1,
           "repeat_relative:1": 1,
           "questLogic:8": "AND",
-          "taskLogic:8": "OR",
+          "taskLogic:8": "AND",
           "visibility:8": "NORMAL",
           "snd_complete:8": "minecraft:entity.player.levelup",
           "snd_update:8": "minecraft:entity.player.levelup"
@@ -473,20 +519,8 @@
               "Count:3": 1,
               "Damage:2": 10,
               "OreDict:8": ""
-            }
-          },
-          "consume:1": 0,
-          "autoConsume:1": 0,
-          "groupDetect:1": 0,
-          "ignoreNBT:1": 1,
-          "partialMatch:1": 1,
-          "entryLogic:8": "AND",
-          "index:3": 0
-        },
-        "1:10": {
-          "taskID:8": "bq_standard:retrieval",
-          "requiredItems:9": {
-            "0:10": {
+            },
+            "1:10": {
               "id:8": "pyrotech:material",
               "Count:3": 1,
               "Damage:2": 11,
@@ -498,8 +532,9 @@
           "groupDetect:1": 0,
           "ignoreNBT:1": 1,
           "partialMatch:1": 1,
-          "entryLogic:8": "AND",
-          "index:3": 1
+          "entryLogic:8": "OR",
+          "optional:1": 0,
+          "index:3": 0
         }
       },
       "rewards:9": {}
@@ -551,6 +586,7 @@
           "ignoreNBT:1": 1,
           "partialMatch:1": 1,
           "entryLogic:8": "AND",
+          "optional:1": 0,
           "index:3": 0
         }
       },
@@ -611,6 +647,7 @@
           "ignoreNBT:1": 1,
           "partialMatch:1": 1,
           "entryLogic:8": "AND",
+          "optional:1": 0,
           "index:3": 0
         }
       },
@@ -656,20 +693,8 @@
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
-            }
-          },
-          "consume:1": 0,
-          "autoConsume:1": 0,
-          "groupDetect:1": 0,
-          "ignoreNBT:1": 1,
-          "partialMatch:1": 1,
-          "entryLogic:8": "AND",
-          "index:3": 0
-        },
-        "1:10": {
-          "taskID:8": "bq_standard:retrieval",
-          "requiredItems:9": {
-            "0:10": {
+            },
+            "1:10": {
               "id:8": "pyrotech:bone_pickaxe",
               "Count:3": 1,
               "Damage:2": 0,
@@ -681,8 +706,9 @@
           "groupDetect:1": 0,
           "ignoreNBT:1": 1,
           "partialMatch:1": 1,
-          "entryLogic:8": "AND",
-          "index:3": 1
+          "entryLogic:8": "OR",
+          "optional:1": 0,
+          "index:3": 0
         }
       },
       "rewards:9": {}
@@ -734,6 +760,7 @@
           "ignoreNBT:1": 1,
           "partialMatch:1": 1,
           "entryLogic:8": "AND",
+          "optional:1": 0,
           "index:3": 0
         }
       },
@@ -792,6 +819,7 @@
           "ignoreNBT:1": 1,
           "partialMatch:1": 1,
           "entryLogic:8": "AND",
+          "optional:1": 0,
           "index:3": 0
         }
       },
@@ -844,6 +872,7 @@
           "ignoreNBT:1": 1,
           "partialMatch:1": 1,
           "entryLogic:8": "AND",
+          "optional:1": 0,
           "index:3": 0
         }
       },
@@ -898,6 +927,7 @@
           "ignoreNBT:1": 1,
           "partialMatch:1": 1,
           "entryLogic:8": "AND",
+          "optional:1": 0,
           "index:3": 0
         }
       },
@@ -950,6 +980,7 @@
           "ignoreNBT:1": 1,
           "partialMatch:1": 1,
           "entryLogic:8": "AND",
+          "optional:1": 0,
           "index:3": 0
         }
       },
@@ -1002,6 +1033,7 @@
           "ignoreNBT:1": 1,
           "partialMatch:1": 1,
           "entryLogic:8": "AND",
+          "optional:1": 0,
           "index:3": 0
         }
       },
@@ -1046,20 +1078,8 @@
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
-            }
-          },
-          "consume:1": 0,
-          "autoConsume:1": 0,
-          "groupDetect:1": 0,
-          "ignoreNBT:1": 1,
-          "partialMatch:1": 1,
-          "entryLogic:8": "AND",
-          "index:3": 0
-        },
-        "1:10": {
-          "taskID:8": "bq_standard:retrieval",
-          "requiredItems:9": {
-            "0:10": {
+            },
+            "1:10": {
               "id:8": "pyrotech:stone_oven",
               "Count:3": 1,
               "Damage:2": 0,
@@ -1071,8 +1091,9 @@
           "groupDetect:1": 0,
           "ignoreNBT:1": 1,
           "partialMatch:1": 1,
-          "entryLogic:8": "AND",
-          "index:3": 1
+          "entryLogic:8": "OR",
+          "optional:1": 0,
+          "index:3": 0
         }
       },
       "rewards:9": {}
@@ -1124,6 +1145,7 @@
           "ignoreNBT:1": 1,
           "partialMatch:1": 1,
           "entryLogic:8": "AND",
+          "optional:1": 0,
           "index:3": 0
         }
       },
@@ -1176,6 +1198,7 @@
           "ignoreNBT:1": 1,
           "partialMatch:1": 1,
           "entryLogic:8": "AND",
+          "optional:1": 0,
           "index:3": 0
         }
       },
@@ -1228,6 +1251,7 @@
           "ignoreNBT:1": 1,
           "partialMatch:1": 1,
           "entryLogic:8": "AND",
+          "optional:1": 0,
           "index:3": 0
         }
       },
@@ -1272,20 +1296,8 @@
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
-            }
-          },
-          "consume:1": 0,
-          "autoConsume:1": 0,
-          "groupDetect:1": 0,
-          "ignoreNBT:1": 1,
-          "partialMatch:1": 1,
-          "entryLogic:8": "AND",
-          "index:3": 0
-        },
-        "1:10": {
-          "taskID:8": "bq_standard:retrieval",
-          "requiredItems:9": {
-            "0:10": {
+            },
+            "1:10": {
               "id:8": "pyrotech:tongs_bone",
               "Count:3": 1,
               "Damage:2": 0,
@@ -1297,8 +1309,9 @@
           "groupDetect:1": 0,
           "ignoreNBT:1": 1,
           "partialMatch:1": 1,
-          "entryLogic:8": "AND",
-          "index:3": 1
+          "entryLogic:8": "OR",
+          "optional:1": 0,
+          "index:3": 0
         }
       },
       "rewards:9": {}
@@ -1353,6 +1366,7 @@
           "ignoreNBT:1": 1,
           "partialMatch:1": 1,
           "entryLogic:8": "AND",
+          "optional:1": 0,
           "index:3": 0
         }
       },
@@ -1406,6 +1420,7 @@
           "ignoreNBT:1": 1,
           "partialMatch:1": 1,
           "entryLogic:8": "AND",
+          "optional:1": 0,
           "index:3": 0
         }
       },
@@ -1458,12 +1473,67 @@
           "ignoreNBT:1": 1,
           "partialMatch:1": 1,
           "entryLogic:8": "AND",
+          "optional:1": 0,
           "index:3": 0
         }
       },
       "rewards:9": {}
     },
     "26:10": {
+      "questID:3": 28,
+      "preRequisites:11": [
+        24,
+        6
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "name:8": "A Real Crafting Table",
+          "desc:8": "With iron you can finally build a vanilla crafting table - no more hammering every recipe.\n\n1. On the Worktable: §e8 iron ingots§r in a ring make a §eCrafting Table Template§r.\n2. Then: the template surrounded by §e8 planks§r makes the §eCrafting Table§r.",
+          "icon:10": {
+            "id:8": "minecraft:crafting_table",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "isMain:1": 0,
+          "isSilent:1": 0,
+          "autoClaim:1": 1,
+          "globalShare:1": 0,
+          "lockedProgress:1": 0,
+          "simultaneous:1": 0,
+          "repeatTime:3": -1,
+          "repeat_relative:1": 1,
+          "questLogic:8": "AND",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "minecraft:crafting_table",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "optional:1": 0,
+          "index:3": 0
+        }
+      },
+      "rewards:9": {}
+    },
+    "27:10": {
       "questID:3": 100,
       "preRequisites:11": [
         0
@@ -1471,7 +1541,7 @@
       "properties:10": {
         "betterquesting:10": {
           "name:8": "Thirst",
-          "desc:8": "You get thirsty as you move, work and fight. §eYou cannot drink straight from rivers or lakes§r - water has to go into a bottle or a canteen first.\n\n- Water from normal biomes is §edirty§r: drinkable, but it can give you parasites. Boil or filter it.\n- Water in §cwastelands, deserts and nuke craters is toxic§r. You cannot even fill a canteen there.\n- Standing in the rain and looking up lets you drink rain water.",
+          "desc:8": "You get thirsty as you move, work and fight. In an emergency you can §edrink straight from a water source§r: look at the water with an §eempty hand§r and right-click.\n\n- Water from normal biomes is §edirty§r: drinkable, but it can give you parasites. Boil or filter it.\n- §eSea water§r is salty: it makes you thirstier and sick to your stomach.\n- Water in §cwastelands, deserts and nuke craters is toxic§r: poison and radiation with every sip. You cannot even fill a canteen there.\n- Standing in the rain and looking up lets you drink rain water.\n\nIf you start in the desert, head for green land and a river - then make a canteen.",
           "icon:10": {
             "id:8": "simpledifficulty:purified_water_bottle",
             "Count:3": 1,
@@ -1501,7 +1571,7 @@
       },
       "rewards:9": {}
     },
-    "27:10": {
+    "28:10": {
       "questID:3": 101,
       "preRequisites:11": [
         100
@@ -1509,7 +1579,7 @@
       "properties:10": {
         "betterquesting:10": {
           "name:8": "Something to Drink From",
-          "desc:8": "A §eCanteen§r (leather) holds several drinks. Glass bottles work too - you will find empty and full ones in ruined buildings long before you can make glass.",
+          "desc:8": "A §eCanteen§r holds several drinks. Animals drop carcasses, not leather - make a §erawhide canteen§r:\n\n1. Process a carcass with a §eButcher's Knife§r to get §epelts§r.\n2. Scrape a pelt with a §eHunter's Knife§r (crafting grid) into a §escraped hide§r.\n3. Wash it: craft it with a bucket of water, or leave it lying in water for a while.\n4. §e3 washed hides + twine§r make the canteen.\n\nTanned leather (6 for a canteen) comes later. Glass bottles work too - you will find empty and full ones in ruined buildings long before you can make glass.",
           "icon:10": {
             "id:8": "simpledifficulty:canteen",
             "Count:3": 1,
@@ -1540,20 +1610,8 @@
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
-            }
-          },
-          "consume:1": 0,
-          "autoConsume:1": 0,
-          "groupDetect:1": 0,
-          "ignoreNBT:1": 1,
-          "partialMatch:1": 1,
-          "entryLogic:8": "AND",
-          "index:3": 0
-        },
-        "1:10": {
-          "taskID:8": "bq_standard:retrieval",
-          "requiredItems:9": {
-            "0:10": {
+            },
+            "1:10": {
               "id:8": "minecraft:glass_bottle",
               "Count:3": 1,
               "Damage:2": 0,
@@ -1565,13 +1623,14 @@
           "groupDetect:1": 0,
           "ignoreNBT:1": 1,
           "partialMatch:1": 1,
-          "entryLogic:8": "AND",
-          "index:3": 1
+          "entryLogic:8": "OR",
+          "optional:1": 0,
+          "index:3": 0
         }
       },
       "rewards:9": {}
     },
-    "28:10": {
+    "29:10": {
       "questID:3": 102,
       "preRequisites:11": [
         101,
@@ -1619,12 +1678,13 @@
           "ignoreNBT:1": 1,
           "partialMatch:1": 1,
           "entryLogic:8": "AND",
+          "optional:1": 0,
           "index:3": 0
         }
       },
       "rewards:9": {}
     },
-    "29:10": {
+    "30:10": {
       "questID:3": 103,
       "preRequisites:11": [
         101,
@@ -1672,12 +1732,13 @@
           "ignoreNBT:1": 1,
           "partialMatch:1": 1,
           "entryLogic:8": "AND",
+          "optional:1": 0,
           "index:3": 0
         }
       },
       "rewards:9": {}
     },
-    "30:10": {
+    "31:10": {
       "questID:3": 104,
       "preRequisites:11": [
         100
@@ -1715,7 +1776,7 @@
       },
       "rewards:9": {}
     },
-    "31:10": {
+    "32:10": {
       "questID:3": 110,
       "preRequisites:11": [
         0
@@ -1754,20 +1815,8 @@
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
-            }
-          },
-          "consume:1": 0,
-          "autoConsume:1": 0,
-          "groupDetect:1": 0,
-          "ignoreNBT:1": 1,
-          "partialMatch:1": 1,
-          "entryLogic:8": "AND",
-          "index:3": 0
-        },
-        "1:10": {
-          "taskID:8": "bq_standard:retrieval",
-          "requiredItems:9": {
-            "0:10": {
+            },
+            "1:10": {
               "id:8": "pyrotech:freckleberries",
               "Count:3": 1,
               "Damage:2": 0,
@@ -1779,13 +1828,14 @@
           "groupDetect:1": 0,
           "ignoreNBT:1": 1,
           "partialMatch:1": 1,
-          "entryLogic:8": "AND",
-          "index:3": 1
+          "entryLogic:8": "OR",
+          "optional:1": 0,
+          "index:3": 0
         }
       },
       "rewards:9": {}
     },
-    "32:10": {
+    "33:10": {
       "questID:3": 111,
       "preRequisites:11": [
         3
@@ -1832,12 +1882,13 @@
           "ignoreNBT:1": 1,
           "partialMatch:1": 1,
           "entryLogic:8": "AND",
+          "optional:1": 0,
           "index:3": 0
         }
       },
       "rewards:9": {}
     },
-    "33:10": {
+    "34:10": {
       "questID:3": 112,
       "preRequisites:11": [
         10
@@ -1876,92 +1927,32 @@
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
-            }
-          },
-          "consume:1": 0,
-          "autoConsume:1": 0,
-          "groupDetect:1": 0,
-          "ignoreNBT:1": 1,
-          "partialMatch:1": 1,
-          "entryLogic:8": "AND",
-          "index:3": 0
-        },
-        "1:10": {
-          "taskID:8": "bq_standard:retrieval",
-          "requiredItems:9": {
-            "0:10": {
+            },
+            "1:10": {
               "id:8": "minecraft:cooked_beef",
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
-            }
-          },
-          "consume:1": 0,
-          "autoConsume:1": 0,
-          "groupDetect:1": 0,
-          "ignoreNBT:1": 1,
-          "partialMatch:1": 1,
-          "entryLogic:8": "AND",
-          "index:3": 1
-        },
-        "2:10": {
-          "taskID:8": "bq_standard:retrieval",
-          "requiredItems:9": {
-            "0:10": {
+            },
+            "2:10": {
               "id:8": "minecraft:cooked_mutton",
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
-            }
-          },
-          "consume:1": 0,
-          "autoConsume:1": 0,
-          "groupDetect:1": 0,
-          "ignoreNBT:1": 1,
-          "partialMatch:1": 1,
-          "entryLogic:8": "AND",
-          "index:3": 2
-        },
-        "3:10": {
-          "taskID:8": "bq_standard:retrieval",
-          "requiredItems:9": {
-            "0:10": {
+            },
+            "3:10": {
               "id:8": "minecraft:cooked_chicken",
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
-            }
-          },
-          "consume:1": 0,
-          "autoConsume:1": 0,
-          "groupDetect:1": 0,
-          "ignoreNBT:1": 1,
-          "partialMatch:1": 1,
-          "entryLogic:8": "AND",
-          "index:3": 3
-        },
-        "4:10": {
-          "taskID:8": "bq_standard:retrieval",
-          "requiredItems:9": {
-            "0:10": {
+            },
+            "4:10": {
               "id:8": "minecraft:cooked_rabbit",
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
-            }
-          },
-          "consume:1": 0,
-          "autoConsume:1": 0,
-          "groupDetect:1": 0,
-          "ignoreNBT:1": 1,
-          "partialMatch:1": 1,
-          "entryLogic:8": "AND",
-          "index:3": 4
-        },
-        "5:10": {
-          "taskID:8": "bq_standard:retrieval",
-          "requiredItems:9": {
-            "0:10": {
+            },
+            "5:10": {
               "id:8": "minecraft:baked_potato",
               "Count:3": 1,
               "Damage:2": 0,
@@ -1973,13 +1964,14 @@
           "groupDetect:1": 0,
           "ignoreNBT:1": 1,
           "partialMatch:1": 1,
-          "entryLogic:8": "AND",
-          "index:3": 5
+          "entryLogic:8": "OR",
+          "optional:1": 0,
+          "index:3": 0
         }
       },
       "rewards:9": {}
     },
-    "34:10": {
+    "35:10": {
       "questID:3": 113,
       "preRequisites:11": [
         110
@@ -2026,12 +2018,13 @@
           "ignoreNBT:1": 1,
           "partialMatch:1": 1,
           "entryLogic:8": "AND",
+          "optional:1": 0,
           "index:3": 0
         }
       },
       "rewards:9": {}
     },
-    "35:10": {
+    "36:10": {
       "questID:3": 114,
       "preRequisites:11": [
         110
@@ -2070,92 +2063,32 @@
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
-            }
-          },
-          "consume:1": 0,
-          "autoConsume:1": 0,
-          "groupDetect:1": 0,
-          "ignoreNBT:1": 1,
-          "partialMatch:1": 1,
-          "entryLogic:8": "AND",
-          "index:3": 0
-        },
-        "1:10": {
-          "taskID:8": "bq_standard:retrieval",
-          "requiredItems:9": {
-            "0:10": {
+            },
+            "1:10": {
               "id:8": "harvestcraft:frostgarden",
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
-            }
-          },
-          "consume:1": 0,
-          "autoConsume:1": 0,
-          "groupDetect:1": 0,
-          "ignoreNBT:1": 1,
-          "partialMatch:1": 1,
-          "entryLogic:8": "AND",
-          "index:3": 1
-        },
-        "2:10": {
-          "taskID:8": "bq_standard:retrieval",
-          "requiredItems:9": {
-            "0:10": {
+            },
+            "2:10": {
               "id:8": "harvestcraft:shadedgarden",
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
-            }
-          },
-          "consume:1": 0,
-          "autoConsume:1": 0,
-          "groupDetect:1": 0,
-          "ignoreNBT:1": 1,
-          "partialMatch:1": 1,
-          "entryLogic:8": "AND",
-          "index:3": 2
-        },
-        "3:10": {
-          "taskID:8": "bq_standard:retrieval",
-          "requiredItems:9": {
-            "0:10": {
+            },
+            "3:10": {
               "id:8": "harvestcraft:soggygarden",
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
-            }
-          },
-          "consume:1": 0,
-          "autoConsume:1": 0,
-          "groupDetect:1": 0,
-          "ignoreNBT:1": 1,
-          "partialMatch:1": 1,
-          "entryLogic:8": "AND",
-          "index:3": 3
-        },
-        "4:10": {
-          "taskID:8": "bq_standard:retrieval",
-          "requiredItems:9": {
-            "0:10": {
+            },
+            "4:10": {
               "id:8": "harvestcraft:tropicalgarden",
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
-            }
-          },
-          "consume:1": 0,
-          "autoConsume:1": 0,
-          "groupDetect:1": 0,
-          "ignoreNBT:1": 1,
-          "partialMatch:1": 1,
-          "entryLogic:8": "AND",
-          "index:3": 4
-        },
-        "5:10": {
-          "taskID:8": "bq_standard:retrieval",
-          "requiredItems:9": {
-            "0:10": {
+            },
+            "5:10": {
               "id:8": "harvestcraft:windygarden",
               "Count:3": 1,
               "Damage:2": 0,
@@ -2167,13 +2100,14 @@
           "groupDetect:1": 0,
           "ignoreNBT:1": 1,
           "partialMatch:1": 1,
-          "entryLogic:8": "AND",
-          "index:3": 5
+          "entryLogic:8": "OR",
+          "optional:1": 0,
+          "index:3": 0
         }
       },
       "rewards:9": {}
     },
-    "36:10": {
+    "37:10": {
       "questID:3": 120,
       "preRequisites:11": [
         2
@@ -2220,12 +2154,13 @@
           "ignoreNBT:1": 1,
           "partialMatch:1": 1,
           "entryLogic:8": "AND",
+          "optional:1": 0,
           "index:3": 0
         }
       },
       "rewards:9": {}
     },
-    "37:10": {
+    "38:10": {
       "questID:3": 121,
       "preRequisites:11": [
         1
@@ -2272,12 +2207,13 @@
           "ignoreNBT:1": 1,
           "partialMatch:1": 1,
           "entryLogic:8": "AND",
+          "optional:1": 0,
           "index:3": 0
         }
       },
       "rewards:9": {}
     },
-    "38:10": {
+    "39:10": {
       "questID:3": 122,
       "preRequisites:11": [
         121
@@ -2316,20 +2252,8 @@
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
-            }
-          },
-          "consume:1": 0,
-          "autoConsume:1": 0,
-          "groupDetect:1": 0,
-          "ignoreNBT:1": 1,
-          "partialMatch:1": 1,
-          "entryLogic:8": "AND",
-          "index:3": 0
-        },
-        "1:10": {
-          "taskID:8": "bq_standard:retrieval",
-          "requiredItems:9": {
-            "0:10": {
+            },
+            "1:10": {
               "id:8": "comforts:sleeping_bag",
               "Count:3": 1,
               "Damage:2": 32767,
@@ -2341,16 +2265,17 @@
           "groupDetect:1": 0,
           "ignoreNBT:1": 1,
           "partialMatch:1": 1,
-          "entryLogic:8": "AND",
-          "index:3": 1
+          "entryLogic:8": "OR",
+          "optional:1": 0,
+          "index:3": 0
         }
       },
       "rewards:9": {}
     },
-    "39:10": {
+    "40:10": {
       "questID:3": 123,
       "preRequisites:11": [
-        7
+        6
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -2386,38 +2311,14 @@
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
-            }
-          },
-          "consume:1": 0,
-          "autoConsume:1": 0,
-          "groupDetect:1": 0,
-          "ignoreNBT:1": 1,
-          "partialMatch:1": 1,
-          "entryLogic:8": "AND",
-          "index:3": 0
-        },
-        "1:10": {
-          "taskID:8": "bq_standard:retrieval",
-          "requiredItems:9": {
-            "0:10": {
+            },
+            "1:10": {
               "id:8": "pyrotech:stash",
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
-            }
-          },
-          "consume:1": 0,
-          "autoConsume:1": 0,
-          "groupDetect:1": 0,
-          "ignoreNBT:1": 1,
-          "partialMatch:1": 1,
-          "entryLogic:8": "AND",
-          "index:3": 1
-        },
-        "2:10": {
-          "taskID:8": "bq_standard:retrieval",
-          "requiredItems:9": {
-            "0:10": {
+            },
+            "2:10": {
               "id:8": "storagedrawers:basicdrawers",
               "Count:3": 1,
               "Damage:2": 32767,
@@ -2429,13 +2330,14 @@
           "groupDetect:1": 0,
           "ignoreNBT:1": 1,
           "partialMatch:1": 1,
-          "entryLogic:8": "AND",
-          "index:3": 2
+          "entryLogic:8": "OR",
+          "optional:1": 0,
+          "index:3": 0
         }
       },
       "rewards:9": {}
     },
-    "40:10": {
+    "41:10": {
       "questID:3": 124,
       "preRequisites:11": [
         121
@@ -2473,7 +2375,7 @@
       },
       "rewards:9": {}
     },
-    "41:10": {
+    "42:10": {
       "questID:3": 130,
       "preRequisites:11": [
         0
@@ -2512,20 +2414,8 @@
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
-            }
-          },
-          "consume:1": 0,
-          "autoConsume:1": 0,
-          "groupDetect:1": 0,
-          "ignoreNBT:1": 1,
-          "partialMatch:1": 1,
-          "entryLogic:8": "AND",
-          "index:3": 0
-        },
-        "1:10": {
-          "taskID:8": "bq_standard:retrieval",
-          "requiredItems:9": {
-            "0:10": {
+            },
+            "1:10": {
               "id:8": "firstaid:bandage",
               "Count:3": 1,
               "Damage:2": 0,
@@ -2537,13 +2427,14 @@
           "groupDetect:1": 0,
           "ignoreNBT:1": 1,
           "partialMatch:1": 1,
-          "entryLogic:8": "AND",
-          "index:3": 1
+          "entryLogic:8": "OR",
+          "optional:1": 0,
+          "index:3": 0
         }
       },
       "rewards:9": {}
     },
-    "42:10": {
+    "43:10": {
       "questID:3": 131,
       "preRequisites:11": [
         0
@@ -2581,7 +2472,7 @@
       },
       "rewards:9": {}
     },
-    "43:10": {
+    "44:10": {
       "questID:3": 132,
       "preRequisites:11": [
         0
@@ -2619,7 +2510,7 @@
       },
       "rewards:9": {}
     },
-    "44:10": {
+    "45:10": {
       "questID:3": 140,
       "preRequisites:11": [
         0
@@ -2657,7 +2548,7 @@
       },
       "rewards:9": {}
     },
-    "45:10": {
+    "46:10": {
       "questID:3": 141,
       "preRequisites:11": [
         0
@@ -2695,7 +2586,7 @@
       },
       "rewards:9": {}
     },
-    "46:10": {
+    "47:10": {
       "questID:3": 142,
       "preRequisites:11": [
         0
@@ -2733,7 +2624,7 @@
       },
       "rewards:9": {}
     },
-    "47:10": {
+    "48:10": {
       "questID:3": 143,
       "preRequisites:11": [
         3
@@ -2772,74 +2663,26 @@
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
-            }
-          },
-          "consume:1": 0,
-          "autoConsume:1": 0,
-          "groupDetect:1": 0,
-          "ignoreNBT:1": 1,
-          "partialMatch:1": 1,
-          "entryLogic:8": "AND",
-          "index:3": 0
-        },
-        "1:10": {
-          "taskID:8": "bq_standard:retrieval",
-          "requiredItems:9": {
-            "0:10": {
+            },
+            "1:10": {
               "id:8": "spartanweaponry:spear_stone",
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
-            }
-          },
-          "consume:1": 0,
-          "autoConsume:1": 0,
-          "groupDetect:1": 0,
-          "ignoreNBT:1": 1,
-          "partialMatch:1": 1,
-          "entryLogic:8": "AND",
-          "index:3": 1
-        },
-        "2:10": {
-          "taskID:8": "bq_standard:retrieval",
-          "requiredItems:9": {
-            "0:10": {
+            },
+            "2:10": {
               "id:8": "spartanweaponry:dagger_stone",
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
-            }
-          },
-          "consume:1": 0,
-          "autoConsume:1": 0,
-          "groupDetect:1": 0,
-          "ignoreNBT:1": 1,
-          "partialMatch:1": 1,
-          "entryLogic:8": "AND",
-          "index:3": 2
-        },
-        "3:10": {
-          "taskID:8": "bq_standard:retrieval",
-          "requiredItems:9": {
-            "0:10": {
+            },
+            "3:10": {
               "id:8": "pyrotech:crude_spear",
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
-            }
-          },
-          "consume:1": 0,
-          "autoConsume:1": 0,
-          "groupDetect:1": 0,
-          "ignoreNBT:1": 1,
-          "partialMatch:1": 1,
-          "entryLogic:8": "AND",
-          "index:3": 3
-        },
-        "4:10": {
-          "taskID:8": "bq_standard:retrieval",
-          "requiredItems:9": {
-            "0:10": {
+            },
+            "4:10": {
               "id:8": "minecraft:bow",
               "Count:3": 1,
               "Damage:2": 0,
@@ -2851,13 +2694,14 @@
           "groupDetect:1": 0,
           "ignoreNBT:1": 1,
           "partialMatch:1": 1,
-          "entryLogic:8": "AND",
-          "index:3": 4
+          "entryLogic:8": "OR",
+          "optional:1": 0,
+          "index:3": 0
         }
       },
       "rewards:9": {}
     },
-    "48:10": {
+    "49:10": {
       "questID:3": 144,
       "preRequisites:11": [
         111
@@ -2904,6 +2748,7 @@
           "ignoreNBT:1": 1,
           "partialMatch:1": 1,
           "entryLogic:8": "AND",
+          "optional:1": 0,
           "index:3": 0
         }
       },
@@ -2966,25 +2811,25 @@
           "sizeY:3": 24
         },
         "5:10": {
-          "id:3": 5,
+          "id:3": 7,
           "x:3": 188,
-          "y:3": 68,
+          "y:3": 28,
           "sizeX:3": 24,
           "sizeY:3": 24
         },
         "6:10": {
-          "id:3": 6,
+          "id:3": 5,
           "x:3": 228,
-          "y:3": 68,
+          "y:3": -12,
           "sizeX:3": 24,
           "sizeY:3": 24
         },
         "7:10": {
-          "id:3": 7,
-          "x:3": 268,
-          "y:3": 68,
-          "sizeX:3": 24,
-          "sizeY:3": 24
+          "id:3": 6,
+          "x:3": 224,
+          "y:3": 24,
+          "sizeX:3": 32,
+          "sizeY:3": 32
         },
         "8:10": {
           "id:3": 8,
@@ -3111,6 +2956,13 @@
           "y:3": 184,
           "sizeX:3": 32,
           "sizeY:3": 32
+        },
+        "26:10": {
+          "id:3": 28,
+          "x:3": 188,
+          "y:3": 188,
+          "sizeX:3": 24,
+          "sizeY:3": 24
         }
       }
     },

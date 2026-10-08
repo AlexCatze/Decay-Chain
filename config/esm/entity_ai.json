@@ -580,7 +580,7 @@
       ],
       "Invert Blacklist": false,
       "Requires Tools": false,
-      "Griefing": true,
+      "Griefing": false,
       "Grief Targets": [
         "minecraft:chest",
         "minecraft:furnace",
@@ -718,7 +718,7 @@
       ],
       "Invert Blacklist": false,
       "Requires Tools": false,
-      "Griefing": true,
+      "Griefing": false,
       "Grief Targets": [
         "minecraft:chest",
         "minecraft:furnace",
@@ -856,7 +856,7 @@
       ],
       "Invert Blacklist": false,
       "Requires Tools": false,
-      "Griefing": true,
+      "Griefing": false,
       "Grief Targets": [
         "minecraft:chest",
         "minecraft:furnace",
@@ -994,7 +994,7 @@
       ],
       "Invert Blacklist": false,
       "Requires Tools": false,
-      "Griefing": true,
+      "Griefing": false,
       "Grief Targets": [
         "minecraft:chest",
         "minecraft:furnace",
@@ -1132,7 +1132,7 @@
       ],
       "Invert Blacklist": false,
       "Requires Tools": false,
-      "Griefing": true,
+      "Griefing": false,
       "Grief Targets": [
         "minecraft:chest",
         "minecraft:furnace",
@@ -1270,7 +1270,7 @@
       ],
       "Invert Blacklist": false,
       "Requires Tools": false,
-      "Griefing": true,
+      "Griefing": false,
       "Grief Targets": [
         "minecraft:chest",
         "minecraft:furnace",
@@ -1408,7 +1408,7 @@
       ],
       "Invert Blacklist": false,
       "Requires Tools": false,
-      "Griefing": true,
+      "Griefing": false,
       "Grief Targets": [
         "minecraft:chest",
         "minecraft:furnace",
@@ -1546,7 +1546,7 @@
       ],
       "Invert Blacklist": false,
       "Requires Tools": false,
-      "Griefing": true,
+      "Griefing": false,
       "Grief Targets": [
         "minecraft:chest",
         "minecraft:furnace",
@@ -1684,7 +1684,7 @@
       ],
       "Invert Blacklist": false,
       "Requires Tools": false,
-      "Griefing": true,
+      "Griefing": false,
       "Grief Targets": [
         "minecraft:chest",
         "minecraft:furnace",
@@ -1822,7 +1822,7 @@
       ],
       "Invert Blacklist": false,
       "Requires Tools": false,
-      "Griefing": true,
+      "Griefing": false,
       "Grief Targets": [
         "minecraft:chest",
         "minecraft:furnace",

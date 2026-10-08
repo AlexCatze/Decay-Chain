@@ -15,6 +15,12 @@ BrickOven.addRecipe("decay_boil_water", <simpledifficulty:purified_water_bottle>
 JEI.removeAndHide(<simpledifficulty:campfire>);
 JEI.removeAndHide(<simpledifficulty:spit>);
 
+// Pyrotech turns animal leather drops into pelts; real leather needs the full tanning chain (barrel, soaking pot,
+// tanning rack), far too late for the first water container. A rawhide canteen only needs washed hides
+// (butcher's knife -> pelt -> hunter's knife -> scraped hide -> water). The 6-leather recipe stays.
+recipes.addShaped("decay_canteen_rawhide", <simpledifficulty:canteen>.withTag({Doses: 0, CanteenType: 0}),
+    [[null, <ore:twine>, null], [<pyrotech:hide_washed>, null, <pyrotech:hide_washed>], [null, <pyrotech:hide_washed>, null]]);
+
 // HBM sits on top of Pyrotech: the vanilla furnace already needs a Pyrotech furnace core,
 // and HBM's iron furnace is built on Pyrotech refractory bricks.
 recipes.replaceAllOccurences(<minecraft:stonebrick:*>, <pyrotech:refractory_brick_block>, <hbm:furnace_iron>);

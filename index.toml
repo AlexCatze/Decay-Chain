@@ -5,8 +5,12 @@ file = "config/Universal Tweaks - Tweaks.cfg"
 hash = "f6a952f5a235747526499569e5901ce9757c84ac95c92510fb97f41b7363b0f5"
 
 [[files]]
+file = "config/betterquesting.cfg"
+hash = "e8e6cb3efc5bcee1e557dec361f42f769f1a0a0dce8fb29f44b368e00367dd23"
+
+[[files]]
 file = "config/betterquesting/DefaultQuests.json"
-hash = "fa927e754401ba887dc1f86db83ff1f26b86b16ed04c634656c4e9bbb71b4baa"
+hash = "f6fc196402a71d7ab23ff96dd75c2478fc98749bef490753d97c63ab8e7797b0"
 
 [[files]]
 file = "config/biomesoplenty/biomes/cherry_blossom_grove.json"
@@ -73,8 +77,16 @@ file = "config/cyberware.cfg"
 hash = "20063be193a1570ff31fc501f3d33a5d1ca021bf4cffdb92c80c3673e2595f31"
 
 [[files]]
+file = "config/defaultworldgenerator-port/worldsettings.data"
+hash = "d90cbf8b2ebd059c9447915df06bb573b1cb70f1455dee3ad8a7f4ecedab2380"
+
+[[files]]
+file = "config/dropt/decaychain_bop_grass.json"
+hash = "f90788fda57d9ec6762af4733890cb3ce9f9b474f6f8644f32e8cd8f1ae5c038"
+
+[[files]]
 file = "config/esm/entity_ai.json"
-hash = "55081052b59d95d62fe69d2d11b2ecce3677d4e7ca350f49cb55837b6cf7e542"
+hash = "321adb6e3fa78c044c1e4dd23dbaba3bbb168101a7ad7a6c0576ac287a206a02"
 
 [[files]]
 file = "config/firstaid.cfg"
@@ -126,7 +138,7 @@ hash = "65d13c6183dfcc31e26c407d7a57ef593a6e6f81aabc08e3679ff9e9dbb10c69"
 
 [[files]]
 file = "config/lostcities/profile_decay.cfg"
-hash = "93b1828d1f7992e7aef43c837e49557a03bdf90927ad3823209ff132bbcb8a1a"
+hash = "8e0725d84b431267c0b56370994b585a53615897af9966070c7c56bba8c174d0"
 
 [[files]]
 file = "config/lostcities/userassets.json"
@@ -470,7 +482,7 @@ hash = "d8236f28620420de4e444ca456152c06465bcb5392079a78ca2d387e9519faf6"
 
 [[files]]
 file = "config/simpledifficulty.cfg"
-hash = "e7e769318da58811785f7bdafdcea46bef784823a1e0b702f15323e417c72cbe"
+hash = "d4e096f3242a99ab605814781d477ca74dc49e53d84103c9aae71762900165de"
 
 [[files]]
 file = "config/simpledifficulty/blockTemperatures.json"
@@ -518,7 +530,7 @@ hash = "8d13c5f398016036aa4fdefb366ef3926d89f96ca104155bc9f6e5a7ec682ecd"
 
 [[files]]
 file = "groovy/assets/decaychain/lang/en_us.lang"
-hash = "b22e2678ae9ad47a345d26cd179bde1abf7dd09df6054abea45610790915ce46"
+hash = "795774387d850cf2146a1f447af4952cb651807349aa982b14c558e2d7be5b6a"
 
 [[files]]
 file = "groovy/assets/decaychain/models/item/toxic_water_bottle.json"
@@ -537,6 +549,10 @@ file = "groovy/classes/DecayRules.groovy"
 hash = "16e50b1b472ad27c5c1a8ad46175759de9b6725f4b0a18a64409834f1b81e436"
 
 [[files]]
+file = "groovy/classes/DecaySpawn.groovy"
+hash = "4928622bed1ce373590301672ad3b3cc17b9bdc92ca9b978b5756a01aef62a87"
+
+[[files]]
 file = "groovy/postInit/glass.groovy"
 hash = "901f71f0e6423125e50a7694d8e57d202b7c9d652d7ac3e85368468e6db81eda"
 
@@ -553,6 +569,10 @@ file = "groovy/postInit/space_ores.groovy"
 hash = "97256114e1d877073c34ff0a8b3718787b2e2936c2880d65cd7494067b487394"
 
 [[files]]
+file = "groovy/postInit/spawn_spread.groovy"
+hash = "4db66ea96d3a1eb728619c3d0c2ca83b2a6e7b8c04319e29e17d7732b55b65d7"
+
+[[files]]
 file = "groovy/postInit/srp_defaults.groovy"
 hash = "c37861444deeb90961b4a363ed004d83d3a3e18dfd5c261ea17a7895facb330e"
 
@@ -562,7 +582,7 @@ hash = "f9161b3a3094acb328b400051cf27edc26dcb9add5db82d6bdc89af967f397aa"
 
 [[files]]
 file = "groovy/postInit/water.groovy"
-hash = "6cdfe661e646937d68af676e1f2f528c762571e324d03d9d48ec93d675e3c0ef"
+hash = "f61143d95c49e3a2c11ece4b5948e9788cfbdc015d2a33f8dd6af5566c67829e"
 
 [[files]]
 file = "groovy/preInit/fuels.groovy"
@@ -700,6 +720,10 @@ metafile = true
 file = "mods/deadly-world.pw.toml"
 hash = "e5d79433074c58b253bc5a715faa89bf4bd9d103a49c857c9a68fcdd647c3b20"
 metafile = true
+
+[[files]]
+file = "mods/decaychainfixes-1.0.0.jar"
+hash = "52973c089f9a4e9bf6a159edf465bb6ab91f3ae54f5a0f0a4091bc3132fcfbb9"
 
 [[files]]
 file = "mods/default-world-generator-port.pw.toml"
@@ -994,7 +1018,7 @@ hash = "f6850ebfbe0f92ab288ee3bc76a9c65d6dcadd99de832d1ea357b09145c53745"
 
 [[files]]
 file = "scripts/pyrotech.zs"
-hash = "62e346ba05238613ee45ab50b8c1cf040f708063ca8ec658c07959070557812c"
+hash = "19fb23bc2a0cf13b143388693f05619e06b5cfdd76ca26866fe6f80f10cbab57"
 
 [[files]]
 file = "scripts/refinedstorage.zs"

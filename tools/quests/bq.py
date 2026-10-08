@@ -18,11 +18,12 @@ def _indexed(entries):
     return {f'{i}:10': e for i, e in enumerate(entries)}
 
 
-def retrieve(*stacks, any_of=False):
-    """Have the items in your inventory (nothing is consumed)."""
+def retrieve(*stacks, any_of=False, optional=False):
+    """Have the items in your inventory (nothing is consumed). Optional tasks are shown as guidance steps but do not
+    block the quest."""
     return {'taskID:8': 'bq_standard:retrieval', 'requiredItems:9': _indexed(stacks), 'consume:1': 0,
             'autoConsume:1': 0, 'groupDetect:1': 0, 'ignoreNBT:1': 1, 'partialMatch:1': 1,
-            'entryLogic:8': 'OR' if any_of else 'AND'}
+            'entryLogic:8': 'OR' if any_of else 'AND', 'optional:1': 1 if optional else 0}
 
 
 def checkbox():
@@ -31,6 +32,14 @@ def checkbox():
 
 
 # ---------- assembly ----------
+
+def _merge_any_of(tasks):
+    """task_logic='OR' over single-item retrieval tasks -> one retrieval task with 'any of' entries.
+    BQ shows separate tasks as separate checklists, which reads as 'collect all of these'."""
+    if len(tasks) > 1 and all(t['taskID:8'] == 'bq_standard:retrieval' and len(t['requiredItems:9']) == 1 for t in tasks):
+        return [retrieve(*(t['requiredItems:9']['0:10'] for t in tasks), any_of=True)]
+    return tasks
+
 
 def build_quest(q):
     props = {
@@ -41,8 +50,11 @@ def build_quest(q):
         'visibility:8': q.get('visibility', 'NORMAL'),
         'snd_complete:8': 'minecraft:entity.player.levelup', 'snd_update:8': 'minecraft:entity.player.levelup',
     }
+    task_list = q['tasks']
+    if q.get('task_logic') == 'OR':
+        task_list = _merge_any_of(task_list)
     tasks = {}
-    for i, t in enumerate(q['tasks']):
+    for i, t in enumerate(task_list):
         tasks[f'{i}:10'] = dict(t, **{'index:3': i})
     return {'questID:3': q['id'], 'preRequisites:11': q.get('requires', []),
             'properties:10': {'betterquesting:10': props}, 'tasks:9': tasks, 'rewards:9': {}}

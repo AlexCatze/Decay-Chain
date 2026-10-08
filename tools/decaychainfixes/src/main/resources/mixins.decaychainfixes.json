@@ -1,0 +1,17 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "decaychain.fixes.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "verbose": true,
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "mixins": [
+    "ESMGriefMixin",
+    "GeneralEntityHandlerMixin",
+    "HarvestCraftGardenSoilMixin",
+    "PacketWorldSavedDataRequestMixin",
+    "TechgunsCarrierMixin"
+  ]
+}
