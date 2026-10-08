@@ -1,0 +1,13 @@
+name = "Backups"
+filename = "Backups-1.12.2-1.5.7.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "e926737ecdb0eae2373298ee520a890925f102cc"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 3404201
+project-id = 293610

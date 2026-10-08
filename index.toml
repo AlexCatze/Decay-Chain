@@ -622,6 +622,11 @@ hash = "28b6d309acf1c6372d6edb4ae468d41a4d6f6fd6a7bf846cd35415224d6118a2"
 metafile = true
 
 [[files]]
+file = "mods/backups.pw.toml"
+hash = "ca84783f3cc48f9d33a8309d2baafbecf0630813b7aaa8ee99a3596faf6fc4a5"
+metafile = true
+
+[[files]]
 file = "mods/baubles.pw.toml"
 hash = "2cc5f913400c0dfe460173edd1e5d9475a09774caf228f41c3e39eba252a7a19"
 metafile = true
