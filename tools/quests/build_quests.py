@@ -15,7 +15,7 @@ import os
 from bq import build
 from primitive import CHAPTERS as PRIMITIVE
 
-PACK_VERSION = 9
+PACK_VERSION = 10
 OUT = os.path.join(os.path.dirname(__file__), '..', '..', 'config', 'betterquesting', 'DefaultQuests.json')
 
 

@@ -315,6 +315,8 @@ ALIVE = [
               "- §eLight§r: torches around your camp; monsters spawn in darkness.\n"
               "- §eFood§r: something cooked, something stored.\n"
               "- §eWalls§r: anything you can close behind you - dig into a hillside if you must.\n\n"
+              "§cAt the first sunset, watch the western sky.§r Something falls from it - and the parasites come with "
+              "it. From that night on, the dark is no longer safe. Do not go looking for the crash site tonight.\n\n"
               "Do not wander at night. Zombies hear noise and follow light, and worse things hunt in the dark. "
               "Survive until morning - then do it again."),
     # --- Health ---

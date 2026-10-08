@@ -10,7 +10,7 @@ hash = "e8e6cb3efc5bcee1e557dec361f42f769f1a0a0dce8fb29f44b368e00367dd23"
 
 [[files]]
 file = "config/betterquesting/DefaultQuests.json"
-hash = "048879c747ab895869fcb292ae4d79c56405598561524f53713672bff3efb469"
+hash = "670aaf2a587152c7ccf597c18ce48a86964353356708a9479d820c9d8552c2a3"
 
 [[files]]
 file = "config/biomesoplenty/biomes/cherry_blossom_grove.json"
@@ -502,7 +502,7 @@ hash = "ae176cca4394d0187acad84792da1eceaef68468643ad79e213900651350a4a2"
 
 [[files]]
 file = "config/srparasites/SRParasitesWorld.cfg"
-hash = "ad2d173542dc2d67d822f6cecd15e38a719fc8d32570c59da80d3cde5329d4a6"
+hash = "7b6f45ca8050387154e20be9ad26b674cdfa018197950f307b7468dfe2be4465"
 
 [[files]]
 file = "config/techguns.cfg"
@@ -530,7 +530,7 @@ hash = "8d13c5f398016036aa4fdefb366ef3926d89f96ca104155bc9f6e5a7ec682ecd"
 
 [[files]]
 file = "groovy/assets/decaychain/lang/en_us.lang"
-hash = "795774387d850cf2146a1f447af4952cb651807349aa982b14c558e2d7be5b6a"
+hash = "fbb7de3709ce50bed67dee0c2a60bfec224fed8d11b656c773fccdee98a53156"
 
 [[files]]
 file = "groovy/assets/decaychain/models/item/toxic_water_bottle.json"
@@ -543,6 +543,10 @@ hash = "40a67f06dd5943491b11f1fb435d7f13d4875bca574e01749a4b3c011ed21e99"
 [[files]]
 file = "groovy/classes/DecayBiomes.groovy"
 hash = "376c781d88b800d4f8b1cf78c77b1e365c8bc31c541ee656c4ba5b8c56ee2f70"
+
+[[files]]
+file = "groovy/classes/DecayMeteor.groovy"
+hash = "a4ab77ca8e0d1df0bc2829786e51bcff93e8fad9dcec7ad810d3074ebdc79ddb"
 
 [[files]]
 file = "groovy/classes/DecayRules.groovy"
@@ -575,6 +579,10 @@ hash = "4db66ea96d3a1eb728619c3d0c2ca83b2a6e7b8c04319e29e17d7732b55b65d7"
 [[files]]
 file = "groovy/postInit/srp_defaults.groovy"
 hash = "c37861444deeb90961b4a363ed004d83d3a3e18dfd5c261ea17a7895facb330e"
+
+[[files]]
+file = "groovy/postInit/srp_meteor.groovy"
+hash = "94691fa1fe1ed99187c720fe04d07c54e2373e530aa1ab4a472f26b4e0b27ebd"
 
 [[files]]
 file = "groovy/postInit/wasteland_crops.groovy"
