@@ -18,3 +18,8 @@ for g in ["glass_ghostly", "glass_ethereal", "glass_ethereal_reverse"] as string
     val glass = itemUtils.getItem("glassential:" ~ g);
     if (!isNull(glass)) { mods.jei.JEI.removeAndHide(glass); }
 }
+
+// Lignite must not be a shortcut to permanent vanilla torches: drop HBM's lignite + stick -> 3 torches recipe.
+// Mined with a pre-iron pickaxe, lignite gives Pyrotech coal pieces instead (config/dropt/decaychain_lignite.json) -
+// those make stone torches. Coal (iron pickaxe and up) still makes vanilla torches.
+recipes.removeByRecipeName("hbm:torch");

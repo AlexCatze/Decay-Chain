@@ -11,6 +11,7 @@
     "ESMGriefMixin",
     "GeneralEntityHandlerMixin",
     "HarvestCraftGardenSoilMixin",
+    "LostCitiesBiomeProviderMixin",
     "PacketWorldSavedDataRequestMixin",
     "TechgunsCarrierMixin"
   ]

@@ -10,7 +10,7 @@ hash = "e8e6cb3efc5bcee1e557dec361f42f769f1a0a0dce8fb29f44b368e00367dd23"
 
 [[files]]
 file = "config/betterquesting/DefaultQuests.json"
-hash = "670aaf2a587152c7ccf597c18ce48a86964353356708a9479d820c9d8552c2a3"
+hash = "8e5441f540613bedbb683e11b8a21a2ce99e044130889db51b5d044d7112323d"
 
 [[files]]
 file = "config/biomesoplenty/biomes/cherry_blossom_grove.json"
@@ -85,12 +85,16 @@ file = "config/dropt/decaychain_bop_grass.json"
 hash = "f90788fda57d9ec6762af4733890cb3ce9f9b474f6f8644f32e8cd8f1ae5c038"
 
 [[files]]
+file = "config/dropt/decaychain_lignite.json"
+hash = "3e70c5aa2bbdcb54ff5bfa920cd1bf68293b8f00c24c00b55ffb2acf3f7cb7f4"
+
+[[files]]
 file = "config/esm/entity_ai.json"
 hash = "321adb6e3fa78c044c1e4dd23dbaba3bbb168101a7ad7a6c0576ac287a206a02"
 
 [[files]]
 file = "config/firstaid.cfg"
-hash = "4da8a6dc89689b22c39fba57b0123f79b51e399f12e995f10a176218368d8a8e"
+hash = "ceb535fbb713957a37902c5edd6cf97e238890e39a9d3a5d66a256ceea335eb1"
 
 [[files]]
 file = "config/hbm/hbm.cfg"
@@ -493,8 +497,16 @@ file = "config/simpledifficulty/consumableThirst.json"
 hash = "bea3a3f0a5cffc33df7b4bce5ff1735959bcde7ed72135b462b6972a6fb9ecb7"
 
 [[files]]
+file = "config/solcarrot.cfg"
+hash = "8af1e91ca7d8059a69572398e70f6bbb76c0168151c42d7c1ee331b3b7053c6d"
+
+[[files]]
 file = "config/spartanweaponry.cfg"
 hash = "522bd1de1592681b81d790e1a9035f0bbe74007815f0e5ba9679b75cfaf9d2db"
+
+[[files]]
+file = "config/spiceoflife.cfg"
+hash = "52ef756d15aa4c4ce11da9f3ebd3ee6d375ea2379104d3c8e1234c577a58ac21"
 
 [[files]]
 file = "config/srparasites/SRParasitesSystems.cfg"
@@ -736,7 +748,7 @@ metafile = true
 
 [[files]]
 file = "mods/decaychainfixes-1.0.0.jar"
-hash = "52973c089f9a4e9bf6a159edf465bb6ab91f3ae54f5a0f0a4091bc3132fcfbb9"
+hash = "73c244424394718bbc62d9f5c1bb2a7dd487dcea818136efc51a9bebc563cdf8"
 
 [[files]]
 file = "mods/default-world-generator-port.pw.toml"
@@ -944,6 +956,11 @@ hash = "0ceb555a7b522e3c1fa0a74ded038912fcdeb2b915db4f0a1b9216d0194f26df"
 metafile = true
 
 [[files]]
+file = "mods/spice-of-life-carrot-edition.pw.toml"
+hash = "3c488bc1200c41f69e61d86b87389afcd936fac6e9378df07961458cb1f459de"
+metafile = true
+
+[[files]]
 file = "mods/storagedrawers.pw.toml"
 hash = "ce9a936dbfb6869e52c1840187b53679dcf3b64f1ac60ba3bb829abcea4bd9e5"
 metafile = true
@@ -966,6 +983,11 @@ metafile = true
 [[files]]
 file = "mods/the-one-probe.pw.toml"
 hash = "06aecc9d2dbbb2b19a3774fa8e7505b5a65f1f47b18a2f9fc24bca2348e0455a"
+metafile = true
+
+[[files]]
+file = "mods/the-spice-of-life.pw.toml"
+hash = "aae7752ff23773d2dd0a2720d6dc4c97abac4a9560bd2f75b879407d4847231f"
 metafile = true
 
 [[files]]
@@ -1027,7 +1049,7 @@ hash = "f6aa69a1eac49d791bd7da8a8d8d3714533238b8626bad9412ace391aff43b84"
 
 [[files]]
 file = "scripts/primitive.zs"
-hash = "f6850ebfbe0f92ab288ee3bc76a9c65d6dcadd99de832d1ea357b09145c53745"
+hash = "b1c6f9bca90aa0df27834a41161f00d9e3634aad103b69df3d9a9915f22c0b28"
 
 [[files]]
 file = "scripts/pyrotech.zs"

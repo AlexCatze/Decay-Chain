@@ -1,0 +1,66 @@
+{
+  "rules": [
+    {
+      "match": {
+        "blocks": {
+          "type": "WHITELIST",
+          "blocks": [
+            "hbm:ore_lignite:32767"
+          ]
+        },
+        "harvester": {
+          "type": "PLAYER",
+          "heldItemMainHand": {
+            "type": "WHITELIST",
+            "items": [
+              "pyrotech:crude_pickaxe:*"
+            ]
+          }
+        }
+      },
+      "drops": [
+        {
+          "item": {
+            "items": [
+              "pyrotech:material:21"
+            ],
+            "quantity": {
+              "min": 1,
+              "max": 2
+            }
+          }
+        }
+      ]
+    },
+    {
+      "match": {
+        "blocks": {
+          "type": "WHITELIST",
+          "blocks": [
+            "hbm:ore_lignite:32767"
+          ]
+        },
+        "harvester": {
+          "type": "PLAYER",
+          "heldItemMainHand": {
+            "type": "WHITELIST",
+            "harvestLevel": "pickaxe;0;1"
+          }
+        }
+      },
+      "drops": [
+        {
+          "item": {
+            "items": [
+              "pyrotech:material:21"
+            ],
+            "quantity": {
+              "min": 2,
+              "max": 4
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

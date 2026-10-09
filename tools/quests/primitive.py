@@ -38,7 +38,7 @@ PATH = [
               "- You start with Pyrotech's guide book, §ePyrotechnic Esoterica§r. Its pages explain every primitive "
               "machine in detail - read it alongside these quests.\n"
               "- The §eStaying Alive§r chapter runs in parallel: water, food, shelter and dangers."),
-    dict(id=1, xy=(48, -24), requires=[0], name='Rocks', icon=pyro('rock'),
+    dict(id=1, xy=(96, -12), requires=[0], name='Rocks', icon=pyro('rock'),
          tasks=[retrieve(item('pyrotech:rock', 8, 32767))],
          desc="Small rocks lie on the ground almost everywhere - pick them up.\n\n"
               "Rocks are your first building material and your first weapon: you can §ethrow§r them at things that "
@@ -73,14 +73,10 @@ PATH = [
          desc="Your inventory crafting grid is all you have yet. Put §eany log + your axe§r into it to make a "
               "§eChopping Block§r (the axe takes a little damage and comes back).\n\n"
               "Place the chopping block on the ground - it is your first workstation."),
-    dict(id=5, xy=(144, -24), requires=[2, 1], name='Crude Hammer', icon=pyro('crude_hammer'),
-         tasks=[retrieve(pyro('crude_hammer'))],
-         desc="Rocks + a stick + plant fibers. Hammers are how you craft on a §eWorktable§r and later an "
-              "§eAnvil§r: place the ingredients on top, then hit them with the hammer."),
-    dict(id=6, xy=(240, 0), size=36, requires=[7, 5], main=True, name='The Worktable', icon=pyro('worktable'),
+    dict(id=6, xy=(240, -12), size=36, requires=[7, 1], main=True, name='The Worktable', icon=pyro('worktable'),
          tasks=[retrieve(ore('plankWood', 1, 'minecraft:planks'), optional=True),
                 retrieve(ore('slabWood', 1, 'minecraft:wooden_slab'), optional=True),
-                retrieve(pyro('worktable'))],
+                retrieve(pyro('worktable'), pyro('crude_hammer'))],
          desc="The Worktable is §ea wooden slab on top of a log§r (inventory grid). Planks and slabs cannot be "
               "crafted by hand - you split them on the chopping block:\n\n"
               "1. §ePlank:§r right-click the chopping block with a §elog§r to put it on top, then hold your axe and "
@@ -88,9 +84,10 @@ PATH = [
               "2. §eSlab:§r put one of those §eplanks§r on the block and hit it again.\n"
               "3. §eWorktable:§r the slab on top of a log.\n\n"
               "Chopping is hard work: §eif nothing happens, you are too hungry§r - eat something.\n\n"
-              "There is no vanilla crafting table at the start - the Worktable replaces it for every 3x3 recipe. "
-              "Right-click it to lay out a recipe, then §ehit it with your hammer§r until the item is done. "
-              "A real crafting table needs iron (see §eA Real Crafting Table§r)."),
+              "You also need a §eCrude Hammer§r (rocks + a stick + plant fibers): there is no vanilla crafting "
+              "table at the start - the Worktable replaces it for every 3x3 recipe. Right-click it to lay out a "
+              "recipe, then §ehit it with your hammer§r until the item is done. Later the same hammer works the "
+              "anvil. A real crafting table needs iron (see §eA Real Crafting Table§r)."),
     dict(id=8, xy=(0, 84), requires=[0], name='Shards', icon=mat(10),
          tasks=[retrieve(mat(10), mat(11), any_of=True)],
          desc="Sharper tools need §eflint shards§r or §ebone shards§r (either one works).\n\n"
@@ -122,13 +119,13 @@ PATH = [
          desc="Shards + sticks + twine, crafted on the §eWorktable§r. Flint or bone tools last much longer than "
               "crude ones and can mine iron ore. Make a pickaxe, an axe and a shovel.\n\n"
               "§7Note: there are no hoes until you have steel - farming is not a primitive-age option."),
-    dict(id=12, xy=(0, 132), requires=[9, 2], name='Drying Rack', icon=pyro('drying_rack', 1),
+    dict(id=12, xy=(48, 132), requires=[9, 2], name='Drying Rack', icon=pyro('drying_rack', 1),
          tasks=[retrieve(item('pyrotech:drying_rack', 1, 32767))],
          desc="Drying racks dry plant fibers, wheat and food, and can store items.\n\n"
               "- §eCrude Drying Rack§r: 2 sticks over 2 plant fibers, holds one item.\n"
               "- §eDrying Rack§r: sticks lashed with twine around a ladder, holds four.\n\n"
               "They work faster under open sky, in warm dry biomes and next to a campfire - and slower in rain."),
-    dict(id=13, xy=(48, 132), requires=[12], name='Straw', icon=pyro('thatch'),
+    dict(id=13, xy=(96, 132), requires=[12], name='Straw', icon=pyro('thatch'),
          tasks=[retrieve(mat(2, 4), pyro('thatch'))],
          desc="Dried plant fibers tie together into §eStraw§r; straw packs into a §eStraw Bale§r (thatch).\n\n"
               "Straw is the fuel bed of a pit kiln, and a straw bed is the cheapest place to sleep."),
@@ -136,10 +133,10 @@ PATH = [
          tasks=[retrieve(mat(17, 8))],
          desc="Dig clay in rivers, swamps and lakes. Lumps of clay become bricks, buckets and - most importantly - "
               "§erefractory bricks§r for the bloomery."),
-    dict(id=15, xy=(144, 156), size=36, requires=[13, 14, 10], main=True, name='Pit Kiln', icon=pyro('kiln_pit'),
+    dict(id=15, xy=(144, 144), size=36, requires=[13, 14, FIRE_STARTER], main=True, name='Pit Kiln', icon=pyro('kiln_pit'),
          tasks=[retrieve(pyro('kiln_pit'))],
          desc="Your first furnace. Place the kiln, put the item inside, cover it with straw and a straw bale, stack "
-              "three logs and light it. Wait - and hope nothing cracks.\n\n"
+              "three logs and light it with your fire starter. Wait - and hope nothing cracks.\n\n"
               "The pit kiln fires clay into bricks and can even smelt §ecopper ore§r into ingots."),
     dict(id=16, xy=(300, 36), requires=[11], name='Granite Anvil', icon=pyro('anvil_granite'),
          tasks=[retrieve(pyro('anvil_granite'))],
@@ -149,7 +146,7 @@ PATH = [
          tasks=[retrieve(item('minecraft:stone_pickaxe'))],
          desc="§7Optional.§r Stone tools are a solid upgrade over flint and bone, and the stone hammer works the "
               "anvil faster."),
-    dict(id=18, xy=(144, 240), requires=[15], task_logic='OR', name='Stone Machines', icon=pyro('stone_kiln'),
+    dict(id=18, xy=(96, 192), requires=[15], task_logic='OR', name='Stone Machines', icon=pyro('stone_kiln'),
          tasks=[retrieve(pyro('stone_kiln')), retrieve(pyro('stone_oven'))],
          desc="§7Optional.§r The Stone Kiln does the pit kiln's job faster and with fewer failures; the Stone Oven "
               "cooks and dries without burning your food. Both run on fuel."),
@@ -279,6 +276,11 @@ ALIVE = [
          icon=item('minecraft:cake'), tasks=[checkbox()],
          desc="There are four ways to eat in the primitive age: §eforage§r, §ehunt and cook§r, §escavenge cans§r "
               "and §epick wild gardens§r. You have found one - none of them is enough on its own, so use them all.\n\n"
+              "- §eVariety is life.§r You start with only §e6 hearts§r. Every new kind of food you eat counts, and at "
+              "5, 10, 20, 30, 45, 60 and 80 different foods you gain §e2 more hearts§r - up to 20. A §eFood Book§r "
+              "(book + carrot) shows what you have and have not eaten yet.\n"
+              "- §eMonotony starves you.§r The same food over and over fills you less each time and takes longer to "
+              "eat. Mix your meals.\n"
               "- Food is less filling than you are used to - cooked food is worth far more than raw.\n"
               "- You only heal while you are well fed.\n"
               "- Eating next to a campfire at night makes you §eComfortable§r: food goes further, and a big meal "
@@ -290,7 +292,10 @@ ALIVE = [
               "light up your camp.\n\n"
               "- §eFiber Torch§r: dried plant fibers on a stick. Cheap, but it §eburns up§r over time and the rain "
               "puts it out.\n"
-              "- §eStone Torch§r: coal pieces on a stone rod. §eNever burns up§r, but rain can still put it out."),
+              "- §eStone Torch§r: coal pieces on a stone rod. §eNever burns up§r, but rain can still put it out.\n\n"
+              "§eCoal pieces§r come from coal ore and from §elignite§r (HBM lignite ore, underground at y 35-60) "
+              "mined with a pickaxe below iron. Careful: breaking coal or lignite can release poisonous coal gas.\n\n"
+              "Proper torches that never go out are made from real coal - mine coal ore with an iron pickaxe."),
     dict(id=121, xy=(144, -96), requires=[1], name='Four Walls', icon=item('minecraft:cobblestone'),
          tasks=[retrieve(ore('cobblestone', 32, 'minecraft:cobblestone'))],
          desc="Rocks craft into cobblestone. Build something you can close behind you before your first night.\n\n"
