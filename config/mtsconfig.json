@@ -41,7 +41,7 @@
       "comment": "If true, all planes will have the ability to use beacons for navigation.  This is false to allow pack authors to define new/old planes that have this capability, but can be turned on if you don't care about realism."
     },
     "giveManualsOnJoin": {
-      "value": true,
+      "value": false,
       "comment": "If true, then whenever a new player joins a world, they will be given a copy of the mod manuals, including a part scanner."
     },
     "performModCompatFunctions": {

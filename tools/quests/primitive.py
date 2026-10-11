@@ -8,8 +8,6 @@ Quests added in the in-game editor keep the ids BQ gave them, so existing progre
 """
 from bq import item, ore, retrieve, checkbox
 
-PYRO_BOOK = item('patchouli:guide_book', nbt={'patchouli:book:8': 'pyrotech:book'})
-
 def pyro(name, meta=0, count=1):
     return item('pyrotech:' + name, count, meta)
 
@@ -27,24 +25,29 @@ BOTTLE = 1226231121
 CANTEEN = 1942058366
 SOMETHING_TO_EAT = 1586696649
 HUNTING = 1665027210
+WOODEN_BUCKET = 150
+PELTS = 151
+SCRAPED_HIDE = 152
+WASHED_HIDE = 153
 
 
 PATH = [
-    dict(id=0, xy=(-12, -12), size=36, main=True, name='Empty Pockets', icon=PYRO_BOOK, tasks=[checkbox()],
+    dict(id=0, xy=(-12, -12), size=36, main=True, name='Empty Pockets', icon=item('minecraft:map'), tasks=[checkbox()],
          desc="The world ended a long time ago. You have nothing - no tools, no food, no clean water.\n\n"
               "These quests are §eonly a guide§r: there are no rewards, and nothing here is required. Follow them "
               "to learn how this pack works, or ignore them and explore.\n\n"
-              "§eTips§r\n- Look up any item with §eR§r (recipe) / §eU§r (uses) in the item list.\n"
-              "- You start with Pyrotech's guide book, §ePyrotechnic Esoterica§r. Its pages explain every primitive "
-              "machine in detail - read it alongside these quests.\n"
-              "- The §eStaying Alive§r chapter runs in parallel: water, food, shelter and dangers."),
+              "§eTips§r\n- Open this quest book any time with the §e`§r key (left of §e1§r; change it in Controls).\n"
+              "- Look up any item with §eR§r (recipe) / §eU§r (uses) in the item list.\n"
+              "- The §eStaying Alive§r chapter runs in parallel: water, food, shelter and dangers.\n"
+              "- The first day is short. §eFire, water, light and walls§r before sunset matter more than anything "
+              "else - see §eThe First Night§r."),
     dict(id=1, xy=(96, -12), requires=[0], name='Rocks', icon=pyro('rock'),
-         tasks=[retrieve(item('pyrotech:rock', 8, 32767))],
+         tasks=[retrieve(item('pyrotech:rock', 4, 32767))],
          desc="Small rocks lie on the ground almost everywhere - pick them up.\n\n"
               "Rocks are your first building material and your first weapon: you can §ethrow§r them at things that "
               "come too close. Mining stone with weak tools also gives rocks instead of cobblestone."),
     dict(id=2, xy=(48, 36), requires=[0], name='Sticks and Fibers', icon=mat(12),
-         tasks=[retrieve(item('minecraft:stick', 6), mat(12, 6))],
+         tasks=[retrieve(item('minecraft:stick', 3), mat(12, 3))],
          desc="§eSticks§r drop from leaves (any tree, including the Biomes O' Plenty ones) - break them by hand.\n"
               "§ePlant Fibers§r come from breaking tall grass and other grassy plants.\n\n"
               "You cannot punch trees in this world: logs only come off with an axe. Make one first."),
@@ -65,7 +68,7 @@ PATH = [
               "- §eCrude Pickaxe§r: starts you on stone.\n"
               "- §eCrude Shovel§r: digging gravel with a shovel finds §eflint shards§r."),
     dict(id=4, xy=(144, 36), requires=[3], name='Timber!', icon=item('minecraft:log'),
-         tasks=[retrieve(ore('logWood', 8, 'minecraft:log'))],
+         tasks=[retrieve(ore('logWood', 3, 'minecraft:log'))],
          desc="Chop a tree with your axe. §cTrees fall when you cut them§r - logs come crashing down, so step "
               "aside or you may get hit.\n\nLogs fuel everything in the primitive age: campfires, kilns, charcoal."),
     dict(id=7, xy=(192, 36), requires=[4], name='Chopping Block', icon=pyro('chopping_block'),
@@ -184,6 +187,65 @@ PATH = [
          desc="With iron you can finally build a vanilla crafting table - no more hammering every recipe.\n\n"
               "1. On the Worktable: §e8 iron ingots§r in a ring make a §eCrafting Table Template§r.\n"
               "2. Then: the template surrounded by §e8 planks§r makes the §eCrafting Table§r."),
+    # --- Leather: hunting -> pelts -> scraped -> washed hides (the canteen itself is in Staying Alive) ---
+    dict(id=HUNTING, xy=(0, 288), requires=[8, 9, 6], name='Hunting and Butchering', icon=pyro('carcass'),
+         tasks=[retrieve(pyro('flint_butchers_knife'), pyro('bone_butchers_knife'), pyro('stone_butchers_knife'), pyro('iron_butchers_knife'),
+                         pyro('flint_hunters_knife'), pyro('bone_hunters_knife'), pyro('stone_hunters_knife'), pyro('iron_hunters_knife'), any_of=True),
+                retrieve(pyro('carcass'))],
+         desc="Animals do not drop meat and leather here. When they die they leave a §eCarcass§r - pick it up, "
+              "place it on the ground and work it with a knife (shards + sticks + twine, on the Worktable). Either "
+              "knife works; the carcass gives up its meat, pelts and bones a piece at a time.\n\n"
+              "§eWhat animals give§r (§alarge hide§r = good for a canteen):\n"
+              "- §eCow§r: beef, §alarge pelt§r, bone shards, lard\n"
+              "- §ePig§r: porkchop, §alarge hide§r, bone shards, lard\n"
+              "- §eSheep§r: mutton, §alarge pelt§r (shear it for wool + a hide)\n"
+              "- §eHorse / Donkey§r: §alarge pelt§r, bone shards, lard\n"
+              "- §eLlama§r: §alarge pelt§r (shear it for wool)\n"
+              "- §eWolf§r: §alarge pelt§r, bone shards, lard\n"
+              "- §ePolar bear§r: §alarge pelt§r, lots of lard\n"
+              "- §eMooshroom§r: §alarge pelt§r (less often), bone shards, lard\n"
+              "- §eRabbit§r: meat, rabbit's foot, §csmall hide§r (no good for a canteen)\n"
+              "- §eBat§r: §csmall pelt§r only\n"
+              "- §eChicken§r: meat and feathers, no hide\n\n"
+              "Pelts do not drop every time. On a §eButcher's Block§r the knife matters: a §eButcher's Knife§r "
+              "doubles the meat but usually ruins the pelt, a §eHunter's Knife§r doubles the pelts but usually "
+              "taints the meat.\n\n"
+              "Butchering is hard work: §eif nothing happens, you are too hungry§r."),
+    dict(id=PELTS, xy=(48, 288), requires=[HUNTING], name='Pelts', icon=pyro('pelt_cow'),
+         tasks=[retrieve(ore('hideScrapeable', 1, 'pyrotech:pelt_cow'))],
+         desc="Get a §elarge pelt or hide§r from a cow, pig, sheep, horse, donkey, llama, wolf, polar bear or "
+              "mooshroom (see §eHunting and Butchering§r).\n\n"
+              "A canteen takes §e3 hides§r, so plan on three animals - or use a §eHunter's Knife§r on a "
+              "§eButcher's Block§r to get more pelts out of each carcass.\n\n"
+              "§7Sheep and llama pelts can be sheared first: you keep the wool and still get a hide to scrape.§r"),
+    dict(id=SCRAPED_HIDE, xy=(96, 288), requires=[PELTS], name='Scraped Hide', icon=pyro('hide_scraped'),
+         tasks=[retrieve(pyro('flint_hunters_knife'), pyro('bone_hunters_knife'), pyro('stone_hunters_knife'), pyro('iron_hunters_knife'), any_of=True),
+                retrieve(pyro('hide_scraped'))],
+         desc="A §eHunter's Knife§r (shards + sticks + twine, on the Worktable - shaped like a blade, not a cleaver) "
+              "scrapes the hair and fat off a pelt.\n\n"
+              "Put the §epelt + Hunter's Knife§r in a crafting grid: out comes a §eScraped Hide§r and the knife "
+              "takes a little damage.\n\n"
+              "§7Rabbit hides and bat pelts give small hides - those make leather straps later, not canteens.§r"),
+    dict(id=WASHED_HIDE, xy=(144, 288), requires=[SCRAPED_HIDE, WOODEN_BUCKET], name='Washed Hide',
+         icon=pyro('hide_washed'),
+         tasks=[retrieve(pyro('hide_washed', count=3))],
+         desc="Scraped hides must be washed before they are any use. Three ways:\n\n"
+              "- §eFast:§r craft a §escraped hide + a bucket of water§r (the bucket comes back empty).\n"
+              "- §eSlow:§r throw the scraped hide into water and wait - it takes about ten minutes.\n"
+              "- §eLater:§r soak it in a §eSoaking Pot§r of water over a campfire.\n\n"
+              "You need §e3 washed hides§r for a canteen."),
+    dict(id=WOODEN_BUCKET, xy=(144, 240), requires=[6], name='Wooden Bucket', icon=pyro('bucket_wood'),
+         tasks=[retrieve(pyro('bucket_wood'))],
+         desc="§e3 planks + 1 plant fiber§r on the Worktable. Your first way to carry water:\n\n"
+              "- §eWash hides§r instantly (next quest).\n"
+              "- §eWater for the night:§r carry a bucket home and pour it out inside your shelter. You can drink "
+              "from it with an empty hand all night - drinking does not use the water up.\n\n"
+              "§7A wooden bucket is not built to last: it can be emptied about 8 times, and a full bucket takes "
+              "damage every second you carry it - fill it near where you need it. If it breaks, it spills its "
+              "water on the spot.§r\n\n"
+              "§7Water only refills itself in rivers and oceans. Elsewhere a pond you take water from shrinks, so "
+              "do not empty your only source.§r\n"
+              "§cWasteland water is too toxic to carry. Never put anything hot in a wooden bucket.§r"),
 ]
 
 ALIVE = [
@@ -205,13 +267,12 @@ ALIVE = [
               "and chests in ruined towns. Some are still full.\n\n"
               "A bottle holds one drink. Fill it at any water, §eboil it on a campfire§r to make it safe, drink, and "
               "keep the empty bottle - it is reusable forever."),
-    dict(id=CANTEEN, xy=(-144, 0), requires=[100], name='Not a Tin Can', icon=item('simpledifficulty:canteen'),
+    dict(id=CANTEEN, xy=(-144, 0), requires=[WASHED_HIDE], name='Not a Tin Can', icon=item('simpledifficulty:canteen'),
          tasks=[retrieve(item('simpledifficulty:canteen'), item('simpledifficulty:iron_canteen'), any_of=True)],
-         desc="A §eCanteen§r holds several drinks. Animals drop carcasses, not leather - make a §erawhide canteen§r:\n\n"
-              "1. Process a carcass with a §eButcher's Knife§r to get §epelts§r (see §eHunting and Butchering§r).\n"
-              "2. Scrape a pelt with a §eHunter's Knife§r (crafting grid) into a §escraped hide§r.\n"
-              "3. Wash it: craft it with a bucket of water, or leave it lying in water for a while.\n"
-              "4. §e3 washed hides + twine§r make the canteen.\n\n"
+         desc="§e3 washed hides + twine§r (on the Worktable) make a §erawhide canteen§r. It holds several drinks - "
+              "far more than a bottle.\n\n"
+              "- Fill it by right-clicking water; water from normal biomes is §edirty§r.\n"
+              "- Canteens cannot go on a fire: purify the water with a §echarcoal filter§r.\n\n"
               "Tanned leather (6 for a canteen) works too, but comes much later. With iron you can upgrade it to an "
               "§eIron Canteen§r that holds more."),
     dict(id=101, xy=(-84, 24), requires=[BOTTLE, CANTEEN], requires_logic='OR', name='Something to Drink From',
@@ -241,17 +302,6 @@ ALIVE = [
               "strawberries and Biomes O' Plenty berry bushes grow in plains and forests.\n\n"
               "Food is less filling here than you are used to, and you only heal when you are well fed. Keep an "
               "eye on the saturation shown on your hunger bar."),
-    dict(id=HUNTING, xy=(24, -48), requires=[8, 9, 6], name='Hunting and Butchering', icon=pyro('carcass'),
-         tasks=[retrieve(pyro('bone_butchers_knife'), pyro('flint_butchers_knife'), pyro('stone_butchers_knife'),
-                         pyro('iron_butchers_knife'), any_of=True),
-                retrieve(pyro('carcass'))],
-         desc="Animals do not drop meat and leather here. When they die they leave a §eCarcass§r - pick it up and "
-              "place it on the ground.\n\n"
-              "- §eButcher's Knife§r (shards + sticks + twine): use it on the carcass for §emeat§r, §epelts§r, "
-              "bone shards and lard.\n"
-              "- §eHunter's Knife§r: gets more pelts out of a carcass, and scrapes pelts into hides.\n"
-              "- A §eButcher's Block§r gives better yields.\n\n"
-              "Butchering is hard work: §eif nothing happens, you are too hungry§r."),
     dict(id=111, xy=(24, -96), requires=[6], name='Hunting Spear', icon=pyro('crude_spear'),
          tasks=[retrieve(pyro('crude_spear'))],
          desc="A crude spear can be thrown - it sticks in the target, so go and pick it up. Animals are the best "
@@ -262,7 +312,10 @@ ALIVE = [
                 retrieve(item('minecraft:cooked_mutton')), retrieve(item('minecraft:cooked_chicken')),
                 retrieve(item('minecraft:cooked_rabbit')), retrieve(item('minecraft:baked_potato'))],
          desc="Cook meat from your carcasses on the campfire. Roasted food restores much more than raw food - and "
-              "raw meat can make you sick. §eFood left cooking unattended burns.§r"),
+              "raw meat can make you sick. §eFood left cooking unattended burns.§r\n\n"
+              "Meat is worth the hunt: most food here is far less filling than you remember, but §ecooked meat still "
+              "fills you like it used to§r and keeps you full for a long time - the best thing to eat before a long "
+              "day or a night in the shelter. Eat the same meat every time, though, and it fills you less and less."),
     dict(id=113, xy=(72, 0), requires=[0], name='Canned Goods', icon=item('hbm:canned_conserve'),
          tasks=[retrieve(item('hbm:canned_conserve', 1, 32767))],
          desc="Ruined cities still hide pre-war food: canned beef, tuna, mystery meat... Cans keep forever. "
@@ -276,8 +329,8 @@ ALIVE = [
          icon=item('minecraft:cake'), tasks=[checkbox()],
          desc="There are four ways to eat in the primitive age: §eforage§r, §ehunt and cook§r, §escavenge cans§r "
               "and §epick wild gardens§r. You have found one - none of them is enough on its own, so use them all.\n\n"
-              "- §eVariety is life.§r You start with only §e6 hearts§r. Every new kind of food you eat counts, and at "
-              "5, 10, 20, 30, 45, 60 and 80 different foods you gain §e2 more hearts§r - up to 20. A §eFood Book§r "
+              "- §eVariety is life.§r You start with only §e3 hearts§r. Every new kind of food you eat counts, and at "
+              "5, 10, 20, 30, 45, 60 and 80 different foods you gain §eanother heart§r - up to 10. A §eFood Book§r "
               "(book + carrot) shows what you have and have not eaten yet.\n"
               "- §eMonotony starves you.§r The same food over and over fills you less each time and takes longer to "
               "eat. Mix your meals.\n"

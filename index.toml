@@ -2,15 +2,15 @@ hash-format = "sha256"
 
 [[files]]
 file = "config/Universal Tweaks - Tweaks.cfg"
-hash = "f6a952f5a235747526499569e5901ce9757c84ac95c92510fb97f41b7363b0f5"
+hash = "f3b87135f43f9085c2a823c7ff82fdd53d467080b7764223f95c49db192f58cb"
 
 [[files]]
 file = "config/betterquesting.cfg"
-hash = "e8e6cb3efc5bcee1e557dec361f42f769f1a0a0dce8fb29f44b368e00367dd23"
+hash = "2a71b7dc3295915c47292fbb6b88bc0ac488cbe50eb7657db7150e73f620a2c3"
 
 [[files]]
 file = "config/betterquesting/DefaultQuests.json"
-hash = "8e5441f540613bedbb683e11b8a21a2ce99e044130889db51b5d044d7112323d"
+hash = "b3338992dc898b70a8c42364160731fbf5f11abf3fd5dda22d66a455e6c4c680"
 
 [[files]]
 file = "config/biomesoplenty/biomes/cherry_blossom_grove.json"
@@ -98,7 +98,7 @@ hash = "ceb535fbb713957a37902c5edd6cf97e238890e39a9d3a5d66a256ceea335eb1"
 
 [[files]]
 file = "config/hbm/hbm.cfg"
-hash = "93ebcebaae903e1d46f0d60643029311b0213f129a0b0272799e871e215177c5"
+hash = "0c7ac92800e5671a52a1e0e4ff5e5c242fb37739a8096f77fd83b95d44d96b73"
 
 [[files]]
 file = "config/hbm/hbm_bedrock_ores.json"
@@ -474,11 +474,19 @@ hash = "5b540dca82c2424513dc5fdc7803d3ab1870b13f7f285ed3f21d27674af42b53"
 
 [[files]]
 file = "config/mtsconfig.json"
-hash = "dbbd1cd3c3180bf1772c3456c5a08bb2cc00127155f0bea8e301c5a5461cad50"
+hash = "615ab46d64d57998d7eb1b5a903d6bdc0ea8f862fafe1278971a8428af6848ff"
 
 [[files]]
 file = "config/mutantbeasts.cfg"
 hash = "9730f2ae0ff69630711094f26a725e721b2c6820231cf3638b1e7dcb59c4751d"
+
+[[files]]
+file = "config/opencomputers/settings.conf"
+hash = "cc8afd5e0548f8f244300c5c0b4fb616b38c830ce2c4bdcc66f465c8ab09c49b"
+
+[[files]]
+file = "config/pyrotech/plugin.Patchouli.cfg"
+hash = "785a2816aac76c01056c693e7759bf6d830e469313a0d0a2f0a22cf7db64aec0"
 
 [[files]]
 file = "config/reskillable.cfg"
@@ -498,7 +506,7 @@ hash = "bea3a3f0a5cffc33df7b4bce5ff1735959bcde7ed72135b462b6972a6fb9ecb7"
 
 [[files]]
 file = "config/solcarrot.cfg"
-hash = "8af1e91ca7d8059a69572398e70f6bbb76c0168151c42d7c1ee331b3b7053c6d"
+hash = "9f6a0e5da2d2d9dd20f53e1e28d971f1150463d4534ca335c94dab5a18c9210e"
 
 [[files]]
 file = "config/spartanweaponry.cfg"
@@ -522,7 +530,7 @@ hash = "74779a9f9d70dcf9a794de938038018705d3d7e26970d947bacb73f0b75d4793"
 
 [[files]]
 file = "config/theoneprobe.cfg"
-hash = "b515dac35c73a224d1c8b3e8e462fa97db355f76f4be88ed1e6b56a5ac20b702"
+hash = "94e9278d6d8d83e47b29f0babd7e88a8062e07b3bfc99cf333e8af9a2bf08114"
 
 [[files]]
 file = "config/tombstone.cfg"
@@ -577,6 +585,10 @@ file = "groovy/postInit/harvest_rules.groovy"
 hash = "f79f10e79a5234d56e67ca23be5867c6b64e0c2cc5c8ce77ec37d5c2269b3774"
 
 [[files]]
+file = "groovy/postInit/meat_saturation.groovy"
+hash = "25fe814f0eb60f9989a060daf2938b9cf0e168f03ac3dfe7c0c65e8436af3118"
+
+[[files]]
 file = "groovy/postInit/primitive.groovy"
 hash = "eae98a0d56bbb4103431a560fcf67977fd97f2cd00f3b586ed4d188d652559c2"
 
@@ -590,7 +602,7 @@ hash = "4db66ea96d3a1eb728619c3d0c2ca83b2a6e7b8c04319e29e17d7732b55b65d7"
 
 [[files]]
 file = "groovy/postInit/srp_defaults.groovy"
-hash = "c37861444deeb90961b4a363ed004d83d3a3e18dfd5c261ea17a7895facb330e"
+hash = "37245decace684543e9f76b7da3499333e44c8ccffcb2102d96a627d72008280"
 
 [[files]]
 file = "groovy/postInit/srp_meteor.groovy"
@@ -748,7 +760,7 @@ metafile = true
 
 [[files]]
 file = "mods/decaychainfixes-1.0.0.jar"
-hash = "73c244424394718bbc62d9f5c1bb2a7dd487dcea818136efc51a9bebc563cdf8"
+hash = "c3fd395b1e55e7312d4eadd6d29d1975e53e025e4482fa2efce7058773cb2766"
 
 [[files]]
 file = "mods/default-world-generator-port.pw.toml"
@@ -1078,3 +1090,11 @@ hash = "5426639c02f06876e2d47e8a1a8c68211d09710c37ad20ee1dadea7e8f4473ea"
 [[files]]
 file = "scripts/weapons.zs"
 hash = "3881cd8722066b38ab56c390dcf3a9284be657bd36040b7ca9bd0cc938424476"
+
+[[files]]
+file = "workspace/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.version"
+hash = "4bf5122f344554c53bde2ebb8cd2b7e3d1600ad631c385a5d7cce23c7785459a"
+
+[[files]]
+file = "workspace/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.core.resources.prefs"
+hash = "0fcddefa220f525bb060ed58c32ef43ff98eea234d5b4ab266aaf44659c4dee4"
