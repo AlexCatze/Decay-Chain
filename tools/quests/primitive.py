@@ -374,7 +374,8 @@ ALIVE = [
               "- §eFood§r: something cooked, something stored.\n"
               "- §eWalls§r: anything you can close behind you - dig into a hillside if you must.\n\n"
               "§cAt the first sunset, watch the western sky.§r Something falls from it - and the parasites come with "
-              "it. From that night on, the dark is no longer safe. Do not go looking for the crash site tonight.\n\n"
+              "it. From that night on, the dark is no longer safe. Do not go looking for the crash site tonight: the "
+              "meteorite's crater is where they breed.\n\n"
               "Do not wander at night. Zombies hear noise and follow light, and worse things hunt in the dark. "
               "Survive until morning - then do it again."),
     # --- Health ---
@@ -396,8 +397,12 @@ ALIVE = [
     # --- Hints ---
     dict(id=140, xy=(288, -96), requires=[0], name='Know Your Enemies', icon=item('minecraft:skull', 1, 2),
          tasks=[checkbox()],
-         desc="- §eParasites§r start weak, but they evolve as they spread and assimilate other creatures. "
-              "The longer they go unchecked, the worse they get.\n"
+         desc="- §eParasites§r come from fallen §emeteorites§r. Each meteorite is a hive with its own evolution: its "
+              "parasites start weak, but they grow stronger as they kill, spread and assimilate other creatures - and "
+              "its zone grows with them. The longer a hive goes unchecked, the worse it gets.\n"
+              "- A hive dies when the §eliving core§r in its crater (the pulsing alveoli and cysts) is destroyed. A "
+              "young one can be raided with a pickaxe; an old one is far too dangerous to walk into - that is what "
+              "explosives, and one day nukes, are for. Another meteorite falls a few days later.\n"
               "- §eMutated wildlife§r roams the wastes - giant worms, insects and worse.\n"
               "- Some monsters are §eelite§r: a coloured health bar and special powers. Avoid them early.\n"
               "- Zombies hear noise, see light and follow blood."),

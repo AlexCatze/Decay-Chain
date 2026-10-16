@@ -7,3 +7,7 @@ fluid.decaychain.kerosene.name=Kerosene
 decaychain.water.toxic_sip=§cThe water burns your throat. It is poisoned and radioactive.
 decaychain.water.salty_sip=§eSalt water. It only makes you thirstier.
 decaychain.meteor.incoming=§cA burning light tears across the sunset sky and falls in the west. Something came with it.
+decaychain.hive.evolved=§cThe meteorite hive at %2$s, %3$s has evolved: its parasites are now phase %1$s.
+decaychain.hive.weakened=§eThe meteorite hive at %2$s, %3$s is weakening (phase %1$s).
+decaychain.hive.destroyed=§aThe living core of the meteorite at %s, %s is destroyed. The infestation there is collapsing.
+decaychain.hive.died=§aThe infestation around %s, %s has died out.

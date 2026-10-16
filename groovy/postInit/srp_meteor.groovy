@@ -1,5 +1,6 @@
-// Decay Chain: the SRP meteor falls at sunset at a safe distance (logic in classes/DecayMeteor.groovy).
-// Day 0 is the one safe day: the first meteor - and with it the parasites - arrives at the first sunset.
+// Decay Chain: SRP meteors fall at sunset at a safe distance, one per area (logic in classes/DecayMeteor.groovy).
+// A player's first day is their one safe day: their first meteor - and with it the parasites - arrives at their first
+// sunset, unless another player's meteorite hive is already nearby.
 
 import classes.DecayMeteor
 import classes.DecayRules
@@ -14,20 +15,11 @@ eventManager.listen { TickEvent.WorldTickEvent event ->
         long time = world.getWorldTime()
         long day = time.intdiv(24000L), timeOfDay = time % 24000L
         if (timeOfDay < DecayMeteor.SUNSET || timeOfDay >= DecayMeteor.SUNSET_END) return
-        long last = DecayMeteor.lastMeteorDay(world)
-        if (last >= day || world.playerEntities.isEmpty()) return
-        if (last >= 0) {
-            // later meteors: only once the infection origin is gone, and not every sunset
-            if (DecayMeteor.infectionActive(world)) return
-            if (DecayMeteor.RNG.nextDouble() >= DecayMeteor.LATER_METEOR_CHANCE) {
-                DecayMeteor.setLastMeteorDay(world, day)
-                return
-            }
+        for (def player : new ArrayList(world.playerEntities)) {
+            if (!DecayMeteor.isDue(world, player, day)) continue
+            def target = DecayMeteor.spawnSafe(world, player.getPosition())
+            if (target == null) continue   // area not loaded yet: retry next second
+            DecayMeteor.claim(world, target, new TextComponentTranslation('decaychain.meteor.incoming'))
         }
-        def players = world.playerEntities
-        def player = players.get(DecayMeteor.RNG.nextInt(players.size()))
-        if (DecayMeteor.spawnSafe(world, player.getPosition()) == null) return   // area not loaded: retry next second
-        DecayMeteor.setLastMeteorDay(world, day)
-        for (def p : players) p.sendMessage(new TextComponentTranslation('decaychain.meteor.incoming'))
     }
 }
