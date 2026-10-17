@@ -1,6 +1,10 @@
 hash-format = "sha256"
 
 [[files]]
+file = "config/Special_Mobs.cfg"
+hash = "5c5dff2a46309b95150a58f0fde57042f1a825a395664775bff49edd64ecd914"
+
+[[files]]
 file = "config/Universal Tweaks - Tweaks.cfg"
 hash = "f3b87135f43f9085c2a823c7ff82fdd53d467080b7764223f95c49db192f58cb"
 
@@ -10,7 +14,7 @@ hash = "2a71b7dc3295915c47292fbb6b88bc0ac488cbe50eb7657db7150e73f620a2c3"
 
 [[files]]
 file = "config/betterquesting/DefaultQuests.json"
-hash = "ee80b5644b4403de186925b1484b9e8705f6b5675175b5c276c37c7a7d7ec200"
+hash = "4035da97da7a510cd0ee05cf77dbba0de5c5f627b5a4e69c5f5a0d20c5ff0bbf"
 
 [[files]]
 file = "config/biomesoplenty/biomes/cherry_blossom_grove.json"
@@ -550,7 +554,7 @@ hash = "8d13c5f398016036aa4fdefb366ef3926d89f96ca104155bc9f6e5a7ec682ecd"
 
 [[files]]
 file = "groovy/assets/decaychain/lang/en_us.lang"
-hash = "924b41a2d2a853b576813364f8f5deb8eef73b8a42521e541b161834acb7e62f"
+hash = "00154edb945cc62275dda54f1ea8d9c9654c37e83eb3c9c3b250bedca0bb00eb"
 
 [[files]]
 file = "groovy/assets/decaychain/models/item/toxic_water_bottle.json"
@@ -575,6 +579,10 @@ hash = "16e50b1b472ad27c5c1a8ad46175759de9b6725f4b0a18a64409834f1b81e436"
 [[files]]
 file = "groovy/classes/DecaySpawn.groovy"
 hash = "4928622bed1ce373590301672ad3b3cc17b9bdc92ca9b978b5756a01aef62a87"
+
+[[files]]
+file = "groovy/postInit/debug_food.groovy"
+hash = "6b8b3959e43de3bdb6799519be18a4b4b85243b2f16683e8cde27f81e027a2a7"
 
 [[files]]
 file = "groovy/postInit/glass.groovy"
@@ -760,7 +768,7 @@ metafile = true
 
 [[files]]
 file = "mods/decaychainfixes-1.0.0.jar"
-hash = "612912e27761b907113c518393ffa3de5cb0155a5ad6e618b68c1b0cf9dda03d"
+hash = "ae9651b2f0d68f3c1a754372c348c47b2ab7b091844629eee949936d436cf701"
 
 [[files]]
 file = "mods/default-world-generator-port.pw.toml"

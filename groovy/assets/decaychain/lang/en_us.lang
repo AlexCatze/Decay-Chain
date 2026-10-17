@@ -15,3 +15,5 @@ decaychain.torch.lit=§6Lit§7 - burns for about %s more min
 decaychain.torch.lit_forever=§6Lit
 decaychain.torch.used=§7Partly burnt: about %s min left
 decaychain.torch.how_to_light=§8Hold it in one hand and use a bow drill, flint and tinder or flint and steel with the other to light it
+decaychain.questbook_hint.title=Quest Book
+decaychain.questbook_hint.text=Press %s to open it

@@ -4,7 +4,7 @@
   "questSettings:10": {
     "betterquesting:10": {
       "pack_name:8": "Decay Chain",
-      "pack_version:3": 19,
+      "pack_version:3": 21,
       "editMode:1": 0,
       "hardcore:1": 0,
       "lockTray:1": 0,
@@ -347,7 +347,7 @@
       "properties:10": {
         "betterquesting:10": {
           "name:8": "Chopping Block",
-          "desc:8": "Your inventory crafting grid is all you have yet. Put §eany log + your axe§r into it to make a §eChopping Block§r (the axe takes a little damage and comes back).\n\nPlace the chopping block on the ground - it is your first workstation.",
+          "desc:8": "Put §eany log + your axe§r into your inventory grid to make a §eChopping Block§r (the axe takes a little damage and comes back), then place it on the ground.\n\n§eUse:§r right-click a §elog§r onto it and hit it with your axe (left-click) until it splits into §eplanks§r; a plank on the block splits into §eslabs§r. Better axes split faster and give more.\n\nThe block wears down with use - keep a spare log. §eIf nothing happens, you are too hungry§r - eat something.",
           "icon:10": {
             "id:8": "pyrotech:chopping_block",
             "Count:3": 1,
@@ -395,13 +395,12 @@
     "7:10": {
       "questID:3": 6,
       "preRequisites:11": [
-        7,
-        1
+        7
       ],
       "properties:10": {
         "betterquesting:10": {
           "name:8": "The Worktable",
-          "desc:8": "The Worktable is §ea wooden slab on top of a log§r (inventory grid). Planks and slabs cannot be crafted by hand - you split them on the chopping block:\n\n1. §ePlank:§r right-click the chopping block with a §elog§r to put it on top, then hold your axe and §ehit (left-click)§r the block until the log splits.\n2. §eSlab:§r put one of those §eplanks§r on the block and hit it again.\n3. §eWorktable:§r the slab on top of a log.\n\nChopping is hard work: §eif nothing happens, you are too hungry§r - eat something.\n\nYou also need a §eCrude Hammer§r (rocks + a stick + plant fibers): there is no vanilla crafting table at the start - the Worktable replaces it for every 3x3 recipe. Right-click it to lay out a recipe, then §ehit it with your hammer§r until the item is done. Later the same hammer works the anvil. A real crafting table needs iron (see §eA Real Crafting Table§r).",
+          "desc:8": "The Worktable is §ea wooden slab on top of a log§r (inventory grid) - split a log into planks and a plank into slabs on the §eChopping Block§r.\n\n§eUse:§r right-click the worktable to lay out a 3x3 recipe, then §ehit it with a hammer§r until the item is done. You also need a §eCrude Hammer§r: rocks + a stick + plant fibers. There is no vanilla crafting table until iron (see §eA Real Crafting Table§r).\n\n§7A wooden worktable breaks after about 64 crafts - keep the materials for a new one. The stone worktable later barely wears.§r",
           "icon:10": {
             "id:8": "pyrotech:worktable",
             "Count:3": 1,
@@ -612,7 +611,7 @@
       "properties:10": {
         "betterquesting:10": {
           "name:8": "Fire Starter",
-          "desc:8": "Nothing burns in this world unless you light it yourself. You need a fire starter:\n\n- §eFlint and Tinder§r: a flint shard + dried plant fibers + a rock. Cheap, wears out quickly.\n- §eBow Drill§r: a bow + a stick. Lasts much longer, but a bow needs string.\n\nUse it on tinder, a kiln or a log pile to light it.",
+          "desc:8": "Nothing burns in this world unless you light it yourself. You need a fire starter:\n\n- §eFlint and Tinder§r: a flint shard + dried plant fibers + a rock. Cheap, wears out quickly.\n- §eBow Drill§r: a bow + a stick. Lasts much longer, but a bow needs string.\n\n§eUse:§r aim at tinder, a kiln or a log pile and §ehold right-click§r until it catches. With an unlit torch in your other hand it lights the torch instead.",
           "icon:10": {
             "id:8": "pyrotech:bow_drill",
             "Count:3": 1,
@@ -672,7 +671,7 @@
       "properties:10": {
         "betterquesting:10": {
           "name:8": "Fire",
-          "desc:8": "A campfire in four steps:\n\n1. Craft §eTinder§r: 2 dried plant fibers + 2 sticks.\n2. Place the tinder on the ground.\n3. Right-click it with §elogs§r to add fuel.\n4. Light it with your §efire starter§r.\n\nThe campfire cooks food (roasted food is far better than raw), §eboils dirty water§r into drinkable water, keeps you warm at night and speeds up nearby drying racks. Resting next to it at night slowly heals you. Rain or a bucket of water puts it out; clear the ash with a shovel.",
+          "desc:8": "A campfire in four steps:\n\n1. Craft §eTinder§r: 2 dried plant fibers + 2 sticks.\n2. Place the tinder on the ground.\n3. Right-click it with §elogs§r to add fuel.\n4. Light it with your §efire starter§r.\n\n§eCook:§r right-click raw food onto it and take it off when it is done - §efood left on too long burns§r. Add logs to keep it going. It also boils dirty water bottles, keeps you warm and speeds up nearby drying racks; resting beside it at night heals you. Rain or a bucket of water puts it out; clear the ash with a shovel.",
           "icon:10": {
             "id:8": "pyrotech:campfire",
             "Count:3": 1,
@@ -806,7 +805,7 @@
       "properties:10": {
         "betterquesting:10": {
           "name:8": "Drying Rack",
-          "desc:8": "Drying racks dry plant fibers, wheat and food, and can store items.\n\n- §eCrude Drying Rack§r: 2 sticks over 2 plant fibers, holds one item.\n- §eDrying Rack§r: sticks lashed with twine around a ladder, holds four.\n\nThey work faster under open sky, in warm dry biomes and next to a campfire - and slower in rain.",
+          "desc:8": "Drying racks dry plant fibers, wheat (into straw) and food, and can store items.\n\n- §eCrude Drying Rack§r: 2 sticks over 2 plant fibers, holds one item.\n- §eDrying Rack§r: sticks lashed with twine around a ladder, holds four.\n\n§eUse:§r right-click items onto the rack and take them off when they look dry. They dry faster under open sky, in warm dry biomes and next to a campfire - and stop in the rain.",
           "icon:10": {
             "id:8": "pyrotech:drying_rack",
             "Count:3": 1,
@@ -854,12 +853,12 @@
     "14:10": {
       "questID:3": 13,
       "preRequisites:11": [
-        12
+        9
       ],
       "properties:10": {
         "betterquesting:10": {
           "name:8": "Straw",
-          "desc:8": "Dried plant fibers tie together into §eStraw§r; straw packs into a §eStraw Bale§r (thatch).\n\nStraw is the fuel bed of a pit kiln, and a straw bed is the cheapest place to sleep.",
+          "desc:8": "Two dried plant fibers tied with a piece of twine make §eStraw§r; four straw pack into a §eStraw Bale§r (thatch).\n\nStraw is the fuel bed of a pit kiln, and a straw bed is the cheapest place to sleep.",
           "icon:10": {
             "id:8": "pyrotech:thatch",
             "Count:3": 1,
@@ -887,14 +886,8 @@
           "requiredItems:9": {
             "0:10": {
               "id:8": "pyrotech:material",
-              "Count:3": 4,
-              "Damage:2": 2,
-              "OreDict:8": ""
-            },
-            "1:10": {
-              "id:8": "pyrotech:thatch",
               "Count:3": 1,
-              "Damage:2": 0,
+              "Damage:2": 2,
               "OreDict:8": ""
             }
           },
@@ -967,13 +960,12 @@
       "questID:3": 15,
       "preRequisites:11": [
         13,
-        14,
         830666229
       ],
       "properties:10": {
         "betterquesting:10": {
           "name:8": "Pit Kiln",
-          "desc:8": "Your first furnace. Place the kiln, put the item inside, cover it with straw and a straw bale, stack three logs and light it with your fire starter. Wait - and hope nothing cracks.\n\nThe pit kiln fires clay into bricks and can even smelt §ecopper ore§r into ingots.",
+          "desc:8": "Your first furnace. The kiln itself is §e2 dried plant fibers§r.\n\n1. §eDig a pit§r one block deep: the kiln needs §esolid, non-flammable blocks below it and on all four sides§r (dirt, stone - not wood). The top stays open.\n2. Place the kiln and right-click the items to fire onto it (up to 8 of one kind).\n3. Add a §estraw bale§r, then §e3 logs§r.\n4. Light it with your §efire starter§r and wait.\n\nWhen the fire goes out, break the ash for the results - some items crack and fail. §cRain ruins a firing§r, so do not fire in bad weather.\n\nIt fires clay into bricks, cobblestone into stone and smelts §ecopper ore§r.",
           "icon:10": {
             "id:8": "pyrotech:kiln_pit",
             "Count:3": 1,
@@ -1014,6 +1006,31 @@
           "entryLogic:8": "AND",
           "optional:1": 0,
           "index:3": 0
+        },
+        "1:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "pyrotech:thatch",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "minecraft:log",
+              "Count:3": 3,
+              "Damage:2": 32767,
+              "OreDict:8": "logWood"
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "optional:1": 0,
+          "index:3": 1
         }
       },
       "rewards:9": {}
@@ -1021,12 +1038,13 @@
     "17:10": {
       "questID:3": 16,
       "preRequisites:11": [
-        11
+        2058197669,
+        1733322149
       ],
       "properties:10": {
         "betterquesting:10": {
           "name:8": "Granite Anvil",
-          "desc:8": "A stone anvil: place things on it and hit them with a pickaxe or hammer to split rocks, shard bones and flint, and later to hammer iron blooms into metal.",
+          "desc:8": "§ePolished granite§r on top of a §esmooth stone slab§r.\n\n§eUse:§r right-click an item onto the anvil and hit it: with a §epickaxe§r to split (rocks, stone bricks, slabs), with a §ehammer§r to crush and forge (shards into dust, limestone, blooms). The anvil wears down with use.",
           "icon:10": {
             "id:8": "pyrotech:anvil_granite",
             "Count:3": 1,
@@ -1074,7 +1092,7 @@
     "18:10": {
       "questID:3": 17,
       "preRequisites:11": [
-        16
+        557288403
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -1127,12 +1145,12 @@
     "19:10": {
       "questID:3": 18,
       "preRequisites:11": [
-        15
+        557288403
       ],
       "properties:10": {
         "betterquesting:10": {
           "name:8": "Stone Machines",
-          "desc:8": "§7Optional.§r The Stone Kiln does the pit kiln's job faster and with fewer failures; the Stone Oven cooks and dries without burning your food. Both run on fuel.",
+          "desc:8": "Built from §emasonry brick blocks§r (4 stone bricks each) and stone bricks - and not optional: only the §eStone Kiln§r can fire §erefractory bricks§r and §equicklime§r, so the road to iron runs through it.\n\n- §eStone Kiln§r: everything the pit kiln does, faster and with fewer failures.\n- §eStone Oven§r: cooks and dries without burning anything.\n\n§eUse:§r right-click the item into the top, fuel (logs, charcoal) into the bottom, and light the opening at the bottom with your fire starter. Take the results from the bottom. A bucket of water puts it out and saves fuel.",
           "icon:10": {
             "id:8": "pyrotech:stone_kiln",
             "Count:3": 1,
@@ -1184,6 +1202,375 @@
       "rewards:9": {}
     },
     "20:10": {
+      "questID:3": 2058197669,
+      "preRequisites:11": [
+        15,
+        11,
+        14
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "name:8": "Polished Granite",
+          "desc:8": "Collect §egranite rocks§r (the pink ones) and pack eight of them around a §eclay lump§r: §eCobbled Granite§r. Fire it in the pit kiln into §eGranite§r, then put four granite together for §ePolished Granite§r - the top of your granite anvil.",
+          "icon:10": {
+            "id:8": "minecraft:stone",
+            "Count:3": 1,
+            "Damage:2": 2,
+            "OreDict:8": ""
+          },
+          "isMain:1": 0,
+          "isSilent:1": 0,
+          "autoClaim:1": 1,
+          "globalShare:1": 0,
+          "lockedProgress:1": 0,
+          "simultaneous:1": 0,
+          "repeatTime:3": -1,
+          "repeat_relative:1": 1,
+          "questLogic:8": "AND",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "pyrotech:rock",
+              "Count:3": 1,
+              "Damage:2": 1,
+              "OreDict:8": ""
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "optional:1": 0,
+          "index:3": 0
+        },
+        "1:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "pyrotech:cobblestone",
+              "Count:3": 1,
+              "Damage:2": 2,
+              "OreDict:8": ""
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "optional:1": 0,
+          "index:3": 1
+        },
+        "2:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "minecraft:stone",
+              "Count:3": 1,
+              "Damage:2": 1,
+              "OreDict:8": ""
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "optional:1": 0,
+          "index:3": 2
+        },
+        "3:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "minecraft:stone",
+              "Count:3": 1,
+              "Damage:2": 2,
+              "OreDict:8": ""
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "optional:1": 0,
+          "index:3": 3
+        }
+      },
+      "rewards:9": {}
+    },
+    "21:10": {
+      "questID:3": 1733322149,
+      "preRequisites:11": [
+        14,
+        15,
+        11
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "name:8": "Stone Slab",
+          "desc:8": "Five stone rocks around a §eclay lump§r make a §eCobblestone Slab§r. Fired in the pit kiln it turns into a smooth §eStone Slab§r - the base of your granite anvil.",
+          "icon:10": {
+            "id:8": "minecraft:stone_slab",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "isMain:1": 0,
+          "isSilent:1": 0,
+          "autoClaim:1": 1,
+          "globalShare:1": 0,
+          "lockedProgress:1": 0,
+          "simultaneous:1": 0,
+          "repeatTime:3": -1,
+          "repeat_relative:1": 1,
+          "questLogic:8": "AND",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "minecraft:stone_slab",
+              "Count:3": 1,
+              "Damage:2": 3,
+              "OreDict:8": ""
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "optional:1": 0,
+          "index:3": 0
+        },
+        "1:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "minecraft:stone_slab",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "optional:1": 0,
+          "index:3": 1
+        }
+      },
+      "rewards:9": {}
+    },
+    "22:10": {
+      "questID:3": 557288403,
+      "preRequisites:11": [
+        16,
+        15
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "name:8": "IThrowable",
+          "desc:8": "Stone work, step by step:\n\n1. §eCobblestone§r: eight stone rocks around a clay lump.\n2. §eStone§r: fire the cobblestone in the pit kiln.\n3. §eStone Bricks§r: four stone in a square.\n4. §eStone Brick Slabs§r: place the bricks on the granite anvil and hit them with a pickaxe.\n5. §eStone Brick§r: split a slab on the anvil the same way.\n\nStone bricks are what stone tools and machines are made of.",
+          "icon:10": {
+            "id:8": "pyrotech:material",
+            "Count:3": 1,
+            "Damage:2": 16,
+            "OreDict:8": ""
+          },
+          "isMain:1": 0,
+          "isSilent:1": 0,
+          "autoClaim:1": 1,
+          "globalShare:1": 0,
+          "lockedProgress:1": 0,
+          "simultaneous:1": 0,
+          "repeatTime:3": -1,
+          "repeat_relative:1": 1,
+          "questLogic:8": "AND",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "minecraft:cobblestone",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "optional:1": 0,
+          "index:3": 0
+        },
+        "1:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "minecraft:stone",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "optional:1": 0,
+          "index:3": 1
+        },
+        "2:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "minecraft:stonebrick",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "optional:1": 0,
+          "index:3": 2
+        },
+        "3:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "minecraft:stone_slab",
+              "Count:3": 1,
+              "Damage:2": 5,
+              "OreDict:8": ""
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "optional:1": 0,
+          "index:3": 3
+        },
+        "4:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "pyrotech:material",
+              "Count:3": 1,
+              "Damage:2": 16,
+              "OreDict:8": ""
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "optional:1": 0,
+          "index:3": 4
+        }
+      },
+      "rewards:9": {}
+    },
+    "23:10": {
+      "questID:3": 1889945701,
+      "preRequisites:11": [
+        557288403
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "name:8": "Isn't It Just a Stick?",
+          "desc:8": "Not quite. Put a §eStone Brick§r on the granite anvil and split it with a pickaxe: four §eStone Sticks§r. A wooden stick would char in the heat of a bloom - every pair of tongs is built on stone sticks.",
+          "icon:10": {
+            "id:8": "pyrotech:material",
+            "Count:3": 1,
+            "Damage:2": 27,
+            "OreDict:8": ""
+          },
+          "isMain:1": 0,
+          "isSilent:1": 0,
+          "autoClaim:1": 1,
+          "globalShare:1": 0,
+          "lockedProgress:1": 0,
+          "simultaneous:1": 0,
+          "repeatTime:3": -1,
+          "repeat_relative:1": 1,
+          "questLogic:8": "AND",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "pyrotech:material",
+              "Count:3": 1,
+              "Damage:2": 27,
+              "OreDict:8": ""
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "optional:1": 0,
+          "index:3": 0
+        }
+      },
+      "rewards:9": {}
+    },
+    "24:10": {
       "questID:3": 19,
       "preRequisites:11": [
         15
@@ -1191,7 +1578,7 @@
       "properties:10": {
         "betterquesting:10": {
           "name:8": "Charcoal",
-          "desc:8": "Stack §elog piles§r, seal them under dirt or stone and light them - a §ePit Burn§r turns wood into charcoal (and tar).\n\nCharcoal is the fuel that gets a bloomery hot enough for iron. It also makes water filters.",
+          "desc:8": "A §ePit Burn§r turns wood into charcoal (and tar):\n\n1. Craft §elog piles§r (9 logs each) and fill a pit with them - §ecompletely full§r, and not too big.\n2. Cover every side with dirt or stone except one pile, light that one with your fire starter and §ecover it at once§r.\n3. Wait until the §esmoke stops§r - do not open it early or it burns to ash.\n4. Uncover it and break the piles for charcoal.\n\nCharcoal is the bloomery's fuel. It also makes water filters.",
           "icon:10": {
             "id:8": "minecraft:coal",
             "Count:3": 1,
@@ -1236,15 +1623,15 @@
       },
       "rewards:9": {}
     },
-    "21:10": {
+    "25:10": {
       "questID:3": 20,
       "preRequisites:11": [
-        15
+        18
       ],
       "properties:10": {
         "betterquesting:10": {
           "name:8": "Refractory Bricks",
-          "desc:8": "Mix clay into §erefractory clay§r, shape unfired refractory bricks and fire them in a kiln.\n\nRefractory bricks survive the heat of iron smelting - the bloomery is built from them.",
+          "desc:8": "The bloomery is built from §erefractory brick blocks§r (4 bricks each). The full chain:\n\n1. §eFlint clay§r: hammer flint shards into flint dust on the granite anvil; melt clay lumps into liquid clay in a §eStone Crucible§r (fuelled like the stone kiln) and carry it over in a bucket; soak the dust in the liquid clay in a §eSoaking Pot§r.\n2. §eSlaked lime§r: hammer §elimestone§r rocks (underground) into dust, fire it in the stone kiln into quicklime, then soak it in water in the soaking pot.\n3. §eRefractory clay§r: 4 clay balls (4 clay lumps each) + 2 pit ash (left in kilns) + 2 slaked lime + 1 flint clay make 5.\n4. Split refractory clay into lumps; 2 lumps make an §eunfired refractory brick§r - fire it in the §estone kiln§r.\n\n§eYou need 28 bricks§r for a bloomery.",
           "icon:10": {
             "id:8": "pyrotech:material",
             "Count:3": 1,
@@ -1272,7 +1659,7 @@
           "requiredItems:9": {
             "0:10": {
               "id:8": "pyrotech:material",
-              "Count:3": 16,
+              "Count:3": 28,
               "Damage:2": 5,
               "OreDict:8": ""
             }
@@ -1289,7 +1676,7 @@
       },
       "rewards:9": {}
     },
-    "22:10": {
+    "26:10": {
       "questID:3": 21,
       "preRequisites:11": [
         11
@@ -1342,15 +1729,15 @@
       },
       "rewards:9": {}
     },
-    "23:10": {
+    "27:10": {
       "questID:3": 22,
       "preRequisites:11": [
-        11
+        1889945701
       ],
       "properties:10": {
         "betterquesting:10": {
           "name:8": "Tongs",
-          "desc:8": "A fresh bloom is glowing-hot iron. §cHolding it with bare hands burns you.§r Carry tongs.",
+          "desc:8": "A fresh bloom is glowing-hot iron. §cHolding it with bare hands burns you.§r Carry tongs: three flint or bone shards on two §estone sticks§r.\n\n§eUse:§r right-click a bloom with the tongs to pick it up. With tongs in either hand, a bloom you take from the bloomery goes into them safely.",
           "icon:10": {
             "id:8": "pyrotech:tongs_flint",
             "Count:3": 1,
@@ -1401,7 +1788,7 @@
       },
       "rewards:9": {}
     },
-    "24:10": {
+    "28:10": {
       "questID:3": 23,
       "preRequisites:11": [
         19,
@@ -1412,7 +1799,7 @@
       "properties:10": {
         "betterquesting:10": {
           "name:8": "The Bloomery",
-          "desc:8": "Load iron ore and fuel into the top of the bloomery and light it. The more (and better) fuel, the faster it works; a bellows helps.\n\nThe result is a §eBloom§r: a lump of iron and slag.",
+          "desc:8": "Seven §erefractory brick blocks§r in a U shape.\n\n§eUse:§r right-click §eiron ore§r and fuel (§echarcoal§r is best) into the top and light the top with your fire starter. The more fuel, the faster it works; a §ebellows§r facing it speeds it up when you jump on it.\n\nWhen the fire on top goes out, take the §eBloom§r - with tongs - and clear the ash with a shovel.",
           "icon:10": {
             "id:8": "pyrotech:bloomery",
             "Count:3": 1,
@@ -1457,7 +1844,7 @@
       },
       "rewards:9": {}
     },
-    "25:10": {
+    "29:10": {
       "questID:3": 24,
       "preRequisites:11": [
         23,
@@ -1466,7 +1853,7 @@
       "properties:10": {
         "betterquesting:10": {
           "name:8": "Iron!",
-          "desc:8": "Put the bloom on an anvil and hammer it: iron comes out, slag stays behind (slag with ore left in it can go back into the bloomery).\n\nYou made metal from nothing. The primitive age is almost over.",
+          "desc:8": "Put the bloom on the granite anvil and hit it with a §ehammer§r, standing close - every few blows knock iron out of it. Hammering is hungry work: if the blows do nothing, eat.\n\nOn an anvil it takes about 8 hits; on the ground it takes twice as many, breaks the block below and can start fires. Slag that still holds ore goes back into the bloomery.\n\nYou made metal from nothing. The primitive age is almost over.",
           "icon:10": {
             "id:8": "minecraft:iron_ingot",
             "Count:3": 1,
@@ -1511,7 +1898,7 @@
       },
       "rewards:9": {}
     },
-    "26:10": {
+    "30:10": {
       "questID:3": 25,
       "preRequisites:11": [
         24
@@ -1564,7 +1951,7 @@
       },
       "rewards:9": {}
     },
-    "27:10": {
+    "31:10": {
       "questID:3": 28,
       "preRequisites:11": [
         24,
@@ -1618,7 +2005,7 @@
       },
       "rewards:9": {}
     },
-    "28:10": {
+    "32:10": {
       "questID:3": 1665027210,
       "preRequisites:11": [
         8,
@@ -1734,7 +2121,7 @@
       },
       "rewards:9": {}
     },
-    "29:10": {
+    "33:10": {
       "questID:3": 151,
       "preRequisites:11": [
         1665027210
@@ -1787,7 +2174,7 @@
       },
       "rewards:9": {}
     },
-    "30:10": {
+    "34:10": {
       "questID:3": 152,
       "preRequisites:11": [
         151
@@ -1877,7 +2264,7 @@
       },
       "rewards:9": {}
     },
-    "31:10": {
+    "35:10": {
       "questID:3": 153,
       "preRequisites:11": [
         152,
@@ -1931,7 +2318,7 @@
       },
       "rewards:9": {}
     },
-    "32:10": {
+    "36:10": {
       "questID:3": 150,
       "preRequisites:11": [
         6
@@ -1984,7 +2371,7 @@
       },
       "rewards:9": {}
     },
-    "33:10": {
+    "37:10": {
       "questID:3": 100,
       "preRequisites:11": [
         0
@@ -2022,7 +2409,7 @@
       },
       "rewards:9": {}
     },
-    "34:10": {
+    "38:10": {
       "questID:3": 1226231121,
       "preRequisites:11": [
         100
@@ -2075,7 +2462,7 @@
       },
       "rewards:9": {}
     },
-    "35:10": {
+    "39:10": {
       "questID:3": 1942058366,
       "preRequisites:11": [
         153
@@ -2134,7 +2521,7 @@
       },
       "rewards:9": {}
     },
-    "36:10": {
+    "40:10": {
       "questID:3": 101,
       "preRequisites:11": [
         1226231121,
@@ -2173,7 +2560,7 @@
       },
       "rewards:9": {}
     },
-    "37:10": {
+    "41:10": {
       "questID:3": 102,
       "preRequisites:11": [
         101,
@@ -2227,7 +2614,7 @@
       },
       "rewards:9": {}
     },
-    "38:10": {
+    "42:10": {
       "questID:3": 103,
       "preRequisites:11": [
         101,
@@ -2281,7 +2668,7 @@
       },
       "rewards:9": {}
     },
-    "39:10": {
+    "43:10": {
       "questID:3": 104,
       "preRequisites:11": [
         100
@@ -2319,7 +2706,7 @@
       },
       "rewards:9": {}
     },
-    "40:10": {
+    "44:10": {
       "questID:3": 110,
       "preRequisites:11": [
         0
@@ -2390,7 +2777,7 @@
       },
       "rewards:9": {}
     },
-    "41:10": {
+    "45:10": {
       "questID:3": 111,
       "preRequisites:11": [
         6
@@ -2443,7 +2830,7 @@
       },
       "rewards:9": {}
     },
-    "42:10": {
+    "46:10": {
       "questID:3": 112,
       "preRequisites:11": [
         10,
@@ -2527,7 +2914,7 @@
       },
       "rewards:9": {}
     },
-    "43:10": {
+    "47:10": {
       "questID:3": 113,
       "preRequisites:11": [
         0
@@ -2580,7 +2967,7 @@
       },
       "rewards:9": {}
     },
-    "44:10": {
+    "48:10": {
       "questID:3": 114,
       "preRequisites:11": [
         0
@@ -2663,7 +3050,7 @@
       },
       "rewards:9": {}
     },
-    "45:10": {
+    "49:10": {
       "questID:3": 1586696649,
       "preRequisites:11": [
         114,
@@ -2704,7 +3091,7 @@
       },
       "rewards:9": {}
     },
-    "46:10": {
+    "50:10": {
       "questID:3": 120,
       "preRequisites:11": [
         2
@@ -2763,7 +3150,7 @@
       },
       "rewards:9": {}
     },
-    "47:10": {
+    "51:10": {
       "questID:3": 121,
       "preRequisites:11": [
         1
@@ -2816,7 +3203,7 @@
       },
       "rewards:9": {}
     },
-    "48:10": {
+    "52:10": {
       "questID:3": 122,
       "preRequisites:11": [
         121
@@ -2875,7 +3262,7 @@
       },
       "rewards:9": {}
     },
-    "49:10": {
+    "53:10": {
       "questID:3": 123,
       "preRequisites:11": [
         6
@@ -2940,7 +3327,7 @@
       },
       "rewards:9": {}
     },
-    "50:10": {
+    "54:10": {
       "questID:3": 124,
       "preRequisites:11": [
         121
@@ -2978,11 +3365,10 @@
       },
       "rewards:9": {}
     },
-    "51:10": {
+    "55:10": {
       "questID:3": 409861656,
       "preRequisites:11": [
         830666229,
-        101,
         120,
         1586696649
       ],
@@ -3019,7 +3405,7 @@
       },
       "rewards:9": {}
     },
-    "52:10": {
+    "56:10": {
       "questID:3": 130,
       "preRequisites:11": [
         0
@@ -3078,7 +3464,7 @@
       },
       "rewards:9": {}
     },
-    "53:10": {
+    "57:10": {
       "questID:3": 131,
       "preRequisites:11": [
         0
@@ -3116,7 +3502,7 @@
       },
       "rewards:9": {}
     },
-    "54:10": {
+    "58:10": {
       "questID:3": 132,
       "preRequisites:11": [
         0
@@ -3154,7 +3540,7 @@
       },
       "rewards:9": {}
     },
-    "55:10": {
+    "59:10": {
       "questID:3": 140,
       "preRequisites:11": [
         0
@@ -3192,7 +3578,7 @@
       },
       "rewards:9": {}
     },
-    "56:10": {
+    "60:10": {
       "questID:3": 141,
       "preRequisites:11": [
         0
@@ -3230,7 +3616,7 @@
       },
       "rewards:9": {}
     },
-    "57:10": {
+    "61:10": {
       "questID:3": 142,
       "preRequisites:11": [
         0
@@ -3268,7 +3654,7 @@
       },
       "rewards:9": {}
     },
-    "58:10": {
+    "62:10": {
       "questID:3": 143,
       "preRequisites:11": [
         3
@@ -3345,7 +3731,7 @@
       },
       "rewards:9": {}
     },
-    "59:10": {
+    "63:10": {
       "questID:3": 144,
       "preRequisites:11": [
         6
@@ -3421,232 +3807,260 @@
       "quests:9": {
         "0:10": {
           "id:3": 0,
-          "x:3": -12,
-          "y:3": -12,
+          "x:3": 0,
+          "y:3": 108,
           "sizeX:3": 36,
           "sizeY:3": 36
         },
         "1:10": {
           "id:3": 1,
-          "x:3": 96,
-          "y:3": -12,
+          "x:3": 12,
+          "y:3": 12,
           "sizeX:3": 24,
           "sizeY:3": 24
         },
         "2:10": {
           "id:3": 2,
-          "x:3": 48,
-          "y:3": 36,
+          "x:3": 72,
+          "y:3": 12,
           "sizeX:3": 24,
           "sizeY:3": 24
         },
         "3:10": {
           "id:3": 1349163978,
-          "x:3": -48,
-          "y:3": 36,
+          "x:3": 72,
+          "y:3": 120,
           "sizeX:3": 24,
           "sizeY:3": 24
         },
         "4:10": {
           "id:3": 3,
-          "x:3": 96,
-          "y:3": 36,
+          "x:3": 120,
+          "y:3": 12,
           "sizeX:3": 24,
           "sizeY:3": 24
         },
         "5:10": {
           "id:3": 4,
-          "x:3": 144,
-          "y:3": 36,
+          "x:3": 168,
+          "y:3": 12,
           "sizeX:3": 24,
           "sizeY:3": 24
         },
         "6:10": {
           "id:3": 7,
-          "x:3": 192,
-          "y:3": 36,
+          "x:3": 216,
+          "y:3": 12,
           "sizeX:3": 24,
           "sizeY:3": 24
         },
         "7:10": {
           "id:3": 6,
-          "x:3": 240,
-          "y:3": -12,
+          "x:3": 276,
+          "y:3": 0,
           "sizeX:3": 36,
           "sizeY:3": 36
         },
         "8:10": {
           "id:3": 8,
-          "x:3": 0,
-          "y:3": 84,
+          "x:3": 72,
+          "y:3": 60,
           "sizeX:3": 24,
           "sizeY:3": 24
         },
         "9:10": {
           "id:3": 9,
-          "x:3": -48,
-          "y:3": 132,
+          "x:3": 120,
+          "y:3": 120,
           "sizeX:3": 24,
           "sizeY:3": 24
         },
         "10:10": {
           "id:3": 830666229,
-          "x:3": 48,
-          "y:3": 84,
+          "x:3": 120,
+          "y:3": 60,
           "sizeX:3": 24,
           "sizeY:3": 24
         },
         "11:10": {
           "id:3": 10,
-          "x:3": 144,
-          "y:3": 84,
+          "x:3": 168,
+          "y:3": 60,
           "sizeX:3": 36,
           "sizeY:3": 36
         },
         "12:10": {
           "id:3": 11,
-          "x:3": 240,
-          "y:3": 84,
+          "x:3": 276,
+          "y:3": 60,
           "sizeX:3": 36,
           "sizeY:3": 36
         },
         "13:10": {
           "id:3": 12,
-          "x:3": 48,
-          "y:3": 132,
+          "x:3": 120,
+          "y:3": 168,
           "sizeX:3": 24,
           "sizeY:3": 24
         },
         "14:10": {
           "id:3": 13,
-          "x:3": 96,
-          "y:3": 132,
+          "x:3": 168,
+          "y:3": 120,
           "sizeX:3": 24,
           "sizeY:3": 24
         },
         "15:10": {
           "id:3": 14,
-          "x:3": 96,
-          "y:3": 84,
+          "x:3": 168,
+          "y:3": 168,
           "sizeX:3": 24,
           "sizeY:3": 24
         },
         "16:10": {
           "id:3": 15,
-          "x:3": 144,
-          "y:3": 144,
+          "x:3": 216,
+          "y:3": 108,
           "sizeX:3": 36,
           "sizeY:3": 36
         },
         "17:10": {
           "id:3": 16,
-          "x:3": 300,
-          "y:3": 36,
-          "sizeX:3": 24,
-          "sizeY:3": 24
+          "x:3": 276,
+          "y:3": 168,
+          "sizeX:3": 36,
+          "sizeY:3": 36
         },
         "18:10": {
           "id:3": 17,
-          "x:3": 348,
-          "y:3": 36,
+          "x:3": 384,
+          "y:3": 216,
           "sizeX:3": 24,
           "sizeY:3": 24
         },
         "19:10": {
           "id:3": 18,
-          "x:3": 96,
-          "y:3": 192,
+          "x:3": 336,
+          "y:3": 216,
           "sizeX:3": 24,
           "sizeY:3": 24
         },
         "20:10": {
-          "id:3": 19,
-          "x:3": 240,
-          "y:3": 240,
+          "id:3": 2058197669,
+          "x:3": 276,
+          "y:3": 120,
           "sizeX:3": 24,
           "sizeY:3": 24
         },
         "21:10": {
-          "id:3": 20,
-          "x:3": 240,
-          "y:3": 192,
+          "id:3": 1733322149,
+          "x:3": 228,
+          "y:3": 168,
           "sizeX:3": 24,
           "sizeY:3": 24
         },
         "22:10": {
-          "id:3": 21,
-          "x:3": 300,
-          "y:3": 84,
+          "id:3": 557288403,
+          "x:3": 336,
+          "y:3": 168,
           "sizeX:3": 24,
           "sizeY:3": 24
         },
         "23:10": {
-          "id:3": 22,
-          "x:3": 240,
-          "y:3": 144,
+          "id:3": 1889945701,
+          "x:3": 384,
+          "y:3": 168,
           "sizeX:3": 24,
           "sizeY:3": 24
         },
         "24:10": {
-          "id:3": 23,
-          "x:3": 300,
-          "y:3": 192,
-          "sizeX:3": 32,
-          "sizeY:3": 32
+          "id:3": 19,
+          "x:3": 336,
+          "y:3": 60,
+          "sizeX:3": 24,
+          "sizeY:3": 24
         },
         "25:10": {
-          "id:3": 24,
-          "x:3": 372,
-          "y:3": 144,
-          "sizeX:3": 32,
-          "sizeY:3": 32
+          "id:3": 20,
+          "x:3": 336,
+          "y:3": 120,
+          "sizeX:3": 24,
+          "sizeY:3": 24
         },
         "26:10": {
-          "id:3": 25,
-          "x:3": 456,
-          "y:3": 144,
-          "sizeX:3": 32,
-          "sizeY:3": 32
-        },
-        "27:10": {
-          "id:3": 28,
-          "x:3": 384,
+          "id:3": 21,
+          "x:3": 336,
           "y:3": 0,
           "sizeX:3": 24,
           "sizeY:3": 24
         },
-        "28:10": {
-          "id:3": 1665027210,
-          "x:3": 0,
-          "y:3": 288,
+        "27:10": {
+          "id:3": 22,
+          "x:3": 384,
+          "y:3": 120,
           "sizeX:3": 24,
           "sizeY:3": 24
+        },
+        "28:10": {
+          "id:3": 23,
+          "x:3": 384,
+          "y:3": 60,
+          "sizeX:3": 32,
+          "sizeY:3": 32
         },
         "29:10": {
-          "id:3": 151,
-          "x:3": 48,
-          "y:3": 288,
-          "sizeX:3": 24,
-          "sizeY:3": 24
+          "id:3": 24,
+          "x:3": 444,
+          "y:3": 60,
+          "sizeX:3": 32,
+          "sizeY:3": 32
         },
         "30:10": {
-          "id:3": 152,
-          "x:3": 96,
-          "y:3": 288,
-          "sizeX:3": 24,
-          "sizeY:3": 24
+          "id:3": 25,
+          "x:3": 504,
+          "y:3": 60,
+          "sizeX:3": 32,
+          "sizeY:3": 32
         },
         "31:10": {
-          "id:3": 153,
-          "x:3": 144,
-          "y:3": 288,
+          "id:3": 28,
+          "x:3": 444,
+          "y:3": 12,
           "sizeX:3": 24,
           "sizeY:3": 24
         },
         "32:10": {
+          "id:3": 1665027210,
+          "x:3": 72,
+          "y:3": 168,
+          "sizeX:3": 24,
+          "sizeY:3": 24
+        },
+        "33:10": {
+          "id:3": 151,
+          "x:3": 72,
+          "y:3": 264,
+          "sizeX:3": 24,
+          "sizeY:3": 24
+        },
+        "34:10": {
+          "id:3": 152,
+          "x:3": 120,
+          "y:3": 264,
+          "sizeX:3": 24,
+          "sizeY:3": 24
+        },
+        "35:10": {
+          "id:3": 153,
+          "x:3": 168,
+          "y:3": 264,
+          "sizeX:3": 24,
+          "sizeY:3": 24
+        },
+        "36:10": {
           "id:3": 150,
-          "x:3": 144,
-          "y:3": 240,
+          "x:3": 168,
+          "y:3": 216,
           "sizeX:3": 24,
           "sizeY:3": 24
         }
@@ -3673,99 +4087,99 @@
       "quests:9": {
         "0:10": {
           "id:3": 100,
-          "x:3": -192,
-          "y:3": 48,
+          "x:3": 96,
+          "y:3": -96,
           "sizeX:3": 24,
           "sizeY:3": 24
         },
         "1:10": {
           "id:3": 1226231121,
-          "x:3": -144,
-          "y:3": 48,
+          "x:3": 96,
+          "y:3": -48,
           "sizeX:3": 24,
           "sizeY:3": 24
         },
         "2:10": {
           "id:3": 1942058366,
-          "x:3": -144,
+          "x:3": 48,
           "y:3": 0,
           "sizeX:3": 24,
           "sizeY:3": 24
         },
         "3:10": {
           "id:3": 101,
-          "x:3": -84,
-          "y:3": 24,
+          "x:3": 96,
+          "y:3": 0,
           "sizeX:3": 24,
           "sizeY:3": 24
         },
         "4:10": {
           "id:3": 102,
-          "x:3": -108,
-          "y:3": 96,
+          "x:3": 96,
+          "y:3": 48,
           "sizeX:3": 24,
           "sizeY:3": 24
         },
         "5:10": {
           "id:3": 103,
-          "x:3": -60,
-          "y:3": 96,
+          "x:3": 48,
+          "y:3": 48,
           "sizeX:3": 24,
           "sizeY:3": 24
         },
         "6:10": {
           "id:3": 104,
-          "x:3": -192,
-          "y:3": 0,
+          "x:3": 48,
+          "y:3": -96,
           "sizeX:3": 24,
           "sizeY:3": 24
         },
         "7:10": {
           "id:3": 110,
-          "x:3": 72,
-          "y:3": 96,
+          "x:3": 0,
+          "y:3": 48,
           "sizeX:3": 24,
           "sizeY:3": 24
         },
         "8:10": {
           "id:3": 111,
-          "x:3": 24,
-          "y:3": -96,
+          "x:3": 216,
+          "y:3": 48,
           "sizeX:3": 24,
           "sizeY:3": 24
         },
         "9:10": {
           "id:3": 112,
-          "x:3": 72,
-          "y:3": -48,
+          "x:3": 0,
+          "y:3": 0,
           "sizeX:3": 24,
           "sizeY:3": 24
         },
         "10:10": {
           "id:3": 113,
-          "x:3": 72,
-          "y:3": 0,
+          "x:3": 0,
+          "y:3": -96,
           "sizeX:3": 24,
           "sizeY:3": 24
         },
         "11:10": {
           "id:3": 114,
-          "x:3": 72,
-          "y:3": 48,
+          "x:3": 0,
+          "y:3": -48,
           "sizeX:3": 24,
           "sizeY:3": 24
         },
         "12:10": {
           "id:3": 1586696649,
-          "x:3": 24,
+          "x:3": -60,
           "y:3": 24,
           "sizeX:3": 24,
           "sizeY:3": 24
         },
         "13:10": {
           "id:3": 120,
-          "x:3": -12,
-          "y:3": 96,
+          "x:3": -60,
+          "y:3": -96,
           "sizeX:3": 24,
           "sizeY:3": 24
         },
@@ -3799,8 +4213,8 @@
         },
         "18:10": {
           "id:3": 409861656,
-          "x:3": -36,
-          "y:3": 0,
+          "x:3": -72,
+          "y:3": -48,
           "sizeX:3": 36,
           "sizeY:3": 36
         },
