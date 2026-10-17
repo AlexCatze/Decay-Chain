@@ -446,7 +446,9 @@ ALIVE = [
               "You cannot make glass yet, but the old world left plenty of bottles behind: look in kitchens, houses "
               "and chests in ruined towns. Some are still full.\n\n"
               "A bottle holds one drink. Fill it at any water, §eboil it on a campfire§r to make it safe, drink, and "
-              "keep the empty bottle - it is reusable forever."),
+              "keep the empty bottle - it is reusable forever.\n\n"
+              "§7Drained a Nuka-Cola? The bomb-shaped bottle (and any other empty soda bottle) holds water too - "
+              "after one fill it is an ordinary water bottle.§r"),
     dict(id=CANTEEN, xy=(48, 0), requires=[WASHED_HIDE], name='Not a Tin Can', icon=item('simpledifficulty:canteen'),
          tasks=[retrieve(item('simpledifficulty:canteen'), item('simpledifficulty:iron_canteen'), any_of=True)],
          desc="§e3 washed hides + twine§r (on the Worktable) make a §erawhide canteen§r. It holds several drinks - "

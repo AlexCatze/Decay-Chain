@@ -18,7 +18,7 @@ hash = "2a71b7dc3295915c47292fbb6b88bc0ac488cbe50eb7657db7150e73f620a2c3"
 
 [[files]]
 file = "config/betterquesting/DefaultQuests.json"
-hash = "db92b8f2c9fef3611e2d8c293cd82430a6778f6e90bb36a347effff29f37b7b4"
+hash = "7f8797310a4cf425606ced1572c39326c9d4eda84462d6766923495e5bb7de5e"
 
 [[files]]
 file = "config/biomesoplenty/biomes/cherry_blossom_grove.json"
@@ -690,7 +690,7 @@ hash = "f9161b3a3094acb328b400051cf27edc26dcb9add5db82d6bdc89af967f397aa"
 
 [[files]]
 file = "groovy/postInit/water.groovy"
-hash = "f61143d95c49e3a2c11ece4b5948e9788cfbdc015d2a33f8dd6af5566c67829e"
+hash = "c1efcf5a6bec25ff7dbe2c4654ee75cf5fe902c107e2ea7f7fb7624f788a32e5"
 
 [[files]]
 file = "groovy/preInit/fuels.groovy"

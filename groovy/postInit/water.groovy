@@ -5,6 +5,8 @@
 // - Normal biomes: vanilla water bottle / Simple Difficulty canteen (CanteenType 0) = dirty water
 //   (parasite chance, see config/simpledifficulty.cfg). Boil it or use a charcoal filter.
 // - Wasteland and nuke-crater biomes: bottles fill with Toxic Water, canteens and buckets refuse.
+// - HBM's empty soda bottles (the bomb-shaped Nuka-Cola bottle and the plain one from Fritz/Korl/Sarsaparilla/S~Cola)
+//   fill like a glass bottle: one fill turns them into an ordinary water bottle (or Toxic Water).
 
 import classes.DecayBiomes
 import classes.DecayRules
@@ -13,7 +15,10 @@ import net.minecraftforge.event.entity.player.FillBucketEvent
 import net.minecraftforge.event.entity.PlaySoundAtEntityEvent
 import net.minecraftforge.common.BiomeDictionary
 import net.minecraftforge.fml.common.registry.ForgeRegistries
+import net.minecraft.init.Items
 import net.minecraft.init.MobEffects
+import net.minecraft.init.PotionTypes
+import net.minecraft.potion.PotionUtils
 import net.minecraft.potion.PotionEffect
 import net.minecraft.util.ResourceLocation
 import com.hbm.capability.HbmLivingProps
@@ -29,6 +34,7 @@ import net.minecraft.util.text.TextComponentTranslation
 import net.minecraft.world.World
 
 CANTEENS = ['simpledifficulty:canteen', 'simpledifficulty:iron_canteen'] as Set
+SODA_BOTTLES = ['hbm:bottle_empty', 'hbm:bottle2_empty'] as Set
 THIRSTY = ForgeRegistries.POTIONS.getValue(new ResourceLocation('simpledifficulty:thirsty'))
 
 // Returns the water block the player is looking at, or null.
@@ -57,13 +63,16 @@ eventManager.listen { PlayerInteractEvent.RightClickItem event ->
         ItemStack stack = event.getItemStack()
         if (stack.isEmpty()) return
         String id = DecayRules.itemId(stack)
-        boolean bottle = id == 'minecraft:glass_bottle'
+        boolean soda = SODA_BOTTLES.contains(id)
+        boolean bottle = soda || id == 'minecraft:glass_bottle'
         if (!bottle && !CANTEENS.contains(id)) return
 
         World world = event.getWorld()
         EntityPlayer player = event.getEntityPlayer()
         BlockPos pos = targetedWater(world, player)
-        if (pos == null || !isToxic(world, pos)) return
+        if (pos == null) return
+        boolean toxic = isToxic(world, pos)
+        if (!toxic && !soda) return                           // glass bottles and canteens fill the vanilla way
 
         event.setCanceled(true)
         event.setCancellationResult(EnumActionResult.SUCCESS)
@@ -71,9 +80,10 @@ eventManager.listen { PlayerInteractEvent.RightClickItem event ->
 
         if (bottle) {
             if (!player.capabilities.isCreativeMode) stack.shrink(1)
-            ItemStack toxic = item('decaychain:toxic_water_bottle')
-            if (!player.inventory.addItemStackToInventory(toxic)) player.dropItem(toxic, false)
-            world.playSound(null, player.posX, player.posY, player.posZ, SoundEvents.ITEM_BOTTLE_FILL, SoundCategory.NEUTRAL, 1.0f, 0.8f)
+            ItemStack filled = toxic ? item('decaychain:toxic_water_bottle')
+                    : PotionUtils.addPotionToItemStack(new ItemStack(Items.POTIONITEM), PotionTypes.WATER)
+            if (!player.inventory.addItemStackToInventory(filled)) player.dropItem(filled, false)
+            world.playSound(null, player.posX, player.posY, player.posZ, SoundEvents.ITEM_BOTTLE_FILL, SoundCategory.NEUTRAL, 1.0f, toxic ? 0.8f : 1.0f)
         } else {
             player.sendStatusMessage(new TextComponentTranslation('decaychain.water.toxic_canteen'), true)
         }
