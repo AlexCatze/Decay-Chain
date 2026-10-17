@@ -18,7 +18,7 @@ hash = "2a71b7dc3295915c47292fbb6b88bc0ac488cbe50eb7657db7150e73f620a2c3"
 
 [[files]]
 file = "config/betterquesting/DefaultQuests.json"
-hash = "4ef07d400871dd4f9a09a98611779fa63be95959771357fa42f1303843d57d37"
+hash = "db92b8f2c9fef3611e2d8c293cd82430a6778f6e90bb36a347effff29f37b7b4"
 
 [[files]]
 file = "config/biomesoplenty/biomes/cherry_blossom_grove.json"
@@ -643,6 +643,10 @@ hash = "16e50b1b472ad27c5c1a8ad46175759de9b6725f4b0a18a64409834f1b81e436"
 [[files]]
 file = "groovy/classes/DecaySpawn.groovy"
 hash = "4928622bed1ce373590301672ad3b3cc17b9bdc92ca9b978b5756a01aef62a87"
+
+[[files]]
+file = "groovy/postInit/canned_food.groovy"
+hash = "5bbee8db961669ed92148675392a17a3a24f2208302908b0c3c858ed0b0a20dd"
 
 [[files]]
 file = "groovy/postInit/debug_food.groovy"
