@@ -448,10 +448,12 @@ ALIVE = [
          tasks=[retrieve(ore('cobblestone', 32, 'minecraft:cobblestone'))],
          desc="Rocks craft into cobblestone. Build something you can close behind you before your first night.\n\n"
               "Mud and straw make §eCob§r - another cheap early building block."),
-    dict(id=122, xy=(144, -48), requires=[121], task_logic='OR', name='A Place to Sleep', icon=item('comforts:sleeping_bag'),
-         tasks=[retrieve(pyro('straw_bed')), retrieve(item('comforts:sleeping_bag', 1, 32767))],
-         desc="A §estraw bed§r is cheap; a §esleeping bag§r (wool) can be carried. Sleeping skips the night - "
-              "except when the horde is coming."),
+    dict(id=122, xy=(144, -48), requires=[121], name='Home Point', icon=pyro('straw_bed'),
+         tasks=[retrieve(pyro('straw_bed'))],
+         desc="Nobody sleeps through the night here - but a bed still marks home. §eRight-click a bed§r, day or "
+              "night, to make it your respawn point. A §estraw bed§r is just 3 straw. A sleeping bag does not count: "
+              "home is where you can defend it.\n\nYou will be back there after every death. If the bed is gone, you "
+              "wake up somewhere random."),
     dict(id=123, xy=(144, 0), requires=[6], task_logic='OR', name='Storage', icon=pyro('crate'),
          tasks=[retrieve(pyro('crate')), retrieve(pyro('stash')), retrieve(item('storagedrawers:basicdrawers', 1, 32767))],
          desc="Crates, stashes and drawers keep your loot safe. A §eRock Bag§r collects rocks automatically."),

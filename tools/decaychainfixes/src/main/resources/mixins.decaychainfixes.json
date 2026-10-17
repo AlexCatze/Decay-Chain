@@ -26,6 +26,7 @@
     "PyrotechTorchTileMixin",
     "TechgunsCarrierMixin",
     "TechgunsGunLockMixin",
+    "UTSleepingBagSpawnMixin",
     "ZombieAwarenessCommandMixin",
     "srp.CtxAdaptedMixin",
     "srp.CtxBeckonMixin",

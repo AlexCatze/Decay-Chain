@@ -6,7 +6,7 @@ hash = "5c5dff2a46309b95150a58f0fde57042f1a825a395664775bff49edd64ecd914"
 
 [[files]]
 file = "config/Universal Tweaks - Tweaks.cfg"
-hash = "f3b87135f43f9085c2a823c7ff82fdd53d467080b7764223f95c49db192f58cb"
+hash = "dde17f76291c04e2281e8b65f011504b49bb12a389694d04e9ea25cbe542e6ae"
 
 [[files]]
 file = "config/betterquesting.cfg"
@@ -14,7 +14,7 @@ hash = "2a71b7dc3295915c47292fbb6b88bc0ac488cbe50eb7657db7150e73f620a2c3"
 
 [[files]]
 file = "config/betterquesting/DefaultQuests.json"
-hash = "4035da97da7a510cd0ee05cf77dbba0de5c5f627b5a4e69c5f5a0d20c5ff0bbf"
+hash = "8c3fa2c05c767977725bfec6cfc906e0ae6363cc8a902c0732b17a43e189e576"
 
 [[files]]
 file = "config/biomesoplenty/biomes/cherry_blossom_grove.json"
@@ -81,6 +81,10 @@ file = "config/cyberware.cfg"
 hash = "20063be193a1570ff31fc501f3d33a5d1ca021bf4cffdb92c80c3673e2595f31"
 
 [[files]]
+file = "config/defaultoptions/keybindings.txt"
+hash = "da2ea023fe6e69a2c63e168109f67b413571860e93d7067c8a75a83bd8f2a58a"
+
+[[files]]
 file = "config/defaultworldgenerator-port/worldsettings.data"
 hash = "d90cbf8b2ebd059c9447915df06bb573b1cb70f1455dee3ad8a7f4ecedab2380"
 
@@ -95,6 +99,10 @@ hash = "3e70c5aa2bbdcb54ff5bfa920cd1bf68293b8f00c24c00b55ffb2acf3f7cb7f4"
 [[files]]
 file = "config/esm/entity_ai.json"
 hash = "321adb6e3fa78c044c1e4dd23dbaba3bbb168101a7ad7a6c0576ac287a206a02"
+
+[[files]]
+file = "config/esm/epicsiegemod.cfg"
+hash = "256ba48c947c9d857ac56df3c769d354769ce7a99ca404f313f98fc6b4a01f02"
 
 [[files]]
 file = "config/firstaid.cfg"
@@ -554,7 +562,7 @@ hash = "8d13c5f398016036aa4fdefb366ef3926d89f96ca104155bc9f6e5a7ec682ecd"
 
 [[files]]
 file = "groovy/assets/decaychain/lang/en_us.lang"
-hash = "00154edb945cc62275dda54f1ea8d9c9654c37e83eb3c9c3b250bedca0bb00eb"
+hash = "9f24d8ed056decc6dc2b15a044c9b1db7e0b1ff28da4511699ec389e6a0251e1"
 
 [[files]]
 file = "groovy/assets/decaychain/models/item/toxic_water_bottle.json"
@@ -768,7 +776,12 @@ metafile = true
 
 [[files]]
 file = "mods/decaychainfixes-1.0.0.jar"
-hash = "ae9651b2f0d68f3c1a754372c348c47b2ab7b091844629eee949936d436cf701"
+hash = "568495d16cded002fb4c0779bddbc722406aee5501e96180765527b4555de08a"
+
+[[files]]
+file = "mods/default-options.pw.toml"
+hash = "2d93ed5044fafbbabeab41598ff9de1ed8234e9e43f6330a4c5c090836f9b834"
+metafile = true
 
 [[files]]
 file = "mods/default-world-generator-port.pw.toml"
