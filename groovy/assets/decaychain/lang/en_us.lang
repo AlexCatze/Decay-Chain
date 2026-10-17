@@ -11,3 +11,7 @@ decaychain.hive.evolved=§cThe meteorite hive at %2$s, %3$s has evolved: its par
 decaychain.hive.weakened=§eThe meteorite hive at %2$s, %3$s is weakening (phase %1$s).
 decaychain.hive.destroyed=§aThe living core of the meteorite at %s, %s is destroyed. The infestation there is collapsing.
 decaychain.hive.died=§aThe infestation around %s, %s has died out.
+decaychain.torch.lit=§6Lit§7 - burns for about %s more min
+decaychain.torch.lit_forever=§6Lit
+decaychain.torch.used=§7Partly burnt: about %s min left
+decaychain.torch.how_to_light=§8Hold it in one hand and use a bow drill, flint and tinder or flint and steel with the other to light it

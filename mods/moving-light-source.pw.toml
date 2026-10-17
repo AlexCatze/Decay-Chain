@@ -1,0 +1,13 @@
+name = "Moving Light Source"
+filename = "movinglightsource.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "5c94145677507cafa4c9948001adb128226d5a8d"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7205279
+project-id = 1372315

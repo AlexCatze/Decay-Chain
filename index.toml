@@ -10,7 +10,7 @@ hash = "2a71b7dc3295915c47292fbb6b88bc0ac488cbe50eb7657db7150e73f620a2c3"
 
 [[files]]
 file = "config/betterquesting/DefaultQuests.json"
-hash = "c0aef6808ce34445f5be147f456006f0ffe40a5ba2d35f8ba09b496b828e71ab"
+hash = "ee80b5644b4403de186925b1484b9e8705f6b5675175b5c276c37c7a7d7ec200"
 
 [[files]]
 file = "config/biomesoplenty/biomes/cherry_blossom_grove.json"
@@ -514,11 +514,11 @@ hash = "522bd1de1592681b81d790e1a9035f0bbe74007815f0e5ba9679b75cfaf9d2db"
 
 [[files]]
 file = "config/spiceoflife.cfg"
-hash = "52ef756d15aa4c4ce11da9f3ebd3ee6d375ea2379104d3c8e1234c577a58ac21"
+hash = "e14a61ab14d4b55e6139c1cfb07a4d89803ce91ab3b121b4eb41676aa47ba435"
 
 [[files]]
 file = "config/srparasites/SRParasitesSystems.cfg"
-hash = "0669a3bf3e89056844e47fe2ae7106c935db9d7df0e761ae77a9fde04f311bd1"
+hash = "82b9924c251e8aa10c82fb86b6ee993ee3272d22f5866a5778e97aa3cb9f0591"
 
 [[files]]
 file = "config/srparasites/SRParasitesWorld.cfg"
@@ -550,7 +550,7 @@ hash = "8d13c5f398016036aa4fdefb366ef3926d89f96ca104155bc9f6e5a7ec682ecd"
 
 [[files]]
 file = "groovy/assets/decaychain/lang/en_us.lang"
-hash = "4d637e7142558487885b92d5616fc05fd28078ed65158dadc3cad02848a489fc"
+hash = "924b41a2d2a853b576813364f8f5deb8eef73b8a42521e541b161834acb7e62f"
 
 [[files]]
 file = "groovy/assets/decaychain/models/item/toxic_water_bottle.json"
@@ -760,7 +760,7 @@ metafile = true
 
 [[files]]
 file = "mods/decaychainfixes-1.0.0.jar"
-hash = "39fa8d6c2c348da4fecdbf5a4e92d0d25301cd225687d0152add2d28ca17d029"
+hash = "612912e27761b907113c518393ffa3de5cb0155a5ad6e618b68c1b0cf9dda03d"
 
 [[files]]
 file = "mods/default-world-generator-port.pw.toml"
@@ -870,6 +870,11 @@ metafile = true
 [[files]]
 file = "mods/mouse-tweaks.pw.toml"
 hash = "5eaab34dbc85c388430ed180eaf33ee94ea1699aac60d785a2fb79a832f74750"
+metafile = true
+
+[[files]]
+file = "mods/moving-light-source.pw.toml"
+hash = "131089a1a2e05054b87a3eef97b1ab093bf0ca8b7c5e13b8d1c9336ba3b3f92f"
 metafile = true
 
 [[files]]
