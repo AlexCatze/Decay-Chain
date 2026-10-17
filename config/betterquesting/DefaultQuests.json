@@ -4,7 +4,7 @@
   "questSettings:10": {
     "betterquesting:10": {
       "pack_name:8": "Decay Chain",
-      "pack_version:3": 23,
+      "pack_version:3": 24,
       "editMode:1": 0,
       "hardcore:1": 0,
       "lockTray:1": 0,
@@ -794,7 +794,12 @@
           "index:3": 0
         }
       },
-      "rewards:9": {}
+      "rewards:9": {},
+      "preRequisiteTypes:7": [
+        1,
+        1,
+        0
+      ]
     },
     "13:10": {
       "questID:3": 12,
@@ -848,7 +853,11 @@
           "index:3": 0
         }
       },
-      "rewards:9": {}
+      "rewards:9": {},
+      "preRequisiteTypes:7": [
+        0,
+        1
+      ]
     },
     "14:10": {
       "questID:3": 13,
@@ -954,7 +963,10 @@
           "index:3": 0
         }
       },
-      "rewards:9": {}
+      "rewards:9": {},
+      "preRequisiteTypes:7": [
+        1
+      ]
     },
     "16:10": {
       "questID:3": 15,
@@ -1145,12 +1157,12 @@
     "19:10": {
       "questID:3": 18,
       "preRequisites:11": [
-        557288403
+        30
       ],
       "properties:10": {
         "betterquesting:10": {
           "name:8": "Stone Machines",
-          "desc:8": "Built from §emasonry brick blocks§r (4 stone bricks each) and stone bricks - and not optional: only the §eStone Kiln§r can fire §erefractory bricks§r and §equicklime§r, so the road to iron runs through it.\n\n- §eStone Kiln§r: everything the pit kiln does, faster and with fewer failures.\n- §eStone Oven§r: cooks and dries without burning anything.\n\n§eUse:§r right-click the item into the top, fuel (logs, charcoal) into the bottom, and light the opening at the bottom with your fire starter. Take the results from the bottom. A bucket of water puts it out and saves fuel.",
+          "desc:8": "Each is §e7 Masonry Bricks blocks§r around a core, with a masonry brick on top - the kiln is built around a §epit kiln§r. Not optional: only the §eStone Kiln§r fires §erefractory bricks§r, §equicklime§r and §eglass§r, so the road to iron runs through it.\n\n- §eStone Kiln§r: everything the pit kiln does, faster and with fewer failures.\n- §eStone Oven§r: cooks and dries without burning anything.\n\n§eUse:§r right-click the item into the top, fuel (logs, charcoal) into the bottom, and light the opening at the bottom with your fire starter. Take the results from the bottom. A bucket of water puts it out and saves fuel.",
           "icon:10": {
             "id:8": "pyrotech:stone_kiln",
             "Count:3": 1,
@@ -1311,7 +1323,12 @@
           "index:3": 3
         }
       },
-      "rewards:9": {}
+      "rewards:9": {},
+      "preRequisiteTypes:7": [
+        0,
+        0,
+        1
+      ]
     },
     "21:10": {
       "questID:3": 1733322149,
@@ -1385,7 +1402,12 @@
           "index:3": 1
         }
       },
-      "rewards:9": {}
+      "rewards:9": {},
+      "preRequisiteTypes:7": [
+        0,
+        0,
+        1
+      ]
     },
     "22:10": {
       "questID:3": 557288403,
@@ -1396,7 +1418,7 @@
       "properties:10": {
         "betterquesting:10": {
           "name:8": "IThrowable",
-          "desc:8": "Stone work, step by step:\n\n1. §eCobblestone§r: eight stone rocks around a clay lump.\n2. §eStone§r: fire the cobblestone in the pit kiln.\n3. §eStone Bricks§r: four stone in a square.\n4. §eStone Brick Slabs§r: place the bricks on the granite anvil and hit them with a pickaxe.\n5. §eStone Brick§r: split a slab on the anvil the same way.\n\nStone bricks are what stone tools and machines are made of.",
+          "desc:8": "Stone work, step by step:\n\n1. §eCobblestone§r: eight stone rocks around a clay lump.\n2. §eStone§r: fire the cobblestone in the pit kiln.\n3. §eStone Bricks§r: four stone in a square.\n4. §eStone Brick Slabs§r: place the bricks on the granite anvil and hit them with a pickaxe.\n5. §eMasonry Brick§r: split a slab on the anvil the same way.\n\nMasonry bricks are what stone tools and machines are made of.",
           "icon:10": {
             "id:8": "pyrotech:material",
             "Count:3": 1,
@@ -1515,7 +1537,11 @@
           "index:3": 4
         }
       },
-      "rewards:9": {}
+      "rewards:9": {},
+      "preRequisiteTypes:7": [
+        0,
+        1
+      ]
     },
     "23:10": {
       "questID:3": 1889945701,
@@ -1525,7 +1551,7 @@
       "properties:10": {
         "betterquesting:10": {
           "name:8": "Isn't It Just a Stick?",
-          "desc:8": "Not quite. Put a §eStone Brick§r on the granite anvil and split it with a pickaxe: four §eStone Sticks§r. A wooden stick would char in the heat of a bloom - every pair of tongs is built on stone sticks.",
+          "desc:8": "Not quite. Put a §eMasonry Brick§r on the granite anvil and split it with a pickaxe: four §eStone Rods§r. A wooden stick would char in the heat of a bloom - every pair of tongs is built on stone rods.",
           "icon:10": {
             "id:8": "pyrotech:material",
             "Count:3": 1,
@@ -1621,17 +1647,20 @@
           "index:3": 0
         }
       },
-      "rewards:9": {}
+      "rewards:9": {},
+      "preRequisiteTypes:7": [
+        1
+      ]
     },
     "25:10": {
       "questID:3": 20,
       "preRequisites:11": [
-        18
+        42
       ],
       "properties:10": {
         "betterquesting:10": {
           "name:8": "Refractory Bricks",
-          "desc:8": "The bloomery is built from §erefractory brick blocks§r (4 bricks each). The full chain:\n\n1. §eFlint clay§r: hammer flint shards into flint dust on the granite anvil; melt clay lumps into liquid clay in a §eStone Crucible§r (fuelled like the stone kiln) and carry it over in a bucket; soak the dust in the liquid clay in a §eSoaking Pot§r.\n2. §eSlaked lime§r: hammer §elimestone§r rocks (underground) into dust, fire it in the stone kiln into quicklime, then soak it in water in the soaking pot.\n3. §eRefractory clay§r: 4 clay balls (4 clay lumps each) + 2 pit ash (left in kilns) + 2 slaked lime + 1 flint clay make 5.\n4. Split refractory clay into lumps; 2 lumps make an §eunfired refractory brick§r - fire it in the §estone kiln§r.\n\n§eYou need 28 bricks§r for a bloomery.",
+          "desc:8": "The last steps to a bloomery:\n\n1. Split each §eRefractory Clay§r into 4 lumps (inventory grid).\n2. Two lumps side by side make an §eUnfired Refractory Brick§r.\n3. Fire them in the §eStone Kiln§r - a few crack.\n4. Four refractory bricks in a square make a §eRefractory Bricks§r block.\n\nThe bloomery takes §e7 blocks: 28 bricks§r. 15 refractory clay make 30 unfired bricks - two spare for the kiln's failures.",
           "icon:10": {
             "id:8": "pyrotech:material",
             "Count:3": 1,
@@ -1737,7 +1766,7 @@
       "properties:10": {
         "betterquesting:10": {
           "name:8": "Tongs",
-          "desc:8": "A fresh bloom is glowing-hot iron. §cHolding it with bare hands burns you.§r Carry tongs: three flint or bone shards on two §estone sticks§r.\n\n§eUse:§r right-click a bloom with the tongs to pick it up. With tongs in either hand, a bloom you take from the bloomery goes into them safely.",
+          "desc:8": "A fresh bloom is glowing-hot iron. §cHolding it with bare hands burns you.§r Carry tongs: three flint or bone shards on two §estone rods§r.\n\n§eUse:§r right-click a bloom with the tongs to pick it up. With tongs in either hand, a bloom you take from the bloomery goes into them safely.",
           "icon:10": {
             "id:8": "pyrotech:tongs_flint",
             "Count:3": 1,
@@ -1896,7 +1925,11 @@
           "index:3": 0
         }
       },
-      "rewards:9": {}
+      "rewards:9": {},
+      "preRequisiteTypes:7": [
+        0,
+        1
+      ]
     },
     "30:10": {
       "questID:3": 25,
@@ -2006,6 +2039,826 @@
       "rewards:9": {}
     },
     "32:10": {
+      "questID:3": 30,
+      "preRequisites:11": [
+        557288403
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "name:8": "Masonry Bricks",
+          "desc:8": "Every stone machine is built from §eMasonry Bricks§r blocks: §e4 masonry bricks§r (the small ones you split from stone brick slabs on the anvil) in a square.\n\nA stone kiln, crucible or sawmill takes §e7 blocks§r each - 28 masonry bricks. Set up a steady supply: fire cobblestone, square it into stone bricks, split them on the anvil.",
+          "icon:10": {
+            "id:8": "pyrotech:masonry_brick_block",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "isMain:1": 0,
+          "isSilent:1": 0,
+          "autoClaim:1": 1,
+          "globalShare:1": 0,
+          "lockedProgress:1": 0,
+          "simultaneous:1": 0,
+          "repeatTime:3": -1,
+          "repeat_relative:1": 1,
+          "questLogic:8": "AND",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "pyrotech:masonry_brick_block",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "optional:1": 0,
+          "index:3": 0
+        }
+      },
+      "rewards:9": {}
+    },
+    "33:10": {
+      "questID:3": 31,
+      "preRequisites:11": [
+        18
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "name:8": "Glass",
+          "desc:8": "Fire §esand§r in the §eStone Kiln§r - the pit kiln is not hot enough. Some of it cracks into glass shards.\n\nThe ruins are full of windows, but §csmashing glass cuts you§r: a §eGlass Cutter§r takes it out whole.\n\nYou need §e4 glass§r for a Stone Tank.",
+          "icon:10": {
+            "id:8": "minecraft:glass",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "isMain:1": 0,
+          "isSilent:1": 0,
+          "autoClaim:1": 1,
+          "globalShare:1": 0,
+          "lockedProgress:1": 0,
+          "simultaneous:1": 0,
+          "repeatTime:3": -1,
+          "repeat_relative:1": 1,
+          "questLogic:8": "AND",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "minecraft:glass",
+              "Count:3": 4,
+              "Damage:2": 32767,
+              "OreDict:8": "blockGlass"
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "optional:1": 0,
+          "index:3": 0
+        }
+      },
+      "rewards:9": {}
+    },
+    "34:10": {
+      "questID:3": 32,
+      "preRequisites:11": [
+        31
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "name:8": "Stone Tank",
+          "desc:8": "§e4 masonry bricks§r in the corners, §e4 glass§r on the sides. A tank stores fluid and keeps it when you break it.\n\nIts real job here: it is the heart of the §eStone Crucible§r. §cHot fluids such as lava break it.§r",
+          "icon:10": {
+            "id:8": "pyrotech:stone_tank",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "isMain:1": 0,
+          "isSilent:1": 0,
+          "autoClaim:1": 1,
+          "globalShare:1": 0,
+          "lockedProgress:1": 0,
+          "simultaneous:1": 0,
+          "repeatTime:3": -1,
+          "repeat_relative:1": 1,
+          "questLogic:8": "AND",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "pyrotech:stone_tank",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "optional:1": 0,
+          "index:3": 0
+        }
+      },
+      "rewards:9": {}
+    },
+    "35:10": {
+      "questID:3": 33,
+      "preRequisites:11": [
+        32
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "name:8": "Stone Crucible",
+          "desc:8": "A crucible §emelts solids into fluids§r. §e7 masonry brick blocks§r around a §estone tank§r, a masonry brick on top.\n\n§eUse:§r right-click clay into the top - a clay lump melts into a little liquid clay, a §eclay ball into 250 mB§r, a clay block into a full bucket. Put fuel (logs, charcoal) in the bottom and light it. Take the §eLiquid Clay§r out with a bucket - a wooden one is fine, liquid clay is not hot.",
+          "icon:10": {
+            "id:8": "pyrotech:stone_crucible",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "isMain:1": 0,
+          "isSilent:1": 0,
+          "autoClaim:1": 1,
+          "globalShare:1": 0,
+          "lockedProgress:1": 0,
+          "simultaneous:1": 0,
+          "repeatTime:3": -1,
+          "repeat_relative:1": 1,
+          "questLogic:8": "AND",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "pyrotech:stone_crucible",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "optional:1": 0,
+          "index:3": 0
+        }
+      },
+      "rewards:9": {}
+    },
+    "36:10": {
+      "questID:3": 34,
+      "preRequisites:11": [
+        15,
+        8
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "name:8": "Sawmill Blade",
+          "desc:8": "A circular blade: §e8 flint shards§r (or 8 bone shards, or 8 diorite rocks) around a §eDiorite§r block.\n\nDiorite comes the same way as granite: §e8 diorite rocks§r (the white ones) around a clay lump make §eCobbled Diorite§r - fire it in the pit kiln.",
+          "icon:10": {
+            "id:8": "pyrotech:sawmill_blade_flint",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "isMain:1": 0,
+          "isSilent:1": 0,
+          "autoClaim:1": 1,
+          "globalShare:1": 0,
+          "lockedProgress:1": 0,
+          "simultaneous:1": 0,
+          "repeatTime:3": -1,
+          "repeat_relative:1": 1,
+          "questLogic:8": "AND",
+          "taskLogic:8": "OR",
+          "visibility:8": "NORMAL",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "pyrotech:sawmill_blade_flint",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "pyrotech:sawmill_blade_bone",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "id:8": "pyrotech:sawmill_blade_stone",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "OR",
+          "optional:1": 0,
+          "index:3": 0
+        }
+      },
+      "rewards:9": {},
+      "preRequisiteTypes:7": [
+        1,
+        1
+      ]
+    },
+    "37:10": {
+      "questID:3": 35,
+      "preRequisites:11": [
+        30,
+        34,
+        7
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "name:8": "Stone Sawmill",
+          "desc:8": "§e7 masonry brick blocks§r around a §eChopping Block§r, a masonry brick on top. The sawmill is the only way to cut §eBoards§r.\n\n§eUse:§r right-click the §eblade§r into the saw, a §ewooden slab§r into the top, fuel (logs, charcoal) into the bottom, and light it. Slabs come out as boards. No blade, no boards.\n\nYou need §e4 boards§r for a Soaking Pot.",
+          "icon:10": {
+            "id:8": "pyrotech:stone_sawmill",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "isMain:1": 0,
+          "isSilent:1": 0,
+          "autoClaim:1": 1,
+          "globalShare:1": 0,
+          "lockedProgress:1": 0,
+          "simultaneous:1": 0,
+          "repeatTime:3": -1,
+          "repeat_relative:1": 1,
+          "questLogic:8": "AND",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "pyrotech:stone_sawmill",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "optional:1": 0,
+          "index:3": 0
+        },
+        "1:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "pyrotech:material",
+              "Count:3": 4,
+              "Damage:2": 20,
+              "OreDict:8": ""
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "optional:1": 0,
+          "index:3": 1
+        }
+      },
+      "rewards:9": {},
+      "preRequisiteTypes:7": [
+        0,
+        0,
+        1
+      ]
+    },
+    "38:10": {
+      "questID:3": 36,
+      "preRequisites:11": [
+        35
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "name:8": "Soaking Pot",
+          "desc:8": "§e4 boards + 4 masonry bricks§r. The pot soaks things in a fluid.\n\n§eUse:§r pour the fluid in with a bucket, right-click the items into the top and wait. Some recipes need a lit campfire under the pot - the ones on the road to iron do not.\n\nIt makes §eFlint Clay§r and §eSlaked Lime§r, and later washes and tans hides. §cHot fluids crack it.§r",
+          "icon:10": {
+            "id:8": "pyrotech:soaking_pot",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "isMain:1": 0,
+          "isSilent:1": 0,
+          "autoClaim:1": 1,
+          "globalShare:1": 0,
+          "lockedProgress:1": 0,
+          "simultaneous:1": 0,
+          "repeatTime:3": -1,
+          "repeat_relative:1": 1,
+          "questLogic:8": "AND",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "pyrotech:soaking_pot",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "optional:1": 0,
+          "index:3": 0
+        }
+      },
+      "rewards:9": {}
+    },
+    "39:10": {
+      "questID:3": 38,
+      "preRequisites:11": [
+        16,
+        8
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "name:8": "Crushed Flint",
+          "desc:8": "Put a §eflint shard§r on the granite anvil and hit it with a §ehammer§r: §eCrushed Flint§r.\n\nA §eflint, bone or stone hammer§r (2 shards or masonry bricks, 2 sticks and twine) works much faster than the crude one - and you will want it for the bloom too.",
+          "icon:10": {
+            "id:8": "pyrotech:material",
+            "Count:3": 1,
+            "Damage:2": 31,
+            "OreDict:8": ""
+          },
+          "isMain:1": 0,
+          "isSilent:1": 0,
+          "autoClaim:1": 1,
+          "globalShare:1": 0,
+          "lockedProgress:1": 0,
+          "simultaneous:1": 0,
+          "repeatTime:3": -1,
+          "repeat_relative:1": 1,
+          "questLogic:8": "AND",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "pyrotech:material",
+              "Count:3": 3,
+              "Damage:2": 31,
+              "OreDict:8": ""
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "optional:1": 0,
+          "index:3": 0
+        }
+      },
+      "rewards:9": {},
+      "preRequisiteTypes:7": [
+        1,
+        1
+      ]
+    },
+    "40:10": {
+      "questID:3": 37,
+      "preRequisites:11": [
+        33,
+        36,
+        38,
+        150
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "name:8": "Flint Clay",
+          "desc:8": "Fill the soaking pot with §eliquid clay§r from the crucible and put in §ecrushed flint§r. Each piece soaks up 250 mB - a quarter bucket - into a ball of §eFlint Clay§r.\n\nOne flint clay goes into every batch of refractory clay: make three.",
+          "icon:10": {
+            "id:8": "pyrotech:material",
+            "Count:3": 1,
+            "Damage:2": 3,
+            "OreDict:8": ""
+          },
+          "isMain:1": 0,
+          "isSilent:1": 0,
+          "autoClaim:1": 1,
+          "globalShare:1": 0,
+          "lockedProgress:1": 0,
+          "simultaneous:1": 0,
+          "repeatTime:3": -1,
+          "repeat_relative:1": 1,
+          "questLogic:8": "AND",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "pyrotech:material",
+              "Count:3": 3,
+              "Damage:2": 3,
+              "OreDict:8": ""
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "optional:1": 0,
+          "index:3": 0
+        }
+      },
+      "rewards:9": {},
+      "preRequisiteTypes:7": [
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    "41:10": {
+      "questID:3": 39,
+      "preRequisites:11": [
+        16
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "name:8": "Limestone",
+          "desc:8": "§eLimestone§r is a pale stone found almost everywhere underground.\n\nBreak it down with a hammer on the granite anvil: a limestone block becomes cobbled limestone, that becomes §e8 limestone rocks§r, and each rock becomes §eCrushed Limestone§r.\n\n§e6 crushed limestone§r is enough lime for a bloomery.",
+          "icon:10": {
+            "id:8": "pyrotech:rock",
+            "Count:3": 1,
+            "Damage:2": 8,
+            "OreDict:8": ""
+          },
+          "isMain:1": 0,
+          "isSilent:1": 0,
+          "autoClaim:1": 1,
+          "globalShare:1": 0,
+          "lockedProgress:1": 0,
+          "simultaneous:1": 0,
+          "repeatTime:3": -1,
+          "repeat_relative:1": 1,
+          "questLogic:8": "AND",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "pyrotech:material",
+              "Count:3": 6,
+              "Damage:2": 28,
+              "OreDict:8": ""
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "optional:1": 0,
+          "index:3": 0
+        }
+      },
+      "rewards:9": {},
+      "preRequisiteTypes:7": [
+        1
+      ]
+    },
+    "42:10": {
+      "questID:3": 40,
+      "preRequisites:11": [
+        39,
+        18
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "name:8": "Quicklime",
+          "desc:8": "Fire §ecrushed limestone§r in the §eStone Kiln§r. The pit kiln cannot do it - this is the other reason the stone kiln is not optional.",
+          "icon:10": {
+            "id:8": "pyrotech:material",
+            "Count:3": 1,
+            "Damage:2": 22,
+            "OreDict:8": ""
+          },
+          "isMain:1": 0,
+          "isSilent:1": 0,
+          "autoClaim:1": 1,
+          "globalShare:1": 0,
+          "lockedProgress:1": 0,
+          "simultaneous:1": 0,
+          "repeatTime:3": -1,
+          "repeat_relative:1": 1,
+          "questLogic:8": "AND",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "pyrotech:material",
+              "Count:3": 6,
+              "Damage:2": 22,
+              "OreDict:8": ""
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "optional:1": 0,
+          "index:3": 0
+        }
+      },
+      "rewards:9": {},
+      "preRequisiteTypes:7": [
+        0,
+        1
+      ]
+    },
+    "43:10": {
+      "questID:3": 41,
+      "preRequisites:11": [
+        40,
+        36
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "name:8": "Slaked Lime",
+          "desc:8": "Soak §equicklime§r in §ewater§r in the soaking pot: 125 mB each, so a bucket does eight. Out comes §eSlaked Lime§r - the binder of refractory clay.",
+          "icon:10": {
+            "id:8": "pyrotech:material",
+            "Count:3": 1,
+            "Damage:2": 8,
+            "OreDict:8": ""
+          },
+          "isMain:1": 0,
+          "isSilent:1": 0,
+          "autoClaim:1": 1,
+          "globalShare:1": 0,
+          "lockedProgress:1": 0,
+          "simultaneous:1": 0,
+          "repeatTime:3": -1,
+          "repeat_relative:1": 1,
+          "questLogic:8": "AND",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "pyrotech:material",
+              "Count:3": 6,
+              "Damage:2": 8,
+              "OreDict:8": ""
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "optional:1": 0,
+          "index:3": 0
+        }
+      },
+      "rewards:9": {}
+    },
+    "44:10": {
+      "questID:3": 43,
+      "preRequisites:11": [
+        10
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "name:8": "Ash",
+          "desc:8": "Fires leave §eAsh§r behind. Collect it from burnt-out campfires (break the ash with a shovel), charcoal pit burns and kilns instead of throwing it away.\n\nRefractory clay needs §e2 ash§r per batch.",
+          "icon:10": {
+            "id:8": "pyrotech:material",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "isMain:1": 0,
+          "isSilent:1": 0,
+          "autoClaim:1": 1,
+          "globalShare:1": 0,
+          "lockedProgress:1": 0,
+          "simultaneous:1": 0,
+          "repeatTime:3": -1,
+          "repeat_relative:1": 1,
+          "questLogic:8": "AND",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "pyrotech:material",
+              "Count:3": 6,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "optional:1": 0,
+          "index:3": 0
+        }
+      },
+      "rewards:9": {},
+      "preRequisiteTypes:7": [
+        1
+      ]
+    },
+    "45:10": {
+      "questID:3": 42,
+      "preRequisites:11": [
+        37,
+        41,
+        43,
+        14
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "name:8": "Refractory Clay",
+          "desc:8": "On the Worktable: §e4 clay balls§r in the corners, §e2 ash§r above and below the middle, §e2 slaked lime§r left and right, §e1 flint clay§r in the middle - §e5 Refractory Clay§r.\n\nA clay ball is 4 lumps of clay. A bloomery takes §e3 batches§r: 12 clay balls, 6 ash, 6 slaked lime and 3 flint clay.",
+          "icon:10": {
+            "id:8": "pyrotech:material",
+            "Count:3": 1,
+            "Damage:2": 4,
+            "OreDict:8": ""
+          },
+          "isMain:1": 0,
+          "isSilent:1": 0,
+          "autoClaim:1": 1,
+          "globalShare:1": 0,
+          "lockedProgress:1": 0,
+          "simultaneous:1": 0,
+          "repeatTime:3": -1,
+          "repeat_relative:1": 1,
+          "questLogic:8": "AND",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "taskID:8": "bq_standard:retrieval",
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "pyrotech:material",
+              "Count:3": 5,
+              "Damage:2": 4,
+              "OreDict:8": ""
+            }
+          },
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "partialMatch:1": 1,
+          "entryLogic:8": "AND",
+          "optional:1": 0,
+          "index:3": 0
+        }
+      },
+      "rewards:9": {},
+      "preRequisiteTypes:7": [
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    "46:10": {
       "questID:3": 1665027210,
       "preRequisites:11": [
         8,
@@ -2119,9 +2972,14 @@
           "index:3": 1
         }
       },
-      "rewards:9": {}
+      "rewards:9": {},
+      "preRequisiteTypes:7": [
+        0,
+        0,
+        1
+      ]
     },
-    "33:10": {
+    "47:10": {
       "questID:3": 151,
       "preRequisites:11": [
         1665027210
@@ -2174,7 +3032,7 @@
       },
       "rewards:9": {}
     },
-    "34:10": {
+    "48:10": {
       "questID:3": 152,
       "preRequisites:11": [
         151
@@ -2264,7 +3122,7 @@
       },
       "rewards:9": {}
     },
-    "35:10": {
+    "49:10": {
       "questID:3": 153,
       "preRequisites:11": [
         152,
@@ -2318,7 +3176,7 @@
       },
       "rewards:9": {}
     },
-    "36:10": {
+    "50:10": {
       "questID:3": 150,
       "preRequisites:11": [
         6
@@ -2369,9 +3227,12 @@
           "index:3": 0
         }
       },
-      "rewards:9": {}
+      "rewards:9": {},
+      "preRequisiteTypes:7": [
+        1
+      ]
     },
-    "37:10": {
+    "51:10": {
       "questID:3": 100,
       "preRequisites:11": [
         0
@@ -2409,7 +3270,7 @@
       },
       "rewards:9": {}
     },
-    "38:10": {
+    "52:10": {
       "questID:3": 1226231121,
       "preRequisites:11": [
         100
@@ -2462,7 +3323,7 @@
       },
       "rewards:9": {}
     },
-    "39:10": {
+    "53:10": {
       "questID:3": 1942058366,
       "preRequisites:11": [
         153
@@ -2521,7 +3382,7 @@
       },
       "rewards:9": {}
     },
-    "40:10": {
+    "54:10": {
       "questID:3": 101,
       "preRequisites:11": [
         1226231121,
@@ -2560,7 +3421,7 @@
       },
       "rewards:9": {}
     },
-    "41:10": {
+    "55:10": {
       "questID:3": 102,
       "preRequisites:11": [
         101,
@@ -2614,7 +3475,7 @@
       },
       "rewards:9": {}
     },
-    "42:10": {
+    "56:10": {
       "questID:3": 103,
       "preRequisites:11": [
         101,
@@ -2668,7 +3529,7 @@
       },
       "rewards:9": {}
     },
-    "43:10": {
+    "57:10": {
       "questID:3": 104,
       "preRequisites:11": [
         100
@@ -2706,7 +3567,7 @@
       },
       "rewards:9": {}
     },
-    "44:10": {
+    "58:10": {
       "questID:3": 110,
       "preRequisites:11": [
         0
@@ -2777,7 +3638,7 @@
       },
       "rewards:9": {}
     },
-    "45:10": {
+    "59:10": {
       "questID:3": 111,
       "preRequisites:11": [
         6
@@ -2830,7 +3691,7 @@
       },
       "rewards:9": {}
     },
-    "46:10": {
+    "60:10": {
       "questID:3": 112,
       "preRequisites:11": [
         10,
@@ -2914,7 +3775,7 @@
       },
       "rewards:9": {}
     },
-    "47:10": {
+    "61:10": {
       "questID:3": 113,
       "preRequisites:11": [
         0
@@ -2922,7 +3783,7 @@
       "properties:10": {
         "betterquesting:10": {
           "name:8": "Canned Goods",
-          "desc:8": "Ruined cities still hide pre-war food: canned beef, tuna, mystery meat... Cans keep forever. City chests, rail tunnels and old dungeons are your pantry.",
+          "desc:8": "Ruined cities still hide pre-war food. Cans keep forever: city chests, rail tunnels and old dungeons are your pantry. Every can comes with a winding key.\n\n§7Scratched inside a locker in a rail tunnel:§r\n§o\"Day 212. Rules of the tin, for whoever finds this.\n\nBeef, tuna, fried chicken, Spam, hotdogs, pizza - eat. Best things left in this world.\n\nMystery meat, pashtet, yogurt, the 'mushroom' stew, the astronaut tube - eat, don't ask.\n\nLeftovers: one mouthful, barely. Recursion: nine times in ten there's another can inside. Eat one, carry the rest, don't think about it.\n\nCanned Fist punches you. Every time. Still food.\n\nEngine oil, diesel, kerosene, napalm, asbestos. The old world sold it as food and it fills you like food. Nothing worse happened to me. Make of that what you will.\n\n§c§oDo not open the Black Hole.§r§o It opens right where you stand. Kowalski opened the Black Hole. We found his boots.\"§r",
           "icon:10": {
             "id:8": "hbm:canned_conserve",
             "Count:3": 1,
@@ -2967,7 +3828,7 @@
       },
       "rewards:9": {}
     },
-    "48:10": {
+    "62:10": {
       "questID:3": 114,
       "preRequisites:11": [
         0
@@ -3050,7 +3911,7 @@
       },
       "rewards:9": {}
     },
-    "49:10": {
+    "63:10": {
       "questID:3": 1586696649,
       "preRequisites:11": [
         114,
@@ -3091,7 +3952,7 @@
       },
       "rewards:9": {}
     },
-    "50:10": {
+    "64:10": {
       "questID:3": 120,
       "preRequisites:11": [
         2
@@ -3150,7 +4011,7 @@
       },
       "rewards:9": {}
     },
-    "51:10": {
+    "65:10": {
       "questID:3": 121,
       "preRequisites:11": [
         1
@@ -3203,7 +4064,7 @@
       },
       "rewards:9": {}
     },
-    "52:10": {
+    "66:10": {
       "questID:3": 122,
       "preRequisites:11": [
         121
@@ -3256,7 +4117,7 @@
       },
       "rewards:9": {}
     },
-    "53:10": {
+    "67:10": {
       "questID:3": 123,
       "preRequisites:11": [
         6
@@ -3321,7 +4182,7 @@
       },
       "rewards:9": {}
     },
-    "54:10": {
+    "68:10": {
       "questID:3": 124,
       "preRequisites:11": [
         121
@@ -3359,7 +4220,7 @@
       },
       "rewards:9": {}
     },
-    "55:10": {
+    "69:10": {
       "questID:3": 409861656,
       "preRequisites:11": [
         830666229,
@@ -3399,7 +4260,7 @@
       },
       "rewards:9": {}
     },
-    "56:10": {
+    "70:10": {
       "questID:3": 130,
       "preRequisites:11": [
         0
@@ -3458,7 +4319,7 @@
       },
       "rewards:9": {}
     },
-    "57:10": {
+    "71:10": {
       "questID:3": 131,
       "preRequisites:11": [
         0
@@ -3496,7 +4357,7 @@
       },
       "rewards:9": {}
     },
-    "58:10": {
+    "72:10": {
       "questID:3": 132,
       "preRequisites:11": [
         0
@@ -3534,7 +4395,7 @@
       },
       "rewards:9": {}
     },
-    "59:10": {
+    "73:10": {
       "questID:3": 140,
       "preRequisites:11": [
         0
@@ -3572,7 +4433,7 @@
       },
       "rewards:9": {}
     },
-    "60:10": {
+    "74:10": {
       "questID:3": 141,
       "preRequisites:11": [
         0
@@ -3610,7 +4471,7 @@
       },
       "rewards:9": {}
     },
-    "61:10": {
+    "75:10": {
       "questID:3": 142,
       "preRequisites:11": [
         0
@@ -3648,7 +4509,7 @@
       },
       "rewards:9": {}
     },
-    "62:10": {
+    "76:10": {
       "questID:3": 143,
       "preRequisites:11": [
         3
@@ -3725,7 +4586,7 @@
       },
       "rewards:9": {}
     },
-    "63:10": {
+    "77:10": {
       "questID:3": 144,
       "preRequisites:11": [
         6
@@ -3976,8 +4837,8 @@
         },
         "25:10": {
           "id:3": 20,
-          "x:3": 336,
-          "y:3": 120,
+          "x:3": 480,
+          "y:3": 264,
           "sizeX:3": 24,
           "sizeY:3": 24
         },
@@ -4024,34 +4885,132 @@
           "sizeY:3": 24
         },
         "32:10": {
+          "id:3": 30,
+          "x:3": 288,
+          "y:3": 216,
+          "sizeX:3": 24,
+          "sizeY:3": 24
+        },
+        "33:10": {
+          "id:3": 31,
+          "x:3": 336,
+          "y:3": 264,
+          "sizeX:3": 24,
+          "sizeY:3": 24
+        },
+        "34:10": {
+          "id:3": 32,
+          "x:3": 384,
+          "y:3": 264,
+          "sizeX:3": 24,
+          "sizeY:3": 24
+        },
+        "35:10": {
+          "id:3": 33,
+          "x:3": 432,
+          "y:3": 264,
+          "sizeX:3": 24,
+          "sizeY:3": 24
+        },
+        "36:10": {
+          "id:3": 34,
+          "x:3": 240,
+          "y:3": 312,
+          "sizeX:3": 24,
+          "sizeY:3": 24
+        },
+        "37:10": {
+          "id:3": 35,
+          "x:3": 288,
+          "y:3": 312,
+          "sizeX:3": 24,
+          "sizeY:3": 24
+        },
+        "38:10": {
+          "id:3": 36,
+          "x:3": 336,
+          "y:3": 312,
+          "sizeX:3": 24,
+          "sizeY:3": 24
+        },
+        "39:10": {
+          "id:3": 38,
+          "x:3": 528,
+          "y:3": 312,
+          "sizeX:3": 24,
+          "sizeY:3": 24
+        },
+        "40:10": {
+          "id:3": 37,
+          "x:3": 432,
+          "y:3": 312,
+          "sizeX:3": 24,
+          "sizeY:3": 24
+        },
+        "41:10": {
+          "id:3": 39,
+          "x:3": 288,
+          "y:3": 360,
+          "sizeX:3": 24,
+          "sizeY:3": 24
+        },
+        "42:10": {
+          "id:3": 40,
+          "x:3": 336,
+          "y:3": 360,
+          "sizeX:3": 24,
+          "sizeY:3": 24
+        },
+        "43:10": {
+          "id:3": 41,
+          "x:3": 384,
+          "y:3": 360,
+          "sizeX:3": 24,
+          "sizeY:3": 24
+        },
+        "44:10": {
+          "id:3": 43,
+          "x:3": 480,
+          "y:3": 360,
+          "sizeX:3": 24,
+          "sizeY:3": 24
+        },
+        "45:10": {
+          "id:3": 42,
+          "x:3": 432,
+          "y:3": 360,
+          "sizeX:3": 24,
+          "sizeY:3": 24
+        },
+        "46:10": {
           "id:3": 1665027210,
           "x:3": 72,
           "y:3": 168,
           "sizeX:3": 24,
           "sizeY:3": 24
         },
-        "33:10": {
+        "47:10": {
           "id:3": 151,
           "x:3": 72,
           "y:3": 264,
           "sizeX:3": 24,
           "sizeY:3": 24
         },
-        "34:10": {
+        "48:10": {
           "id:3": 152,
           "x:3": 120,
           "y:3": 264,
           "sizeX:3": 24,
           "sizeY:3": 24
         },
-        "35:10": {
+        "49:10": {
           "id:3": 153,
           "x:3": 168,
           "y:3": 264,
           "sizeX:3": 24,
           "sizeY:3": 24
         },
-        "36:10": {
+        "50:10": {
           "id:3": 150,
           "x:3": 168,
           "y:3": 216,

@@ -2,9 +2,10 @@
 
 Usage:  python tools/quests/diff_save.py "<instance>/saves/<world>/betterquesting/QuestDatabase.json"
 
-Prints every quest whose name, prerequisites, logic, icon, tasks or layout differ, plus quests that exist on only one
-side, so in-game edits can be ported back into the chapter modules (primitive.py, ...). BQ omits default values when
-it saves, so missing keys are compared as their defaults. Descriptions are reported as changed/unchanged only.
+Prints every quest whose name, prerequisites, hidden dependency lines, logic, icon, tasks or layout differ, plus
+quests that exist on only one side, so in-game edits can be ported back into the chapter modules (primitive.py, ...).
+BQ omits default values when it saves, so missing keys are compared as their defaults. Descriptions are reported as
+changed/unchanged only.
 """
 import json
 import os
@@ -39,6 +40,12 @@ def tasks(q):
     return out
 
 
+def hidden_lines(q):
+    """Prerequisites whose dependency line is hidden (requirement type 1)."""
+    types = q.get('preRequisiteTypes:7', [])
+    return {r for r, t in zip(q.get('preRequisites:11', []), types) if t == 1}
+
+
 def main(save_path):
     sq, sl = load(save_path)
     rq, rl = load(REPO_BOOK)
@@ -56,6 +63,8 @@ def main(save_path):
             diffs.append(('desc', 'changed', ''))
         if sorted(sq[i].get('preRequisites:11', [])) != sorted(rq[i].get('preRequisites:11', [])):
             diffs.append(('prereq', rq[i].get('preRequisites:11', []), sq[i].get('preRequisites:11', [])))
+        if hidden_lines(sq[i]) != hidden_lines(rq[i]):
+            diffs.append(('hidden lines', sorted(hidden_lines(rq[i])), sorted(hidden_lines(sq[i]))))
         if tasks(sq[i]) != tasks(rq[i]):
             diffs.append(('tasks', tasks(rq[i]), tasks(sq[i])))
         if sl.get(i) != rl.get(i):

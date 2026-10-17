@@ -1,0 +1,157 @@
+{
+    "images": {
+        "title": {
+            "image": "decaychain:textures/gui/title_logo.png",
+            "posX": -152,
+            "posY": 10,
+            "width": 305,
+            "height": 53,
+            "alignment": "top_center"
+        },
+        "art_singleplayer": {
+            "image": "decaychain:textures/gui/menu/singleplayer.png",
+            "posX": -100,
+            "posY": -59,
+            "width": 200,
+            "height": 20,
+            "alignment": "center"
+        },
+        "art_multiplayer": {
+            "image": "decaychain:textures/gui/menu/multiplayer.png",
+            "posX": -100,
+            "posY": -13,
+            "width": 200,
+            "height": 20,
+            "alignment": "center"
+        },
+        "art_mods": {
+            "image": "decaychain:textures/gui/menu/mods.png",
+            "posX": -100,
+            "posY": 33,
+            "width": 200,
+            "height": 20,
+            "alignment": "center"
+        },
+        "art_options": {
+            "image": "decaychain:textures/gui/menu/options.png",
+            "posX": -104,
+            "posY": 79,
+            "width": 98,
+            "height": 20,
+            "alignment": "center"
+        },
+        "art_quit": {
+            "image": "decaychain:textures/gui/menu/quit.png",
+            "posX": 6,
+            "posY": 79,
+            "width": 98,
+            "height": 28,
+            "alignment": "center"
+        }
+    },
+    "buttons": {
+        "singleplayer": {
+            "text": "menu.singleplayer",
+            "posX": -100,
+            "posY": -39,
+            "width": 200,
+            "height": 20,
+            "action": {
+                "type": "openGui",
+                "gui": "singleplayer"
+            },
+            "alignment": "center"
+        },
+        "multiplayer": {
+            "text": "menu.multiplayer",
+            "posX": -100,
+            "posY": 7,
+            "width": 200,
+            "height": 20,
+            "action": {
+                "type": "openGui",
+                "gui": "multiplayer"
+            },
+            "alignment": "center"
+        },
+        "mods": {
+            "text": "fml.menu.mods",
+            "posX": -100,
+            "posY": 53,
+            "width": 200,
+            "height": 20,
+            "action": {
+                "type": "openGui",
+                "gui": "mods"
+            },
+            "alignment": "center"
+        },
+        "options": {
+            "text": "menu.options",
+            "posX": -104,
+            "posY": 99,
+            "width": 98,
+            "height": 20,
+            "action": {
+                "type": "openGui",
+                "gui": "options"
+            },
+            "alignment": "center"
+        },
+        "quit": {
+            "text": "menu.quit",
+            "posX": 6,
+            "posY": 99,
+            "width": 98,
+            "height": 20,
+            "action": {
+                "type": "quit"
+            },
+            "alignment": "center"
+        }
+    },
+    "labels": {
+        "mojang": {
+            "text": "Copyright Mojang AB. Do not distribute!",
+            "hoverText": "\u00a7nCopyright Mojang AB. Do not distribute!",
+            "posX": -197,
+            "posY": -10,
+            "color": -1,
+            "alignment": "bottom_right",
+            "action": {
+                "type": "openGui",
+                "gui": "credits"
+            }
+        },
+        "fml": {
+            "text": "",
+            "posX": 2,
+            "posY": -40,
+            "color": -1,
+            "alignment": "bottom_left"
+        },
+        "version": {
+            "text": "Decay Chain 1.0.0",
+            "posX": 2,
+            "posY": -10,
+            "color": -4144960,
+            "alignment": "bottom_left"
+        }
+    },
+    "other": {
+        "splash-text": {
+            "posX": 100,
+            "posY": 58,
+            "color": -256,
+            "alignment": "top_center",
+            "texts": "file:decaychain:texts/splashes.txt"
+        },
+        "panorama": {
+            "images": "decaychain:textures/gui/panorama/panorama_%c.png",
+            "animate": true,
+            "animationSpeed": 1,
+            "blur": true,
+            "gradient": true
+        }
+    }
+}

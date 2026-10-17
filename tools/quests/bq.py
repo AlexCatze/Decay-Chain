@@ -56,8 +56,13 @@ def build_quest(q):
     tasks = {}
     for i, t in enumerate(task_list):
         tasks[f'{i}:10'] = dict(t, **{'index:3': i})
-    return {'questID:3': q['id'], 'preRequisites:11': q.get('requires', []),
-            'properties:10': {'betterquesting:10': props}, 'tasks:9': tasks, 'rewards:9': {}}
+    quest = {'questID:3': q['id'], 'preRequisites:11': q.get('requires', []),
+             'properties:10': {'betterquesting:10': props}, 'tasks:9': tasks, 'rewards:9': {}}
+    hidden = q.get('hidden', [])
+    assert set(hidden) <= set(q.get('requires', [])), f"quest {q['id']} hides a line to a quest it does not require"
+    if hidden:   # dependency lines not drawn in the quest book (BQ requirement type 1 = implicit)
+        quest['preRequisiteTypes:7'] = [1 if r in hidden else 0 for r in q['requires']]
+    return quest
 
 
 def build(chapters, pack_version):

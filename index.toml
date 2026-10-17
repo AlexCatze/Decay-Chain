@@ -1,6 +1,10 @@
 hash-format = "sha256"
 
 [[files]]
+file = "config/CustomMainMenu/mainmenu.json"
+hash = "d2c9cdd85a285efb0fd93fd6eafdbb415466a1c518c61c6f91b8d087e04ffaa5"
+
+[[files]]
 file = "config/Special_Mobs.cfg"
 hash = "5c5dff2a46309b95150a58f0fde57042f1a825a395664775bff49edd64ecd914"
 
@@ -14,7 +18,7 @@ hash = "2a71b7dc3295915c47292fbb6b88bc0ac488cbe50eb7657db7150e73f620a2c3"
 
 [[files]]
 file = "config/betterquesting/DefaultQuests.json"
-hash = "8c3fa2c05c767977725bfec6cfc906e0ae6363cc8a902c0732b17a43e189e576"
+hash = "4ef07d400871dd4f9a09a98611779fa63be95959771357fa42f1303843d57d37"
 
 [[files]]
 file = "config/biomesoplenty/biomes/cherry_blossom_grove.json"
@@ -569,6 +573,58 @@ file = "groovy/assets/decaychain/models/item/toxic_water_bottle.json"
 hash = "8847ba441abfd2a74afbb04d234dac6d23a0bf6eff40538b3ec6d1f7637a363e"
 
 [[files]]
+file = "groovy/assets/decaychain/texts/splashes.txt"
+hash = "ed68f8dd1bca32a28755517df429b67741d1990772b71a73467944298ec79750"
+
+[[files]]
+file = "groovy/assets/decaychain/textures/gui/menu/mods.png"
+hash = "5ddf938d75ea50275598ffb44cc135c40ab037d4784fd1f970854c2079e6be77"
+
+[[files]]
+file = "groovy/assets/decaychain/textures/gui/menu/multiplayer.png"
+hash = "e64677b152bd7d60e22c30903815275f7cf9d606d4e9a1d603a8f8d8284d1a9b"
+
+[[files]]
+file = "groovy/assets/decaychain/textures/gui/menu/options.png"
+hash = "865aa705b87879ee9b81071fdfee83c182ef0e15cc9e9695342055aceb104b08"
+
+[[files]]
+file = "groovy/assets/decaychain/textures/gui/menu/quit.png"
+hash = "fb45dc44fd8abafaf5434c92bd46ea04f4b784b222003108a6b81380c5379edf"
+
+[[files]]
+file = "groovy/assets/decaychain/textures/gui/menu/singleplayer.png"
+hash = "f9b2d6d6c20d9e6e84e08860e5f39e6d3e249057d1f83d6e8b2e0fbd0e710e85"
+
+[[files]]
+file = "groovy/assets/decaychain/textures/gui/panorama/panorama_0.png"
+hash = "08cc4f656971c4cbf40551232a85ed1a122b17864aaf751d296d96857a8535ef"
+
+[[files]]
+file = "groovy/assets/decaychain/textures/gui/panorama/panorama_1.png"
+hash = "91f9faca3ed2beb12b1e59bfcac657b85376891aa3cabd54563db921d13e7423"
+
+[[files]]
+file = "groovy/assets/decaychain/textures/gui/panorama/panorama_2.png"
+hash = "34b7665832536fa5fd006e4cc1c8741ac9dd0f69b7b19869386a2cbdf89385ec"
+
+[[files]]
+file = "groovy/assets/decaychain/textures/gui/panorama/panorama_3.png"
+hash = "12fd5ab5df954cf34a8a9a57bb9fe888e078c4553b9480dd4f2d00828ba6b433"
+
+[[files]]
+file = "groovy/assets/decaychain/textures/gui/panorama/panorama_4.png"
+hash = "beaecaae6b154ee63f9ff5ae3ab617b0f2332b5ccce8f9516362fd892024950b"
+
+[[files]]
+file = "groovy/assets/decaychain/textures/gui/panorama/panorama_5.png"
+hash = "0ea78f7fe8a0044ed3d09824fa1340b5917a43d759831c6a985dddf00d674c4f"
+
+[[files]]
+file = "groovy/assets/decaychain/textures/gui/title_logo.png"
+hash = "82a15b5ac9a2dfbdf99126f2f7f632aff6073b0173d87f0b17d64f3285c8e38a"
+
+[[files]]
 file = "groovy/assets/decaychain/textures/items/toxic_water_bottle.png"
 hash = "40a67f06dd5943491b11f1fb435d7f13d4875bca574e01749a4b3c011ed21e99"
 
@@ -776,7 +832,7 @@ metafile = true
 
 [[files]]
 file = "mods/decaychainfixes-1.0.0.jar"
-hash = "568495d16cded002fb4c0779bddbc722406aee5501e96180765527b4555de08a"
+hash = "d780630af61f369b2f5cb186ff696e9770009a7d5022d82a3aa47b303e01ab3a"
 
 [[files]]
 file = "mods/default-options.pw.toml"
