@@ -18,7 +18,7 @@ hash = "2a71b7dc3295915c47292fbb6b88bc0ac488cbe50eb7657db7150e73f620a2c3"
 
 [[files]]
 file = "config/betterquesting/DefaultQuests.json"
-hash = "cc067ab5abdb963c81fbdc637b90a7e8e2b681e8ed0ba1fcdf58ed9bb2fb1e2c"
+hash = "d4ea9e667fa1300c1f3dc1cf9d0d9002165ba44e9382a3a630b381c02f02face"
 
 [[files]]
 file = "config/biomesoplenty/biomes/cherry_blossom_grove.json"
@@ -1151,7 +1151,7 @@ hash = "f6aa69a1eac49d791bd7da8a8d8d3714533238b8626bad9412ace391aff43b84"
 
 [[files]]
 file = "scripts/primitive.zs"
-hash = "b1c6f9bca90aa0df27834a41161f00d9e3634aad103b69df3d9a9915f22c0b28"
+hash = "13ead787893847d248f1a5c0c790c0aff4b42b07b65a6e371c153d9f924275c4"
 
 [[files]]
 file = "scripts/pyrotech.zs"

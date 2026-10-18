@@ -23,3 +23,11 @@ for g in ["glass_ghostly", "glass_ethereal", "glass_ethereal_reverse"] as string
 // Mined with a pre-iron pickaxe, lignite gives Pyrotech coal pieces instead (config/dropt/decaychain_lignite.json) -
 // those make stone torches. Coal (iron pickaxe and up) still makes vanilla torches.
 recipes.removeByRecipeName("hbm:torch");
+
+// Wearable Backpacks: 3 leather instead of 7, twine (or string) in the corners, and iron instead of gold - a backpack
+// is the reward for the first tanned leather and the first iron, not for a gold find
+recipes.removeByRecipeName("wearablebackpacks:backpack");
+recipes.addShaped("decay_backpack", <wearablebackpacks:backpack>, [
+    [<ore:twine>, <ore:ingotIron>, <ore:twine>],
+    [<ore:leather>, <minecraft:wool:*>, <ore:leather>],
+    [<ore:twine>, <ore:leather>, <ore:twine>]]);
