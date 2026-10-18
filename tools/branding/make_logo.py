@@ -28,7 +28,8 @@ FACE_H = 32
 UNDERSIDE = 10
 LETTER_GAP = 3
 WORD_GAP = 12
-DAMAGE = 0.40                   # share of the letter faces that is rusted, overgrown or broken off
+DAMAGE = 0.40                   # scale of the decay: rust, biomass and broken edges are shares of this
+RIM = 3                         # broken edges reach at most this far into a letter
 
 # 5 x 5 glyph grid: column widths 6 6 4 6 6 and row heights 6 6 7 6 7 px, the vanilla proportions (a little wider gap)
 COLS, ROWS = [6, 6, 4, 6, 6], [6, 6, 7, 6, 7]
@@ -36,7 +37,7 @@ GLYPHS = {
     'D': ["####.", "##.##", "##.##", "##.##", "####."],
     'E': ["#####", "##...", "#####", "##...", "#####"],
     'C': ["#####", "##...", "##...", "##...", "#####"],
-    'A': ["#####", "##.##", "#####", "##.##", "##.##"],
+    'A': [".###.", "##.##", "#####", "##.##", "##.##"],
     'Y': ["##.##", "##.##", "#####", ".###.", ".###."],
     'H': ["##.##", "##.##", "#####", "##.##", "##.##"],
     'I': ["##", "##", "##", "##", "##"],
@@ -181,23 +182,18 @@ def main():
     centre = W / 2
     area = len(face)
 
-    # ---- broken: one letter split with its piece slipped, bites out of edges and corners
+    # ---- broken: bites out of the outer edges and corners. They stay within RIM px of a letter's outline, so they
+    # never cut through a stroke into the letter's holes and every letter keeps its shape.
     broken = set()
-    lx, lw = letters[3]                                       # the A of DECAY cracks through and its right half slips
-    cut = lambda x, y: x - lx > 13 + (y - top) * 0.25
-    moved = {(x, y): c for (x, y), c in face.items() if letter_of[(x, y)] == 3 and cut(x, y)}
-    for p in moved:
-        del face[p]
-    for (x, y), c in moved.items():
-        face[(x + 2, y + 3)] = c
-        letter_of[(x + 2, y + 3)] = 3
+    rim = lambda x, y: min(x - letters[letter_of[(x, y)]][0], letters[letter_of[(x, y)]][0]
+                           + letters[letter_of[(x, y)]][1] - 1 - x, y - top, base - y) <= RIM
     bite_noise = value_noise(rng, W, H, 2.5)
-    edge = [p for p in face if p[1] < base - 4 and any(q not in face for q in ((p[0], p[1] - 1),))]
+    edge = [p for p in face if p[1] < base - 4 and (p[0], p[1] - 1) not in face]
     corners = [p for p in face if sum(q not in face for q in n4(p)) >= 2]
-    for sx, sy in rng.sample(edge, 8) + rng.sample(corners, 6):
-        r = rng.uniform(2.5, 5.5)
+    for sx, sy in rng.sample(edge, 7) + rng.sample(corners, 5):
+        r = rng.uniform(1.8, 3.2)
         for (x, y) in list(face):
-            if (x - sx) ** 2 + ((y - sy) * 1.2) ** 2 <= r * r * (0.6 + bite_noise(x, y)):
+            if (x - sx) ** 2 + ((y - sy) * 1.2) ** 2 <= r * r * (0.6 + bite_noise(x, y)) and rim(x, y):
                 broken.add((x, y))
     for p in broken:
         face.pop(p, None)
@@ -243,13 +239,9 @@ def main():
         dx = rng.choice((-1, 1))
         for _ in range(rng.randint(4, 10)):
             if (x, y) in face:
-                img[(x, y)] = DARK_CRACK if rng.random() < 0.7 else BLACK
+                img[(x, y)] = DARK_CRACK if rng.random() < 0.8 else CRACK
             x += dx if rng.random() < 0.65 else 0
             y += 1 if rng.random() < 0.45 else 0
-    for x, y in moved:                                        # the split line
-        for q in ((x, y), (x + 2, y + 3)):
-            if q in face and (q[0] - 1, q[1]) not in face:
-                img[q] = DARK_CRACK
     for p in chips:
         img[p] = RUBBLE[(p[0] * 7 + p[1] * 3) % 2]
 
@@ -258,7 +250,7 @@ def main():
     alive = [p for p in face if p not in chips]
     score = {p: rust_big(*p) * 0.8 + rust_fine(*p) * 0.2 - (p[1] - top) / FACE_H * 0.15 for p in alive}
     ranked = sorted(alive, key=score.get, reverse=True)
-    rust = set(ranked[:int(area * DAMAGE * 0.42)])
+    rust = set(ranked[:int(area * DAMAGE * 0.28)])
     for p in rust:                                            # patches: dark in the middle, flaky light rims
         depth = score[p] - score[ranked[len(rust) - 1]]
         tone = 1 if depth > 0.16 else 2 if depth > 0.08 else 3 if depth > 0.03 else 4

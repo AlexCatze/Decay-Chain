@@ -9,6 +9,7 @@
   },
   "mixins": [
     "AthenaeumTileDataServiceMixin",
+    "BqOptionalRetrievalMixin",
     "ESMGriefMixin",
     "FirstAidScaleHealMixin",
     "GeneralEntityHandlerMixin",

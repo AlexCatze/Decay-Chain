@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "config/CustomMainMenu/mainmenu.json"
-hash = "d2c9cdd85a285efb0fd93fd6eafdbb415466a1c518c61c6f91b8d087e04ffaa5"
+hash = "33df1fbf798d3212188e4f92bfb95cb7634a86af2feeba930e904f3a9bd892cc"
 
 [[files]]
 file = "config/Special_Mobs.cfg"
@@ -18,7 +18,7 @@ hash = "2a71b7dc3295915c47292fbb6b88bc0ac488cbe50eb7657db7150e73f620a2c3"
 
 [[files]]
 file = "config/betterquesting/DefaultQuests.json"
-hash = "7f8797310a4cf425606ced1572c39326c9d4eda84462d6766923495e5bb7de5e"
+hash = "af4640355374916fe0d0b1767ed020cd7eecec6984baf4a7c83137800f837126"
 
 [[files]]
 file = "config/biomesoplenty/biomes/cherry_blossom_grove.json"
@@ -162,7 +162,7 @@ hash = "8e0725d84b431267c0b56370994b585a53615897af9966070c7c56bba8c174d0"
 
 [[files]]
 file = "config/lostcities/userassets.json"
-hash = "f70d87c226722afed0410cc723bf4aa7995fc9c1faf72f895b2556c559e21b46"
+hash = "7e24187f960476650d9e00a92cb524f44afaee1fecceaea060f7c6cfc8f05ad5"
 
 [[files]]
 file = "config/lostsouls.cfg"
@@ -622,7 +622,7 @@ hash = "0ea78f7fe8a0044ed3d09824fa1340b5917a43d759831c6a985dddf00d674c4f"
 
 [[files]]
 file = "groovy/assets/decaychain/textures/gui/title_logo.png"
-hash = "82a15b5ac9a2dfbdf99126f2f7f632aff6073b0173d87f0b17d64f3285c8e38a"
+hash = "4ce361a476377bbd3258678744261a260a71f990fe06925208c988fba4012ee0"
 
 [[files]]
 file = "groovy/assets/decaychain/textures/items/toxic_water_bottle.png"
@@ -836,7 +836,7 @@ metafile = true
 
 [[files]]
 file = "mods/decaychainfixes-1.0.0.jar"
-hash = "d780630af61f369b2f5cb186ff696e9770009a7d5022d82a3aa47b303e01ab3a"
+hash = "f10c6b981d6da390393e5b6eb951ae5817a9c5eeb683e7a25747baa331a899fb"
 
 [[files]]
 file = "mods/default-options.pw.toml"
@@ -1175,7 +1175,7 @@ hash = "5426639c02f06876e2d47e8a1a8c68211d09710c37ad20ee1dadea7e8f4473ea"
 
 [[files]]
 file = "scripts/weapons.zs"
-hash = "3881cd8722066b38ab56c390dcf3a9284be657bd36040b7ca9bd0cc938424476"
+hash = "4bb2d7679ef9023e8e1dc0df3776f3bea765f18c0e2e2836cc6634a5eb6374ee"
 
 [[files]]
 file = "workspace/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.version"

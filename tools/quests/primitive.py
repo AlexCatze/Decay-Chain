@@ -195,13 +195,13 @@ PATH = [
               "puts it out and saves fuel."),
     dict(id=POLISHED_GRANITE, xy=(276, 120), requires=[15, 11, 14], hidden=[14], name='Polished Granite',
          icon=item('minecraft:stone', 1, 2),
-         tasks=[retrieve(pyro('rock', 1)), retrieve(pyro('cobblestone', 2)), retrieve(item('minecraft:stone', 1, 1)),
-                retrieve(item('minecraft:stone', 1, 2))],
+         tasks=[retrieve(pyro('rock', 1), optional=True), retrieve(pyro('cobblestone', 2), optional=True),
+                retrieve(item('minecraft:stone', 1, 1), optional=True), retrieve(item('minecraft:stone', 1, 2))],
          desc="Collect §egranite rocks§r (the pink ones) and pack eight of them around a §eclay lump§r: "
               "§eCobbled Granite§r. Fire it in the pit kiln into §eGranite§r, then put four granite together for "
               "§ePolished Granite§r - the top of your granite anvil."),
     dict(id=STONE_SLAB, xy=(228, 168), requires=[14, 15, 11], hidden=[11], name='Stone Slab', icon=item('minecraft:stone_slab'),
-         tasks=[retrieve(item('minecraft:stone_slab', 1, 3)), retrieve(item('minecraft:stone_slab'))],
+         tasks=[retrieve(item('minecraft:stone_slab', 1, 3), optional=True), retrieve(item('minecraft:stone_slab'))],
          desc="Five stone rocks around a §eclay lump§r make a §eCobblestone Slab§r. Fired in the pit kiln it "
               "turns into a smooth §eStone Slab§r - the base of your granite anvil."),
     dict(id=STONEWORK, xy=(336, 168), requires=[16, 15], hidden=[15], name='IThrowable', icon=mat(16),
@@ -619,7 +619,9 @@ ALIVE = [
          tasks=[retrieve(item('spartanweaponry:spear_wood')), retrieve(item('spartanweaponry:spear_stone')),
                 retrieve(item('spartanweaponry:dagger_stone')), retrieve(pyro('crude_spear')), retrieve(item('minecraft:bow'))],
          desc="Spears, daggers and clubs of wood and stone are your first real weapons; a bow keeps danger at a "
-              "distance. Firearms come with steel."),
+              "distance. Firearms come with steel.\n\n"
+              "Stone weapons are cut from §emasonry bricks§r, so they come once your granite anvil is working. "
+              "Handles, poles and bowstrings take §etwine§r just as well as string."),
     dict(id=144, xy=(288, 96), requires=[6], name='Backpack', icon=item('wearablebackpacks:backpack'),
          tasks=[retrieve(item('wearablebackpacks:backpack'))],
          desc="A backpack worn on your back roughly doubles what you can carry home from a scavenging run.\n\n"

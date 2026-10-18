@@ -32,6 +32,26 @@ recipes.addShaped("decay_hbm_autoshotgun_space", <hbm:gun_autoshotgun>, [
     [<ore:gripAnyPlastic>, <hbmspace:circuit:4>, <ore:gripAnyPlastic>]]);
 recipes.replaceAllOccurences(<ore:gripAnyPlastic>, <hbmspace:circuit:4>, <hbm:gun_minigun>);
 
+// --- Spartan Weaponry: stone weapons are made of masonry bricks (Pyrotech), not cobblestone ---
+for weapon in ["battleaxe", "boomerang", "dagger", "glaive", "greatsword", "halberd", "hammer", "javelin", "katana",
+               "lance", "longsword", "mace", "parrying_dagger", "pike", "rapier", "saber", "scythe", "spear", "staff",
+               "throwing_axe", "throwing_knife", "warhammer"] as string[] {
+    recipes.replaceAllOccurences(<ore:cobblestone>, <pyrotech:material:16>, itemUtils.getItem("spartanweaponry:" + weapon + "_stone"));
+}
+
+// --- Spartan Weaponry: twine works wherever string does (handles, poles, bows, crossbows, quivers, dynamite) ---
+val stringOrTwine = <ore:string> | <ore:twine>;
+for name in ["longbow", "crossbow"] as string[] {
+    for material in ["wood", "leather", "copper", "tin", "bronze", "iron", "steel", "silver", "gold", "electrum", "lead",
+                     "nickel", "invar", "platinum", "diamond"] as string[] {
+        recipes.replaceAllOccurences(<ore:string>, stringOrTwine, itemUtils.getItem("spartanweaponry:" + name + "_" + material));
+    }
+}
+for item in [<spartanweaponry:material:0>, <spartanweaponry:material:1>, <spartanweaponry:quiver_arrow>,
+             <spartanweaponry:quiver_bolt>, <spartanweaponry:dynamite>] as crafttweaker.item.IItemStack[] {
+    recipes.replaceAllOccurences(<ore:string>, stringOrTwine, item);
+}
+
 // --- HBM: laser weapons need top-tier vacuum circuits ---
 for laser in [<hbm:gun_lasrifle>, <hbm:gun_tau>] as crafttweaker.item.IItemStack[] {
     recipes.replaceAllOccurences(<hbm:circuit:11>, <hbmspace:circuit:6>, laser);
