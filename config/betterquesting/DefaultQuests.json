@@ -4,7 +4,7 @@
   "questSettings:10": {
     "betterquesting:10": {
       "pack_name:8": "Decay Chain",
-      "pack_version:3": 28,
+      "pack_version:3": 29,
       "editMode:1": 0,
       "hardcore:1": 0,
       "lockTray:1": 0,
@@ -1457,7 +1457,7 @@
           "ignoreNBT:1": 1,
           "partialMatch:1": 1,
           "entryLogic:8": "AND",
-          "optional:1": 0,
+          "optional:1": 1,
           "index:3": 0
         },
         "1:10": {
@@ -1476,7 +1476,7 @@
           "ignoreNBT:1": 1,
           "partialMatch:1": 1,
           "entryLogic:8": "AND",
-          "optional:1": 0,
+          "optional:1": 1,
           "index:3": 1
         },
         "2:10": {
@@ -1495,7 +1495,7 @@
           "ignoreNBT:1": 1,
           "partialMatch:1": 1,
           "entryLogic:8": "AND",
-          "optional:1": 0,
+          "optional:1": 1,
           "index:3": 2
         },
         "3:10": {
@@ -1514,7 +1514,7 @@
           "ignoreNBT:1": 1,
           "partialMatch:1": 1,
           "entryLogic:8": "AND",
-          "optional:1": 0,
+          "optional:1": 1,
           "index:3": 3
         },
         "4:10": {

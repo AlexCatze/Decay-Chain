@@ -26,6 +26,7 @@
     "PyrotechIgniterMixin",
     "PyrotechTorchTileMixin",
     "TechgunsCarrierMixin",
+    "TechgunsFoodSlotMixin",
     "TechgunsGunLockMixin",
     "UTSleepingBagSpawnMixin",
     "ZombieAwarenessCommandMixin",

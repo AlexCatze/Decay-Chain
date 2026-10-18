@@ -205,8 +205,9 @@ PATH = [
          desc="Five stone rocks around a §eclay lump§r make a §eCobblestone Slab§r. Fired in the pit kiln it "
               "turns into a smooth §eStone Slab§r - the base of your granite anvil."),
     dict(id=STONEWORK, xy=(336, 168), requires=[16, 15], hidden=[15], name='IThrowable', icon=mat(16),
-         tasks=[retrieve(item('minecraft:cobblestone')), retrieve(item('minecraft:stone')),
-                retrieve(item('minecraft:stonebrick')), retrieve(item('minecraft:stone_slab', 1, 5)), retrieve(mat(16))],
+         tasks=[retrieve(item('minecraft:cobblestone'), optional=True), retrieve(item('minecraft:stone'), optional=True),
+                retrieve(item('minecraft:stonebrick'), optional=True),
+                retrieve(item('minecraft:stone_slab', 1, 5), optional=True), retrieve(mat(16))],
          desc="Stone work, step by step:\n\n"
               "1. §eCobblestone§r: eight stone rocks around a clay lump.\n"
               "2. §eStone§r: fire the cobblestone in the pit kiln.\n"

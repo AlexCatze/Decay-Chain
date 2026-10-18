@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "config/CustomMainMenu/mainmenu.json"
-hash = "33df1fbf798d3212188e4f92bfb95cb7634a86af2feeba930e904f3a9bd892cc"
+hash = "caf17437ad1fc212a0ceee19e248595f99cd704ec9295210671690caa7094d6d"
 
 [[files]]
 file = "config/Special_Mobs.cfg"
@@ -18,7 +18,7 @@ hash = "2a71b7dc3295915c47292fbb6b88bc0ac488cbe50eb7657db7150e73f620a2c3"
 
 [[files]]
 file = "config/betterquesting/DefaultQuests.json"
-hash = "af4640355374916fe0d0b1767ed020cd7eecec6984baf4a7c83137800f837126"
+hash = "cc067ab5abdb963c81fbdc637b90a7e8e2b681e8ed0ba1fcdf58ed9bb2fb1e2c"
 
 [[files]]
 file = "config/biomesoplenty/biomes/cherry_blossom_grove.json"
@@ -111,6 +111,10 @@ hash = "256ba48c947c9d857ac56df3c769d354769ce7a99ca404f313f98fc6b4a01f02"
 [[files]]
 file = "config/firstaid.cfg"
 hash = "ceb535fbb713957a37902c5edd6cf97e238890e39a9d3a5d66a256ceea335eb1"
+
+[[files]]
+file = "config/harvestcraft.cfg"
+hash = "2c005d9e217d61d975f17e43185362cc9d889774249da6485bdcd4c261742399"
 
 [[files]]
 file = "config/hbm/hbm.cfg"
@@ -649,10 +653,6 @@ file = "groovy/postInit/canned_food.groovy"
 hash = "5bbee8db961669ed92148675392a17a3a24f2208302908b0c3c858ed0b0a20dd"
 
 [[files]]
-file = "groovy/postInit/debug_food.groovy"
-hash = "6b8b3959e43de3bdb6799519be18a4b4b85243b2f16683e8cde27f81e027a2a7"
-
-[[files]]
 file = "groovy/postInit/glass.groovy"
 hash = "901f71f0e6423125e50a7694d8e57d202b7c9d652d7ac3e85368468e6db81eda"
 
@@ -836,7 +836,7 @@ metafile = true
 
 [[files]]
 file = "mods/decaychainfixes-1.0.0.jar"
-hash = "f10c6b981d6da390393e5b6eb951ae5817a9c5eeb683e7a25747baa331a899fb"
+hash = "6ff34d7d2bfdeeee61d17d9a06cedc1ea3a10b6f29865cf6ad0252b2ea386f27"
 
 [[files]]
 file = "mods/default-options.pw.toml"
