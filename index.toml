@@ -114,7 +114,7 @@ hash = "ceb535fbb713957a37902c5edd6cf97e238890e39a9d3a5d66a256ceea335eb1"
 
 [[files]]
 file = "config/harvestcraft.cfg"
-hash = "2c005d9e217d61d975f17e43185362cc9d889774249da6485bdcd4c261742399"
+hash = "8473b7ac903141b131f32e2181e51cf76ac24407b328dcae41b206171e81f7b3"
 
 [[files]]
 file = "config/hbm/hbm.cfg"
@@ -537,6 +537,10 @@ file = "config/spiceoflife.cfg"
 hash = "e14a61ab14d4b55e6139c1cfb07a4d89803ce91ab3b121b4eb41676aa47ba435"
 
 [[files]]
+file = "config/srparasites/SRParasites.cfg"
+hash = "840bde15e1f8152fd3b8fde6c9901b67c618eccf36278aa70807b3f79d1743a0"
+
+[[files]]
 file = "config/srparasites/SRParasitesSystems.cfg"
 hash = "82b9924c251e8aa10c82fb86b6ee993ee3272d22f5866a5778e97aa3cb9f0591"
 
@@ -836,7 +840,7 @@ metafile = true
 
 [[files]]
 file = "mods/decaychainfixes-1.0.0.jar"
-hash = "6ff34d7d2bfdeeee61d17d9a06cedc1ea3a10b6f29865cf6ad0252b2ea386f27"
+hash = "8b154a1b01ad64a55fd9eee4d2429c2f55d2947709bb56740945c0417d578917"
 
 [[files]]
 file = "mods/default-options.pw.toml"

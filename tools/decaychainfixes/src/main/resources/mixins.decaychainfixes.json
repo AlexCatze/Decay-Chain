@@ -10,10 +10,12 @@
   "mixins": [
     "AthenaeumTileDataServiceMixin",
     "BqOptionalRetrievalMixin",
+    "DayLengthServerMixin",
     "ESMGriefMixin",
     "FirstAidScaleHealMixin",
     "GeneralEntityHandlerMixin",
     "HarvestCraftGardenSoilMixin",
+    "HarvestCraftGardenSpreadMixin",
     "HbmGunLockMixin",
     "HbmLegacyGunLockMixin",
     "LostCitiesBiomeProviderMixin",
@@ -54,7 +56,12 @@
     "srp.CtxTileMixin",
     "srp.EntityMeteorMixin",
     "srp.ParasiteEventEntityMixin",
+    "srp.SrpCelestialRollMixin",
+    "srp.SrpNightIndexMixin",
     "srp.SRPSaveDataMixin",
     "srp.SRPWorldDataMixin"
+  ],
+  "client": [
+    "client.DayLengthClientMixin"
   ]
 }
