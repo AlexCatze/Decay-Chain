@@ -42,11 +42,13 @@ def _merge_any_of(tasks):
 
 
 def build_quest(q):
+    # BQ reads its properties by ResourceLocation path, which Minecraft 1.12 lower-cases: the keys must be lower case
+    # ('questLogic' would be ignored and the quest would fall back to AND).
     props = {
         'name:8': q['name'], 'desc:8': q['desc'], 'icon:10': q['icon'],
-        'isMain:1': 1 if q.get('main') else 0, 'isSilent:1': 0, 'autoClaim:1': 1,
-        'globalShare:1': 0, 'lockedProgress:1': 0, 'simultaneous:1': 0, 'repeatTime:3': -1,
-        'repeat_relative:1': 1, 'questLogic:8': q.get('requires_logic', 'AND'), 'taskLogic:8': q.get('task_logic', 'AND'),
+        'ismain:1': 1 if q.get('main') else 0, 'issilent:1': 0, 'autoclaim:1': 1,
+        'globalshare:1': 0, 'lockedprogress:1': 0, 'simultaneous:1': 0, 'repeattime:3': -1,
+        'repeat_relative:1': 1, 'questlogic:8': q.get('requires_logic', 'AND'), 'tasklogic:8': q.get('task_logic', 'AND'),
         'visibility:8': q.get('visibility', 'NORMAL'),
         'snd_complete:8': 'minecraft:entity.player.levelup', 'snd_update:8': 'minecraft:entity.player.levelup',
     }
@@ -92,8 +94,8 @@ def build(chapters, pack_version):
         'format:8': '2.1.0',
         'build:8': '4.3.2',
         'questSettings:10': {'betterquesting:10': {
-            'pack_name:8': 'Decay Chain', 'pack_version:3': pack_version, 'editMode:1': 0, 'hardcore:1': 0,
-            'lockTray:1': 0, 'livesDef:3': 3, 'livesMax:3': 10, 'party_enable:1': 1,
+            'pack_name:8': 'Decay Chain', 'pack_version:3': pack_version, 'editmode:1': 0, 'hardcore:1': 0,
+            'locktray:1': 0, 'livesdef:3': 3, 'livesmax:3': 10, 'party_enable:1': 1,
             'home_image:8': 'betterquesting:textures/gui/default_title.png',
             'home_anchor_x:5': 0.5, 'home_anchor_y:5': 0.0, 'home_offset_x:3': -128, 'home_offset_y:3': 0}},
         'questDatabase:9': quests,

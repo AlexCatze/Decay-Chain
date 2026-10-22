@@ -13,7 +13,7 @@ def pyro(name, meta=0, count=1):
 
 def mat(meta, count=1):
     """pyrotech:material sub-items: 2 straw, 5 refractory brick, 10 flint shard, 11 bone shard,
-    12 plant fibers, 13 dried plant fibers, 14 twine, 17 clay lump"""
+    12 plant fibers, 13 dried plant fibers, 14 twine, 17 clay lump, 9 unfired refractory brick, 35 refractory clay lump"""
     return item('pyrotech:material', count, meta)
 
 
@@ -38,10 +38,11 @@ MASONRY, GLASS, STONE_TANK, CRUCIBLE, SAW_BLADE, SAWMILL, SOAKING_POT = 30, 31, 
 FLINT_CLAY, CRUSHED_FLINT, LIMESTONE, QUICKLIME, SLAKED_LIME, REFRACTORY_CLAY, ASH = 37, 38, 39, 40, 41, 42, 43
 # leather: washed hide -> tannin (barrel of tarred wood) -> tanned hide -> tanning rack
 WOOD_TAR, TARRED_WOOD, BARREL, TANNED_HIDE, TANNING_RACK, LEATHER = 44, 45, 46, 47, 48, 49
+BELLOWS, MECH_BELLOWS = 50, 51
 
 
 PATH = [
-    dict(id=0, xy=(0, 108), size=36, main=True, name='Empty Pockets', icon=item('minecraft:map'), tasks=[checkbox()],
+    dict(id=0, xy=(0, 48), size=36, main=True, name='Empty Pockets', icon=item('minecraft:map'), tasks=[checkbox()],
          desc="The world ended a long time ago. You have nothing - no tools, no food, no clean water.\n\n"
               "These quests are §eonly a guide§r: there are no rewards, and nothing here is required. Follow them "
               "to learn how this pack works, or ignore them and explore.\n\n"
@@ -50,7 +51,7 @@ PATH = [
               "- The §eStaying Alive§r chapter runs in parallel: water, food, shelter and dangers.\n"
               "- The first day is short. §eFire, water, light and walls§r before sunset matter more than anything "
               "else - see §eThe First Night§r."),
-    dict(id=1, xy=(12, 12), requires=[0], name='Rocks', icon=pyro('rock'),
+    dict(id=1, xy=(72, 60), requires=[0], name='Rocks', icon=pyro('rock'),
          tasks=[retrieve(item('pyrotech:rock', 4, 32767))],
          desc="Small rocks lie on the ground almost everywhere - pick them up.\n\n"
               "Rocks are your first building material and your first weapon: you can §ethrow§r them at things that "
@@ -60,7 +61,7 @@ PATH = [
          desc="§eSticks§r drop from leaves (any tree, including the Biomes O' Plenty ones) - break them by hand.\n"
               "§ePlant Fibers§r come from breaking tall grass and other grassy plants.\n\n"
               "You cannot punch trees in this world: logs only come off with an axe. Make one first."),
-    dict(id=DRIED_FIBERS, xy=(72, 120), requires=[0], name='Dried Plant Fibers', icon=mat(13),
+    dict(id=DRIED_FIBERS, xy=(24, 156), requires=[0], name='Dried Plant Fibers', icon=mat(13),
          tasks=[retrieve(mat(13, 3))],
          desc="Fresh plant fibers are too green to burn or twist. §eDried Plant Fibers§r are the base of twine, "
               "tinder, fiber torches and fire starters.\n\n"
@@ -103,12 +104,12 @@ PATH = [
               "\n"
               "§7A wooden worktable breaks after about 64 crafts - keep the materials for a new one. The stone "
               "worktable later barely wears.§r"),
-    dict(id=8, xy=(72, 60), requires=[0], name='Shards', icon=mat(10),
+    dict(id=8, xy=(72, 108), requires=[0], name='Shards', icon=mat(10),
          tasks=[retrieve(mat(10), mat(11), any_of=True)],
          desc="Sharper tools need §eflint shards§r or §ebone shards§r (either one works).\n\n"
               "- Flint shards: dig gravel with a shovel.\n- Bone shards: break bones on an anvil, or find them in fossils.\n"
               "Skeletons drop bones - but at night you have bigger problems than skeletons."),
-    dict(id=9, xy=(120, 120), requires=[DRIED_FIBERS], name='Twine', icon=mat(14),
+    dict(id=9, xy=(72, 156), requires=[DRIED_FIBERS], name='Twine', icon=mat(14),
          tasks=[retrieve(mat(14))],
          desc="Twist §e3 dried plant fibers§r into §e3 twine§r (inventory grid). Twine ties tools together, "
               "builds drying racks and knives, and lashes the better tools."),
@@ -140,7 +141,7 @@ PATH = [
          desc="Shards + sticks + twine, crafted on the §eWorktable§r. Flint or bone tools last much longer than "
               "crude ones and can mine iron ore. Make a pickaxe, an axe and a shovel.\n\n"
               "§7Note: there are no hoes until you have steel - farming is not a primitive-age option."),
-    dict(id=12, xy=(120, 168), requires=[9, 2], hidden=[2], name='Drying Rack', icon=pyro('drying_rack', 1),
+    dict(id=12, xy=(120, 156), requires=[9, 2], hidden=[2], name='Drying Rack', icon=pyro('drying_rack', 1),
          tasks=[retrieve(item('pyrotech:drying_rack', 1, 32767))],
          desc="Drying racks dry plant fibers, wheat (into straw) and food, and can store items.\n"
               "\n"
@@ -149,16 +150,16 @@ PATH = [
               "\n"
               "§eUse:§r right-click items onto the rack and take them off when they look dry. They dry faster under"
               " open sky, in warm dry biomes and next to a campfire - and stop in the rain."),
-    dict(id=13, xy=(168, 120), requires=[9], name='Straw', icon=pyro('thatch'),
+    dict(id=13, xy=(120, 108), requires=[9], name='Straw', icon=pyro('thatch'),
          tasks=[retrieve(mat(2))],
          desc="Two dried plant fibers tied with a piece of twine make §eStraw§r; four straw pack into a §eStraw "
               "Bale§r (thatch).\n\nStraw is the fuel bed of a pit kiln, and a straw bed is the cheapest place to "
               "sleep."),
-    dict(id=14, xy=(168, 168), requires=[3], hidden=[3], name='Clay', icon=mat(17),
+    dict(id=14, xy=(228, 60), requires=[3], hidden=[3], name='Clay', icon=mat(17),
          tasks=[retrieve(mat(17, 8))],
          desc="Dig clay in rivers, swamps and lakes. Lumps of clay become bricks, buckets and - most importantly - "
               "§erefractory bricks§r for the bloomery."),
-    dict(id=15, xy=(228, 60), size=36, requires=[13, FIRE_STARTER], main=True, name='Pit Kiln', icon=pyro('kiln_pit'),
+    dict(id=15, xy=(168, 144), size=36, requires=[13, FIRE_STARTER], main=True, name='Pit Kiln', icon=pyro('kiln_pit'),
          tasks=[retrieve(pyro('kiln_pit')), retrieve(pyro('thatch'), ore('logWood', 3, 'minecraft:log'))],
          desc="Your first furnace. The kiln itself is §e2 dried plant fibers§r.\n"
               "\n"
@@ -172,14 +173,14 @@ PATH = [
               "firing§r, so do not fire in bad weather.\n"
               "\n"
               "It fires clay into bricks, cobblestone into stone and smelts §ecopper ore§r."),
-    dict(id=16, xy=(228, 168), size=36, requires=[POLISHED_GRANITE, STONE_SLAB], name='Granite Anvil', icon=pyro('anvil_granite'),
+    dict(id=16, xy=(288, 120), size=36, requires=[POLISHED_GRANITE, STONE_SLAB], name='Granite Anvil', icon=pyro('anvil_granite'),
          tasks=[retrieve(pyro('anvil_granite'))],
          desc="§ePolished granite§r on top of a §esmooth stone slab§r.\n"
               "\n"
               "§eUse:§r right-click an item onto the anvil and hit it: with a §epickaxe§r to split (rocks, stone "
               "bricks, slabs), with a §ehammer§r to crush and forge (shards into dust, limestone, blooms). The "
               "anvil wears down with use."),
-    dict(id=17, xy=(312, 120), requires=[STONEWORK], name='Stone Tools', icon=item('minecraft:stone_pickaxe'),
+    dict(id=17, xy=(240, 216), requires=[STONEWORK], name='Stone Tools', icon=item('minecraft:stone_pickaxe'),
          tasks=[retrieve(item('minecraft:stone_pickaxe'))],
          desc="§7Optional.§r Stone tools are a solid upgrade over flint and bone, and the stone hammer works the "
               "anvil faster."),
@@ -195,14 +196,14 @@ PATH = [
               "§eUse:§r right-click the item into the top, fuel (logs, charcoal) into the bottom, and light the "
               "opening at the bottom with your fire starter. Take the results from the bottom. A bucket of water "
               "puts it out and saves fuel."),
-    dict(id=POLISHED_GRANITE, xy=(264, 120), requires=[15, 11, 14], hidden=[14], name='Polished Granite',
+    dict(id=POLISHED_GRANITE, xy=(228, 156), requires=[15, 11, 14], hidden=[11, 14], name='Polished Granite',
          icon=item('minecraft:stone', 1, 2),
          tasks=[retrieve(pyro('rock', 1), optional=True), retrieve(pyro('cobblestone', 2), optional=True),
                 retrieve(item('minecraft:stone', 1, 1), optional=True), retrieve(item('minecraft:stone', 1, 2))],
          desc="Collect §egranite rocks§r (the pink ones) and pack eight of them around a §eclay lump§r: "
               "§eCobbled Granite§r. Fire it in the pit kiln into §eGranite§r, then put four granite together for "
               "§ePolished Granite§r - the top of your granite anvil."),
-    dict(id=STONE_SLAB, xy=(216, 120), requires=[14, 15, 11], hidden=[11], name='Stone Slab', icon=item('minecraft:stone_slab'),
+    dict(id=STONE_SLAB, xy=(228, 108), requires=[14, 15, 11], hidden=[11], name='Stone Slab', icon=item('minecraft:stone_slab'),
          tasks=[retrieve(item('minecraft:stone_slab', 1, 3), optional=True), retrieve(item('minecraft:stone_slab'))],
          desc="Five stone rocks around a §eclay lump§r make a §eCobblestone Slab§r. Fired in the pit kiln it "
               "turns into a smooth §eStone Slab§r - the base of your granite anvil."),
@@ -235,16 +236,22 @@ PATH = [
               "\n"
               "Charcoal is the bloomery's fuel. It also makes water filters."),
     dict(id=20, xy=(408, 120), requires=[REFRACTORY_CLAY], name='Refractory Bricks', icon=mat(5),
-         tasks=[retrieve(mat(5, 28))],
+         tasks=[retrieve(mat(35, 60), optional=True), retrieve(mat(9, 30), optional=True), retrieve(mat(5, 28))],
          desc="The last steps to a bloomery:\n"
               "\n"
               "1. Split each §eRefractory Clay§r into 4 lumps (inventory grid).\n"
               "2. Two lumps side by side make an §eUnfired Refractory Brick§r.\n"
-              "3. Fire them in the §eStone Kiln§r - a few crack.\n"
+              "3. Fire them in the §eStone Kiln§r - about 1 in 20 cracks.\n"
               "4. Four refractory bricks in a square make a §eRefractory Bricks§r block.\n"
               "\n"
               "The bloomery takes §e7 blocks: 28 bricks§r. 15 refractory clay make 30 unfired bricks - two spare "
-              "for the kiln's failures."),
+              "for the kiln; if more than two crack, one more batch of refractory clay covers it.\n"
+              "\n"
+              "§eShopping list for one bloomery§r\n"
+              "- §e15 clay balls§r (60 lumps): 12 for refractory clay, 3 melted into liquid clay\n"
+              "- §e7 limestone rocks§r (one limestone block) and a bucket of water\n"
+              "- §e1 flint shard§r\n"
+              "- §e6 ash§r"),
     dict(id=21, xy=(348, 0), requires=[11], name='Iron Ore', icon=item('minecraft:iron_ore'),
          tasks=[retrieve(ore('oreIron', 8, 'minecraft:iron_ore'))],
          desc="Iron ore needs at least a flint, bone or stone pickaxe.\n\n"
@@ -266,7 +273,7 @@ PATH = [
               "\n"
               "When the fire on top goes out, take the §eBloom§r - with tongs - and clear the ash with a shovel."),
     dict(id=24, xy=(456, 60), size=36, requires=[23, 16], hidden=[16], main=True, name='Iron!', icon=item('minecraft:iron_ingot'),
-         tasks=[retrieve(ore('ingotIron', 4, 'minecraft:iron_ingot'))],
+         tasks=[retrieve(ore('ingotIron', 1, 'minecraft:iron_ingot'))],
          desc="Put the bloom on the granite anvil and hit it with a §ehammer§r, standing close - every few blows "
               "knock iron out of it. Hammering is hungry work: if the blows do nothing, eat.\n"
               "\n"
@@ -335,7 +342,8 @@ PATH = [
               "it.§r"),
     dict(id=CRUSHED_FLINT, xy=(504, 168), requires=[16, 8], hidden=[16, 8], name='Crushed Flint', icon=mat(31),
          tasks=[retrieve(mat(31, 3))],
-         desc="Put a §eflint shard§r on the granite anvil and hit it with a §ehammer§r: §eCrushed Flint§r.\n\n"
+         desc="Put a §eflint shard§r on the granite anvil and hit it with a §ehammer§r: one shard gives §e3 Crushed "
+              "Flint§r - exactly what a bloomery's 3 flint clay need.\n\n"
               "A §eflint, bone or stone hammer§r (2 shards or masonry bricks, 2 sticks and twine) works much faster "
               "than the crude one - and you will want it for the bloom too."),
     dict(id=FLINT_CLAY, xy=(456, 168), requires=[CRUCIBLE, SOAKING_POT, CRUSHED_FLINT, WOODEN_BUCKET],
@@ -343,36 +351,39 @@ PATH = [
          tasks=[retrieve(mat(3, 3))],
          desc="Fill the soaking pot with §eliquid clay§r from the crucible and put in §ecrushed flint§r. Each piece "
               "soaks up 250 mB - a quarter bucket - into a ball of §eFlint Clay§r.\n\n"
-              "One flint clay goes into every batch of refractory clay: make three."),
+              "One flint clay goes into every batch of refractory clay: make three. That is §e750 mB of liquid clay - "
+              "3 clay balls§r melted in the crucible (single lumps give only 62 mB each)."),
     dict(id=LIMESTONE, xy=(552, 168), requires=[16], hidden=[16], name='Limestone', icon=item('pyrotech:rock', 1, 8),
-         tasks=[retrieve(mat(28, 6))],
+         tasks=[retrieve(mat(28, 7))],
          desc="§eLimestone§r is a pale stone found almost everywhere underground.\n\n"
               "Break it down with a hammer on the granite anvil: a limestone block becomes cobbled limestone, that "
-              "becomes §e8 limestone rocks§r, and each rock becomes §eCrushed Limestone§r.\n\n"
-              "§e6 crushed limestone§r is enough lime for a bloomery."),
+              "becomes §e8 limestone rocks§r, and each rock becomes one §eCrushed Limestone§r.\n\n"
+              "A bloomery needs 6 quicklime; §e7 crushed limestone§r leaves one spare for the kiln - one block of "
+              "limestone covers it."),
     dict(id=QUICKLIME, xy=(552, 120), requires=[LIMESTONE, 18], hidden=[18], name='Quicklime', icon=mat(22),
          tasks=[retrieve(mat(22, 6))],
-         desc="Fire §ecrushed limestone§r in the §eStone Kiln§r. The pit kiln cannot do it - this is the other "
-              "reason the stone kiln is not optional."),
+         desc="Fire §ecrushed limestone§r in the §eStone Kiln§r, one quicklime each. About 1 in 20 burns to ash "
+              "instead. The pit kiln cannot do it - this is the other reason the stone kiln is not optional."),
     dict(id=SLAKED_LIME, xy=(504, 120), requires=[QUICKLIME, SOAKING_POT], hidden=[SOAKING_POT], name='Slaked Lime',
          icon=mat(8),
          tasks=[retrieve(mat(8, 6))],
          desc="Soak §equicklime§r in §ewater§r in the soaking pot: 125 mB each, so a bucket does eight. Out comes "
-              "§eSlaked Lime§r - the binder of refractory clay."),
-    dict(id=ASH, xy=(408, 168), requires=[10], hidden=[10], name='Ash', icon=mat(0),
+              "§eSlaked Lime§r - the binder of refractory clay.\n\n"
+              "A bloomery takes §e6§r (750 mB of water)."),
+    dict(id=ASH, xy=(408, 168), requires=[10, 15], requires_logic='OR', hidden=[10, 15], name='Ash', icon=mat(0),
          tasks=[retrieve(mat(0, 6))],
          desc="Fires leave §eAsh§r behind. Collect it from burnt-out campfires (break the ash with a shovel), "
               "charcoal pit burns and kilns instead of throwing it away.\n\n"
-              "Refractory clay needs §e2 ash§r per batch."),
+              "Refractory clay needs §e2 ash§r per batch - §e6§r for a bloomery."),
     dict(id=REFRACTORY_CLAY, xy=(456, 120), requires=[FLINT_CLAY, SLAKED_LIME, ASH, 14], hidden=[14],
          name='Refractory Clay', icon=mat(4),
-         tasks=[retrieve(mat(4, 5))],
+         tasks=[retrieve(item('minecraft:clay_ball', 12), optional=True), retrieve(mat(4, 15))],
          desc="On the Worktable: §e4 clay balls§r in the corners, §e2 ash§r above and below the middle, §e2 slaked "
               "lime§r left and right, §e1 flint clay§r in the middle - §e5 Refractory Clay§r.\n\n"
-              "A clay ball is 4 lumps of clay. A bloomery takes §e3 batches§r: 12 clay balls, 6 ash, 6 slaked lime "
-              "and 3 flint clay."),
+              "A clay ball is 4 lumps of clay. A bloomery takes §e3 batches = 15 refractory clay§r: 12 clay balls, "
+              "6 ash, 6 slaked lime and 3 flint clay."),
     # --- Leather: hunting -> pelts -> scraped -> washed hides (the canteen itself is in Staying Alive) ---
-    dict(id=HUNTING, xy=(72, 168), requires=[8, 9, 6], hidden=[6], name='Hunting and Butchering', icon=pyro('carcass'),
+    dict(id=HUNTING, xy=(72, 204), requires=[8, 9, 6], hidden=[6], name='Hunting and Butchering', icon=pyro('carcass'),
          tasks=[retrieve(pyro('flint_butchers_knife'), pyro('bone_butchers_knife'), pyro('stone_butchers_knife'), pyro('iron_butchers_knife'),
                          pyro('flint_hunters_knife'), pyro('bone_hunters_knife'), pyro('stone_hunters_knife'), pyro('iron_hunters_knife'), any_of=True),
                 retrieve(pyro('carcass'))],
@@ -395,7 +406,7 @@ PATH = [
               "doubles the meat but usually ruins the pelt, a §eHunter's Knife§r doubles the pelts but usually "
               "taints the meat.\n\n"
               "Butchering is hard work: §eif nothing happens, you are too hungry§r."),
-    dict(id=PELTS, xy=(72, 216), requires=[HUNTING], name='Pelts', icon=pyro('pelt_cow'),
+    dict(id=PELTS, xy=(72, 264), requires=[HUNTING], name='Pelts', icon=pyro('pelt_cow'),
          tasks=[retrieve(ore('hideScrapeable', 1, 'pyrotech:pelt_cow'))],
          desc="Get a §elarge pelt or hide§r from a cow, pig, sheep, horse, donkey, llama, wolf, polar bear or "
               "mooshroom (see §eHunting and Butchering§r).\n\n"
@@ -464,11 +475,29 @@ PATH = [
               "Set it up §eunder open sky§r: a tanning rack only works in daylight."),
     dict(id=LEATHER, xy=(552, 312), requires=[TANNED_HIDE, TANNING_RACK], name='Leather',
          icon=item('minecraft:leather'),
-         tasks=[retrieve(item('minecraft:leather', 3))],
+         tasks=[retrieve(item('minecraft:leather'))],
          desc="Right-click a §etanned hide§r onto the tanning rack and leave it in the sun: about ten minutes of "
               "daylight turn it into §eLeather§r. A large hide gives one leather; small hides give small leather "
               "pieces.\n\n"
-              "§e3 leather§r make a §eBackpack§r (see Staying Alive)."),
+              "§e2 leather§r, cut into straps and a sheet, make a §eBackpack§r (see Staying Alive)."),
+    dict(id=BELLOWS, xy=(600, 312), requires=[LEATHER, MASONRY, STONE_STICK, SAWMILL],
+         hidden=[MASONRY, STONE_STICK, SAWMILL], name='Bellows', icon=pyro('bellows'),
+         tasks=[retrieve(pyro('bellows'))],
+         desc="A §eBellows§r: 2 §eboards§r and a §emasonry brick§r on top, 2 §eleather sheets§r around a "
+              "§estone rod§r in the middle, 2 §emasonry brick blocks§r at the bottom. Cut a leather sheet from "
+              "leather with a hunter's knife.\n\n"
+              "§eUse:§r place it facing a §ebloomery§r or a stone machine (kiln, oven, crucible, sawmill) and "
+              "§ejump on it§r - every push of air speeds up the fire."),
+    dict(id=MECH_BELLOWS, xy=(648, 312), requires=[BELLOWS, TARRED_WOOD], hidden=[TARRED_WOOD],
+         name='Mechanical Bellows', icon=pyro('mechanical_bellows'),
+         tasks=[retrieve(pyro('mechanical_bellows'))],
+         desc="A bellows that pumps by itself: 2 §etarred boards§r and an §eiron ingot§r on top, 2 §estone "
+              "rods§r around your §ebellows§r, 2 §etarred planks§r and a §eHeavy Cloth§r at the bottom (heavy cloth: "
+              "4 wool around a leather make 3).\n\n"
+              "§eUse:§r right-click a §ecog§r into it and it keeps pumping, speeding up to §ethree stone machines§r "
+              "around it - no more jumping. Each push wears the cog down; a redstone signal pauses it.\n\n"
+              "§eCogs:§r 8 sticks around a plank (wood), or 8 rocks, flint shards or bone shards around a stone "
+              "rod. Harder cogs last longer."),
 ]
 
 ALIVE = [
@@ -501,7 +530,10 @@ ALIVE = [
               "Tanned leather (6 for a canteen) works too, but comes much later. With iron you can upgrade it to an "
               "§eIron Canteen§r that holds more."),
     dict(id=101, xy=(96, 0), requires=[BOTTLE, CANTEEN], requires_logic='OR', name='Something to Drink From',
-         icon=item('simpledifficulty:canteen'), tasks=[checkbox()],
+         icon=item('simpledifficulty:canteen'),
+         tasks=[retrieve(item('minecraft:glass_bottle'), item('minecraft:potion', 1, 32767),
+                         item('simpledifficulty:purified_water_bottle'), item('simpledifficulty:canteen'),
+                         item('simpledifficulty:iron_canteen'), any_of=True)],
          desc="Bottles and canteens are how you carry water:\n\n"
               "- §eFill§r: right-click water with an empty bottle or canteen. Water from normal biomes is §edirty§r.\n"
               "- §eDrink§r: hold right-click. A canteen holds several drinks, a bottle one.\n"
@@ -527,10 +559,6 @@ ALIVE = [
               "strawberries and Biomes O' Plenty berry bushes grow in plains and forests.\n\n"
               "Food is less filling here than you are used to, and you only heal when you are well fed. Keep an "
               "eye on the saturation shown on your hunger bar."),
-    dict(id=111, xy=(216, 48), requires=[6], name='Hunting Spear', icon=pyro('crude_spear'),
-         tasks=[retrieve(pyro('crude_spear'))],
-         desc="A crude spear can be thrown - it sticks in the target, so go and pick it up. Animals are the best "
-              "early source of meat, pelts (canteens, later leather) and bones."),
     dict(id=112, xy=(0, 0), requires=[10, HUNTING], task_logic='OR', name='Cooked Meal',
          icon=item('minecraft:cooked_porkchop'),
          tasks=[retrieve(item('minecraft:cooked_porkchop')), retrieve(item('minecraft:cooked_beef')),
@@ -584,12 +612,13 @@ ALIVE = [
               "- §eStone Torch§r: coal pieces on a stone rod. §eNever burns up§r, but rain can still put it out.\n\n"
               "§eCoal pieces§r come from coal ore and from §elignite§r (HBM lignite ore, underground at y 35-60) "
               "mined with a pickaxe below iron. Careful: breaking coal or lignite can release poisonous coal gas.\n\n"
-              "Proper torches that never go out are made from real coal - mine coal ore with an iron pickaxe."),
+              "Proper torches that never go out are made from §ecoke§r - coal or lignite baked in HBM's "
+              "Combination Oven (Scavenger age)."),
     dict(id=121, xy=(144, -96), requires=[1], name='Four Walls', icon=item('minecraft:cobblestone'),
          tasks=[retrieve(ore('cobblestone', 32, 'minecraft:cobblestone'))],
          desc="Rocks craft into cobblestone. Build something you can close behind you before your first night.\n\n"
               "Mud and straw make §eCob§r - another cheap early building block."),
-    dict(id=122, xy=(144, -48), requires=[121], name='Home Point', icon=pyro('straw_bed'),
+    dict(id=122, xy=(144, -48), requires=[0], name='Home Point', icon=pyro('straw_bed'),
          tasks=[retrieve(pyro('straw_bed'))],
          desc="Nobody sleeps through the night here - but a bed still marks home. §eRight-click a bed§r, day or "
               "night, to make it your respawn point. A §estraw bed§r is just 3 straw. A sleeping bag does not count: "
@@ -598,7 +627,7 @@ ALIVE = [
     dict(id=123, xy=(144, 0), requires=[6], task_logic='OR', name='Storage', icon=pyro('crate'),
          tasks=[retrieve(pyro('crate')), retrieve(pyro('stash')), retrieve(item('storagedrawers:basicdrawers', 1, 32767))],
          desc="Crates, stashes and drawers keep your loot safe. A §eRock Bag§r collects rocks automatically."),
-    dict(id=124, xy=(144, 48), requires=[121], name='The Horde', icon=item('minecraft:rotten_flesh'), tasks=[checkbox()],
+    dict(id=124, xy=(144, 48), requires=[0], name='The Horde', icon=item('minecraft:rotten_flesh'), tasks=[checkbox()],
          desc="§cEvery tenth night a horde comes for you§r - and it grows each time. You cannot sleep through it.\n\n"
               "Zombies carrying pickaxes §edig through walls§r. HBM concrete stops them; until you have it, build "
               "thick walls, light everything and have an escape route.\n\n"
@@ -657,19 +686,16 @@ ALIVE = [
          desc="Experience buys skill levels (open the skills tab in your inventory). Tools and machines are never "
               "locked by skills - but §eweapons and armour are§r: better guns, swords and armour need Attack, "
               "Defense or Agility levels."),
-    dict(id=143, xy=(288, 48), requires=[3], task_logic='OR', name='Something to Fight With',
-         icon=item('spartanweaponry:spear_wood'),
-         tasks=[retrieve(item('spartanweaponry:spear_wood')), retrieve(item('spartanweaponry:spear_stone')),
-                retrieve(item('spartanweaponry:dagger_stone')), retrieve(pyro('crude_spear')), retrieve(item('minecraft:bow'))],
-         desc="Spears, daggers and clubs of wood and stone are your first real weapons; a bow keeps danger at a "
-              "distance. Firearms come with steel.\n\n"
-              "Stone weapons are cut from §emasonry bricks§r, so they come once your granite anvil is working. "
-              "Handles, poles and bowstrings take §etwine§r just as well as string."),
-    dict(id=144, xy=(288, 96), requires=[LEATHER, 24], name='Backpack', icon=item('wearablebackpacks:backpack'),
+    dict(id=144, xy=(216, 48), requires=[LEATHER, 24], name='Backpack', icon=item('wearablebackpacks:backpack'),
          tasks=[retrieve(item('wearablebackpacks:backpack'))],
          desc="A backpack worn on your back roughly doubles what you can carry home from a scavenging run.\n\n"
-              "§e3 leather§r, an §eiron ingot§r and §ewool§r, with §etwine or string§r in the four corners. Leather "
-              "is tanned from hides - see the end of the Path to Iron chapter."),
+              "§e2 leather straps§r on the sides, a §eleather sheet§r at the bottom, an §eiron ingot§r on top and "
+              "§ewool§r in the middle, with §etwine or string§r in the four corners.\n\n"
+              "Cut leather with a §ehunter's knife§r: leather makes a sheet, a sheet makes 2 straps - §e2 leather§r "
+              "in all. Leather is tanned from hides - see the end of the Path to Iron chapter.\n\n"
+              "§eWear it§r in the §eBody§r slot of the Baubles inventory. You cannot open it on your own back: "
+              "take it off and §eplace it on the ground§r, then right-click it. Another player can open it while "
+              "you wear it."),
 ]
 
 CHAPTERS = [

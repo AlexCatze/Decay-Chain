@@ -18,7 +18,7 @@ hash = "2a71b7dc3295915c47292fbb6b88bc0ac488cbe50eb7657db7150e73f620a2c3"
 
 [[files]]
 file = "config/betterquesting/DefaultQuests.json"
-hash = "d4ea9e667fa1300c1f3dc1cf9d0d9002165ba44e9382a3a630b381c02f02face"
+hash = "3bf2c0d7feaf89d540b629fdc9e27ee563b0fffda83b5767c2031d3801efbb91"
 
 [[files]]
 file = "config/biomesoplenty/biomes/cherry_blossom_grove.json"
@@ -114,7 +114,7 @@ hash = "ceb535fbb713957a37902c5edd6cf97e238890e39a9d3a5d66a256ceea335eb1"
 
 [[files]]
 file = "config/harvestcraft.cfg"
-hash = "8473b7ac903141b131f32e2181e51cf76ac24407b328dcae41b206171e81f7b3"
+hash = "f57aece27d410fb4d95b649d759ad663f4f5f90e400850cfd68adad6319ae9a2"
 
 [[files]]
 file = "config/hbm/hbm.cfg"
@@ -131,6 +131,10 @@ hash = "7bd472bf9bd3013197f5dbd42e7d0af0cacd6a45f670cb72924beebea87c5018"
 [[files]]
 file = "config/hbmConfig/hbmItemPools.json"
 hash = "c2aa32b4f93b843c4338c5b536dcd1fb3658d4e36248124e923422c07ef84cdc"
+
+[[files]]
+file = "config/hbmRecipes/hbmAnvil.json"
+hash = "4335278d3e06b9a6e25373c87076793f10d0290e9c20857531dd12c69c91b7cf"
 
 [[files]]
 file = "config/hbmRecipes/hbmAssemblyMachine.json"
@@ -166,7 +170,7 @@ hash = "8e0725d84b431267c0b56370994b585a53615897af9966070c7c56bba8c174d0"
 
 [[files]]
 file = "config/lostcities/userassets.json"
-hash = "7e24187f960476650d9e00a92cb524f44afaee1fecceaea060f7c6cfc8f05ad5"
+hash = "27d435b4d5c4e10907b5177a6df63f910cd4ac8bca6fdc2ce1df30f32fe969ee"
 
 [[files]]
 file = "config/lostsouls.cfg"
@@ -298,7 +302,7 @@ hash = "3374f9b060eac63f159496842ffecdbd6930d269efaab228c685ab1ed793c42f"
 
 [[files]]
 file = "config/lycanitesmobs/creatures/gorger.json"
-hash = "e0fc2e7ba98f536eb004bb65be852fc7dc725dc3a3affe6cb13a8088db6f9c2a"
+hash = "a1a870ab02bfd69222ff33ce35c126c6afabec84f0b7198cb7b0ba5ac23c9109"
 
 [[files]]
 file = "config/lycanitesmobs/creatures/gorgomite.json"
@@ -334,11 +338,11 @@ hash = "078eca49977ee7e99d5e9ba86acb2c87bd8aa20fcf3786d42587b456128c11fe"
 
 [[files]]
 file = "config/lycanitesmobs/creatures/khalk.json"
-hash = "38d1ccecf42e308d14c283676bd67f6b3571aa0b55ed44c00836f49dd9471d0c"
+hash = "9839ce64bd883b8bafe5b620276b3245966efae5dd02ce2a95a5919d03ff15ec"
 
 [[files]]
 file = "config/lycanitesmobs/creatures/lobber.json"
-hash = "79d18a20ca696862fdf37780bc9eae1044f4a2162a3c4479f723a9fbaa740276"
+hash = "bb88c7968e2741572f216c63d53d31888374eede59e728164a9fd97873c21cbb"
 
 [[files]]
 file = "config/lycanitesmobs/creatures/morock.json"
@@ -390,7 +394,7 @@ hash = "23657682a71bded994be762811c3c67a42b27c2aa91bb6010ab55db94939f18b"
 
 [[files]]
 file = "config/lycanitesmobs/creatures/salamander.json"
-hash = "7fc8c18b34d65fdc618b4f08b5709a8004cc0cce7e71a669006416afb43c9b8a"
+hash = "5118cbc0ab1f1cc8fceca8542509d686cb0c2e6d85cc95d39fb3228d4b51600d"
 
 [[files]]
 file = "config/lycanitesmobs/creatures/shade.json"
@@ -485,6 +489,10 @@ file = "config/lycanitesmobs/mobevents.cfg"
 hash = "c68f94b9f06b4dcf339426139f0a4942cefb56972519523b07326bfc5c437b28"
 
 [[files]]
+file = "config/lycanitesmobs/spawners/lava.json"
+hash = "53bcf6fedd1a02c709e9c15fe01dd1ca53794dfbaf4e6a612112d0b07eb6af7e"
+
+[[files]]
 file = "config/lycanitesmobs/spawning.cfg"
 hash = "9631f34f6f4b672a1158f2252430d88415eade9ebece3743471993c1b809ae8e"
 
@@ -503,6 +511,10 @@ hash = "9730f2ae0ff69630711094f26a725e721b2c6820231cf3638b1e7dcb59c4751d"
 [[files]]
 file = "config/opencomputers/settings.conf"
 hash = "cc8afd5e0548f8f244300c5c0b4fb616b38c830ce2c4bdcc66f465c8ab09c49b"
+
+[[files]]
+file = "config/pyrotech/module.tech.Bloomery.cfg"
+hash = "ab4f04383c5467e6783f0f6277f8d6b678e7fddfdf0e7987828e33eaa57a160d"
 
 [[files]]
 file = "config/pyrotech/plugin.Patchouli.cfg"
@@ -559,6 +571,10 @@ hash = "94e9278d6d8d83e47b29f0babd7e88a8062e07b3bfc99cf333e8af9a2bf08114"
 [[files]]
 file = "config/tombstone.cfg"
 hash = "07af4e6fb07a8ba8bce918fe826066e3885a1529167076de0720c49c16d02b05"
+
+[[files]]
+file = "config/wearablebackpacks.cfg"
+hash = "e8d0ea1a3a75f38f551bc0023cafb1e815a6c0b3eae8c1886caf7d0990e410ea"
 
 [[files]]
 file = "config/xaero/minimap/profiles/default.cfg"
@@ -1143,7 +1159,7 @@ hash = "c2f0ad80d27ca9298d0b85db9cb9e2c1ab8546b58d99fa79c01b7539ac519000"
 
 [[files]]
 file = "scripts/loot.zs"
-hash = "0e6c64454d03c4fca184a4c072594a1fb780640f96b8983692a01ecda00a96c1"
+hash = "965cf9a79d39783022c2f4da143097f5a7908be10991c367254e555970c034e6"
 
 [[files]]
 file = "scripts/opencomputers.zs"
@@ -1151,7 +1167,7 @@ hash = "f6aa69a1eac49d791bd7da8a8d8d3714533238b8626bad9412ace391aff43b84"
 
 [[files]]
 file = "scripts/primitive.zs"
-hash = "13ead787893847d248f1a5c0c790c0aff4b42b07b65a6e371c153d9f924275c4"
+hash = "310e39ee08b1aeeb11824f9800061905de0b46824f785ebf15e3323fccea6486"
 
 [[files]]
 file = "scripts/pyrotech.zs"
@@ -1163,7 +1179,7 @@ hash = "50b210fe1b0c365e8dd3d83f7419cec1edf58c068ef94bc9410491ba72ca35e1"
 
 [[files]]
 file = "scripts/scavenger.zs"
-hash = "72f2bbf0d023e4c577e13dbc7d7f577dd0ec3bc7bf75ba3710925126dde4ac50"
+hash = "724afb23f29fd01cbffd821570128160a61e4b95ad130d2b0c6e6166963124f0"
 
 [[files]]
 file = "scripts/storagedrawers.zs"
@@ -1179,7 +1195,7 @@ hash = "5426639c02f06876e2d47e8a1a8c68211d09710c37ad20ee1dadea7e8f4473ea"
 
 [[files]]
 file = "scripts/weapons.zs"
-hash = "4bb2d7679ef9023e8e1dc0df3776f3bea765f18c0e2e2836cc6634a5eb6374ee"
+hash = "7c10cf7196cfd72c41cc1d87864bfc341b5f9eb5d91e09bdd2d56c5d9223361b"
 
 [[files]]
 file = "workspace/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.version"

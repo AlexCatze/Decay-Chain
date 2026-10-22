@@ -14,13 +14,14 @@ import os
 
 from bq import build
 from primitive import CHAPTERS as PRIMITIVE
+from scavenger import CHAPTERS as SCAVENGER
 
-PACK_VERSION = 31
+PACK_VERSION = 52
 OUT = os.path.join(os.path.dirname(__file__), '..', '..', 'config', 'betterquesting', 'DefaultQuests.json')
 
 
 if __name__ == '__main__':
-    data = build(PRIMITIVE, PACK_VERSION)
+    data = build(PRIMITIVE + SCAVENGER, PACK_VERSION)
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     with open(OUT, 'w', encoding='utf-8') as f:
         json.dump(data, f, indent=2, ensure_ascii=False)

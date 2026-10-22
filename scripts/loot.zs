@@ -11,6 +11,7 @@ val dirtyWater = <minecraft:potion>.withTag({Potion: "minecraft:water"});
 // Common scavenger loot: city ruins, vanilla dungeons
 function addScavenge(pool as LootPool, dirtyWater as crafttweaker.item.IItemStack) {
     pool.addItemEntry(<hbm:scrap>, 20, 0, [Functions.setCount(1, 6)], [], "decay_scrap");
+    pool.addItemEntry(<hbm:plate_polymer>, 6, 0, [Functions.setCount(2, 8)], [], "decay_insulator");
     pool.addItemEntry(<minecraft:gunpowder>, 6, 0, [Functions.setCount(1, 4)], [], "decay_gunpowder");
     pool.addItemEntry(<minecraft:iron_ingot>, 6, 0, [Functions.setCount(1, 3)], [], "decay_iron");
     pool.addItemEntry(<minecraft:string>, 4, 0, [Functions.setCount(1, 4)], [], "decay_string");

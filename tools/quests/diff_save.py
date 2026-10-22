@@ -12,7 +12,8 @@ import os
 import sys
 
 REPO_BOOK = os.path.join(os.path.dirname(__file__), '..', '..', 'config', 'betterquesting', 'DefaultQuests.json')
-DEFAULTS = {'taskLogic:8': 'AND', 'questLogic:8': 'AND', 'isMain:1': 0, 'visibility:8': 'NORMAL'}
+# BQ property keys are lower case (ResourceLocation paths); camelCase keys in a file are ignored by BQ.
+DEFAULTS = {'tasklogic:8': 'AND', 'questlogic:8': 'AND', 'ismain:1': 0, 'visibility:8': 'NORMAL'}
 
 
 def load(path):

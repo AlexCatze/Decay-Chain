@@ -39,6 +39,10 @@
           {
             "random": 25,
             "block": "hbm:brick_concrete_broken"
+          },
+          {
+            "random": 10,
+            "block": "hbm:block_insulator"
           }
         ],
         "damaged": "minecraft:iron_bars"
@@ -107,6 +111,10 @@
           {
             "random": 5,
             "block": "hbm:brick_concrete_mossy"
+          },
+          {
+            "random": 10,
+            "block": "hbm:block_insulator"
           }
         ],
         "damaged": "minecraft:iron_bars"
@@ -167,6 +175,10 @@
           {
             "random": 25,
             "block": "hbm:brick_concrete_broken"
+          },
+          {
+            "random": 10,
+            "block": "hbm:block_insulator"
           }
         ],
         "damaged": "minecraft:iron_bars"
@@ -227,6 +239,10 @@
           {
             "random": 5,
             "block": "hbm:brick_concrete_mossy"
+          },
+          {
+            "random": 10,
+            "block": "hbm:block_insulator"
           }
         ],
         "damaged": "minecraft:iron_bars"

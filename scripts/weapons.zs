@@ -7,14 +7,15 @@
 
 import mods.jei.JEI;
 
-// --- Techguns: Scavenger parts use HBM steel ---
-for part in [<techguns:itemshared:33>, <techguns:itemshared:38>, <techguns:itemshared:57>, <techguns:itemshared:68>, <techguns:itemshared:70>] as crafttweaker.item.IItemStack[] {
+// --- Techguns: Scavenger parts use HBM steel; the iron barrel (revolver, sawed-off) is pressed iron plate ---
+for part in [<techguns:itemshared:33>, <techguns:itemshared:57>, <techguns:itemshared:68>, <techguns:itemshared:70>] as crafttweaker.item.IItemStack[] {
     recipes.replaceAllOccurences(<ore:ingotIron>, <ore:plateSteel>, part);
 }
+recipes.replaceAllOccurences(<ore:ingotIron>, <ore:plateIron>, <techguns:itemshared:38>);
 
-// --- Techguns: plastic means HBM polymer (Industrial) ---
+// --- Techguns: plastic means HBM polymer bars (Industrial) - not hbm:plate_polymer, which is the Insulator (wool + twine) ---
 <ore:sheetPlastic>.remove(<techguns:itemshared:55>);
-<ore:sheetPlastic>.add(<hbm:plate_polymer>);
+<ore:sheetPlastic>.add(<hbm:ingot_polymer>);
 JEI.hide(<techguns:itemshared:55>);
 
 // --- Techguns: obsidian steel is a Space alloy (its blast furnace is removed in techguns.zs) ---
